@@ -84,7 +84,7 @@ class Validator extends DKIM
             }
 
             //Validate canonicalization algorithms for header and body
-            [$headerCA, $bodyCA] = explode('/', $dkimTags['c']);
+            [$headerCA, $bodyCA] = explode('/', $dkimTags['c']) + ['simple', 'simple'];
             if ($headerCA !== 'relaxed' && $headerCA !== 'simple') {
                 $output[$signatureIndex][] = [
                     'status' => 'PERMFAIL',
