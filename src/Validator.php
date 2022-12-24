@@ -236,7 +236,7 @@ class Validator
                 $validationResult->addPass("Compatible DKIM version: ${dkimTags['v']}" . '.');
 
                 //Validate canonicalization algorithms for header and body
-                [$headerCA, $bodyCA] = explode('/', $dkimTags['c'], 2);
+                [$headerCA, $bodyCA] = explode('/', $dkimTags['c'], 2) + [1 => 'simple'];
                 if (
                     $headerCA !== self::CANONICALIZATION_HEADERS_RELAXED &&
                     $headerCA !== self::CANONICALIZATION_HEADERS_SIMPLE
