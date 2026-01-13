@@ -1,0 +1,8 @@
+{
+    "bulk._domainkey.openpetition.de": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDGvkvh8pkK+jstXlQ6UGy1xUIvBeASCatvv3Sg\/ZsO2D6UUfiS4A4nNBvWcuSIGSgIst+vPV3zjjm0unercKOiKE5yE1MzaOn1Y\/PWIF2fLEG+NUGXJBN4S+Fuu4wbkGMqkq9+KMhk52dFHh5QmY2\/jdt0h+KoxF9xtc0h+bbzXwIDAQAB"
+        }
+    ]
+}

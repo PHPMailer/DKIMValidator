@@ -1,0 +1,2659 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6a10:dc16:b0:61a:42cd:afa1 with SMTP id uw22csp2211008pxb;
+        Mon, 16 Jun 2025 13:10:44 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IG2pOWFTqA/BC7/cAS/Df0Bdfh6M9jC4qMtm0rIuACtBSXLEuwZ9CAZncR10HZA/wDg229U
+X-Received: by 2002:a05:6102:2b99:b0:4e6:d850:1f82 with SMTP id ada2fe7eead31-4e7f62eb7ddmr6846452137.25.1750104644375;
+        Mon, 16 Jun 2025 13:10:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750104644; cv=none;
+        d=google.com; s=arc-20240605;
+        b=ACxWm7ZFZpFtE/byBiygc607o2GKc1NBt2KXgTQ9Smv1toSFIOJEdYBdWLCyOHZGiz
+         ktrogZz0WEVJTo+Lwt/bvl8TTdr/LjtaYsoft9IkCfqWPhYNthNJXcPAOMXAn5lNB4D2
+         iupm7jG8NBlY0WEXKR+/lTrX0dIPLloBLatBw3FFZAe90dpbjyJnNyuCD+QwkMZoA4hG
+         3mb7O0XzFdcYkafan2+Y7PAML2AUAoklCRunXT8XoFAUA2Ge9aRu1stqrLmnzpd9h0wP
+         NltiHFBMaERIl72NsZweaWWoMmeNYvTBKt0nYMIyXEm+HBE4RqIBtmVgHYvVEWmYGCRT
+         S7nA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:mime-version:list-unsubscribe:feedback-id:precedence
+         :from:subject:to:date:dkim-signature;
+        bh=OhSCk8FtAPgQTq4rFTY4IGSyJNX/MPTa15/Joyq8ZvM=;
+        fh=U9vcTkYWvVGno2mg3b0pl0YpGkionviz3uCFg9xc2Yc=;
+        b=X9Ot9AxKuPQWf9VTOC1/EqbJ6Wc1nIPl17QMC933ejWxHvmvpwGhe31QqI0LYjdXus
+         Pmhr74jO5h2vSCR/xvqtOr7ylM5DBzMDks7TKbEi1cdsJogivpsjIl25TpYldjBiJ8Xl
+         oqbXonr4vYxtEUQjqyFp/mc1+lk39eTiZBGFZAGG7Ev/0bdYACnv+CpTyxS1lLFroT9O
+         3f0vbKziPb1VMK8qZ6xLV1eMZHWBLK6OJpFaIUNYTGiAvpGc8e2zVtV4CeKm5Wz+cVCR
+         pEDM23VOZ+PusqubJZFgspDTKADcnleMpYql5dWt4MFJ6+Hglw8NyC8CHfVy/8LxDQBg
+         8NMA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@phpclasses.org header.s=1436676070.phpclasses header.b=usGSsm+V;
+       spf=pass (google.com: domain of errors-d4d4online=gmail.com@phpclasses.org designates 144.217.39.137 as permitted sender) smtp.mailfrom="errors-d4d4online=gmail.com@phpclasses.org";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=phpclasses.org
+Return-Path: <errors-d4d4online=gmail.com@phpclasses.org>
+Received: from phpclasses.org (be7.phpclasses.org. [144.217.39.137])
+        by mx.google.com with ESMTPS id ada2fe7eead31-4e7e7107680si1970509137.463.2025.06.16.13.10.44
+        for <d4d4online@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 16 Jun 2025 13:10:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of errors-d4d4online=gmail.com@phpclasses.org designates 144.217.39.137 as permitted sender) client-ip=144.217.39.137;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@phpclasses.org header.s=1436676070.phpclasses header.b=usGSsm+V;
+       spf=pass (google.com: domain of errors-d4d4online=gmail.com@phpclasses.org designates 144.217.39.137 as permitted sender) smtp.mailfrom="errors-d4d4online=gmail.com@phpclasses.org";
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=phpclasses.org
+DKIM-Signature: v=1; a=rsa-sha256; c=simple; d=phpclasses.org; h=date:to
+	:subject:from:list-unsubscribe:mime-version:content-type
+	:message-id; s=1436676070.phpclasses; bh=yyw/Yu5vUDzF7Dd8FlJZ5g2
+	BWw7+qdjHcXLWUCmRAQk=; b=usGSsm+VhOSskoIKyQsaoVSSUzdvSfW6OSDZNXE
+	QqbCtKYGLWzv0mytB0D6LNpDnzDd3+qMPR3/RrboOI1t2milYZco2QQExaAC/470
+	S5R7VPh6Ts7hfOmkEPVVWVCI3BPbTtOiMBtawA35DlR96zUzZq13mhghCaJwwk25
+	2iEA=
+Received: (qmail 5873 invoked by uid 500); 16 Jun 2025 18:57:12 -0000
+Date: 16 Jun 2025 18:57:12 -0000
+To: David Dreschner <d4d4online@gmail.com>
+Subject: [PHP Classes] Innovation Award results of May of 2025
+From: PHP Classes Award <list-award@phpclasses.org>
+Precedence: bulk
+Feedback-ID: 181102:{recipient}:award:PHPClasses
+X-Feedback-ID: 181102:{recipient}:award:PHPClasses
+List-Unsubscribe: <https://www.phpclasses.org/unsub/n/dreschner/u/award/cc/da280f/>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="e66777fdbbcace9c9250527433619090"
+Message-ID: <20250616185712.9686.errors-d-d-online-gmail-com@phpclasses.org>
+
+--e66777fdbbcace9c9250527433619090
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+David you are getting this message as part of the service for being a user
+of the PHP Classes site to which you registered voluntarily using the email
+address d4d4online@gmail.com.
+
+To unsubscribe see the instructions at the bottom of this message.
+___________________________________________________________________________
+
+     The winners of the Award may receive prizes provided by sponsors.
+___________________________________________________________________________
+
+o IP2Location: One year server license IP to country, region, city,
+latitude, longitude, ZIP code, time zone, area code database
+
+o Programming Labs: 1 Year License of Wizard's Toolkit for any domain name
+
+o APILayer: 1 year subscription to the Basic Plan of an API product of
+choice
+
+o IonCube: One year of ionCube24 Web site security protection
+
+o SourceGuardian: SourceGuarding PHP encoder tool
+
+o PHPClasses: One official elePHPant Plush Mascott
+
+o CodeLobster Software: One downloadable copy of CodeLobster Professional
+
+o Mailtrap: 1 year of Team Plan of Mailtrap
+
+o Nomad PHP: 1 Year Subscription to NomadPHP Advanced PHP Learning
+
+o IBANAPI: Premium IBAN Validation API service Enterprise Edition for 1 Yea=
+r
+
+o O'Reilly: 30 Days Free Access to O'Reilly Safari Learning Platform
+
+o PHP Architect: One subscription to the PDF edition of the PHP Architect
+magazine
+
+o PHP Defender: PHP encoder tool one year license
+
+___________________________________________________________________________
+
+*David please go to winners page to access the winner package pages.*
+https://www.phpclasses.org/winners/year/2025/#winners-2025-04-01
+
+          Congratulations to Rodrigo Faustino and Roberto Aleman!
+___________________________________________________________________________
+
+                         Winners of April of 2025
+___________________________________________________________________________
+
+ 1. Face ID PHP (28.57%)
+    Author: Rodrigo Faustino
+
+ 1. RA Anomaly detector GMM (28.57%)
+    Author: Roberto Aleman
+
+ 3. Shannon Entropy Calculator (14.29%)
+    Author: Roberto Aleman
+
+ 3. RA Boyer Moore Search (14.29%)
+    Author: Roberto Aleman
+
+ 3. Learn PHP (14.29%)
+    Author: Kabir Hossain
+
+ 6. Idempotency Laravel (<1.00%)
+    Author: Edward Paul
+
+ 6. Conjugador (<1.00%)
+    Author: Juan Camacho
+
+ 6. Proto x Bus (<1.00%)
+    Author: DeGraciaMathieu
+
+ 6. PHP Stuff Versioned (<1.00%)
+    Author: Andrey Postal
+
+ 6. WPMU Dev Plugin Test (<1.00%)
+    Author: Adeleye Ayodeji
+
+ 6. PHP WebSockets (<1.00%)
+    Author: Chun-Sheng, Li
+
+ 6. LaraGuard IP (<1.00%)
+    Author: Neeraj Saini
+
+ 6. Laravel API Kit (<1.00%)
+    Author: Neeraj Saini
+
+ 6. JPEG Codec PHP (<1.00%)
+    Author: Uku-Kaarel Jo~esaar
+___________________________________________________________________________
+
+
+*David please go to the voting page to know the packages and vote on the
+best*
+https://www.phpclasses.org/vote.html
+
+                 Nominees to win the award of May of 2025
+___________________________________________________________________________
+
+o Class: Deepseek Offline
+=20
+https://www.phpclasses.org/package/13464-PHP-Chat-with-DeepSeek-bot-in-the-=
+local-machine.html
+
+
+  Description: Chat with DeepSeek bot in the local machine
+
+  Author: Rodrigo Faustino
+
+  Country: Brazil
+
+  Comment:
+    Deepseek LLM is one of the most recent Large Language Models that has
+    been used to implement applications based on Artificial Intelligence.
+
+    Usually, the available LLMs can be used via a remote API.
+
+    This package provides a PHP application that can use Ollama to
+    implement a chatbot application that responds automatically to user
+    queries and run locally to access several types of LLMs engines like
+    Deepseek, Gemma and Llama3.
+___________________________________________________________________________
+
+o Class: RA KMP Search
+=20
+https://www.phpclasses.org/package/13538-PHP-Search-text-strings-using-the-=
+KMP-algorithm.html
+
+
+  Description: Search text strings using the KMP algorithm
+
+  Author: Roberto Aleman
+
+  Country: Venezuela
+
+  Comment:
+    The Knuth-Morris-Pratt algorithm can be used to perform searches of
+    text using a pattern in a way that it quickly can find the next
+    occurrence of the pattern after it finds one occurrence.
+
+    This package provides a class that implements the Knuth-Morris-Pratt
+    algorithm in PHP.
+___________________________________________________________________________
+
+o Class: RA Rabin Karp Search Algorithm
+=20
+https://www.phpclasses.org/package/13540-PHP-Search-for-text-using-the-Rabi=
+n-Karp-algorithm.html
+
+
+  Description: Search for text using the Rabin-Karp algorithm
+
+  Author: Roberto Aleman
+
+  Country: Venezuela
+
+  Comment:
+    Some PHP application need to search text or binary data.
+
+    The Rabin Karp algorithm uses hashes of the data to perform searches
+    that scan less data to find matching occurrences of a given search text=
+=2E
+
+    This package provides a PHP implementation that can search data as
+    plain text or raw binary data or data encoded using hexadecimal
+    characters.
+___________________________________________________________________________
+
+o Class: Biggidroid WhatsApp CTA for WordPress
+=20
+https://www.phpclasses.org/package/13541-PHP-Display-WhatsApp-contact-butto=
+n-in-WordPress-pages.html
+
+
+  Description: Display WhatsApp contact button in WordPress pages
+
+  Author: Adeleye Ayodeji
+
+  Country: Nigeria
+
+  Comment:
+    WordPress is a very popular content management systems that allow
+    developers to implement plugins to extend WordPress capabilities.
+
+    One way to extend WordPress capabilities is to provide better means of
+    content to let users contact site owners.
+
+    This package provides a WordPress plugin that makes a WhatsApp contact
+    button appear in WordPress site pages to let users send messages to
+    site owners just hitting the WhatsApp contact button.
+___________________________________________________________________________
+
+o Class: Biggidroid Contact for WordPress
+=20
+https://www.phpclasses.org/package/13545-PHP-Add-contact-forms-to-WordPress=
+-site-pages.html
+
+
+  Description: Add contact forms to WordPress site pages
+
+  Author: Adeleye Ayodeji
+
+  Country: Nigeria
+
+  Comment:
+    The administrators of many sites that use WordPress as a content
+    management system would like to provide a means to be contacted by the
+    site users without exposing their email addresses publicly.
+
+    A contact form allows implementing that feature.
+
+    This package provides a plugin to let site administrators to add
+    contact forms to their WordPress sites.
+___________________________________________________________________________
+
+o Class: RA Ultimate Cipher Analyzer
+=20
+https://www.phpclasses.org/package/13546-PHP-Analyze-and-suggest-the-of-an-=
+encrypted-file.html
+
+
+  Description: Analyze and suggest the of an encrypted file
+
+  Author: Roberto Aleman
+
+  Country: Venezuela
+
+  Comment:
+    Sometimes it is necessary to determine the types of files in a
+    directory to figure what is the role of those files.
+
+    One of the most difficult challenges in computer security is
+    determining which algorithm was used to encrypt a file.
+
+    PHP provides functions to detect certain types of files.
+
+    This package provides a pure PHP analysis tool to detect more types of
+    files that can be encrypted.
+
+    It uses different strategies to determine which algorithm was used to
+    encrypt a file without knowing the encryption key, the original file
+    contents, or the file contents hash.
+___________________________________________________________________________
+
+o Class: Docker Compose Auto Scaling Service
+=20
+https://www.phpclasses.org/package/13552-PHP-Manage-the-deployment-of-servi=
+ces-using-Docker.html
+
+
+  Description: Manage the deployment of services using Docker
+
+  Author: Matheusz Maydana
+
+  Country: Brazil
+
+  Comment:
+    Docker is a tool that can deploy containers to run applications in the
+    same machine, as if they were different machines.
+
+    Docker can be useful to run many instances of the same PHP application
+    when there is a demand to handle the requests of many users to the Web
+    server that processes the request to PHP applications.
+
+    This package provides an example Docker container management script
+    that uses a PHP script to scale the number of Docker instances that
+    handle the accesses to an application.
+___________________________________________________________________________
+
+o Class: ATK Wordpress Plugin
+=20
+https://www.phpclasses.org/package/13557-PHP-Components-to-build-WordPress-=
+plugins.html
+
+
+  Description: Components to build WordPress plugins
+
+  Author: Francesco Danti
+
+  Country: Italy
+
+  Comment:
+    WordPress is a popular content management system written in PHP that
+    can be extended using plugin packages.
+
+    This package provides a framework with many classes that are useful to
+    develop WordPress plugins.
+___________________________________________________________________________
+
+
+
+PHP Classes site tip of the day:
+
+o *Support forums*
+
+  If you would like to post a comment or request support about using a
+given class, you may use the support forums that exist for each class.
+ =20
+  These forums may be found by going to the respective class page and use
+the "Support forum" link.
+ =20
+  When a new support forum message is posted, the respective class author
+is notified by e-mail, unless he has choosen in his user options page to
+never subscribe to his classes' discussion forums.
+ =20
+  Any other user may subscribe to any class forums and also be notified by
+e-mail about new threads or even every new message replies posted on the
+=66orums of his interest.
+  https://www.phpclasses.org/discuss/
+
+___________________________________________________________________________
+
+{TextPreferredName}, if you are not interested in receiving any more
+messages like this one, go to the unsubscribe page .
+
+https://www.phpclasses.org/unsub/n/dreschner/u/award/cc/da280f/
+
+
+--e66777fdbbcace9c9250527433619090
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML>
+<html lang=3D"en">
+<head>
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3DEdge">
+<meta name=3D"google-site-verification" content=3D"koB0IMWgAHKwEXWyOGt9RPqY=
+rJU-fKzpoOTwRnprhKo" />
+<title>Innovation Award results of May of 2025 - PHP Classes</title>
+<!-- /opt2/mlemos/httpd/htdocs/setup/..//application/templates/sites/phpcla=
+sses/styles-email.css -->
+<style type=3D"text/css">
+* {
+     font-size: 12px;
+}
+
+html, body {
+     color: black;
+     font-family: arial,helvetica,sans-serif;
+     margin: 0px;
+}
+
+a:link, a:active {
+     color: #0578C2;
+     text-decoration: underline;
+}
+
+a:visited {
+     color: #12314D;
+     text-decoration: underline;
+}
+
+a:hover {
+     color: #999999;
+}
+
+=2Eleft {
+     float: left;
+}
+
+=2Eright {
+     float: right;
+}
+
+=2Eclear {
+     clear: both;
+}
+
+img {
+     border: medium none;
+}
+
+h1 {
+     color: #113452;
+     font-size: 17px;
+     font-weight: bold;
+}
+
+h2 {
+     color: #666666;
+     font-size: 16px;
+     padding-bottom: 0px;
+     padding-top: 0px;
+}
+
+h2 a {
+     font-size: 16px;
+}
+
+h3 {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #333333;
+     font-size: 15px;
+     margin: 10px 0px;
+     padding: 10px 0px;
+}
+
+h4 {
+     color: #113452;
+     font-size: 14px;
+     font-weight: bold;
+}
+
+h5 {
+     color: #0578C2;
+     font-size: 13px;
+     font-weight: bold;
+}
+
+h6 {
+     color: #666666;
+     font-size: 12px;
+     font-weight: bold;
+}
+
+big {
+     font-size: larger;
+}
+
+small {
+     font-size: smaller;
+}
+
+big big a {
+     display: block;
+     font-size: 16px;
+     padding: 0px 0px 10px;
+}
+
+big a {
+     font-size: 14px;
+}
+
+=2Enbpb, .nbtb {
+     background-color: inherit;
+     border-width: 0px;
+}
+
+=2EbackgroundDecoration {
+     position: absolute;
+     right: 1025px;
+     top: 0px;
+}
+
+#rightDecorationBg {
+     left: 1025px;
+}
+
+#MainContainer {
+     height: 100%;
+=09 margin:0 auto -90px;
+}
+#Container {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     height: auto !important;
+     height:100%;=20
+     min-height: 100%;
+     margin: 0px auto;
+     position: relative;
+     z-index: 10;
+}
+#PageContent {
+     margin: 0px auto;
+     position: relative;
+     text-align: left;
+}
+
+#PageInfo {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     padding: 0;
+}
+
+=2EpageDecoration {
+     bottom: 0px;
+     position: absolute;
+     right: -9px;
+}
+
+#leftDecoration {
+     left: -9px;
+}
+
+#user {
+     height: 36px;
+     line-height: 36px;
+     width: 100%;
+}
+
+#TopLine {
+     height: 36px;
+     line-height: 36px;
+     position: absolute;
+     width: 100%;
+     z-index: 1;
+}
+
+#UserContent {
+     height: 36px;
+     line-height: 36px;
+     width: 100%;
+     z-index: 1;
+}
+
+#user table {
+     white-space: nowrap;
+     width: auto;
+     color: #C3F0FF;
+     font-weight: bold;
+     margin: 0px auto;
+     padding: 0px 0px 0px 140px;
+}
+
+#user table td {
+     line-height: 30px;
+     padding: 0px;
+     white-space: nowrap;
+     width: auto;
+}
+
+#user .tabcontent {
+     color: #C3F0FF;
+     font-weight: bold;
+}
+
+#user .tabcontent span {
+     float: left;
+     padding: 8px 5px 0px 2px;
+     white-space: nowrap;
+}
+
+#user a {
+     color: #FFFFFF;
+     font-size: 11px;
+     font-weight: 100;
+     padding: 0px 5px 0px 2px;
+     text-align: left;
+     text-decoration: none;
+     white-space: nowrap;
+}
+
+#user a:hover {
+     color: #C3F0FF;
+}
+
+#user img {
+     padding-top: 3px;
+     vertical-align: top;
+}
+
+#user .nbgu {
+     float: left;
+     padding: 0px;
+     white-space: nowrap;
+}
+
+#Top {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     margin: 0px auto;
+     padding: 0px 0px 10px;
+     position: relative;
+     width: 100%;
+}
+
+#logoPHP {
+     float: left;
+     height: 63px;
+     left: 15px;
+     margin: 0px 0px 0px 15px;
+     padding: 20px 0px 15px;
+     position: absolute;
+     text-align: center;
+     top: -37px;
+     width: 263px;
+}
+
+#Top #logoCompany {
+     float: right;
+     position: absolute;
+     right: 145px;
+     top: 0px;
+}
+
+#elephpant {
+     float: right;
+     margin-right: 15px;
+     position: absolute;
+     right: 5px;
+     top: -30px;
+}
+
+#Top h1 {
+     border-bottom: 3px dotted #CCCCCC;
+     clear: left;
+     color: #666666;
+     font-size: 20px;
+     line-height: 20px;
+     margin: 0px 0px 0px 30px;
+     padding: 10px 0px 0px 0px;
+     text-align: center;
+}
+
+#Top h1 * {
+     font-size: 20px;
+}
+
+#recommendpage {
+     float: right;
+     margin: 0px 35px 10px 0px;
+}
+
+#recommendpage #recommendpagecontainer {
+     float: left;
+     padding: 0px 10px 0px 0px;
+}
+
+#recommendpage table {
+     float: left;
+     height: 40px;
+     min-width: 688px;
+     text-align: right;
+     white-space: normal;
+}
+
+#recommendpage table td {
+     background: none repeat scroll 0% 0% transparent;
+     border: medium none;
+     padding: 10px 0px 5px 10px;
+     vertical-align: top;
+}
+
+#recommendpage table td img {
+     padding: 0px 3px 0px 5px;
+}
+
+#navigation {
+     clear: both;
+     color: #FFFFFF;
+     font-size: 13px;
+     font-weight: 100;
+     height: 44px;
+     line-height: 24px;
+     margin: 0px 0px 0px 20px;
+     padding: 0px;
+     position: relative;
+     text-align: center;
+     z-index: 1000;
+}
+
+#navigation form {
+     border: 0px none;
+}
+
+#navigation table {
+     height: 44px;
+}
+
+#navigation td {
+     color: #C3F0FF;
+     font-size: 14px;
+     font-weight: bold;
+     padding-top: 9px;
+}
+
+#navigation img {
+     border: 0px none;
+     margin: 0px 0px 0px 5px;
+     vertical-align: middle;
+}
+
+#navigation a {
+     color: #FFFFFF;
+     font-size: 13px;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+#navigation a:hover {
+     color: #C3F0FF;
+}
+
+#navigation td.nbgu {
+     display: none;
+}
+
+#navigation td.nbtu, #MenuContent td.nblu {
+     height: 24px;
+     line-height: 24px;
+     padding: 10px 4px 0px;
+     text-decoration: none;
+}
+
+#navigation td.nbtu input[type=3D"text"] {
+     height: 20px;
+     margin: 0px 5px;
+     width: 100px;
+}
+
+#navigation td.nbtu * {
+     float: left;
+}
+
+#ads {
+     clear: both;
+     margin: 0px auto;
+     padding: 0px;
+}
+
+#inputText {
+     color: #666666;
+     float: left;
+     height: 20px;
+     width: 150px;
+}
+
+=2EInfoContent {
+     clear: both;
+     margin: 0px auto;
+     padding: 2px 20px;
+}
+
+=2EInfoContent .nblu, .InfoContent .nbtu {
+     border-color: #92DBEC;
+     border-style: solid solid none;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     border-width: 1px 1px medium;
+     color: #0666AB;
+     font-size: 12px;
+     padding: 7px;
+     text-align: center;
+     white-space: nowrap;
+     width: auto;
+}
+
+=2EInfoContent .nbld, .InfoContent .nbtd {
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+     border-color: #92DBEC;
+     border-style: solid solid none;
+     border-width: 1px 1px medium;
+     color: #0666AB;
+     font-size: 12px;
+     padding: 7px;
+     text-align: center;
+     white-space: nowrap;
+     width: auto;
+}
+
+=2EInfoContent .nblu, .InfoContent .nbld {
+     color: #FFFFFF;
+}
+
+=2EInfoContent .nbgu {
+     border-bottom: 2px solid #92CCF7;
+     color: #0666AB;
+     margin: 1px;
+     padding: 0px;
+     white-space: nowrap;
+}
+
+=2EInfoContent .nbgd {
+     border-top: 2px solid #92CCF7;
+     color: #0666AB;
+     margin: 1px;
+     padding: 0px;
+     white-space: nowrap;
+}
+
+=2EInfoContent .nbtu a, .InfoContent .nbld a, .InfoContent .nbtd a {
+     color: #0666AB;
+     font-size: 12px;
+}
+
+=2EInfoContent .nblu a:hover, .InfoContent .nbtu a:hover, .InfoContent .nbld =
+a:hover, .InfoContent .nbtd a:hover {
+     color: #2989C7;
+}
+
+=2EInfoContent .nblu a, .InfoContent .nbld a {
+     color: #FFFFFF;
+     font-size: 12px;
+}
+
+=2EInfoContent .nblu a:hover, .InfoContent .nbld a:hover {
+     color: #C3F0FF;
+}
+
+=2EInfoContent .nbtu, .InfoContent .nbtd {
+     vertical-align: middle;
+}
+
+=2EInfoContent .nbpu, .InfoContent .nbpd {
+     padding: 10px 0px;
+}
+
+=2EInfoContent td {
+     padding-left: 5px;
+}
+
+=2Eeven td, .odd td, .even th, .odd th {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #444444;
+}
+
+td.menutext {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #444444;
+}
+
+td.menutext p {
+     margin: 0px;
+     padding: 5px 0px 10px;
+}
+
+td.menuicon {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #444444;
+}
+
+td.menuicon img {
+     margin: 5px 15px;
+}
+
+h2.menulink {
+     color: #666666;
+     font-size: 16px;
+     margin: 0px;
+     padding: 0px 0px 5px;
+}
+
+h2.menulink a {
+     color: #595959;
+     font-size: 16px;
+     text-decoration: none;
+}
+
+=2Eback {
+     background-color: #FFFFFF;
+}
+
+=2Eeven {
+     background: none repeat scroll 0% 0% #E1F7FF;
+}
+
+=2Elight {
+     background: none repeat scroll 0% 0% #F6F6F6;
+}
+
+=2Edark, .odd {
+     background: none repeat scroll 0% 0% #FBFBFB;
+}
+
+=2Eeven td, .odd td, .highlight td, .highlight th, .featuredeven td, .feature=
+dodd td {
+     border-bottom: 3px dotted #CCCCCC;
+     padding: 5px;
+}
+
+=2Ehighlight {
+     background: none repeat scroll 0% 0% #E8E8E8;
+     padding: 5px;
+}
+
+=2Etabcontent {
+     font-weight: bold;
+}
+
+=2Efeaturedodd {
+     background-color: #C5D4DB;
+     padding: 5px;
+}
+
+=2Efeaturedeven {
+     background-color: #CEDEE6;
+     padding: 5px;
+}
+
+=2Eremoved {
+     background-color: #AAAAAA;
+     text-decoration: line-through;
+}
+
+=2Einvalid {
+     background-color: #FFCCCC;
+}
+
+=2Ewarning {
+     background-color: #FFB366;
+}
+
+=2Ealright {
+     background-color: #70F0A0;
+}
+
+=2Emonospace {
+     font-family: Courier,"Courier New",monospace;
+}
+
+=2Eprogressbar {
+     background-color: #0000FF;
+     background-image: url("{graphics}progress.png");
+     background-size: auto 100%;
+     border-style: none;
+     padding: 4px;
+     text-align: center;
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     box-shadow: 4px 4px 4px #888;
+     -moz-box-shadow: 4px 4px 4px #888;
+     -webkit-box-shadow: 4px 4px 4px #888;
+     text-shadow: 2px 2px 2px #55C;
+     -moz-text-shadow: 2px 2px 2px #55C;
+     -webkit-text-shadow: 2px 2px 2px #55C;
+}
+
+=2Ebox {
+     border-color: #E1E1E1 #999999 #999999 #E1E1E1;
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     border-style: solid;
+     border-width: 1px;
+     padding: 10px;
+}
+
+=2Eframed {
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     margin: 5px 0px;
+     padding: 10px 15px;
+}
+
+=2Enotifications {
+     background-color: #FF0000;
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     color: #FFFFFF;
+     font-weight: bold;
+     margin: 5px 0px;
+     padding: 4px;
+}
+
+=2Emenu {
+     border-color: #FCFCFF #707078 #707078 #FCFCFF;
+     border-style: solid;
+     border-width: 1px;
+     cursor: default;
+     opacity: 0.95;
+     padding: 2px;
+}
+
+#Footer {
+     height: 90px;
+     width: 100%;
+     z-index: 1;
+}
+
+#FooterInfo {
+     bottom: 0px;
+     height: 80px;
+     padding: 20px 2% 0px;
+     position: absolute;
+     width: 96%;
+}
+
+#endnavigation {
+     height: 35px;
+     padding: 0px;
+}
+
+#endnavigation * {
+     margin: 0px;
+     padding: 0px;
+}
+
+#endnavigation table {
+     height: 35px;
+     padding: 0px;
+}
+
+#endnavigation table tbody {
+     vertical-align: top;
+}
+
+#endnavigation a {
+     color: #FFFFFF;
+     font-size: 12px;
+     font-weight: bold;
+     padding: 0px 20px 0px 5px;
+     text-decoration: none;
+     text-transform: capitalize;
+}
+
+#endnavigation a:hover {
+     color: #95DDED;
+     text-decoration: underline;
+}
+
+#endnavigation img {
+     padding-left: 13px;
+}
+
+#Copyright {
+     color: #FFFFFF;
+     font-size: 12px;
+     height: 20px;
+     margin: 0px auto;
+     padding: 10px 0px;
+     text-align: left;
+}
+
+#Copyright a {
+     color: #80CCE8;
+     text-decoration: none;
+}
+
+#Copyright a:hover {
+     text-decoration: underline;
+}
+
+#Copyright table td {
+     color: #FFFFFF;
+     padding: 0px 10px;
+}
+
+#FooterInfo tt {
+     font-family: arial,helvetica,sans-serif;
+}
+
+=2Eedit, .edit:link, .edit:visited, .InfoContent .nbtu a.edit {
+     background-color: #60b040;
+     background-image: linear-gradient(#90c070, #60b040);
+     color: #ffffff;
+     font-weight: bold;
+     border-color: #60a840;
+}
+
+=2Eedit:hover, .InfoContent .nbtu a.edit:hover {
+     background-color: #50a030;
+     background-image: linear-gradient(#60b040, #50a030);
+     color: #C3F0FF;
+     font-weight: bold;
+     border-color: #60a840;
+}
+
+=2Eedit:active, .InfoContent .nbtu a.edit:active {
+     background-color: #60b040;
+     background-image: linear-gradient(#50a030, #60b040);
+     color: #ffffff;
+     font-weight: bold;
+     border-color: #409020;
+     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15)
+}
+
+=2Ebutton {
+     border-radius: 6px;
+     -moz-border-radius: 6px;=20
+     -webkit-border-radius: 6px;
+     padding: 4px;
+     border-width: 1px;
+     border-style: solid;
+}
+
+</style>
+
+<meta http-equiv=3D"content-type" content=3D"text/html; charset=3DISO-8859-=
+1">
+</head>
+<body><div style=3D"display:none;font-size:1px;color:#333333;line-height:1p=
+x;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Check Innovation=
+ Award last month winners and this month nominees</div>
+<div id=3D"fb-root"></div>
+<style type=3D"text/css"><!--
+* {
+     font-size: 12px;
+}
+
+html, body {
+     color: black;
+     font-family: arial,helvetica,sans-serif;
+     margin: 0px;
+}
+
+a:link, a:active {
+     color: #0578C2;
+     text-decoration: underline;
+}
+
+a:visited {
+     color: #12314D;
+     text-decoration: underline;
+}
+
+a:hover {
+     color: #999999;
+}
+
+=2Eleft {
+     float: left;
+}
+
+=2Eright {
+     float: right;
+}
+
+=2Eclear {
+     clear: both;
+}
+
+img {
+     border: medium none;
+}
+
+h1 {
+     color: #113452;
+     font-size: 17px;
+     font-weight: bold;
+}
+
+h2 {
+     color: #666666;
+     font-size: 16px;
+     padding-bottom: 0px;
+     padding-top: 0px;
+}
+
+h2 a {
+     font-size: 16px;
+}
+
+h3 {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #333333;
+     font-size: 15px;
+     margin: 10px 0px;
+     padding: 10px 0px;
+}
+
+h4 {
+     color: #113452;
+     font-size: 14px;
+     font-weight: bold;
+}
+
+h5 {
+     color: #0578C2;
+     font-size: 13px;
+     font-weight: bold;
+}
+
+h6 {
+     color: #666666;
+     font-size: 12px;
+     font-weight: bold;
+}
+
+big {
+     font-size: larger;
+}
+
+small {
+     font-size: smaller;
+}
+
+big big a {
+     display: block;
+     font-size: 16px;
+     padding: 0px 0px 10px;
+}
+
+big a {
+     font-size: 14px;
+}
+
+=2Enbpb, .nbtb {
+     background-color: inherit;
+     border-width: 0px;
+}
+
+=2EbackgroundDecoration {
+     position: absolute;
+     right: 1025px;
+     top: 0px;
+}
+
+#rightDecorationBg {
+     left: 1025px;
+}
+
+#MainContainer {
+     height: 100%;
+=09 margin:0 auto -90px;
+}
+#Container {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     height: auto !important;
+     height:100%;=20
+     min-height: 100%;
+     margin: 0px auto;
+     position: relative;
+     z-index: 10;
+}
+#PageContent {
+     margin: 0px auto;
+     position: relative;
+     text-align: left;
+}
+
+#PageInfo {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     padding: 0;
+}
+
+=2EpageDecoration {
+     bottom: 0px;
+     position: absolute;
+     right: -9px;
+}
+
+#leftDecoration {
+     left: -9px;
+}
+
+#user {
+     height: 36px;
+     line-height: 36px;
+     width: 100%;
+}
+
+#TopLine {
+     height: 36px;
+     line-height: 36px;
+     position: absolute;
+     width: 100%;
+     z-index: 1;
+}
+
+#UserContent {
+     height: 36px;
+     line-height: 36px;
+     width: 100%;
+     z-index: 1;
+}
+
+#user table {
+     white-space: nowrap;
+     width: auto;
+     color: #C3F0FF;
+     font-weight: bold;
+     margin: 0px auto;
+     padding: 0px 0px 0px 140px;
+}
+
+#user table td {
+     line-height: 30px;
+     padding: 0px;
+     white-space: nowrap;
+     width: auto;
+}
+
+#user .tabcontent {
+     color: #C3F0FF;
+     font-weight: bold;
+}
+
+#user .tabcontent span {
+     float: left;
+     padding: 8px 5px 0px 2px;
+     white-space: nowrap;
+}
+
+#user a {
+     color: #FFFFFF;
+     font-size: 11px;
+     font-weight: 100;
+     padding: 0px 5px 0px 2px;
+     text-align: left;
+     text-decoration: none;
+     white-space: nowrap;
+}
+
+#user a:hover {
+     color: #C3F0FF;
+}
+
+#user img {
+     padding-top: 3px;
+     vertical-align: top;
+}
+
+#user .nbgu {
+     float: left;
+     padding: 0px;
+     white-space: nowrap;
+}
+
+#Top {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     margin: 0px auto;
+     padding: 0px 0px 10px;
+     position: relative;
+     width: 100%;
+}
+
+#logoPHP {
+     float: left;
+     height: 63px;
+     left: 15px;
+     margin: 0px 0px 0px 15px;
+     padding: 20px 0px 15px;
+     position: absolute;
+     text-align: center;
+     top: -37px;
+     width: 263px;
+}
+
+#Top #logoCompany {
+     float: right;
+     position: absolute;
+     right: 145px;
+     top: 0px;
+}
+
+#elephpant {
+     float: right;
+     margin-right: 15px;
+     position: absolute;
+     right: 5px;
+     top: -30px;
+}
+
+#Top h1 {
+     border-bottom: 3px dotted #CCCCCC;
+     clear: left;
+     color: #666666;
+     font-size: 20px;
+     line-height: 20px;
+     margin: 0px 0px 0px 30px;
+     padding: 10px 0px 0px 0px;
+     text-align: center;
+}
+
+#Top h1 * {
+     font-size: 20px;
+}
+
+#recommendpage {
+     float: right;
+     margin: 0px 35px 10px 0px;
+}
+
+#recommendpage #recommendpagecontainer {
+     float: left;
+     padding: 0px 10px 0px 0px;
+}
+
+#recommendpage table {
+     float: left;
+     height: 40px;
+     min-width: 688px;
+     text-align: right;
+     white-space: normal;
+}
+
+#recommendpage table td {
+     background: none repeat scroll 0% 0% transparent;
+     border: medium none;
+     padding: 10px 0px 5px 10px;
+     vertical-align: top;
+}
+
+#recommendpage table td img {
+     padding: 0px 3px 0px 5px;
+}
+
+#navigation {
+     clear: both;
+     color: #FFFFFF;
+     font-size: 13px;
+     font-weight: 100;
+     height: 44px;
+     line-height: 24px;
+     margin: 0px 0px 0px 20px;
+     padding: 0px;
+     position: relative;
+     text-align: center;
+     z-index: 1000;
+}
+
+#navigation form {
+     border: 0px none;
+}
+
+#navigation table {
+     height: 44px;
+}
+
+#navigation td {
+     color: #C3F0FF;
+     font-size: 14px;
+     font-weight: bold;
+     padding-top: 9px;
+}
+
+#navigation img {
+     border: 0px none;
+     margin: 0px 0px 0px 5px;
+     vertical-align: middle;
+}
+
+#navigation a {
+     color: #FFFFFF;
+     font-size: 13px;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+#navigation a:hover {
+     color: #C3F0FF;
+}
+
+#navigation td.nbgu {
+     display: none;
+}
+
+#navigation td.nbtu, #MenuContent td.nblu {
+     height: 24px;
+     line-height: 24px;
+     padding: 10px 4px 0px;
+     text-decoration: none;
+}
+
+#navigation td.nbtu input[type=3D"text"] {
+     height: 20px;
+     margin: 0px 5px;
+     width: 100px;
+}
+
+#navigation td.nbtu * {
+     float: left;
+}
+
+#ads {
+     clear: both;
+     margin: 0px auto;
+     padding: 0px;
+}
+
+#inputText {
+     color: #666666;
+     float: left;
+     height: 20px;
+     width: 150px;
+}
+
+=2EInfoContent {
+     clear: both;
+     margin: 0px auto;
+     padding: 2px 20px;
+}
+
+=2EInfoContent .nblu, .InfoContent .nbtu {
+     border-color: #92DBEC;
+     border-style: solid solid none;
+     border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     border-width: 1px 1px medium;
+     color: #0666AB;
+     font-size: 12px;
+     padding: 7px;
+     text-align: center;
+     white-space: nowrap;
+     width: auto;
+}
+
+=2EInfoContent .nbld, .InfoContent .nbtd {
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+     border-color: #92DBEC;
+     border-style: solid solid none;
+     border-width: 1px 1px medium;
+     color: #0666AB;
+     font-size: 12px;
+     padding: 7px;
+     text-align: center;
+     white-space: nowrap;
+     width: auto;
+}
+
+=2EInfoContent .nblu, .InfoContent .nbld {
+     color: #FFFFFF;
+}
+
+=2EInfoContent .nbgu {
+     border-bottom: 2px solid #92CCF7;
+     color: #0666AB;
+     margin: 1px;
+     padding: 0px;
+     white-space: nowrap;
+}
+
+=2EInfoContent .nbgd {
+     border-top: 2px solid #92CCF7;
+     color: #0666AB;
+     margin: 1px;
+     padding: 0px;
+     white-space: nowrap;
+}
+
+=2EInfoContent .nbtu a, .InfoContent .nbld a, .InfoContent .nbtd a {
+     color: #0666AB;
+     font-size: 12px;
+}
+
+=2EInfoContent .nblu a:hover, .InfoContent .nbtu a:hover, .InfoContent .nbld =
+a:hover, .InfoContent .nbtd a:hover {
+     color: #2989C7;
+}
+
+=2EInfoContent .nblu a, .InfoContent .nbld a {
+     color: #FFFFFF;
+     font-size: 12px;
+}
+
+=2EInfoContent .nblu a:hover, .InfoContent .nbld a:hover {
+     color: #C3F0FF;
+}
+
+=2EInfoContent .nbtu, .InfoContent .nbtd {
+     vertical-align: middle;
+}
+
+=2EInfoContent .nbpu, .InfoContent .nbpd {
+     padding: 10px 0px;
+}
+
+=2EInfoContent td {
+     padding-left: 5px;
+}
+
+=2Eeven td, .odd td, .even th, .odd th {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #444444;
+}
+
+td.menutext {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #444444;
+}
+
+td.menutext p {
+     margin: 0px;
+     padding: 5px 0px 10px;
+}
+
+td.menuicon {
+     border-bottom: 3px dotted #CCCCCC;
+     color: #444444;
+}
+
+td.menuicon img {
+     margin: 5px 15px;
+}
+
+h2.menulink {
+     color: #666666;
+     font-size: 16px;
+     margin: 0px;
+     padding: 0px 0px 5px;
+}
+
+h2.menulink a {
+     color: #595959;
+     font-size: 16px;
+     text-decoration: none;
+}
+
+=2Eback {
+     background-color: #FFFFFF;
+}
+
+=2Eeven {
+     background: none repeat scroll 0% 0% #E1F7FF;
+}
+
+=2Elight {
+     background: none repeat scroll 0% 0% #F6F6F6;
+}
+
+=2Edark, .odd {
+     background: none repeat scroll 0% 0% #FBFBFB;
+}
+
+=2Eeven td, .odd td, .highlight td, .highlight th, .featuredeven td, .feature=
+dodd td {
+     border-bottom: 3px dotted #CCCCCC;
+     padding: 5px;
+}
+
+=2Ehighlight {
+     background: none repeat scroll 0% 0% #E8E8E8;
+     padding: 5px;
+}
+
+=2Etabcontent {
+     font-weight: bold;
+}
+
+=2Efeaturedodd {
+     background-color: #C5D4DB;
+     padding: 5px;
+}
+
+=2Efeaturedeven {
+     background-color: #CEDEE6;
+     padding: 5px;
+}
+
+=2Eremoved {
+     background-color: #AAAAAA;
+     text-decoration: line-through;
+}
+
+=2Einvalid {
+     background-color: #FFCCCC;
+}
+
+=2Ewarning {
+     background-color: #FFB366;
+}
+
+=2Ealright {
+     background-color: #70F0A0;
+}
+
+=2Emonospace {
+     font-family: Courier,"Courier New",monospace;
+}
+
+=2Eprogressbar {
+     background-color: #0000FF;
+     background-image: url("https://files.phpclasses.org/graphics/phpclasse=
+s/progress.png");
+     background-size: auto 100%;
+     border-style: none;
+     padding: 4px;
+     text-align: center;
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     box-shadow: 4px 4px 4px #888;
+     -moz-box-shadow: 4px 4px 4px #888;
+     -webkit-box-shadow: 4px 4px 4px #888;
+     text-shadow: 2px 2px 2px #55C;
+     -moz-text-shadow: 2px 2px 2px #55C;
+     -webkit-text-shadow: 2px 2px 2px #55C;
+}
+
+=2Ebox {
+     border-color: #E1E1E1 #999999 #999999 #E1E1E1;
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     border-style: solid;
+     border-width: 1px;
+     padding: 10px;
+}
+
+=2Eframed {
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     margin: 5px 0px;
+     padding: 10px 15px;
+}
+
+=2Enotifications {
+     background-color: #FF0000;
+     border-radius: 8px;
+     -moz-border-radius: 8px;=20
+     -webkit-border-radius: 8px;
+     color: #FFFFFF;
+     font-weight: bold;
+     margin: 5px 0px;
+     padding: 4px;
+}
+
+=2Emenu {
+     border-color: #FCFCFF #707078 #707078 #FCFCFF;
+     border-style: solid;
+     border-width: 1px;
+     cursor: default;
+     opacity: 0.95;
+     padding: 2px;
+}
+
+#Footer {
+     height: 90px;
+     width: 100%;
+     z-index: 1;
+}
+
+#FooterInfo {
+     bottom: 0px;
+     height: 80px;
+     padding: 20px 2% 0px;
+     position: absolute;
+     width: 96%;
+}
+
+#endnavigation {
+     height: 35px;
+     padding: 0px;
+}
+
+#endnavigation * {
+     margin: 0px;
+     padding: 0px;
+}
+
+#endnavigation table {
+     height: 35px;
+     padding: 0px;
+}
+
+#endnavigation table tbody {
+     vertical-align: top;
+}
+
+#endnavigation a {
+     color: #FFFFFF;
+     font-size: 12px;
+     font-weight: bold;
+     padding: 0px 20px 0px 5px;
+     text-decoration: none;
+     text-transform: capitalize;
+}
+
+#endnavigation a:hover {
+     color: #95DDED;
+     text-decoration: underline;
+}
+
+#endnavigation img {
+     padding-left: 13px;
+}
+
+#Copyright {
+     color: #FFFFFF;
+     font-size: 12px;
+     height: 20px;
+     margin: 0px auto;
+     padding: 10px 0px;
+     text-align: left;
+}
+
+#Copyright a {
+     color: #80CCE8;
+     text-decoration: none;
+}
+
+#Copyright a:hover {
+     text-decoration: underline;
+}
+
+#Copyright table td {
+     color: #FFFFFF;
+     padding: 0px 10px;
+}
+
+#FooterInfo tt {
+     font-family: arial,helvetica,sans-serif;
+}
+
+=2Eedit, .edit:link, .edit:visited, .InfoContent .nbtu a.edit {
+     background-color: #60b040;
+     background-image: linear-gradient(#90c070, #60b040);
+     color: #ffffff;
+     font-weight: bold;
+     border-color: #60a840;
+}
+
+=2Eedit:hover, .InfoContent .nbtu a.edit:hover {
+     background-color: #50a030;
+     background-image: linear-gradient(#60b040, #50a030);
+     color: #C3F0FF;
+     font-weight: bold;
+     border-color: #60a840;
+}
+
+=2Eedit:active, .InfoContent .nbtu a.edit:active {
+     background-color: #60b040;
+     background-image: linear-gradient(#50a030, #60b040);
+     color: #ffffff;
+     font-weight: bold;
+     border-color: #409020;
+     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15)
+}
+
+=2Ebutton {
+     border-radius: 6px;
+     -moz-border-radius: 6px;=20
+     -webkit-border-radius: 6px;
+     padding: 4px;
+     border-width: 1px;
+     border-style: solid;
+}
+
+// --></style>
+<div style=3D" background-color: #ffffff ; color: black ;">
+<div id=3D"MainContainer">
+  <div id=3D"Container">=20
+    <div id=3D"PageContent">
+      <div id=3D"PageInfo">
+        <div><a href=3D"https://www.phpclasses.org/"><img src=3D"https://fi=
+les.phpclasses.org/graphics/phpclasses/logo-phpclasses.png" width=3D"180" h=
+eight=3D"60" loading=3D"lazy" alt=3D"PHP Classes" style=3D"border: 0"></a><=
+/div>
+        <div id=3D"Top">
+          <h1 style=3D"text-align: center">Innovation Award results of May =
+of 2025</h1>
+        </div>
+        <div id=3D"ads"><table align=3D"center" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"468" height=3D"125" border=3D"0"><tr><td style=3D"padding=
+: 4px"><b><big><a href=3D"https://bit.ly/Personalized-PHP-elePHPant">Get Yo=
+ur Own Personalized PHP ElePHPant Plush Mascot Toy with with a Logo of Your=
+ Choice</a></big></b><br><br>Would you like to Get a Personalized PHP masco=
+t?<br><br>Now you can get PHP elePHPant plush with a logo of your company o=
+r your personal logo.<br><br>The elePHPant has the PHP logo on one side and=
+ your logo on the other side of the belly.<br><br>This is ideal for you to =
+establish your brand, companies that give PHP elePHPants to their PHP devel=
+opers, event organizers to give custom elePHPants to have developer helping=
+ to advertise their events.<br><br>Go to the <a href=3D"https://bit.ly/Pers=
+onalized-elePHPant-information-contact">contact page</a> to get more detail=
+s about the available options.<br><br>You can also use the buttons on the p=
+age to contact us via WhatsApp, Email and Facebook Messenger.</td><td><a hr=
+ef=3D"https://bit.ly/Personalized-PHP-elePHPant"> <img src=3D"https://files=
+=2Ephpclasses.org/graphics/language/PHP.png" width=3D"100" height=3D"100" bor=
+der=3D"0" alt=3D"Advertisement"></a></td></tr></table></div>
+        <div class=3D"InfoContent"><!-- body_start --><div class=3D"box dar=
+k" style=3D"margin: auto; max-width: 50em">David you are getting this messa=
+ge as part of the service for being a user of the PHP Classes site to which=
+ you registered voluntarily using the email address d4d4online@gmail.com. T=
+o unsubscribe see the instructions at the bottom of this message.</div>
+<br />
+<div style=3D"margin: auto; max-width: 50em"><center><h2>The winners of the=
+ Award may receive prizes provided by sponsors.</h2></center>
+<center><table class=3D"framed light" style=3D"background-color: #FFFFFF">
+<tr>
+<td><table>
+<tr>
+<th>Sponsors</th>
+<th colspan=3D"2">Prizes</th>
+</tr>
+<tr>
+<td><b>IP2Location</b></td>
+<td>One year server license IP to country, region, city, latitude, longitud=
+e, ZIP code, time zone, area code database</td><td style=3D"text-align: cen=
+ter" class=3D"c499"></td></tr>
+<tr>
+<td><b>Programming Labs</b></td>
+<td>1 Year License of Wizard's Toolkit for any domain name</td><td style=3D=
+"text-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>APILayer</b></td>
+<td>1 year subscription to the Basic Plan of an API product of choice</td><=
+td style=3D"text-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>IonCube</b></td>
+<td>One year of ionCube24 Web site security protection</td><td style=3D"tex=
+t-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>SourceGuardian</b></td>
+<td>SourceGuarding PHP encoder tool</td><td style=3D"text-align: center" cl=
+ass=3D"c499"></td></tr>
+<tr>
+<td><b>PHPClasses</b></td>
+<td>One official elePHPant Plush Mascott</td><td style=3D"text-align: cente=
+r" class=3D"c499"></td></tr>
+<tr>
+<td><b>CodeLobster Software</b></td>
+<td>One downloadable copy of CodeLobster Professional</td><td style=3D"text=
+-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>Mailtrap</b></td>
+<td>1 year of Team Plan of Mailtrap</td><td style=3D"text-align: center" cl=
+ass=3D"c499"></td></tr>
+<tr>
+<td><b>Nomad PHP</b></td>
+<td>1 Year Subscription to NomadPHP Advanced PHP Learning</td><td style=3D"=
+text-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>IBANAPI</b></td>
+<td>Premium IBAN Validation API service Enterprise Edition for 1 Year</td><=
+td style=3D"text-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>O'Reilly</b></td>
+<td>30 Days Free Access to O'Reilly Safari Learning Platform</td><td style=
+=3D"text-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>PHP Architect</b></td>
+<td>One subscription to the PDF edition of the PHP Architect magazine</td><=
+td style=3D"text-align: center" class=3D"c499"></td></tr>
+<tr>
+<td><b>PHP Defender</b></td>
+<td>PHP encoder tool one year license</td><td style=3D"text-align: center" =
+class=3D"c499"></td></tr>
+</table></td>
+</tr>
+</table></center><br>
+<h3 align=3D"center">David please go to <a href=3D"https://www.phpclasses.o=
+rg/winners/year/2025/#winners-2025-04-01">winners page</a> to access the wi=
+nner package pages.</h3><center><h2>Congratulations to Rodrigo Faustino and=
+ Roberto Aleman!</h2></center>
+<br />
+<a id=3D"winners-2025-04-01"></a><table align=3D"center" class=3D"box" styl=
+e=3D"padding: 4px" cellspacing=3D"0">
+<tr>
+<th>Rank</th>
+<th>Class</th>
+<th class=3D"c640">Author</th>
+<th class=3D"c640"></th>
+<th class=3D"c640">Score</th>
+<th class=3D"c640">Points</th>
+<th class=3D"c640">Prize</th>
+</tr>
+<tr class=3D"odd">
+<th>1</th>
+<td><a href=3D"https://www.phpclasses.org/package/13516-PHP-Recognize-faces=
+-by-analyzing-image-descriptors.html">Face ID PHP</a><br />Recognize faces =
+by analyzing image descriptors</td>
+<td class=3D"c640">Rodrigo Faustino</td>
+<td class=3D"c640">Brazil</td>
+<td class=3D"c640" align=3D"right"><tt>28.57%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>14</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>1</th>
+<td><a href=3D"https://www.phpclasses.org/package/13517-PHP-Detect-anomalie=
+s-in-encrypted-strings.html">RA Anomaly detector GMM</a><br />Detect anomal=
+ies in encrypted strings</td>
+<td class=3D"c640">Roberto Aleman</td>
+<td class=3D"c640">Venezuela</td>
+<td class=3D"c640" align=3D"right"><tt>28.57%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>14</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"odd">
+<th>3</th>
+<td><a href=3D"https://www.phpclasses.org/package/13511-PHP-Measure-image-c=
+omplexity-using-Shannon-entropy.html">Shannon Entropy Calculator</a><br />M=
+easure image complexity using Shannon entropy</td>
+<td class=3D"c640">Roberto Aleman</td>
+<td class=3D"c640">Venezuela</td>
+<td class=3D"c640" align=3D"right"><tt>14.29%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>12</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>3</th>
+<td><a href=3D"https://www.phpclasses.org/package/13513-PHP-Search-on-a-str=
+ing-using-the-Boyer-Moore-algorithm.html">RA Boyer Moore Search</a><br />Se=
+arch on a string using the Boyer-Moore algorithm</td>
+<td class=3D"c640">Roberto Aleman</td>
+<td class=3D"c640">Venezuela</td>
+<td class=3D"c640" align=3D"right"><tt>14.29%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>12</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"odd">
+<th>3</th>
+<td><a href=3D"https://www.phpclasses.org/package/13533-PHP-Examples-of-PHP=
+-features-using-OOP-or-global-code.html">Learn PHP</a><br />Examples of PHP=
+ features using OOP or global code</td>
+<td class=3D"c640">Kabir Hossain</td>
+<td class=3D"c640">Bangladesh</td>
+<td class=3D"c640" align=3D"right"><tt>14.29%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>12</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13520-PHP-Avoid-executing=
+-of-the-same-process-multiple-times.html">Idempotency Laravel</a><br />Avoi=
+d executing of the same process multiple times</td>
+<td class=3D"c640">Edward Paul</td>
+<td class=3D"c640">Nigeria</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"odd">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13521-PHP-Conjugate-verbs=
+-in-Andalusian-language.html">Conjugador</a><br />Conjugate verbs in Andalu=
+sian language</td>
+<td class=3D"c640">Juan Camacho</td>
+<td class=3D"c640">Belgium</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13522-PHP-Manage-queues-o=
+=66-messages-using-protocol-buffers.html">Proto x Bus</a><br />Manage queues =
+of messages using protocol buffers</td>
+<td class=3D"c640">DeGraciaMathieu</td>
+<td class=3D"c640">France</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"odd">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13523-PHP-Manage-and-run-=
+multiple-versions-of-the-same-class.html">PHP Stuff Versioned</a><br />Mana=
+ge and run multiple versions of the same class</td>
+<td class=3D"c640">Andrey Postal</td>
+<td class=3D"c640">Brazil</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13524-PHP-Test-WordPress-=
+plugin-created-using-WPMU-Dev.html">WPMU Dev Plugin Test</a><br />Test Word=
+Press plugin created using WPMU Dev</td>
+<td class=3D"c640">Adeleye Ayodeji</td>
+<td class=3D"c640">Nigeria</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"odd">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13526-PHP-Implement-a-cha=
+tbot-using-WebSockets.html">PHP WebSockets</a><br />Implement a chatbot usi=
+ng WebSockets</td>
+<td class=3D"c640">Chun-Sheng, Li</td>
+<td class=3D"c640">Taiwan</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13527-PHP-Block-HTTP-requ=
+ests-from-spamming-IP-addresses.html">LaraGuard IP</a><br />Block HTTP requ=
+ests from spamming IP addresses</td>
+<td class=3D"c640">Neeraj Saini</td>
+<td class=3D"c640">India</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"odd">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13528-PHP-Improve-API-cre=
+ation-using-the-Laravel-framework.html">Laravel API Kit</a><br />Improve AP=
+I creation using the Laravel framework</td>
+<td class=3D"c640">Neeraj Saini</td>
+<td class=3D"c640">India</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td><a href=3D"https://www.phpclasses.org/package/13530-PHP-Convert-JPEG-im=
+ages-using-pure-PHP-code.html">JPEG Codec PHP</a><br />Convert JPEG images =
+using pure PHP code</td>
+<td class=3D"c640">Uku-Kaarel Jo~esaar</td>
+<td class=3D"c640">Estonia</td>
+<td class=3D"c640" align=3D"right"><tt>&lt;1.00%</tt></td>
+<td class=3D"c640" align=3D"right"><tt>9</tt></td>
+<td class=3D"c640"></td>
+</tr>
+
+</table>
+<br /></TD>
+</TR>
+</TABLE>
+<br />
+<h3 align=3D"center">David please go to the <a rel=3D"nofollow" href=3D"htt=
+ps://www.phpclasses.org/vote.html">voting page</a> to know the packages and=
+ vote on the best</h3><CENTER><H2>Nominees to win the award of May of 2025<=
+/H2></CENTER>
+<CENTER><TABLE style=3D"width: 100%; max-width: 40em;">
+<TR>
+<TD>
+<CENTER><TABLE class=3D"box light" style=3D"padding: 4px">
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13464-PHP-Chat-with-DeepS=
+eek-bot-in-the-local-machine.html"><big><b>Deepseek Offline</b></big></A></=
+TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Chat with DeepSeek bot in the local machine</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Rodrigo Faustino</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Brazil</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>Deepseek LLM is one of the most recent Large Language =
+Models that has been used to implement applications based on Artificial Int=
+elligence.<BR>
+<BR>
+Usually, the available LLMs can be used via a remote API.<BR>
+<BR>
+This package provides a PHP application that can use Ollama to implement a =
+chatbot application that responds automatically to user queries and run loc=
+ally to access several types of LLMs engines like Deepseek, Gemma and Llama=
+3.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13538-PHP-Search-text-str=
+ings-using-the-KMP-algorithm.html"><big><b>RA KMP Search</b></big></A></TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Search text strings using the KMP algorithm</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Roberto Aleman</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Venezuela</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>The Knuth-Morris-Pratt algorithm can be used to perfor=
+m searches of text using a pattern in a way that it quickly can find the ne=
+xt occurrence of the pattern after it finds one occurrence.<BR>
+<BR>
+This package provides a class that implements the Knuth-Morris-Pratt algori=
+thm in PHP.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13540-PHP-Search-for-text=
+-using-the-Rabin-Karp-algorithm.html"><big><b>RA Rabin Karp Search Algorith=
+m</b></big></A></TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Search for text using the Rabin-Karp algorithm</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Roberto Aleman</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Venezuela</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>Some PHP application need to search text or binary dat=
+a.<BR>
+<BR>
+The Rabin Karp algorithm uses hashes of the data to perform searches that s=
+can less data to find matching occurrences of a given search text.<BR>
+<BR>
+This package provides a PHP implementation that can search data as plain te=
+xt or raw binary data or data encoded using hexadecimal characters.</I></TD=
+>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13541-PHP-Display-WhatsAp=
+p-contact-button-in-WordPress-pages.html"><big><b>Biggidroid WhatsApp CTA f=
+or WordPress</b></big></A></TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Display WhatsApp contact button in WordPress pages</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Adeleye Ayodeji</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Nigeria</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>WordPress is a very popular content management systems=
+ that allow developers to implement plugins to extend WordPress capabilitie=
+s.<BR>
+<BR>
+One way to extend WordPress capabilities is to provide better means of cont=
+ent to let users contact site owners.<BR>
+<BR>
+This package provides a WordPress plugin that makes a WhatsApp contact butt=
+on appear in WordPress site pages to let users send messages to site owners=
+ just hitting the WhatsApp contact button.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13545-PHP-Add-contact-for=
+ms-to-WordPress-site-pages.html"><big><b>Biggidroid Contact for WordPress</=
+b></big></A></TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Add contact forms to WordPress site pages</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Adeleye Ayodeji</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Nigeria</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>The administrators of many sites that use WordPress as=
+ a content management system would like to provide a means to be contacted =
+by the site users without exposing their email addresses publicly.<BR>
+<BR>
+A contact form allows implementing that feature.<BR>
+<BR>
+This package provides a plugin to let site administrators to add contact fo=
+rms to their WordPress sites.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13546-PHP-Analyze-and-sug=
+gest-the-of-an-encrypted-file.html"><big><b>RA Ultimate Cipher Analyzer</b>=
+</big></A></TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Analyze and suggest the of an encrypted file</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Roberto Aleman</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Venezuela</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>Sometimes it is necessary to determine the types of fi=
+les in a directory to figure what is the role of those files.<BR>
+<BR>
+One of the most difficult challenges in computer security is determining wh=
+ich algorithm was used to encrypt a file.<BR>
+<BR>
+PHP provides functions to detect certain types of files.<BR>
+<BR>
+This package provides a pure PHP analysis tool to detect more types of file=
+s that can be encrypted.<BR>
+<BR>
+It uses different strategies to determine which algorithm was used to encry=
+pt a file without knowing the encryption key, the original file contents, o=
+r the file contents hash.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13552-PHP-Manage-the-depl=
+oyment-of-services-using-Docker.html"><big><b>Docker Compose Auto Scaling S=
+ervice</b></big></A></TD>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Manage the deployment of services using Docker</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Matheusz Maydana</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Brazil</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>Docker is a tool that can deploy containers to run app=
+lications in the same machine, as if they were different machines.<BR>
+<BR>
+Docker can be useful to run many instances of the same PHP application when=
+ there is a demand to handle the requests of many users to the Web server t=
+hat processes the request to PHP applications.<BR>
+<BR>
+This package provides an example Docker container management script that us=
+es a PHP script to scale the number of Docker instances that handle the acc=
+esses to an application.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR><TH COLSPAN=3D"2" ALIGN=3D"right">Class:</TH>
+<TD><A HREF=3D"https://www.phpclasses.org/package/13557-PHP-Components-to-b=
+uild-WordPress-plugins.html"><big><b>ATK Wordpress Plugin</b></big></A></TD=
+>
+<TD ROWSPAN=3D"4"></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Description:</TH>
+<TD>Components to build WordPress plugins</TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Author:</TH>
+<TD><b>Francesco Danti</b></TD>
+</TR>
+<TR>
+<TD></TD>
+<TH ALIGN=3D"right">Country:</TH>
+<TD>Italy</TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"2" ALIGN=3D"right" VALIGN=3D"top">Comment:</TH>
+<TD COLSPAN=3D"2"><I>WordPress is a popular content management system writt=
+en in PHP that can be extended using plugin packages.<BR>
+<BR>
+This package provides a framework with many classes that are useful to deve=
+lop WordPress plugins.</I></TD>
+</TR>
+<TR>
+<TD COLSPAN=3D"4"><br><br></TD>
+</TR>
+<TR>
+<TH COLSPAN=3D"4"><h2><A rel=3D"nofollow" HREF=3D"https://www.phpclasses.or=
+g/vote.html">Vote</A></h2></TH>
+</TR>
+</TABLE></CENTER>
+</TD>
+</TR>
+</TABLE></CENTER>
+<center><h2>Award Winners by Author of 2025</h2></center>
+<table align=3D"center" class=3D"box" style=3D"padding: 4px" cellspacing=3D=
+"0">
+<tr>
+<th>Rank</th>
+<th>Author</th>
+<th></th>
+<th>Packages</th>
+<th>Points</th>
+</tr>
+<tr class=3D"odd">
+<th>1</th>
+<td>Roberto Aleman</td>
+<td>Venezuela</td>
+<td align=3D"right"><tt>5</tt></td>
+<td align=3D"right"><tt>52</tt></td>
+</tr>
+<tr class=3D"even">
+<th>2</th>
+<td>Rodrigo Faustino</td>
+<td>Brazil</td>
+<td align=3D"right"><tt>3</tt></td>
+<td align=3D"right"><tt>29</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>3</th>
+<td>Neeraj Saini</td>
+<td>India</td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>18</tt></td>
+</tr>
+<tr class=3D"even">
+<th>4</th>
+<td>Juan Camacho</td>
+<td>Belgium</td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>16</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>4</th>
+<td>Nitesh Apte</td>
+<td>India</td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>16</tt></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td>Adeleye Ayodeji</td>
+<td>Nigeria</td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>14</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>7</th>
+<td>ASCOOS CMS</td>
+<td>Greece</td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>12</tt></td>
+</tr>
+<tr class=3D"even">
+<th>7</th>
+<td>Kabir Hossain</td>
+<td>Bangladesh</td>
+<td align=3D"right"><tt>1</tt></td>
+<td align=3D"right"><tt>12</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>9</th>
+<td>Roman Kozin</td>
+<td>Ukraine</td>
+<td align=3D"right"><tt>1</tt></td>
+<td align=3D"right"><tt>10</tt></td>
+</tr>
+<tr class=3D"even">
+<th>9</th>
+<td>Carlos Artur Curvelo da Matos</td>
+<td>Portugal</td>
+<td align=3D"right"><tt>1</tt></td>
+<td align=3D"right"><tt>10</tt></td>
+</tr>
+
+</table>
+<br />
+<center><h2>Award Winners by Country of 2025</h2></center>
+<table align=3D"center" class=3D"box" style=3D"padding: 4px" cellspacing=3D=
+"0">
+<tr>
+<th>Rank</th>
+<th>Country</th>
+<th></th>
+<th>Packages</th>
+<th>Points</th>
+</tr>
+<tr class=3D"odd">
+<th>1</th>
+<td>Venezuela</td>
+<td></td>
+<td align=3D"right"><tt>5</tt></td>
+<td align=3D"right"><tt>52</tt></td>
+</tr>
+<tr class=3D"even">
+<th>1</th>
+<td>Brazil</td>
+<td></td>
+<td align=3D"right"><tt>6</tt></td>
+<td align=3D"right"><tt>52</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>3</th>
+<td>India</td>
+<td></td>
+<td align=3D"right"><tt>5</tt></td>
+<td align=3D"right"><tt>41</tt></td>
+</tr>
+<tr class=3D"even">
+<th>4</th>
+<td>Bangladesh</td>
+<td></td>
+<td align=3D"right"><tt>4</tt></td>
+<td align=3D"right"><tt>27</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>5</th>
+<td>Nigeria</td>
+<td></td>
+<td align=3D"right"><tt>3</tt></td>
+<td align=3D"right"><tt>23</tt></td>
+</tr>
+<tr class=3D"even">
+<th>6</th>
+<td>Belgium</td>
+<td></td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>16</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>7</th>
+<td>Germany</td>
+<td></td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>15</tt></td>
+</tr>
+<tr class=3D"even">
+<th>8</th>
+<td>Greece</td>
+<td></td>
+<td align=3D"right"><tt>2</tt></td>
+<td align=3D"right"><tt>12</tt></td>
+</tr>
+<tr class=3D"odd">
+<th>9</th>
+<td>Ukraine</td>
+<td></td>
+<td align=3D"right"><tt>1</tt></td>
+<td align=3D"right"><tt>10</tt></td>
+</tr>
+<tr class=3D"even">
+<th>9</th>
+<td>Portugal</td>
+<td></td>
+<td align=3D"right"><tt>1</tt></td>
+<td align=3D"right"><tt>10</tt></td>
+</tr>
+
+</table>
+<br />
+<H2><A NAME=3D"tip">PHP Classes site tip of the day</A>:</H2>
+<div style=3D"margin: auto; max-width: 50em" class=3D"box light"><p><b><big=
+><a href=3D"https://www.phpclasses.org/discuss/" target=3D"_blank">Support =
+=66orums</a></big></b></p>
+<div>If you would like to post a comment or request support about using a g=
+iven class, you may use the support forums that exist for each class.<br>
+<br>
+These forums may be found by going to the respective class page and use the=
+ &quot;Support forum&quot; link.<br>
+<br>
+When a new support forum message is posted, the respective class author is =
+notified by e-mail, unless he has choosen in his user options page to never=
+ subscribe to his classes' discussion forums.<br>
+<br>
+Any other user may subscribe to any class forums and also be notified by e-=
+mail about new threads or even every new message replies posted on the foru=
+ms of his interest.</div>
+</div>
+</div><hr />
+<a name=3D"instructions"></a><div class=3D"box dark" style=3D"margin: auto;=
+ max-width: 50em">David, if you are not interested in receiving any more me=
+ssages like this one, go to the <a href=3D"https://www.phpclasses.org/unsub=
+/n/dreschner/u/award/cc/da280f/">unsubscribe page</a> .</div>
+<!-- body_end -->
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
+--e66777fdbbcace9c9250527433619090--

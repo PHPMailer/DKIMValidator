@@ -1,0 +1,622 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6a11:9d0e:b0:67c:a119:9306 with SMTP id nq14csp396094pxc;
+        Fri, 19 Dec 2025 09:44:03 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IFXdPoyBBUY6w0fkLu6CL/7JrlY03hujJYPb22vffknBxtcg7REFSkpLyzsrm0k4sr/i6LS
+X-Received: by 2002:a05:6000:178c:b0:431:918:501d with SMTP id ffacd0b85a97d-4324e702853mr4018999f8f.60.1766166243200;
+        Fri, 19 Dec 2025 09:44:03 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1766166243; cv=none;
+        d=google.com; s=arc-20240605;
+        b=FcRox8yz7Ofi/co0E8QdRYr6/FZ9T0kY1xUMBmnNt4ePn6nbJ6Ds4zXuXrN+KkA8ur
+         /N5JndOt8mdUk4LDAyBp45tJThOs3Nv1/ce1sY1unM0ePXAPYZX1tJuVc9DFCMHRi7Ro
+         2obkJuiuOGZXDMsIFCjFt/cS62JF7Ki9ZPss8vQmN29hBVYs0h3FtvkfZGdfOoFfZyJJ
+         +oUUQLHw8dy4qJdAlqnGTnHPzcczBxMUQ0Fsp6whapBoaZq8+VEuPuSi18mI68P7goL3
+         1rhOIpEM5odI5O2iLPNdPRYEG6MSER75p+sJoUyuiSa2CixHkAGVPwJ3Or0HlNa5lJZw
+         Mlfg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=date:mime-version:message-id:to:list-unsubscribe
+         :list-unsubscribe-post:mtu-token:from:dkim-signature:subject;
+        bh=BlVvv/XEOpxNfP72pYDgleCclcBNlUArS1KvkSwwJfk=;
+        fh=lVkVyK4gEgT3UMAZjMloo01Ekuu50XVvQ3JHuS2J8V4=;
+        b=KkbQsTuE7lqd8D8rrR7tSl+qtSwAU/YAIx5XkNvK46j1kbERqTnSneypchyPw96vJa
+         YJVuxiPgwHEkSLZAMu0LujWKPyGvaV4/ueRlhGSDEdFt7QlCcm6eUaLuKPBNZpMSBQ5J
+         VEfy3liVudU49R91/mM7dDviTcpHSFBHefd02DYI7qZzyx9Yt29LkORsb6dR5RSFWazH
+         h2Wv0vLj/NuW5pz7Jwyd7KKcy/lydynCyeC+0B/CQqa3hCN8ANLHS2XIHI/kovPeaZkJ
+         fZjKrlTE40nKGmv5HIHTM0LGuFdGQ50Xr2gVgQQ2BtdpWCCqal0ojtQUc4nGAYLte7LF
+         mJig==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@regenwald.org header.s=20160623 header.b="HRwejc/D";
+       spf=pass (google.com: domain of newsletter+d4d4online=gmail.com@regenwald.org designates 2a00:4e00:2000:173::39 as permitted sender) smtp.mailfrom="newsletter+d4d4online=gmail.com@regenwald.org";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=regenwald.org
+Return-Path: <newsletter+d4d4online=gmail.com@regenwald.org>
+Received: from newsletter-out.regenwald.org (newsletter-out.regenwald.org. [2a00:4e00:2000:173::39])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-4324ea2080esi3979617f8f.146.2025.12.19.09.44.02
+        for <d4d4online@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 19 Dec 2025 09:44:03 -0800 (PST)
+Received-SPF: pass (google.com: domain of newsletter+d4d4online=gmail.com@regenwald.org designates 2a00:4e00:2000:173::39 as permitted sender) client-ip=2a00:4e00:2000:173::39;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@regenwald.org header.s=20160623 header.b="HRwejc/D";
+       spf=pass (google.com: domain of newsletter+d4d4online=gmail.com@regenwald.org designates 2a00:4e00:2000:173::39 as permitted sender) smtp.mailfrom="newsletter+d4d4online=gmail.com@regenwald.org";
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=regenwald.org
+Subject: Erfolge, die Mut machen
+ =?UTF-8?Q?=E2=80=93_dank_Ihnen_w=C3=A4chst?= 
+ =?UTF-8?Q?_Hoffnung_im_Regenwald?=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=regenwald.org;
+	s=20160623; t=1766161425;
+	bh=BlVvv/XEOpxNfP72pYDgleCclcBNlUArS1KvkSwwJfk=;
+	h=Subject:From:List-Unsubscribe-Post:List-Unsubscribe:To;
+	b=HRwejc/DIW382bJP1cHacZZau9f1rR2EEr+cjbfEw5EgRuAavTrbGlR4T8NWBudMa
+	 f0dXxTks38acWnKvPdCC7Aei1grwRAdHzwjY85vqrRXG6a7n1+VP61GJySGt2ARhCx
+	 QqruIq733L9hWDB2QYpRcn2S4W79GDD4GQ24UgHZQFPGlzRfLJoSIdV80DRtpjKClW
+	 FCim30gK+p1jYNdFtxTl6/R5Rcrw++B1x+qaTKoPWEVX/WrW50jx/iL47V6+jX9I3t
+	 dcITUnL4FsOBE3nDTclLhgVHrcr2TL9vJAu2gdszPomz79Mamn7l6Oo/9PtC1lmfgZ
+	 ZTIPE10JG9dP9utSN/p0Qv+kDkJVDXd7ME+kW091mx1Kx4RanBqD+3DJBdLQpiTlIV
+	 rOvfjKaWlXChtFCatay22zQkxhH16IVZ8YvFp4RrxfDQITS+8mXawU5NBU+o7GFBIB
+	 l95MDojH4g7nOdeuYaIWrU3l9N1RRef7GZdGihgRE27Jn+yxpEwcCSPq/mmY9/yQIc
+	 c2MUBoB4uxh9qmcmNOrRBIM0O9SudVaLQd/llpXpep7rIgHK56hwXoO73J7w7aGU45
+	 hyTc7pGV4/JK5Tt5lW+mcIppScWZRmxvcx+aG7BmdKMevsqIAbV7lu7OxqSYgmWE5H
+	 Dg610qCVNNPfqqoSIDxNfuHc=
+From: "Rettet den Regenwald e.V." <action@regenwald.org>
+Mtu-Token: 7af5b15ff63ee3101b49e253355b7319715547e54a655c1e8a5991074762b4d2
+X-Auto-Response-Suppress: All
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Unsubscribe: <mailto:newsletter@regenwald.org?subject=Unsubscribe:7af5b15ff63ee3101b49e253355b7319715547e54a655c1e8a5991074762b4d2>,
+	<https://www.regenwald.org/newsletter/edit-subscription/7af5b15ff63ee3101b49e253355b7319715547e54a655c1e8a5991074762b4d2>
+To: d4d4online@gmail.com
+Message-ID: <652136155-1766159461@regenwald.org>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary=mDDZH9Ej
+Date: Fri, 19 Dec 2025 17:23:45 +0100 (CET)
+
+--mDDZH9Ej
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Erfolge, die Mut machen – dank Ihnen wächst Hoffnung im Regenwald
+
+Liebe Freundinnen und Freunde des Regenwaldes,
+
+Sie haben uns 2025 angespornt und ermutigt – unser Einsatz für die Regenwälder wirkt!
+
+Mit Ihrer Unterstützung, Ihren Unterschriften und Ihren Spenden haben Sie große und kleine Erfolge unserer Partner in den Tropenwäldern erst möglich gemacht. Wirksame Projekte laufen, weil sich mutige und erfahrene Menschen dafür einsetzen.
+
+So bewahren die indigenen Ka’apor am Amazonas das große Regenwaldgebiet Alto Turiaçu, und wir unterstützen sie dabei. Eco-Guards dokumentieren in den Wäldern Liberias Spuren bedrohter Schimpansen, melden Rodungen, verhindern Wilderei. Wir fördern sie. In Indonesien haben Menschen des Dorfes Kwala Serapuh eine illegale Ölpalmenplantage gestoppt, rund 2.000 Ölpalmen entfernt und neue Mangroven gepflanzt. Wir haben einen Teil dazu beigetragen. Auf den Aru-Inseln haben Indigene eine Million Hektar Wald gerettet, auch vor der Zerstörung für Palmöl- und Kautschuk-Plantagen. Mit unserer Unterstützung pflanzen sie auf den degradierten Flächen Baumsetzlinge.
+
+Auch unsere Kampagnen in Deutschland wären ohne Sie kaum denkbar. Petitionen, öffentlicher Druck, Aufklärung und Information – das können wir nur dank Ihnen leisten.
+
+Jetzt spenden: https://www.regenwald.org/nl/5012/1/652136155
+
+Jetzt sind es noch wenige Tage bis Weihnachten – Endspurt für unseren Adventskalender! Seien Sie gespannt, was sich Wissenswertes, Erstaunliches und Ermutigendes hinter den letzten Türchen verbirgt.
+
+Falls Sie für die ruhigen Feiertage erhellenden Lesestoff brauchen, legen wir Ihnen unseren Regenwald Report ans Herz. Sie können ihn online lesen oder herunterladen.
+
+Wir wünschen Ihnen schöne Feiertage und ein gutes Neues Jahr!
+
+Bleiben Sie gesund.
+
+---------------------------------
+
+Last minute Geschenk: eine Regenwald-Urkunde
+
+Suchen Sie noch ein Weihnachtsgeschenk, das von Herzen kommt? Etwas Sinnvolles, das Gutes bewirkt, jenseits von Konsumrausch?
+
+Mit unseren Regenwaldschutz-Urkunden schenken Sie Freude und ermöglichen starke Arbeit für gesunde Wälder.
+
+Sie können Ihr Geschenk selbst ausdrucken. Gern schicken wir Ihnen die Urkunden per Post, wir können die Zustellung vor Weihnachten natürlich nicht garantieren.
+
+Orang-Utans, Elefanten, üppiger Regenwald - wir haben mehrere Motive zur Auswahl. Sie können einen Namen und eine Widmung in die Urkunden eintragen und sie so persönlich gestalten.
+
+Jetzt spenden
+
+---------------------------------
+
+227.275 Unterschriften für Kongos Regenwälder
+
+Mehrere Monate lang haben wir für die Regenwälder des Kongobeckens getrommelt, da diese oft wenig beachtet werden. Drei Petitionen haben wir dafür zu einem Packet zusammengeschnürt – und jetzt 227.275 Unterschriften beim Bundesentwicklungsministerium übergeben.
+
+Erfolg für den Kongo: https://www.regenwald.org/nl/5012/3/652136155
+
+---------------------------------
+
+Kampagne trocknet Ölpipeline aus
+
+„Stoppt die Ostafrikanische Rohölpipeline!“ Das fordern wir seit Oktober 2019 und haben dazu unter anderem eine Petition gestartet. Innerhalb der sechs Jahre ist der Bau kaum vorangekommen, potentielle Finanziers sind abgesprungen.
+
+Ein Erfolg eines breiten Widerstandes, der Details der Petition überholt hat. Wir beenden sie daher – und engagieren uns ansonsten wie bisher im Netzwerk #StopEACOP, bis das Projekt endgültig beerdigt wird.
+
+Kampagne gegen Pipeline: https://www.regenwald.org/nl/5012/4/652136155
+
+---------------------------------
+
+Spenden Sie für den Schutz der Regenwälder
+
+Helfen Sie, die Vielfalt und Schönheit der Regenwälder zu schützen. Unterstützen Sie mutige Menschen, die sich für die Natur einsetzen.
+
+Jetzt spenden: https://www.regenwald.org/nl/5012/5/652136155
+
+---------------------------------
+
+Sie bekommen diesen Newsletter, weil Sie vermutlich an einer Protest- oder Spendenaktion auf unserer Website teilgenommen haben. Zum Abbestellen oder Editieren Ihrer Einstellungen auf den folgenden Link klicken: https://www.regenwald.org/newsletter/edit-subscription/7af5b15ff63ee3101b49e253355b7319715547e54a655c1e8a5991074762b4d2
+
+
+--mDDZH9Ej
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html>
+<html lang="de" xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=yes">
+    <meta name="x-apple-disable-message-reformatting">
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title></title>
+        <style nonce="">
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+        @media (prefers-color-scheme: dark ) {
+                        body > div,
+            body > div > table td,
+            .outer
+            {
+                background-color: #272623 !important;
+            }
+
+            /* Custom Dark Mode Font Colors */
+            h1, h2, p, span, a, b, td, div
+            {
+                color: #ffffff !important;
+            }
+
+            /* Custom Dark Mode Text Link Color */
+            .link { color: #91ADD4 !important; }
+        }
+
+        
+                td.column img
+        {
+            display: block;
+            border: none;
+            margin: 0;
+            width: 100%;
+            width: 100% !important;
+            height: auto;
+            height: auto !important;
+        }
+
+        @media only screen and (min-width: 554px)
+        {
+            td.column1
+            {
+                width: 44% !important;
+            }
+            td.column2
+            {
+                width: 56% !important;
+            }
+        }
+        @media only screen and (max-width: 554px)
+        {
+            td.column
+            {
+                min-width: 100%;
+                                width: 100% !important;
+            }
+        }
+
+    </style>
+
+    <!--[if mso]>
+    <style type="text/css">
+        table {border-collapse:collapse;border:0;border-spacing:0;margin:0;}
+        table,td {font-family: Helvetica,Arial,sans-serif;}
+        table.outer, tr.one-col img {width:660px;}
+        tr.two-col img {width:247px;}
+        div, td {padding:0;}
+        div {margin:0 !important;}
+        table.button {mso-margin-bottom-alt: 0; mso-margin-top-alt: 0;}
+        hr {width:450pt;}
+        .sm-buttons {letter-spacing: 20px}
+        span.sm-buttons {}
+    </style>
+    <noscript>
+        <xml>
+            <o:OfficeDocumentSettings>
+                <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+        </xml>
+    </noscript>
+    <![endif]-->
+    </head>
+<body style="margin:0;padding:0;word-spacing:normal;background:#E8E8E0;">
+<div style="display:none;max-height:0px;overflow:hidden;">Indigene Gemeinschaften und Eco-Guards schätzen Ihre Unterstützung – unser aller Einsatz für die Regenwälder wirkt!</div><div style="display:none;max-height:0px;overflow:hidden;">͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ ͏ </div>
+<div role="article" aria-roledescription="E-Mail" lang="de" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;background:#E8E8E0;">
+    <table class="outer" align="center" role="presentation" style="display:block;margin:0 auto;max-width:660px;border:0;border-spacing:0;    font-family:Helvetica,Arial,sans-serif;font-size:15px;line-height:26px;color:#272D2B;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;">
+        <tbody style="display:block;padding:0;"><tr style="display:block;padding:0;">
+            <td style="text-align:center;display:block;font-size:12px;padding:5px;">
+<img alt="" role="presentation" aria-hidden="true" style="border:none;display:block;line-height:0;margin-bottom:0px;" 
+src="https://www.regenwald.org/newsletter/tu/652136155"
+ width="1" height="1">
+
+                    Falls Sie keine Bilder sehen,
+                    <a style="color:#272D2B" 
+href="https://www.regenwald.org/newsletter/5012"
+>Newsletter im Browser anschauen</a></td>
+        </tr><tr style="display:block;padding:0;">
+            <td style="display:block;padding:0;background:#FFFFFF">
+                                <table role="presentation" style="width:100%;border:0;border-spacing:0">
+                <tr>
+                    <td align="left" style="font-size:17px;font-weight:bold;padding:20px 30px 20px 20px;line-height:1">
+                        <picture>
+                            <source srcset="https://www.regenwald.org/frontend/img/newsletter/logo-de-dark.png" media="(prefers-color-scheme: dark)">
+                            <img 
+src="https://www.regenwald.org/frontend/img/newsletter/logo-de.png"
+ alt="Rettet den Regenwald e.V." width="288" style="width:100%;max-width:288px;height:auto;vertical-align:middle;line-height:68px;" />
+                        </picture>
+                        <div class="claim" style="mso-hide:all;float:right;color:#5C9144;margin-top:23px;text-align:right;" >Ihre Stimme hilft</div>
+                    </td>
+                    <!--[if mso]>
+                    <td valign="middle" align="right" style="display:none;mso-hide:none;color:#5C9144;font-size:17px;font-weight:bold;padding:20px 30px 0 0;vertical-align:middle;mso-line-height-alt:100%;mso-line-height-rule:exactly">
+                        Ihre Stimme hilft
+                    </td>
+                    <![endif]-->
+                </tr>
+                </table>
+
+                                
+
+                <table role="presentation" style="display:block;padding:0;width:100%;border:0;border-spacing:0;background:#33923C;color:#FFFFFF;">
+        <tbody style="display:block;padding:0;">            <tr class="one-col" style="display:block;padding:0;">
+                <td style="display:block;padding:0;" valign="top">
+                    <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/1/652136155"
+ style="display:block;color:inherit;text-decoration:none">    <picture>
+                    <source media="(max-width: 370px)" srcset="https://www.regenwald.org/photos/article/wide/s/weihnachts-regenwald-schneeflocken-tukan.jpg 1x, https://www.regenwald.org/photos/article/wide/s/x2/weihnachts-regenwald-schneeflocken-tukan.jpg 2x">
+                    <source media="(max-width: 554px)" srcset="https://www.regenwald.org/photos/article/wide/m/weihnachts-regenwald-schneeflocken-tukan.jpg 1x, https://www.regenwald.org/photos/article/wide/m/x2/weihnachts-regenwald-schneeflocken-tukan.jpg 2x">
+                <img 
+src="https://www.regenwald.org/photos/article/wide/l/x2/weihnachts-regenwald-schneeflocken-tukan.jpg"
+ width="660" style="display:block;width:100%;height:auto;border:none;margin:0;" alt="Weihnachtsmotiv" srcset="https://www.regenwald.org/photos/article/wide/l/weihnachts-regenwald-schneeflocken-tukan.jpg 1x, https://www.regenwald.org/photos/article/wide/l/x2/weihnachts-regenwald-schneeflocken-tukan.jpg 2x"
+    >
+    </picture></a>
+                </td>
+            </tr>
+                <tr style="display:block;padding:0;">
+            <td valign="top" style="display:block;padding:30px;line-height:26px">
+                <h1 style="margin-top:0;margin-bottom:25px;font-size:24px;line-height:29px;font-weight:bold;">Erfolge, die Mut machen – dank Ihnen wächst Hoffnung im Regenwald</h1>
+
+                
+                                                    
+                <p style="margin: 12px 0 12px 0">Liebe Freundinnen und Freunde des Regenwaldes,</p>
+<p style="margin: 12px 0 12px 0"><strong>Sie haben uns 2025 angespornt und ermutigt – unser Einsatz für die Regenwälder wirkt!</strong></p>
+<p style="margin: 12px 0 12px 0">Mit <strong>Ihrer Unterstützung, Ihren Unterschriften und Ihren Spenden</strong> haben Sie große und kleine Erfolge unserer Partner in den Tropenwäldern erst möglich gemacht. Wirksame Projekte laufen, weil sich mutige und erfahrene Menschen dafür einsetzen.</p>
+<p style="margin: 12px 0 12px 0">So bewahren die indigenen Ka’apor am Amazonas das <b>große Regenwaldgebiet Alto Turiaçu, </b>und wir unterstützen sie dabei. <strong>Eco-Guards dokumentieren in den Wäldern Liberias</strong> Spuren bedrohter Schimpansen, melden Rodungen, verhindern Wilderei. Wir fördern sie. In Indonesien haben Menschen des Dorfes Kwala Serapuh eine <strong>illegale Ölpalmenplantage gestoppt,</strong> rund 2.000 Ölpalmen entfernt und neue Mangroven gepflanzt. Wir haben einen Teil dazu beigetragen. Auf den Aru-Inseln haben Indigene eine Million Hektar Wald gerettet, auch vor der Zerstörung für Palmöl- und Kautschuk-Plantagen. Mit unserer Unterstützung <strong>pflanzen sie auf den degradierten Flächen Baumsetzlinge</strong>.</p>
+<p style="margin: 12px 0 12px 0">Auch unsere <strong>Kampagnen in Deutschland</strong> wären ohne Sie kaum denkbar. Petitionen, öffentlicher Druck, Aufklärung und Information – <strong>das können wir nur dank Ihnen leisten.</strong></p>
+                <!--[if mso]><p style="margin:10px 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+    <table role="presentation" class="button" style="display:block;padding:0;border-spacing:0;margin-top:20px;margin-bottom:20px;;">
+        <tbody style="display:block;padding:0;">
+        <tr style="display:block;padding:0;">
+            <td style="display:block;vertical-align:middle;padding:0;mso-padding-alt:7px 0px 7px 22px;mso-shading:#FFFFFF;">
+                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/1/652136155"
+ style="font-size:14px;background:#FFFFFF;color:#33923C !important;text-decoration:none; text-underline-color: #FFFFFF;font-weight:bold;display:inline-block;padding:17px 30px 15px 30px;border-radius:6px;mso-border-alt:8px solid #FFFFFF;mso-padding-alt:0px;">JETZT SPENDEN<span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #FFFFFF;border-left-color: transparent;border-top: 6px solid #33923C;border-bottom: 6px solid #33923C;margin-left: 1em;vertical-align: -1px;"></span><span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #33923C;border-top: 6px solid #FFFFFF;border-top-color: transparent;border-bottom: 6px solid #FFFFFF;border-bottom-color: transparent;vertical-align: -1px;"></span>
+                </a>
+            </td>
+                        <!--[if mso]>
+            <td style="vertical-align:middle;padding:0;line-height: 20px;mso-padding-alt:15px 30px 15px 0px;mso-shading:#FFFFFF;">
+            <v:shape alt="" coordsize="3,11" style="position:relative; top:2px; width:3; height:11" path="m,l3,5,,10e" fillcolor="#FFFFFF" strokecolor="#33923C" strokeweight="1.5pt"/>
+            </td>
+            <![endif]-->
+                    </tr>
+        </tbody>
+    </table>
+            <!--[if mso]><p style="margin:10px 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+    
+<p style="margin: 12px 0 12px 0">Jetzt sind es noch wenige Tage bis Weihnachten – Endspurt für unseren <a style="text-decoration:underline;color:#FFFFFF" 
+href="https://www.regenwald.org/nl/5012/1/gqtxqddhtk/652136155"
+ target="_blank" rel="noopener noreferrer"><strong>Adventskalender</strong>!</a> Seien Sie gespannt, was sich Wissenswertes, Erstaunliches und Ermutigendes hinter den <a style="text-decoration:underline;color:#FFFFFF" 
+href="https://www.regenwald.org/nl/5012/1/gqtxqddhtk/652136155"
+ target="_blank" rel="noopener noreferrer">letzten Türchen</a> verbirgt.</p>
+<p style="margin: 12px 0 12px 0">Falls Sie für die ruhigen Feiertage erhellenden Lesestoff brauchen, legen wir Ihnen unseren <a style="text-decoration:underline;color:#FFFFFF" 
+href="https://www.regenwald.org/nl/5012/1/hjvnwhqmnc/652136155"
+ target="_blank" rel="noopener noreferrer"><strong><i>Regenwald Report</i></strong></a> ans Herz. Sie können ihn online lesen oder <a style="text-decoration:underline;color:#FFFFFF" 
+href="https://www.regenwald.org/nl/5012/1/hjvnwhqmnc/652136155"
+ target="_blank" rel="noopener noreferrer">herunterladen</a>.</p>
+<p style="margin: 12px 0 12px 0"><strong>Wir wünschen Ihnen schöne Feiertage und ein gutes Neues Jahr!</strong></p>
+<p style="margin: 12px 0 12px 0">Bleiben Sie gesund.</p><!--[if mso]><p style="margin:20px 0 0 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+                    <table role="presentation" style="padding:0;margin-top:20px;width:100%;border:0;border-spacing:0;color:#FFFFFF">
+                                                <tr style="padding:0;">
+                                                        <td style="padding:0;line-height:26px;">
+                                <p style="margin: 0 0 12px 0">Marianne Klute und Bettina Behrend<br>Rettet den Regenwald e. V.</p>
+                            </td>                            <td style="padding:0;vertical-align:top;max-width:35%;text-align: right">
+                                <img style="width: 100%; height: auto; max-width: 142px" alt="Portrait" loading="lazy" 
+src="https://www.regenwald.org/frontend/img/newsletter/portraits/bb-mk.png"
+ width="142" height="">
+                            </td></tr>
+                                            </table></td>
+        </tr>
+        </tbody>
+    </table><table role="presentation" style="display:block;padding:0;border:0;border-spacing:0;width:100%;color:#272D2B">
+            <tbody style="display:block;padding:0;">
+            <tr class="two-col" style="display: block; padding:15px;"><td class="column column1" style="width:44%;min-width:-webkit-calc(44%);min-width:calc(44%);max-width:100%;width:-webkit-calc(275625px - 52500%);width:calc(275625px - 52500%);display:inline-block;vertical-align:top;padding:0;mso-padding-alt:30px 15px 30px 30px;" valign="top">
+                    <div style="padding:15px">
+                                                    <picture>
+                    <source media="(max-width: 430px),(min-width: 554px)," srcset="https://www.regenwald.org/photos/article/wide/s/regenwald-urkunden-2025.jpg 1x, https://www.regenwald.org/photos/article/wide/s/x2/regenwald-urkunden-2025.jpg 2x">
+                <img 
+src="https://www.regenwald.org/photos/article/wide/l/x2/regenwald-urkunden-2025.jpg"
+ width="247" style="display:block;width:100%;height:auto;border:none;margin:0;" alt="Auswahl von Spendenurkunden" srcset="https://www.regenwald.org/photos/article/wide/l/regenwald-urkunden-2025.jpg 1x, https://www.regenwald.org/photos/article/wide/l/x2/regenwald-urkunden-2025.jpg 2x"
+    >
+    </picture>
+                    </div>
+                </td><td class="column column2" style="width:56%;min-width:-webkit-calc(56%);min-width:calc(56%);max-width:100%;width:-webkit-calc(275625px - 52500%);width:calc(275625px - 52500%);display:inline-block;vertical-align:top;line-height:26px;padding:0;mso-padding-alt:30px 30px 30px 15px;" valign="top">
+                    <div style="padding: 15px">
+                                                                                                <h2 style="margin-top:0;margin-bottom:23px;font-size:20px;line-height:25px;font-weight:bold;">Last minute Geschenk: eine Regenwald-Urkunde</h2>
+                        
+                                                    
+                <p style="margin: 12px 0 12px 0">Suchen Sie noch ein Weihnachtsgeschenk, das von Herzen kommt? Etwas Sinnvolles, das Gutes bewirkt, jenseits von Konsumrausch?</p>
+<p style="margin: 12px 0 12px 0">Mit unseren <strong>Regenwaldschutz-Urkunden schenken Sie Freude</strong> und ermöglichen starke Arbeit für gesunde Wälder.</p>
+<p style="margin: 12px 0 12px 0">Sie können <b>Ihr Geschenk selbst ausdrucken</b>. Gern schicken wir Ihnen die Urkunden <strong>per Post</strong>, wir können die Zustellung vor Weihnachten natürlich nicht garantieren.</p>
+<p style="margin: 12px 0 12px 0">Orang-Utans, Elefanten, üppiger Regenwald - wir haben mehrere Motive zur Auswahl. Sie können einen Namen und eine Widmung in die Urkunden eintragen und sie so persönlich gestalten.</p>
+                <!--[if mso]><p style="margin:10px 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+    <table role="presentation" class="button" style="display:block;padding:0;border-spacing:0;margin-top:20px;;">
+        <tbody style="display:block;padding:0;">
+        <tr style="display:block;padding:0;">
+            <td style="display:block;vertical-align:middle;padding:0;mso-padding-alt:7px 0px 7px 22px;mso-shading:#CC3C33;">
+                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/2/ckmbqkpcyf/652136155"
+ style="font-size:14px;background:#CC3C33;color:#FFFFFF !important;text-decoration:none; text-underline-color: #CC3C33;font-weight:bold;display:inline-block;padding:17px 30px 15px 30px;border-radius:6px;mso-border-alt:8px solid #CC3C33;mso-padding-alt:0px;">JETZT SPENDEN<span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #CC3C33;border-left-color: transparent;border-top: 6px solid #FFFFFF;border-bottom: 6px solid #FFFFFF;margin-left: 1em;vertical-align: -1px;"></span><span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #FFFFFF;border-top: 6px solid #CC3C33;border-top-color: transparent;border-bottom: 6px solid #CC3C33;border-bottom-color: transparent;vertical-align: -1px;"></span>
+                </a>
+            </td>
+                        <!--[if mso]>
+            <td style="vertical-align:middle;padding:0;line-height: 20px;mso-padding-alt:15px 30px 15px 0px;mso-shading:#CC3C33;">
+            <v:shape alt="" coordsize="3,11" style="position:relative; top:2px; width:3; height:11" path="m,l3,5,,10e" fillcolor="#CC3C33" strokecolor="#FFFFFF" strokeweight="1.5pt"/>
+            </td>
+            <![endif]-->
+                    </tr>
+        </tbody>
+    </table>
+    </div>
+                </td></tr></tbody>
+        </table><p style="margin:0 30px;font-size:0px;line-height:0px;height:0px;padding-top:2px;background:#E7E7E7;mso-shading:transparent" role="separator" >
+    <!--[if vml]>
+        <v:line from="30,0" to="471pt,0" strokecolor="#E7E7E7" strokeweight="1.5pt"/>
+            <![endif]-->
+    </p>
+<table role="presentation" style="display:block;padding:0;border:0;border-spacing:0;width:100%;color:#272D2B">
+            <tbody style="display:block;padding:0;">
+            <tr class="two-col" style="display: block; padding:15px;"><td class="column column1" style="width:44%;min-width:-webkit-calc(44%);min-width:calc(44%);max-width:100%;width:-webkit-calc(275625px - 52500%);width:calc(275625px - 52500%);display:inline-block;vertical-align:top;padding:0;mso-padding-alt:30px 15px 30px 30px;" valign="top">
+                    <div style="padding:15px">
+                                                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/3/652136155"
+ style="display:block;color:inherit;text-decoration:none">    <picture>
+                    <source media="(max-width: 430px),(min-width: 554px)," srcset="https://www.regenwald.org/photos/article/wide/s/uebergabe-drc-2-skal.jpg 1x, https://www.regenwald.org/photos/article/wide/s/x2/uebergabe-drc-2-skal.jpg 2x">
+                <img 
+src="https://www.regenwald.org/photos/article/wide/l/x2/uebergabe-drc-2-skal.jpg"
+ width="247" style="display:block;width:100%;height:auto;border:none;margin:0;" alt="Übergabe von Petitionen im BMZ in Bonn" srcset="https://www.regenwald.org/photos/article/wide/l/uebergabe-drc-2-skal.jpg 1x, https://www.regenwald.org/photos/article/wide/l/x2/uebergabe-drc-2-skal.jpg 2x"
+    >
+    </picture></a>
+                    </div>
+                </td><td class="column column2" style="width:56%;min-width:-webkit-calc(56%);min-width:calc(56%);max-width:100%;width:-webkit-calc(275625px - 52500%);width:calc(275625px - 52500%);display:inline-block;vertical-align:top;line-height:26px;padding:0;mso-padding-alt:30px 30px 30px 15px;" valign="top">
+                    <div style="padding: 15px">
+                                                                                                                        <span style="color:#CC3C33;font-size:20px;line-height:25px;font-weight:bold;">Petition im Ministerium übergeben</span>
+                                                <h2 style="margin-top:0;margin-bottom:23px;font-size:20px;line-height:25px;font-weight:bold;">227.275 Unterschriften für Kongos Regenwälder</h2>
+                        
+                                                    
+                <p style="margin: 12px 0 12px 0">Mehrere Monate lang haben wir für die Regenwälder des Kongobeckens getrommelt, da diese oft wenig beachtet werden. Drei Petitionen haben wir dafür zu einem Packet zusammengeschnürt – und jetzt 227.275 Unterschriften beim Bundesentwicklungsministerium übergeben.</p>
+                <!--[if mso]><p style="margin:10px 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+    <table role="presentation" class="button" style="display:block;padding:0;border-spacing:0;margin-top:20px;;">
+        <tbody style="display:block;padding:0;">
+        <tr style="display:block;padding:0;">
+            <td style="display:block;vertical-align:middle;padding:0;mso-padding-alt:7px 0px 7px 22px;mso-shading:#CC3C33;">
+                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/3/652136155"
+ style="font-size:14px;background:#CC3C33;color:#FFFFFF !important;text-decoration:none; text-underline-color: #CC3C33;font-weight:bold;display:inline-block;padding:17px 30px 15px 30px;border-radius:6px;mso-border-alt:8px solid #CC3C33;mso-padding-alt:0px;">ERFOLG FÜR DEN KONGO<span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #CC3C33;border-left-color: transparent;border-top: 6px solid #FFFFFF;border-bottom: 6px solid #FFFFFF;margin-left: 1em;vertical-align: -1px;"></span><span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #FFFFFF;border-top: 6px solid #CC3C33;border-top-color: transparent;border-bottom: 6px solid #CC3C33;border-bottom-color: transparent;vertical-align: -1px;"></span>
+                </a>
+            </td>
+                        <!--[if mso]>
+            <td style="vertical-align:middle;padding:0;line-height: 20px;mso-padding-alt:15px 30px 15px 0px;mso-shading:#CC3C33;">
+            <v:shape alt="" coordsize="3,11" style="position:relative; top:2px; width:3; height:11" path="m,l3,5,,10e" fillcolor="#CC3C33" strokecolor="#FFFFFF" strokeweight="1.5pt"/>
+            </td>
+            <![endif]-->
+                    </tr>
+        </tbody>
+    </table>
+    </div>
+                </td></tr></tbody>
+        </table><p style="margin:0 30px;font-size:0px;line-height:0px;height:0px;padding-top:2px;background:#E7E7E7;mso-shading:transparent" role="separator" >
+    <!--[if vml]>
+        <v:line from="30,0" to="471pt,0" strokecolor="#E7E7E7" strokeweight="1.5pt"/>
+            <![endif]-->
+    </p>
+<table role="presentation" style="display:block;padding:0;border:0;border-spacing:0;width:100%;color:#272D2B">
+            <tbody style="display:block;padding:0;">
+            <tr class="two-col" style="display: block; padding:15px;"><td class="column column1" style="width:44%;min-width:-webkit-calc(44%);min-width:calc(44%);max-width:100%;width:-webkit-calc(275625px - 52500%);width:calc(275625px - 52500%);display:inline-block;vertical-align:top;padding:0;mso-padding-alt:30px 15px 30px 30px;" valign="top">
+                    <div style="padding:15px">
+                                                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/4/652136155"
+ style="display:block;color:inherit;text-decoration:none">    <picture>
+                    <source media="(max-width: 430px),(min-width: 554px)," srcset="https://www.regenwald.org/photos/article/wide/s/elefanteacop-fb.jpg 1x, https://www.regenwald.org/photos/article/wide/s/x2/elefanteacop-fb.jpg 2x">
+                <img 
+src="https://www.regenwald.org/photos/article/wide/l/x2/elefanteacop-fb.jpg"
+ width="247" style="display:block;width:100%;height:auto;border:none;margin:0;" alt="Montage: Erdöl ist eine große Gefahr für Elefanten - StopEACOP" srcset="https://www.regenwald.org/photos/article/wide/l/elefanteacop-fb.jpg 1x, https://www.regenwald.org/photos/article/wide/l/x2/elefanteacop-fb.jpg 2x"
+    >
+    </picture></a>
+                    </div>
+                </td><td class="column column2" style="width:56%;min-width:-webkit-calc(56%);min-width:calc(56%);max-width:100%;width:-webkit-calc(275625px - 52500%);width:calc(275625px - 52500%);display:inline-block;vertical-align:top;line-height:26px;padding:0;mso-padding-alt:30px 30px 30px 15px;" valign="top">
+                    <div style="padding: 15px">
+                                                                                                                        <span style="color:#CC3C33;font-size:20px;line-height:25px;font-weight:bold;">Erfolg</span>
+                                                <h2 style="margin-top:0;margin-bottom:23px;font-size:20px;line-height:25px;font-weight:bold;">Kampagne trocknet Ölpipeline aus</h2>
+                        
+                                                    
+                <p style="margin: 12px 0 12px 0">„Stoppt die Ostafrikanische Rohölpipeline!“ Das fordern wir seit Oktober 2019 und haben dazu unter anderem eine Petition gestartet. Innerhalb der sechs Jahre ist der Bau kaum vorangekommen, potentielle Finanziers sind abgesprungen.</p>
+<p style="margin: 12px 0 12px 0">Ein Erfolg eines breiten Widerstandes, der Details der Petition überholt hat. Wir beenden sie daher – und engagieren uns ansonsten wie bisher im Netzwerk #StopEACOP, bis das Projekt endgültig beerdigt wird.</p>
+                <!--[if mso]><p style="margin:10px 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+    <table role="presentation" class="button" style="display:block;padding:0;border-spacing:0;margin-top:20px;;">
+        <tbody style="display:block;padding:0;">
+        <tr style="display:block;padding:0;">
+            <td style="display:block;vertical-align:middle;padding:0;mso-padding-alt:7px 0px 7px 22px;mso-shading:#CC3C33;">
+                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/4/652136155"
+ style="font-size:14px;background:#CC3C33;color:#FFFFFF !important;text-decoration:none; text-underline-color: #CC3C33;font-weight:bold;display:inline-block;padding:17px 30px 15px 30px;border-radius:6px;mso-border-alt:8px solid #CC3C33;mso-padding-alt:0px;">KAMPAGNE GEGEN PIPELINE<span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #CC3C33;border-left-color: transparent;border-top: 6px solid #FFFFFF;border-bottom: 6px solid #FFFFFF;margin-left: 1em;vertical-align: -1px;"></span><span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #FFFFFF;border-top: 6px solid #CC3C33;border-top-color: transparent;border-bottom: 6px solid #CC3C33;border-bottom-color: transparent;vertical-align: -1px;"></span>
+                </a>
+            </td>
+                        <!--[if mso]>
+            <td style="vertical-align:middle;padding:0;line-height: 20px;mso-padding-alt:15px 30px 15px 0px;mso-shading:#CC3C33;">
+            <v:shape alt="" coordsize="3,11" style="position:relative; top:2px; width:3; height:11" path="m,l3,5,,10e" fillcolor="#CC3C33" strokecolor="#FFFFFF" strokeweight="1.5pt"/>
+            </td>
+            <![endif]-->
+                    </tr>
+        </tbody>
+    </table>
+    </div>
+                </td></tr></tbody>
+        </table>            <table role="presentation" style="display:block;padding:0;width:100%;border:0;border-spacing:0;background:#33923C;color:#FFFFFF;">
+        <tbody style="display:block;padding:0;">            <tr class="one-col" style="display:block;padding:0;">
+                <td style="display:block;padding:0;" valign="top">
+                    <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/5/652136155"
+ style="display:block;color:inherit;text-decoration:none">    <picture>
+                    <source media="(max-width: 370px)" srcset="https://www.regenwald.org/photos/article/wide/s/riesentukan2.jpg 1x, https://www.regenwald.org/photos/article/wide/s/x2/riesentukan2.jpg 2x">
+                    <source media="(max-width: 554px)" srcset="https://www.regenwald.org/photos/article/wide/m/riesentukan2.jpg 1x, https://www.regenwald.org/photos/article/wide/m/x2/riesentukan2.jpg 2x">
+                <img 
+src="https://www.regenwald.org/photos/article/wide/l/x2/riesentukan2.jpg"
+ width="660" style="display:block;width:100%;height:auto;border:none;margin:0;" alt="Der Tukan ist ein symbol für die Artenvielfalt" srcset="https://www.regenwald.org/photos/article/wide/l/riesentukan2.jpg 1x, https://www.regenwald.org/photos/article/wide/l/x2/riesentukan2.jpg 2x"
+    >
+    </picture></a>
+                </td>
+            </tr>
+                <tr style="display:block;padding:0;">
+            <td valign="top" style="display:block;padding:30px;line-height:26px">
+                <h1 style="margin-top:0;margin-bottom:25px;font-size:24px;line-height:29px;font-weight:bold;">Spenden Sie für den Schutz der Regenwälder</h1>
+
+                
+                                                    
+                <p style="margin: 12px 0 12px 0">Helfen Sie, die Vielfalt und Schönheit der Regenwälder zu schützen. Unterstützen Sie mutige Menschen, die sich für die Natur einsetzen.</p>
+                <!--[if mso]><p style="margin:10px 0;line-height: 0;mso-line-height-rule: exactly">&nbsp;</p><![endif]-->
+    <table role="presentation" class="button" style="display:block;padding:0;border-spacing:0;margin-top:20px;;">
+        <tbody style="display:block;padding:0;">
+        <tr style="display:block;padding:0;">
+            <td style="display:block;vertical-align:middle;padding:0;mso-padding-alt:7px 0px 7px 22px;mso-shading:#FFFFFF;">
+                <a target="_blank" 
+href="https://www.regenwald.org/nl/5012/5/652136155"
+ style="font-size:14px;background:#FFFFFF;color:#33923C !important;text-decoration:none; text-underline-color: #FFFFFF;font-weight:bold;display:inline-block;padding:17px 30px 15px 30px;border-radius:6px;mso-border-alt:8px solid #FFFFFF;mso-padding-alt:0px;">JETZT SPENDEN<span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #FFFFFF;border-left-color: transparent;border-top: 6px solid #33923C;border-bottom: 6px solid #33923C;margin-left: 1em;vertical-align: -1px;"></span><span style="display: inline-block;height: 0px; width: 0px;border-left: 4px solid #33923C;border-top: 6px solid #FFFFFF;border-top-color: transparent;border-bottom: 6px solid #FFFFFF;border-bottom-color: transparent;vertical-align: -1px;"></span>
+                </a>
+            </td>
+                        <!--[if mso]>
+            <td style="vertical-align:middle;padding:0;line-height: 20px;mso-padding-alt:15px 30px 15px 0px;mso-shading:#FFFFFF;">
+            <v:shape alt="" coordsize="3,11" style="position:relative; top:2px; width:3; height:11" path="m,l3,5,,10e" fillcolor="#FFFFFF" strokecolor="#33923C" strokeweight="1.5pt"/>
+            </td>
+            <![endif]-->
+                    </tr>
+        </tbody>
+    </table>
+    </td>
+        </tr>
+        </tbody>
+    </table>
+                <table role="presentation" style="display:block;padding:0;width:100%;border:0;border-spacing:0;background:#2D312F;color:#FFFFFF">
+                    <tbody style="display:block;padding:0;">
+                    <tr style="display:block;padding:0;">
+                        <td valign="top" style="display:block;padding:30px;line-height:26px">
+                                                        <h3 style="margin-top:0;margin-bottom:20px;font-size:23px;line-height:28px;font-weight:bold;">Folgen Sie uns</h3>
+                            <p class="sm-buttons" style="margin: 0 0 1em 0;margin: -10px -10px 1em -10px;">
+                                <a target="_blank"  
+ 
+href="https://www.facebook.com/rettetdenregenwald"
+ style="color:#FFFFFF;background:#656865;margin:10px 10px;display:inline-block;padding:10px 10px 4px 10px;text-decoration:none;text-underline-color:#656865;letter-spacing:normal;vertical-align:middle;border-radius:6px;mso-padding-alt:0px;mso-border-alt:8px solid #656865;"><img aria-hidden="true" focusable="false" 
+ 
+src="https://www.regenwald.org/frontend/img/newsletter/share-facebook.png?c"
+ width="20" height="20" alt="" style="border:none;" />&nbsp;<span style="vertical-align: 4px">Facebook</span>
+    </a>&nbsp;<a target="_blank"  
+ 
+href="https://mastodon.social/@RettetdenRegenwald"
+ style="color:#FFFFFF;background:#656865;margin:10px 10px;display:inline-block;padding:10px 10px 4px 10px;text-decoration:none;text-underline-color:#656865;letter-spacing:normal;vertical-align:middle;border-radius:6px;mso-padding-alt:0px;mso-border-alt:8px solid #656865;"><img aria-hidden="true" focusable="false" 
+ 
+src="https://www.regenwald.org/frontend/img/newsletter/share-mastodon.png?c"
+ width="20" height="20" alt="" style="border:none;" />&nbsp;<span style="vertical-align: 4px">Mastodon</span>
+    </a>&nbsp;<a target="_blank"  
+ 
+href="https://instagram.com/rettetdenregenwald_org"
+ style="color:#FFFFFF;background:#656865;margin:10px 10px;display:inline-block;padding:10px 10px 4px 10px;text-decoration:none;text-underline-color:#656865;letter-spacing:normal;vertical-align:middle;border-radius:6px;mso-padding-alt:0px;mso-border-alt:8px solid #656865;"><img aria-hidden="true" focusable="false" 
+ 
+src="https://www.regenwald.org/frontend/img/newsletter/share-instagram.png?c"
+ width="20" height="20" alt="" style="border:none;" />&nbsp;<span style="vertical-align: 4px">Instagram</span>
+    </a>&nbsp;<a target="_blank"  
+ 
+href="https://t.me/regenwaldnews"
+ style="color:#FFFFFF;background:#656865;margin:10px 10px;display:inline-block;padding:10px 10px 4px 10px;text-decoration:none;text-underline-color:#656865;letter-spacing:normal;vertical-align:middle;border-radius:6px;mso-padding-alt:0px;mso-border-alt:8px solid #656865;"><img aria-hidden="true" focusable="false" 
+ 
+src="https://www.regenwald.org/frontend/img/newsletter/share-telegram.png?c"
+ width="20" height="20" alt="" style="border:none;" />&nbsp;<span style="vertical-align: 4px">Telegram</span>
+    </a>
+                            </p>
+                            <p style="margin:0; mso-margin-top-alt: 10px;">
+                            Impressum:
+                            </p><table role="presentation" style="display:block;padding:0px;width:100%;border:0;border-spacing:0;color:#FFFFFF">
+                                <tbody style="display:block;padding:0;">
+                                <tr style="display:block;padding:0;">
+                                    <td style="padding:1em 0;display:inline-block;line-height:26px;width:100%;max-width:100%;width:calc(250000px - 50000%);min-width:calc(100% - 200px)">
+                                        <strong>Rettet den Regenwald e.V.</strong><br>
+                                        Jupiterweg 15, 22391 Hamburg<br>
+                                        Telefon: <a style="color:#ffffff" 
+href="tel:+494022851080"
+>+49 40 228 510 80</a><br>
+                                        <br>IBAN: DE11 4306 0967 2025 0541 00<br>
+                                        <br>
+                                        <a style="color:#ffffff" 
+href="mailto:kontakt@regenwald.org"
+>kontakt@regenwald.org</a>&nbsp;&nbsp;•&nbsp;
+                                        <a style="color:#ffffff" 
+href="https://www.regenwald.org"
+>www.regenwald.org</a>
+
+                                    </td><td style="padding:1em 0;display:inline-block;vertical-align:top;width:100%;max-width:100%;width:calc(200px)">
+                                        <a style="color:#ffffff;display:block" 
+href="https://www.regenwald.org/verein/transparenz"
+>
+                                            <img style="width: 100%; height: auto; max-width: 200px" alt="Initiative Transparente Zivilgesellschaft" loading="lazy" 
+src="https://www.regenwald.org/build/logo-initiative-transparente-zivilgesellschaft-weiss.01e2327b.png"
+ width="200" height="54">
+                                        </a>
+                                    </td></tr>
+                                </tbody>
+                            </table><p style="margin:0 0px;font-size:0px;line-height:0px;height:0px;padding-top:2px;background:#FFFFFF;mso-shading:transparent" role="separator" >
+    <!--[if vml]>
+        <v:line from="30,0" to="471pt,0" strokecolor="#FFFFFF" strokeweight="1.5pt"/>
+            <![endif]-->
+    </p>
+
+                                <p style="margin: 1em 0;">
+                                    Bildnachweise:                                                                                        <br>Bild 1: Collage RdR
+                                                                                            <br>Bild 2: Collage: Rettet den Regenwald
+                                                                                            <br>Bild 3: Rettet den Regenwald e.V.
+                                                                                            <br>Bild 4: RdR/Mathias Rittgerott
+                                                                                            <br>Bild 5: Angelika Hofer
+                                                                                </p><p style="margin:0 0px;font-size:0px;line-height:0px;height:0px;padding-top:2px;background:#FFFFFF;mso-shading:transparent" role="separator" >
+    <!--[if vml]>
+        <v:line from="30,0" to="471pt,0" strokecolor="#FFFFFF" strokeweight="1.5pt"/>
+            <![endif]-->
+    </p>
+
+                                <p style="margin: 1em 0;">
+                                <a 
+href="https://www.regenwald.org/newsletter/edit-subscription/7af5b15ff63ee3101b49e253355b7319715547e54a655c1e8a5991074762b4d2"
+ style="color:#FFFFFF;">Newsletter für d4d4online@gmail.com abbestellen</a>
+                                </p></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+--mDDZH9Ej--

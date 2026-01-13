@@ -25,10 +25,12 @@
     "ext-mbstring": "*"
   },
   "require-dev": {
+    "ext-json": "*",
     "nunomaduro/phpinsights": "^v1.9.0",
-    "phpunit/phpunit": "8.4.1",
     "friendsofphp/php-cs-fixer": "^2.15",
-    "roave/security-advisories": "dev-master"
+    "roave/security-advisories": "dev-master",
+    "phpunit/phpunit": "^8.5",
+    "symfony/phpunit-bridge": "^7.3"
   },
   "autoload": {
     "psr-4": {
@@ -48,5 +50,10 @@
       "@test:unit",
       "@test:types"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
   }
 }

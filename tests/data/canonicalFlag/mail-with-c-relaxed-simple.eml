@@ -1,0 +1,834 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6a11:9d0e:b0:67c:a119:9306 with SMTP id nq14csp889660pxc;
+        Mon, 29 Dec 2025 13:32:10 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGOudw4fH5u7nvuoKvpCj8SMEOVkTir4g70h1O2J/WkL31uHvvV7SUnA/kYR1XK5j/YdmhZ
+X-Received: by 2002:a05:600c:c0c7:b0:47d:264e:b37d with SMTP id 5b1f17b1804b1-47d264eb725mr260774155e9.22.1767043929667;
+        Mon, 29 Dec 2025 13:32:09 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1767043929; cv=none;
+        d=google.com; s=arc-20240605;
+        b=Xm8qiKhuGryQ2M5jQNSgxmRfmOzK0iSMOpSpq7ITLeGUgoonkY8Wq5dLBcNilGf8g1
+         zhBJaI1M6MwFZVyt5q1j18ITt/Yp8cQF3KQhKyrrPhO88GT017gA3bAr833IuY7Mt8HZ
+         bCTEKRBEjF0r6VFPNv/vfjoiBmkLkr5fOw5KXTuGIsGFonFsry7mfB62oV4Jt/KilWix
+         ZltvE07825vNEZZ6htnCjOimmo0+VlNEpmFl6vq+Kakh8B+CkpALTwxjvCT738bp8Ye6
+         mrSaJbXal8PLt6ix2Dc/lEH8646Tbt9seOu1rTWTo4dq8zL7Y5oEl+3Mf5qfqKca+c2n
+         hvWw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=message-id:date:list-unsubscribe-post:list-unsubscribe:reply-to
+         :precedence:to:mime-version:subject:from:dkim-signature;
+        bh=+JgJaKlrCKCBxqGzvJGpIsB3Oje1HKzyq87kPkgf5Mo=;
+        fh=U9vcTkYWvVGno2mg3b0pl0YpGkionviz3uCFg9xc2Yc=;
+        b=bQ/3Mbppm4Ic1a3GMARb6TW6vbT7C/78Lz4PEO6xuaXIV5jPduqgVOXUb0ZPQf0yk1
+         sU0ckO6uHEnkF24i4c3yTEfjk3U25/DMMnqAthBo+AnOpd7r9QbW+8h5DvV79RjQDcaj
+         yqKRNLzmAGWu6Ue5EgkjCWGxNzDUbgWs4wYb9jcKZZL1dNFEEEVI/QTE8+fMonyX5caR
+         KicwcMU13to5dnis40yuTBdh+yCjngWj3uWtBMWzYZHkUyv8JQZYZy1gUIeutA8dR8Lw
+         KZFFgTkzjA6+pIbq0MHx49Hbg1t86m2JyRYGlnnSmCLdaHJofTh1JZ/lF7x+ajbigi/O
+         NDpw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@openpetition.org header.s=default2k header.b="mT/zKrVt";
+       spf=pass (google.com: domain of newsletter@openpetition.org designates 94.130.231.215 as permitted sender) smtp.mailfrom=newsletter@openpetition.org;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=openpetition.org
+Return-Path: <newsletter@openpetition.org>
+Received: from mx-out-02.openpetition.de (mx-out-02.openpetition.de. [94.130.231.215])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-4325b423ddfsi37827713f8f.2.2025.12.29.13.32.09
+        for <d4d4online@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 29 Dec 2025 13:32:09 -0800 (PST)
+Received-SPF: pass (google.com: domain of newsletter@openpetition.org designates 94.130.231.215 as permitted sender) client-ip=94.130.231.215;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@openpetition.org header.s=default2k header.b="mT/zKrVt";
+       spf=pass (google.com: domain of newsletter@openpetition.org designates 94.130.231.215 as permitted sender) smtp.mailfrom=newsletter@openpetition.org;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=openpetition.org
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=openpetition.org;
+	s=default2k; t=1767043929;
+	bh=Uo5FUWoGnU+VjSUS6f31AH2TlKzAOoB+MZVC6evVxJE=;
+	h=From:Subject:To:Reply-To:List-Unsubscribe:List-Unsubscribe-Post:
+	 Date:From;
+	b=mT/zKrVt1ZiNCtgvhDpbnOtBkP3xfFDFm8I7AmExPrEMLUCXuCZWm2sFxhQCdTcXk
+	 VIMEMKHcMwfENW3zvqh9LkbUD4axeWzaS5kISUqhkeomZSsqWpwXt6lrt5Mt7jOeS5
+	 Y/b1FB36g0iPimYYL9n12UPDdoxzYBm6FjFxdrtgGNYR2ygpdFUPP5KyWF1Fi9Wv9s
+	 cA3ptvn3oyEEvgamRkwUlixdSahsIb7ZqyeoqBYVo8/Ud07PYve0GsP9GyL/DGwRV7
+	 pd4QhatRRLt3ivqVZEykL0iXSC0vFeTAL99ZAGZDk29TBoyx0vVbIKm3TWaD2OA0+I
+	 lQ2YoXc3Lad5w==
+Received: from iapetus (unknown [10.0.99.4])
+	by mx-out-02.openpetition.de (Postfix) with SMTP id 3CF813FBD6
+	for <d4d4online@gmail.com>; Mon, 29 Dec 2025 21:32:09 +0000 (UTC)
+From: openPetition <newsletter@openpetition.org>
+Subject: =?UTF-8?B?4p2k77iPIEFsbHRhZ3NoZWxkZW4gMjAyNQ==?=
+MIME-Version: 1.0
+X-Mailer: RQ3 Mail
+To: David Dreschner <d4d4online@gmail.com>
+Precedence: bulk
+Reply-To: openPetition <info@openpetition.net>
+List-Unsubscribe: <mailto:service@openpetition.org?subject=unsubscribe&body=https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_id=6012>, <https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_id=6012>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-CSA-Complaints: csa-complaints@eco.de
+Content-Type: multipart/alternative; boundary="==BOUNDARY=470f9ad0ed802077eb3095961b25f870"
+Date: Mon, 29 Dec 2025 21:32:09 +0000
+Message-ID: <f6f78cb685d807b922a88c41748ad2a958c482a2@iapetus>
+
+
+--==BOUNDARY=470f9ad0ed802077eb3095961b25f870
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+
+Video: Jahresrückblick
+
+Das sind die wahren Heldinnen und Helden, David Dreschner!
+
+Bevor wir alle bald in das neue Jahr starten, möchten wir unseren Blick noch einmal auf das richten, was wirklich zählt: das geballte Engagement von Menschen wie Ihnen. Denn auch 2025 wurden mit Petitionen wichtige Themen sichtbar gemacht, Ungerechtigkeiten angegangen, Veränderungen bewirkt. Mit unserem Jahresrückblick möchten wir genau das – und die Menschen, die dahinter stehen – feiern:
+
+
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821
+
+
+🎬 Video jetzt ansehen
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821
+
+
+Vielleicht entdecken Sie bekannte Themen oder sich selbst darin wieder. Denn jede Unterschrift, jedes Teilen, jedes Mitreden zählt. Sich einzumischen und mitzugestalten, ist nicht selbstverständlich – aber Sie tun es. Dafür möchten wir Ihnen ganz herzlich danken!
+
+Täglich arbeiten wir von openPetition daran, Sie dabei zu unterstützen, Veränderungen anzustoßen und politische Beteiligung für alle möglich zu machen. Kostenfrei, unabhängig und überparteilich – das ist unsere Mission. Damit wir diese Arbeit auch im neuen Jahr fortsetzen können, sind wir auf die Unterstützung von Menschen wie Ihnen angewiesen, David Dreschner:
+
+
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Ja, ich unterstütze openPetition mit einer regelmäßigen Spende
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Ich helfe einmalig
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/d12cb52200c235e774f6162dd7d99be010743b83?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Je mehr Menschen sehen, dass Wandel möglich ist, desto stärker wird die Beteiligung von uns allen. Falls Sie gerade nicht spenden können, freuen wir uns auch über das Teilen unseres Jahresvideos: https://youtu.be/S-JigSq2hoY
+
+Denn Sichtbarkeit ist der Anfang jeder Veränderung.
+
+Wir freuen uns darauf, auch 2026 an Ihrer Seite zu bleiben und wünschen Ihnen und Ihren Liebsten einen guten Start in das neue Jahr. 
+❤️-lichst das Team von openPetition
+
+Dóra, Jochen, Maren, Tra My, Cai, Hannah, Steven v. R., Emily, Victor, Jana, Max, Coline, Michelle, Jane, Mara, Jackie, Karina, Steven V., Jess & Jörg
+
+PS: openPetition ist die einzige gemeinnützige Petitionsplattform in Deutschland und zu 100% spendenfinanziert. Ihre Spende ist steuerlich absetzbar und macht echte Beteiligung möglich.
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50
+
+openPetition ist eine zivilgesellschaftliche Plattform für digitale Demokratie, überparteilich, gemeinnützig und transparent.
+
+openPetition gemeinnützige GmbH
+Am Friedrichshain 34 · 10407 Berlin · Deutschland
+
+Amtsgericht Berlin-Charlottenburg · HRB 144054info@openpetition.net
+
+
+·www.openpetition.de
+https://www.openpetition.de/
+
+
+Über openPetition
+https://www.openpetition.de/content/about_us
+
+
+·Kontakt
+https://www.openpetition.de/user/kontakt
+
+
+·Fördern
+https://www.openpetition.de/spenden?amount=10&interval=1
+
+
+Facebook
+https://www.facebook.com/openPetition
+
+
+Instagram
+https://www.instagram.com/openpetition/
+
+
+TikTok
+https://www.tiktok.com/@openPetition/
+
+
+Youtube
+https://www.youtube.com/@openPetitionDE
+
+
+Sie erhalten diesen Newsletter, weil Sie auf openPetition eine Petition unterzeichnet haben. Sie haben zuletzt am 06.11.2022 die Petition "Heidelberg für Alle! Forderungen zur OB-Wahl 2022 (https://www.openpetition.de/petition/online/heidelberg-fuer-alle-forderungen-zur-ob-wahl-2022)" unterschrieben.
+Sie können den openPetition Newsletter jederzeit abbestellen (https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_id=6012) und erneut abonnieren (https://www.openpetition.de/newsletter/anmelden).
+
+
+--==BOUNDARY=470f9ad0ed802077eb3095961b25f870
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+
+Video: Jahresrückblick
+
+Das sind die wahren Heldinnen und Helden, David Dreschner!
+
+Bevor wir alle bald in das neue Jahr starten, möchten wir unseren Blick noch einmal auf das richten, was wirklich zählt: das geballte Engagement von Menschen wie Ihnen. Denn auch 2025 wurden mit Petitionen wichtige Themen sichtbar gemacht, Ungerechtigkeiten angegangen, Veränderungen bewirkt. Mit unserem Jahresrückblick möchten wir genau das – und die Menschen, die dahinter stehen – feiern:
+
+
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821
+
+
+🎬 Video jetzt ansehen
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821
+
+
+Vielleicht entdecken Sie bekannte Themen oder sich selbst darin wieder. Denn jede Unterschrift, jedes Teilen, jedes Mitreden zählt. Sich einzumischen und mitzugestalten, ist nicht selbstverständlich – aber Sie tun es. Dafür möchten wir Ihnen ganz herzlich danken!
+
+Täglich arbeiten wir von openPetition daran, Sie dabei zu unterstützen, Veränderungen anzustoßen und politische Beteiligung für alle möglich zu machen. Kostenfrei, unabhängig und überparteilich – das ist unsere Mission. Damit wir diese Arbeit auch im neuen Jahr fortsetzen können, sind wir auf die Unterstützung von Menschen wie Ihnen angewiesen, David Dreschner:
+
+
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Ja, ich unterstütze openPetition mit einer regelmäßigen Spende
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Ich helfe einmalig
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/d12cb52200c235e774f6162dd7d99be010743b83?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Je mehr Menschen sehen, dass Wandel möglich ist, desto stärker wird die Beteiligung von uns allen. Falls Sie gerade nicht spenden können, freuen wir uns auch über das Teilen unseres Jahresvideos: https://youtu.be/S-JigSq2hoY
+
+Denn Sichtbarkeit ist der Anfang jeder Veränderung.
+
+Wir freuen uns darauf, auch 2026 an Ihrer Seite zu bleiben und wünschen Ihnen und Ihren Liebsten einen guten Start in das neue Jahr. 
+❤️-lichst das Team von openPetition
+
+Dóra, Jochen, Maren, Tra My, Cai, Hannah, Steven v. R., Emily, Victor, Jana, Max, Coline, Michelle, Jane, Mara, Jackie, Karina, Steven V., Jess & Jörg
+
+PS: openPetition ist die einzige gemeinnützige Petitionsplattform in Deutschland und zu 100% spendenfinanziert. Ihre Spende ist steuerlich absetzbar und macht echte Beteiligung möglich.
+https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50
+
+openPetition ist eine zivilgesellschaftliche Plattform für digitale Demokratie, überparteilich, gemeinnützig und transparent.
+
+openPetition gemeinnützige GmbH
+Am Friedrichshain 34 · 10407 Berlin · Deutschland
+
+Amtsgericht Berlin-Charlottenburg · HRB 144054info@openpetition.net
+
+
+·www.openpetition.de
+https://www.openpetition.de/
+
+
+Über openPetition
+https://www.openpetition.de/content/about_us
+
+
+·Kontakt
+https://www.openpetition.de/user/kontakt
+
+
+·Fördern
+https://www.openpetition.de/spenden?amount=10&interval=1
+
+
+Facebook
+https://www.facebook.com/openPetition
+
+
+Instagram
+https://www.instagram.com/openpetition/
+
+
+TikTok
+https://www.tiktok.com/@openPetition/
+
+
+Youtube
+https://www.youtube.com/@openPetitionDE
+
+
+Sie erhalten diesen Newsletter, weil Sie auf openPetition eine Petition unterzeichnet haben. Sie haben zuletzt am 06.11.2022 die Petition "<a style="color: #05a5b0;text-decoration: none;" href="https://www.openpetition.de/petition/online/heidelberg-fuer-alle-forderungen-zur-ob-wahl-2022">Heidelberg für Alle! Forderungen zur OB-Wahl 2022</a>" unterschrieben.
+Sie können den openPetition Newsletter jederzeit abbestellen (https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_id=6012) und erneut abonnieren (https://www.openpetition.de/newsletter/anmelden).
+
+
+--==BOUNDARY=470f9ad0ed802077eb3095961b25f870
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	lang="de"
+	dir="ltr"
+>
+<head>
+	<meta http-equiv="Content-Type"
+		content="text/html; charset=UTF-8"
+	/>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1"
+	/>
+
+		<meta name="format-detection"
+		content="telephone=no"
+	/>
+
+		<title>{{subject}}</title>
+
+	<style type="text/css">
+	/**
+	 * Client specifc fixes/normalisation
+	 * https://templates.mailchimp.com/development/css/client-specific-styles/
+	 */
+
+	/* Outlook.com / Hotmail */
+	.ExternalClass {
+		width: 100%;
+	}
+	.ExternalClass,
+	.ExternalClass p,
+	.ExternalClass span,
+	.ExternalClass font,
+	.ExternalClass td,
+	.ExternalClass div {
+		line-height: 100%;
+	}
+
+	/* Text Size Adjustment WebKit */
+	body {
+		-webkit-text-size-adjust: 100%;
+	}
+
+	/*
+	 * Remove blue links on Samsung and Apple devices
+	 * and fix text formatting in Thunderbird
+	 */
+	#MessageViewBody a,
+	a[x-apple-data-detectors],
+	table {
+		color: inherit;
+		text-decoration: none;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+	}
+
+	@media (max-width:660px)  {
+		.responsive-table-cell {
+			display: block;
+			width: auto;
+		}
+		.responsive-right {
+			text-align: right;
+		}
+		.responsive-hide {
+			display: none;
+		}
+		.responsive-spacer-bottom {
+			margin-bottom: 20px;
+		}
+	}
+	</style>
+
+	<!--[if mso]>
+	<style type="text/css">
+	/* Outlook */
+		body { /* Text Size Adjustment Windows Mobile */
+			-ms-text-size-adjust: 100%;
+		}
+
+		body, table, td {
+			color: #3e3d40;
+			font-size: 16px;
+			line-height: 1.5em;
+			font-family: Arial, sans-serif;
+		}
+		#outlook a { /* “Read in Browser” Link */
+			padding: 0;
+		}
+		table { /* table Element Spacing */
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		img { /* Image Resizing */
+			-ms-interpolation-mode: bicubic;
+		}
+	</style>
+	<![endif]-->
+
+	<!--[if gte mso 16]>
+	<style>
+	/* Outlook Dark Mode */
+		.keep-white {
+			mso-style-textfill-type:gradient;
+			mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000";
+			color:#000000 !important;
+		}
+	</style>
+	<![endif]-->
+
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+</head>
+<body style="background-color: #f9f9f9; color: #3e3d40; margin: 0; padding: 0;"
+	bgcolor="#f9f9f9"
+	text="#3e3d40"
+>
+				<p style="display:none"></p>
+			<table style="background-color: #f9f9f9; margin: 0; padding: 0; color: #3e3d40; font-size: 16px; line-height: 1.5em; font-family: Arial, sans-serif;"
+		role="presentation"
+		border="0"
+		cellpadding="0"
+		cellspacing="0"
+		width="100%"
+		height="100%"
+		bgcolor="#f9f9f9"
+		text="#3e3d40"
+	>
+		<tr>
+			<td align="center"
+				valign="top"
+			>
+				<!--[if !mso]><!-->
+				<table style="min-width: 360px; max-width: 660px; mso-cellspacing: 0px;"
+					role="presentation"
+					border="0"
+					cellpadding="0"
+					cellspacing="0"
+					width="100%"
+					bgcolor="#ffffff"
+					style="background-color: #ffffff"
+				>
+				<!--<![endif]-->
+				<!--[if mso]>
+				<center>
+					<table style="width: 660px; mso-cellspacing: 0px;"
+						role="presentation"
+						width="660"
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						bgcolor="#ffffff"
+						style="background-color: #ffffff"
+					>
+				<![endif]-->
+										<tr>
+						<td align="center"
+							valign="top"
+						>
+							<table role="presentation"
+								border="0"
+								cellpadding="0"
+								cellspacing="0"
+								width="100%"
+							>
+																<tr>
+									<td align="left"
+										valign="top"
+									>
+										
+<table style="background-color: #ffffff; border-top: 4px solid #29b0cc;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+	bgcolor="#ffffff"
+>
+	<tr>
+		<td style="padding: 20px  15px  20px 30px;"
+			class="responsive-table-cell"
+			align="left"
+			valign="top"
+		>
+			<a style="text-decoration: none;"
+				href="https://www.openpetition.de/"
+			>
+				<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+					src="https://www.openpetition.de/img/logo_openpetition_email.png"
+					aria-label="openPetition"
+											width="166"
+																height="49"
+									/>
+			</a>
+		</td>
+
+			</tr>
+</table>
+									</td>
+								</tr>
+
+																										<tr>
+										<td align="left"
+											valign="top"
+										>
+											
+<table style="background-color: #29b0cc; padding: 10px 30px 10px 30px;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+	bgcolor="#29b0cc"
+>
+	<tr>
+		<td style="background-color: #29b0cc;"
+			align="left"
+			valign="top"
+		>
+							<h1 class="keep-white"
+					style="color: #ffffff; font-size: 16px; margin: 0;"
+				>
+																	Video: Jahresrückblick									</h1>
+					</td>
+	</tr>
+</table>
+										</td>
+									</tr>
+								
+																	<tr>
+	<td>
+		<a href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821" style="text-decoration:none">
+			<img style="color: #29b0cc; display: block; font-weight: bold; font-size: 12px; text-decoration: none;"
+	alt=""
+	src="https://www.openpetition.de/wordpress-content/uploads/2025/12/fuer-Blog-2.png"
+	border="0"
+	width="100%"
+	
+>
+
+		</a>
+	</td>
+</tr>
+																								<tr>
+									<td style="padding: 0px 30px 15px 30px;"
+										align="left"
+										valign="top"
+										bgcolor="#ffffff"
+										text="#3e3d40"
+									>
+
+<p style="margin: 0px 0px 0px 0px; line-height: 0;">
+	<img src="https://www.openpetition.de/newsletter/pixel/1fb61634a05db4392461d7bf0ee75423d4ded1d0/blank.gif"
+		width="1"
+		height="1"
+	>
+</p>
+
+<p><strong>Das sind die wahren Heldinnen und Helden, David Dreschner!</strong></p><p>Bevor wir alle bald in das neue Jahr starten, möchten wir unseren Blick noch einmal auf das richten, was wirklich zählt: <strong>das geballte Engagement von Menschen wie Ihnen.</strong> Denn auch 2025 wurden mit Petitionen wichtige Themen sichtbar gemacht, Ungerechtigkeiten angegangen, Veränderungen bewirkt. Mit unserem Jahresrückblick möchten wir genau das – und die Menschen, die dahinter stehen<strong>
+</strong>– feiern:</p>
+<table style="margin-top: 10px; margin-bottom: 10px;"
+	align="center"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+>
+	<tr>
+		<td align="center"
+			valign="middle"
+		>
+			<a class="keep-white"
+				style="color: #ffffff; text-decoration: none"
+				href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821"
+				target="_blank"
+			>
+				<table role="presentation"
+					border="0"
+					cellpadding="0"
+					cellspacing="0"
+					width="auto"
+					style="background-color: #29b0cc; border: 1px solid #29b0cc; border-radius: 4px;"
+				>
+					<tr>
+						<!--[if !mso]><!-->
+						<td style="background-color: #29b0cc; padding: 10px 10px 10px 10px; border: 1px solid #29b0cc; border-radius: 4px;"
+							align="center"
+							valign="top"
+						>
+						<!--<![endif]-->
+						<!--[if mso]>
+							<td style="background-color: #29b0cc; padding: 5px 10px 10px 10px; border: 1px solid #29b0cc; border-radius: 4px;"
+							align="center"
+							valign="top"
+							>
+						<![endif]-->
+							<a class="keep-white"
+								style="color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; text-decoration: none;"
+								href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/7e0ad1c96f5b3fc4697af566430febab35abc821"
+								target="_blank"
+							>
+								🎬 Video jetzt ansehen 
+							</a>
+						</td>
+					</tr>
+				</table>
+			</a>
+		</td>
+	</tr>
+</table>
+<p>Vielleicht entdecken Sie bekannte Themen oder sich selbst darin wieder.<em> </em>Denn jede Unterschrift, jedes Teilen, jedes Mitreden zählt. Sich einzumischen und mitzugestalten, ist nicht selbstverständlich – <strong>aber Sie tun es</strong>. Dafür möchten wir Ihnen ganz herzlich danken!</p><p>Täglich arbeiten wir von openPetition daran, Sie dabei zu unterstützen, Veränderungen anzustoßen und politische Beteiligung für alle möglich zu machen. <strong>Kostenfrei, unabhängig und
+überparteilich – das ist unsere Mission.</strong> Damit wir diese Arbeit auch im neuen Jahr fortsetzen können, sind wir auf die Unterstützung von Menschen wie Ihnen angewiesen, David Dreschner:</p>
+<table style="margin-top: 10px; margin-bottom: 10px;"
+	align="center"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+>
+	<tr>
+		<td align="center"
+			valign="middle"
+		>
+			<a class="keep-white"
+				style="color: #ffffff; text-decoration: none"
+				href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50"
+				target="_blank"
+			>
+				<table role="presentation"
+					border="0"
+					cellpadding="0"
+					cellspacing="0"
+					width="auto"
+					style="background-color: #29b0cc; border: 1px solid #29b0cc; border-radius: 4px;"
+				>
+					<tr>
+						<!--[if !mso]><!-->
+						<td style="background-color: #29b0cc; padding: 10px 10px 10px 10px; border: 1px solid #29b0cc; border-radius: 4px;"
+							align="center"
+							valign="top"
+						>
+						<!--<![endif]-->
+						<!--[if mso]>
+							<td style="background-color: #29b0cc; padding: 5px 10px 10px 10px; border: 1px solid #29b0cc; border-radius: 4px;"
+							align="center"
+							valign="top"
+							>
+						<![endif]-->
+							<a class="keep-white"
+								style="color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; text-decoration: none;"
+								href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50"
+								target="_blank"
+							>
+								Ja, ich unterstütze openPetition mit einer regelmäßigen Spende 
+							</a>
+						</td>
+					</tr>
+				</table>
+			</a>
+		</td>
+	</tr>
+</table>
+<table style="font-size: 16px;"
+	align="center"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	bgcolor="#ffffff"
+>
+	<tbody>
+		<tr>
+			<td style="color: #29b0cc"
+				align="center"
+				valign="middle"
+			>
+				<a style="color: #29b0cc"
+					href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/d12cb52200c235e774f6162dd7d99be010743b83?op_ti=565c844b96e9050705694358e24b6d50"
+					target="_blank"
+				>
+					<b>Ich helfe einmalig </b>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>Je mehr Menschen sehen, dass Wandel möglich ist, desto stärker wird die Beteiligung von uns allen. Falls Sie gerade nicht spenden können, freuen wir uns auch über das <strong>Teilen unseres Jahresvideos</strong>: <a style="color:#29b0cc" href="https://youtu.be/S-JigSq2hoY" target="_blank"><strong>https://youtu.be/S-JigSq2hoY</strong></a></p><p>Denn Sichtbarkeit ist der Anfang jeder Veränderung.<br></p><p>Wir freuen uns darauf, auch 2026 an Ihrer Seite zu bleiben und wünschen Ihnen und
+Ihren Liebsten einen guten Start in das neue Jahr. <br>❤️-lichst das Team von openPetition</p><p>Dóra, Jochen, Maren, Tra My, Cai, Hannah, Steven v. R., Emily, Victor, Jana, Max, Coline, Michelle, Jane, Mara, Jackie, Karina, Steven V., Jess &amp; Jörg</p><p>PS: openPetition ist die einzige gemeinnützige Petitionsplattform in Deutschland und zu 100% spendenfinanziert. <a style="color:#29b0cc"
+href="https://www.openpetition.de/newsletter/link/1fb61634a05db4392461d7bf0ee75423d4ded1d0/10b9a66c69add7a946302f98c6f79c11e3c32500?op_ti=565c844b96e9050705694358e24b6d50" target="_blank"><strong>Ihre Spende ist steuerlich absetzbar und macht echte Beteiligung möglich.</strong></a><br></p>
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+										<tr>
+						<td align="center"
+							valign="top"
+						>
+							
+<table style="background-color: #29b0cc;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+	bgcolor="#29b0cc"
+>
+		<tr>
+		<td style="background-color: #29b0cc; padding: 30px 30px 15px 30px;"
+			align="center"
+			valign="top"
+		>
+			<img src="https://static.openpetition.de/images/logo_openpetition_outline.png"
+				alt=""
+				width="49"
+				height="50"
+			/>
+		</td>
+	</tr>
+
+		<tr>
+		<td class="keep-white"
+			style="background-color: #29b0cc; padding: 15px 30px 15px 30px; color: #ffffff;"
+			align="center"
+			valign="top"
+		>
+			<p style="margin: 0;">
+				openPetition ist eine zivilgesellschaftliche Plattform für digitale Demokratie, überparteilich, gemeinnützig und transparent.			</p>
+		</td>
+	</tr>
+
+		<tr>
+		<td class="keep-white"
+			style="background-color: #29b0cc; padding: 15px 30px 30px 30px; color: #ffffff;"
+			align="center"
+			valign="top"
+		>
+			<address style="font-style: normal;">
+				<b>openPetition gemeinnützige GmbH</b>
+				<br />
+				Am Friedrichshain 34 &middot; 10407 Berlin &middot; Deutschland			</address>
+			Amtsgericht Berlin-Charlottenburg · HRB 144054			<br /> <br />
+			<a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="mailto:info@openpetition.net">info@openpetition.net</a> &middot; <a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/">www.openpetition.de</a>			<br />
+			<a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/content/about_us">Über openPetition</a> &middot; <a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/user/kontakt">Kontakt</a> &middot; <a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/spenden?amount=10&interval=1">Fördern</a>		</td>
+	</tr>
+</table>
+						</td>
+					</tr>
+
+										<tr>
+						<td align="center"
+							valign="top"
+							bgcolor="#f9f9f9"
+							style="background-color: #f9f9f9"
+						>
+							
+	<table style="mso-padding-alt: 10px"
+		role="presentation"
+		border="0"
+		cellpadding="10"
+		cellspacing="0"
+	>
+		<tr>
+			<td align="center"
+				valign="top"
+			>
+				<a style="text-decoration: none;"
+					href="https://www.facebook.com/openPetition"
+					target="_blank"
+					rel="external nofollow noopener"
+				>
+					<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+						src="https://static.openpetition.de/images/logo_facebook.png"
+						alt="Facebook"
+						height="16" 					/>
+				</a>
+			</td>
+
+			<td align="center"
+				valign="top"
+			>
+				<a style="text-decoration: none;"
+					href="https://www.instagram.com/openpetition/"
+					target="_blank"
+					rel="external nofollow noopener"
+				>
+					<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+						src="https://static.openpetition.de/images/logo_instagram.png"
+						alt="Instagram"
+						height="16" 					/>
+				</a>
+			</td>
+
+			<td align="center"
+				valign="top"
+			>
+				<a style="text-decoration: none;"
+				   href="https://www.tiktok.com/@openPetition/"
+				   target="_blank"
+				   rel="external nofollow noopener"
+				>
+					<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+						 src="https://static.openpetition.de/images/logo_tiktok.png"
+						 alt="TikTok"
+						 height="16" 					/>
+				</a>
+			</td>
+
+			<td align="center"
+				valign="top"
+			>
+				<a style="text-decoration: none;"
+					href="https://www.youtube.com/@openPetitionDE"
+					target="_blank"
+					rel="external nofollow noopener"
+				>
+					<img style="display: block; margin-top: 2px; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+						src="https://static.openpetition.de/images/youtube_social_icon_red.png"
+						alt="Youtube"
+						height="14" 					/>
+				</a>
+			</td>
+		</tr>
+	</table>
+						</td>
+					</tr>
+
+										<tr>
+						<td align="center"
+							valign="top"
+							bgcolor="#f9f9f9"
+							style="background-color: #f9f9f9"
+						>
+							<table style="padding: 0px 30px 0px 30px;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+>
+	<tr>
+		<td align="center"
+			valign="top"
+		>
+			<p style="margin: 0; font-size: 13px;">
+									Sie erhalten diesen Newsletter, weil Sie auf openPetition eine Petition unterzeichnet haben. Sie haben zuletzt am 06.11.2022 die Petition "<a style="color: #05a5b0;text-decoration: none;" href="https://www.openpetition.de/petition/online/heidelberg-fuer-alle-forderungen-zur-ob-wahl-2022">Heidelberg für Alle! Forderungen zur OB-Wahl 2022</a>" unterschrieben. 				
+									<br />
+					Sie können den openPetition Newsletter jederzeit <a style="color: #29b0cc;" href="https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_id=6012">abbestellen</a> und erneut <a style="color: #29b0cc;" href="https://www.openpetition.de/newsletter/anmelden">abonnieren</a>.							</p>
+		</td>
+	</tr>
+</table>
+						</td>
+					</tr>
+				</table>
+				<!--[if mso]>
+				</center>
+				<![endif]-->
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+--==BOUNDARY=470f9ad0ed802077eb3095961b25f870--
+

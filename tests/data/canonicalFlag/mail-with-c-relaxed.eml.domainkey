@@ -1,0 +1,8 @@
+{
+    "mailing._domainkey.foodwatch.de": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfvgMo245lekN+eHQipbDcEzEzAYtWg3\/OAvp66FLqRnF29yG\/rUddTjFhA+KgZ5F3kXqK\/ksX3N+oVFh150zZRc9HNxbJNdTeb\/m+EKMpwjiejL9mb8yuJo36QqEsgz5NohU8jBj10vNhkdnsjhLumO\/VJQ\/LiU78kOvJsT+EEwIDAQAB;"
+        }
+    ]
+}

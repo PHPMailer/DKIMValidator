@@ -1,0 +1,815 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6400:c1:0:0:0:0 with SMTP id ia1csp229398ecb;
+        Thu, 22 Sep 2022 03:58:34 -0700 (PDT)
+X-Google-Smtp-Source: AMsMyM4e0uk8esCUa+67F7HlhG2NsYoVpJh1Z3XGTsEZt6tyTwfGMMsqI0uCubY2lkQ8LIUAiPzr
+X-Received: by 2002:a1c:440b:0:b0:3b3:330d:88d8 with SMTP id r11-20020a1c440b000000b003b3330d88d8mr2000139wma.31.1663844313991;
+        Thu, 22 Sep 2022 03:58:33 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1663844313; cv=none;
+        d=google.com; s=arc-20160816;
+        b=G1Y9aEr0dSvwaVdzmoZGcinoLs2E4DdB7YI09nFAkIyxD/lFCHkJuikMX1NKvw3SLg
+         6xSg8NtgruOJoj2OK6MXLtFwbRGL+bRbvRK+QZp4V5uFODheEnvVFDVfsWX37Wk633IL
+         BESG0BQGFDgZGtrEATpPs7byegpr8OAD05sS0ml9DeXYhITcqN9rReIl3xucsWqcKOfX
+         UN5b5og3Dx6W0D5HSiiLY/fK0gI6bM0O+3h3EpSKToNlXryXj+iQWsGkSV3RSZNGNXPw
+         9pUNRVJkuTGby+vnHFu8pk61RuAUYfTKs/7iFPlPtr6didikQv9VcLeWJZYhZUWwY7Qr
+         ESNQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:date:list-unsubscribe-post:list-unsubscribe:reply-to
+         :precedence:to:mime-version:subject:from:dkim-signature;
+        bh=IlzdSmYz1gy0Y2T3g5uyAQNhUlS+IEASw2rz14LBVaw=;
+        b=tNanObuUSmSHVsJ6JPCRIsXjE9YF2yEQewM9XtMVLd1CBA2PWazEIvu/86a/nTP7tb
+         3tuwF7/RKyTZ5lT/IE1XqG3Kp1ws8UnQaTv5Q4aPkW9ZPnEZqR6hXeieMYmKxy0+xNYw
+         yffXhlLvIoMxaOnbGgTRftY8nVP+0KSIUbYEvt03eWxIf4Lwihyt8VqhRSWtofRDQgYr
+         /4jO31ZwuyGvT2eBKKV7YPcVzA1gjmd20dsyfsgJky1lht0cdDPVpvNt5e/ziUENfXfS
+         BH9X4TlWnX/F1QDT4Us/1fPAGdIlkdO86n4GCTN/UbqUpibbIepCuFuZ8Hq4U7GLLSB9
+         8DTQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@openpetition.de header.s=bulk header.b=ExHs9DqP;
+       spf=pass (google.com: domain of newsletter@openpetition.de designates 148.251.186.32 as permitted sender) smtp.mailfrom=newsletter@openpetition.de
+Return-Path: <newsletter@openpetition.de>
+Received: from telesto.openpetition.de (telesto.openpetition.de. [148.251.186.32])
+        by mx.google.com with ESMTPS id s18-20020a5d69d2000000b0022a4829e954si3655744wrw.280.2022.09.22.03.58.33
+        for <d4d4online@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 22 Sep 2022 03:58:33 -0700 (PDT)
+Received-SPF: pass (google.com: domain of newsletter@openpetition.de designates 148.251.186.32 as permitted sender) client-ip=148.251.186.32;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@openpetition.de header.s=bulk header.b=ExHs9DqP;
+       spf=pass (google.com: domain of newsletter@openpetition.de designates 148.251.186.32 as permitted sender) smtp.mailfrom=newsletter@openpetition.de
+Received: from iapetus (unknown [10.0.99.4])
+	by telesto.openpetition.de (Postfix) with SMTP id 7E4461F40445
+	for <d4d4online@gmail.com>; Thu, 22 Sep 2022 12:58:33 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=simple/simple; d=openpetition.de;
+	s=bulk; t=1663844313;
+	bh=vQY0R22ZaRJ/R9CmYYTCs1uYhipfZ8rSis8AN7SmXzQ=;
+	h=From:Subject:To:Reply-To:List-Unsubscribe:List-Unsubscribe-Post:
+	 Date:From;
+	b=ExHs9DqPO4gHJuCH/oh+qjYTyxpBfyEEvwmiNPAJO7r65Uw/pkFmKo2SCK/C5JC2M
+	 UtwnjCKl8YR+250XqQZBJDWqmhF6Vg2I7VWZONsk2OHbrOmiSB4/fPjxz959xddpFN
+	 VH8Ln6gLCh/DjbZ/9KMxtK2vLCzeX/y8P7XhNzdE=
+From: openPetition <newsletter@openpetition.de>
+Subject: Wir sind gemein
+MIME-Version: 1.0
+X-Mailer: RQ3 Mail
+To: David Dreschner <d4d4online@gmail.com>
+Precedence: bulk
+Reply-To: openPetition <info@openpetition.eu>
+List-Unsubscribe: <https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_number=2058>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="==BOUNDARY=abcf3aad035b815c6d0d80738625d664"
+Date: Thu, 22 Sep 2022 12:58:33 +0200
+Message-ID: <fbed06bc725a7c449701962558cb78f6ae34047b@iapetus>
+
+
+--==BOUNDARY=abcf3aad035b815c6d0d80738625d664
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Nur gemein oder nützig?
+
+openPetition
+https://www.openpetition.de/
+
+
+Petition starten
+https://www.openpetition.de/petition/neu?op_rf=nl
+
+
+ | Über uns
+https://www.openpetition.de/content/about_us?op_rf=nl
+
+
+ |  Helfen
+https://www.openpetition.de/spenden?op_rf=nl
+
+
+Wir sind gemein
+
+Hallo David Dreschner,
+
+wir sind gemein - zumindest aus Sicht mancher Menschen. Einigen sind wir zu links, anderen zu konservativ. Die Vorstellung, dass Petitionen auf openPetition unserer Meinung entsprechen, ist falsch. Ob Sie einen Zebrastreifen vor einer Kita oder die Einführung einer deutschlandweiten Spritpreisbremse fordern, für den Erhalt eines Waldabschnitts kämpfen oder die Corona-Maßnahmen kritisieren - wir von openPetition behandeln alle Themen gleich, egal welche Meinung Sie vertreten. Warum? Weil wir
+uns der Demokratie verschrieben haben. 
+
+Viele Menschen wissen nicht, dass openPetition 
+
+die einzige gemeinnützige Petitionsplattform in Deutschland ist:Wir werden weiterhin als gemeinnützig anerkannt, weil wir politisch neutral bleiben - im Gegensatz zu allen anderen Petitionsplattformen, die ihre Gemeinnützigkeit im Laufe der letzten Jahre verloren oder selbst abgelegt haben.
+
+Ihre Daten schützt:Viele Plattformen sind kostenlos - doch oft bezahlen Sie dafür mit Ihren Daten. Bei uns werden Ihre persönlichen Informationen nicht ausgewertet oder an Dritte verkauft. Wir erheben keine Daten darüber, zu welcher politischen oder gesellschaftlichen Gruppe Sie gehören könnten. 5 Jahre nach beendeter Petition löschen wir Ihre Unterschriften sogar automatisch - ganz ohne Aufforderung. vollkommen frei von Werbung ist:Wir konzentrieren uns auf das Wesentliche - Ihre
+Petitionen. Wir lenken Sie nicht mit bunten Werbebannern ab oder lassen uns kaufen. Uns ist es wichtig, dass Petitionen organisch wachsen, weil sie den Puls der Zeit treffen und nicht, weil sie gegen Geld beworben werden. 
+
+zu 100 Prozent spendenfinanziert ist:Wir finanzieren uns ausschließlich durch Spenden unserer Nutzerinnen und Nutzer. Staatliche Mittel oder Parteispenden kommen für uns nicht in Frage. So bleiben wir nicht nur finanziell unabhängig, sondern auch unabhängig von jeglicher politischer Einflussnahme.David Dreschner, um unseren Prinzipien auch weiterhin treu bleiben zu können, benötigen wir Ihre Hilfe. Von den 12 Millionen Nutzerinnen und Nutzern auf unserer Plattform fördern uns 99 Prozent
+nicht. Wenn uns nur ein Bruchteil der Menschen, die diese E-Mail lesen, monatlich unterstützen, können wir unsere Unabhängigkeit von Werbung und staatlichen Förderungen auch in Zukunft sicherstellen. 
+
+
+https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Jetzt die Unabhängigkeit von openPetition sichern
+https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Seit über einem Jahrzehnt begleiten wir Menschen wie Sie mit vollem Einsatz dabei, gesellschaftliche und politische Veränderungen anzustoßen. Wir bieten allen eine Plattform und sorgen dafür, dass Sie gehört werden - ganz unabhängig von der Richtung Ihres Anliegens. 
+
+Danke, dass Sie von Ihrem Recht auf Mitbestimmung Gebrauch machen!
+
+Herzliche Grüße
+
+Jörg Mitzlaff, Gründer von openPetition
+
+PS: Wussten Sie, dass Sie dank unserer Gemeinnützigkeit Spenden an openPetition von Ihrer Steuer absetzen können? Zu Jahresanfang melden wir uns von selbst und schicken Ihnen die Spendenbescheinigung zu. Sie müssen sich um nichts weiter kümmern. Bereits mit einem kleinen monatlichen Beitrag helfen Sie uns, unsere Mission fortzuführen
+(https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50).
+
+openPetition ist eine zivilgesellschaftliche Plattform für digitale Demokratie, politisch neutral, gemeinnützig und transparent.
+
+openPetition gemeinnützige GmbH
+Am Friedrichshain 34 · 10407 Berlin · Deutschland
+
+info@openpetition.eu
+
+
+·www.openpetition.de
+https://www.openpetition.de/
+
+
+Über openPetition
+https://www.openpetition.de/content/about_us
+
+
+·Fördern
+https://www.openpetition.de/spenden?amount=10&interval=1
+
+
+Instagram
+https://www.instagram.com/openpetition.de/
+
+
+Facebook
+https://www.facebook.com/openPetition
+
+
+Twitter
+https://twitter.com/openPetition
+
+
+Sie erhalten diesen Newsletter, weil Sie auf openPetition eine Petition unterzeichnet haben. Sie haben zuletzt am 20.04.2021 die openPetition "Schützen Sie die Skandinavistik vor Streichungen! (https://www.openpetition.de/petition/online/schuetzen-sie-die-skandinavistik-vor-streichungen)" unterschrieben.
+Sie können den openPetition Newsletter jederzeit abbestellen (https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_number=2058) und erneut abonnieren (https://www.openpetition.de/newsletter/anmelden).
+
+
+--==BOUNDARY=abcf3aad035b815c6d0d80738625d664
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Nur gemein oder nützig?
+
+openPetition
+https://www.openpetition.de/
+
+
+Petition starten
+https://www.openpetition.de/petition/neu?op_rf=nl
+
+
+ | Über uns
+https://www.openpetition.de/content/about_us?op_rf=nl
+
+
+ |  Helfen
+https://www.openpetition.de/spenden?op_rf=nl
+
+
+Wir sind gemein
+
+Hallo David Dreschner,
+
+wir sind gemein - zumindest aus Sicht mancher Menschen. Einigen sind wir zu links, anderen zu konservativ. Die Vorstellung, dass Petitionen auf openPetition unserer Meinung entsprechen, ist falsch. Ob Sie einen Zebrastreifen vor einer Kita oder die Einführung einer deutschlandweiten Spritpreisbremse fordern, für den Erhalt eines Waldabschnitts kämpfen oder die Corona-Maßnahmen kritisieren - wir von openPetition behandeln alle Themen gleich, egal welche Meinung Sie vertreten. Warum? Weil wir
+uns der Demokratie verschrieben haben. 
+
+Viele Menschen wissen nicht, dass openPetition 
+
+die einzige gemeinnützige Petitionsplattform in Deutschland ist:Wir werden weiterhin als gemeinnützig anerkannt, weil wir politisch neutral bleiben - im Gegensatz zu allen anderen Petitionsplattformen, die ihre Gemeinnützigkeit im Laufe der letzten Jahre verloren oder selbst abgelegt haben.
+
+Ihre Daten schützt:Viele Plattformen sind kostenlos - doch oft bezahlen Sie dafür mit Ihren Daten. Bei uns werden Ihre persönlichen Informationen nicht ausgewertet oder an Dritte verkauft. Wir erheben keine Daten darüber, zu welcher politischen oder gesellschaftlichen Gruppe Sie gehören könnten. 5 Jahre nach beendeter Petition löschen wir Ihre Unterschriften sogar automatisch - ganz ohne Aufforderung. vollkommen frei von Werbung ist:Wir konzentrieren uns auf das Wesentliche - Ihre
+Petitionen. Wir lenken Sie nicht mit bunten Werbebannern ab oder lassen uns kaufen. Uns ist es wichtig, dass Petitionen organisch wachsen, weil sie den Puls der Zeit treffen und nicht, weil sie gegen Geld beworben werden. 
+
+zu 100 Prozent spendenfinanziert ist:Wir finanzieren uns ausschließlich durch Spenden unserer Nutzerinnen und Nutzer. Staatliche Mittel oder Parteispenden kommen für uns nicht in Frage. So bleiben wir nicht nur finanziell unabhängig, sondern auch unabhängig von jeglicher politischer Einflussnahme.David Dreschner, um unseren Prinzipien auch weiterhin treu bleiben zu können, benötigen wir Ihre Hilfe. Von den 12 Millionen Nutzerinnen und Nutzern auf unserer Plattform fördern uns 99 Prozent
+nicht. Wenn uns nur ein Bruchteil der Menschen, die diese E-Mail lesen, monatlich unterstützen, können wir unsere Unabhängigkeit von Werbung und staatlichen Förderungen auch in Zukunft sicherstellen. 
+
+
+https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Jetzt die Unabhängigkeit von openPetition sichern
+https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50
+
+
+Seit über einem Jahrzehnt begleiten wir Menschen wie Sie mit vollem Einsatz dabei, gesellschaftliche und politische Veränderungen anzustoßen. Wir bieten allen eine Plattform und sorgen dafür, dass Sie gehört werden - ganz unabhängig von der Richtung Ihres Anliegens. 
+
+Danke, dass Sie von Ihrem Recht auf Mitbestimmung Gebrauch machen!
+
+Herzliche Grüße
+
+Jörg Mitzlaff, Gründer von openPetition
+
+PS: Wussten Sie, dass Sie dank unserer Gemeinnützigkeit Spenden an openPetition von Ihrer Steuer absetzen können? Zu Jahresanfang melden wir uns von selbst und schicken Ihnen die Spendenbescheinigung zu. Sie müssen sich um nichts weiter kümmern. Bereits mit einem kleinen monatlichen Beitrag helfen Sie uns, unsere Mission fortzuführen
+(https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50).
+
+openPetition ist eine zivilgesellschaftliche Plattform für digitale Demokratie, politisch neutral, gemeinnützig und transparent.
+
+openPetition gemeinnützige GmbH
+Am Friedrichshain 34 · 10407 Berlin · Deutschland
+
+info@openpetition.eu
+
+
+·www.openpetition.de
+https://www.openpetition.de/
+
+
+Über openPetition
+https://www.openpetition.de/content/about_us
+
+
+·Fördern
+https://www.openpetition.de/spenden?amount=10&interval=1
+
+
+Instagram
+https://www.instagram.com/openpetition.de/
+
+
+Facebook
+https://www.facebook.com/openPetition
+
+
+Twitter
+https://twitter.com/openPetition
+
+
+Sie erhalten diesen Newsletter, weil Sie auf openPetition eine Petition unterzeichnet haben. Sie haben zuletzt am 20.04.2021 die openPetition "<a style="color: #05a5b0;text-decoration: none;" href="https://www.openpetition.de/petition/online/schuetzen-sie-die-skandinavistik-vor-streichungen">Schützen Sie die Skandinavistik vor Streichungen!</a>" unterschrieben.
+Sie können den openPetition Newsletter jederzeit abbestellen (https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_number=2058) und erneut abonnieren (https://www.openpetition.de/newsletter/anmelden).
+
+
+--==BOUNDARY=abcf3aad035b815c6d0d80738625d664
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:o="urn:schemas-microsoft-com:office:office"
+	lang="de"
+	dir="ltr"
+>
+<head>
+	<meta http-equiv="Content-Type"
+		content="text/html; charset=UTF-8"
+	/>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1"
+	/>
+
+		<meta name="format-detection"
+		content="telephone=no"
+	/>
+
+		<title>Wir sind gemein</title>
+
+	<style type="text/css">
+	/**
+	 * Client specifc fixes/normalisation
+	 * https://templates.mailchimp.com/development/css/client-specific-styles/
+	 */
+
+	/* Outlook.com / Hotmail */
+	.ExternalClass {
+		width: 100%;
+	}
+	.ExternalClass,
+	.ExternalClass p,
+	.ExternalClass span,
+	.ExternalClass font,
+	.ExternalClass td,
+	.ExternalClass div {
+		line-height: 100%;
+	}
+
+	/* Text Size Adjustment WebKit */
+	body {
+		-webkit-text-size-adjust: 100%;
+	}
+
+	/*
+	 * Remove blue links on Samsung and Apple devices
+	 * and fix text formatting in Thunderbird
+	 */
+	#MessageViewBody a,
+	a[x-apple-data-detectors],
+	table {
+		color: inherit;
+		text-decoration: none;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: inherit;
+		line-height: inherit;
+	}
+
+	@media (max-width:660px)  {
+		.responsive-table-cell {
+			display: block;
+			width: auto;
+		}
+		.responsive-right {
+			text-align: right;
+		}
+		.responsive-hide {
+			display: none;
+		}
+		.responsive-spacer-bottom {
+			margin-bottom: 20px;
+		}
+	}
+	</style>
+
+	<!--[if mso]>
+	<style type="text/css">
+	/* Outlook */
+		body { /* Text Size Adjustment Windows Mobile */
+			-ms-text-size-adjust: 100%;
+		}
+
+		body, table, td {
+			color: #3e3d40;
+			font-size: 15px;
+			line-height: 1.5em;
+			font-family: Arial, sans-serif;
+		}
+		#outlook a { /* “Read in Browser” Link */
+			padding: 0;
+		}
+		table { /* table Element Spacing */
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+		img { /* Image Resizing */
+			-ms-interpolation-mode: bicubic;
+		}
+	</style>
+	<![endif]-->
+
+	<!--[if gte mso 16]>
+	<style>
+	/* Outlook Dark Mode */
+		.keep-white {
+			mso-style-textfill-type:gradient;
+			mso-style-textfill-fill-gradientfill-stoplist:"0 \#FFFFFF 0 100000\,100000 \#FFFFFF 0 100000";
+			color:#000000 !important;
+		}
+	</style>
+	<![endif]-->
+
+	<!--[if mso]>
+	<xml>
+		<o:OfficeDocumentSettings>
+			<o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+</head>
+<body style="background-color: #f9f9f9; color: #3e3d40; margin: 0; padding: 0;"
+	bgcolor="#f9f9f9"
+	text="#3e3d40"
+>
+				<p style="display:none">Nur gemein oder nützig?</p>
+			<table style="background-color: #f9f9f9; margin: 0; padding: 0; color: #3e3d40; font-size: 15px; line-height: 1.5em; font-family: Arial, sans-serif;"
+		role="presentation"
+		border="0"
+		cellpadding="0"
+		cellspacing="0"
+		width="100%"
+		height="100%"
+		bgcolor="#f9f9f9"
+		text="#3e3d40"
+	>
+		<tr>
+			<td align="center"
+				valign="top"
+			>
+				<!--[if !mso]><!-->
+				<table style="min-width: 360px; max-width: 660px; mso-cellspacing: 0px;"
+					role="presentation"
+					border="0"
+					cellpadding="0"
+					cellspacing="0"
+					width="100%"
+					bgcolor="#ffffff"
+					style="background-color: #ffffff"
+				>
+				<!--<![endif]-->
+				<!--[if mso]>
+				<center>
+					<table style="width: 660px; mso-cellspacing: 0px;"
+						role="presentation"
+						width="660"
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						bgcolor="#ffffff"
+						style="background-color: #ffffff"
+					>
+				<![endif]-->
+										<tr>
+						<td align="center"
+							valign="top"
+						>
+							<table role="presentation"
+								border="0"
+								cellpadding="0"
+								cellspacing="0"
+								width="100%"
+							>
+																<tr>
+									<td align="left"
+										valign="top"
+									>
+										
+<table style="background-color: #ffffff; border-top: 4px solid #29b0cc;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+	bgcolor="#ffffff"
+>
+	<tr>
+		<td style="padding: 20px  15px  20px 30px;"
+			class="responsive-table-cell"
+			align="left"
+			valign="top"
+		>
+			<a style="text-decoration: none;"
+				href="https://www.openpetition.de/"
+			>
+				<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+					src="https://www.openpetition.de/img/logo_openpetition_email.png"
+					alt="openPetition"
+											width="166"
+																height="49"
+									/>
+			</a>
+		</td>
+
+					<td style="padding: 20px 30px 20px 15px;"
+				class="responsive-hide"
+				align="right"
+				valign="middle"
+			>
+
+				<table role="presentation"
+					border="0"
+					cellpadding="0"
+					cellspacing="0"
+				>
+					<tr>
+																			<td align="center">
+								<a style="text-decoration: none; color: #3e3d40;"
+									href="https://www.openpetition.de/petition/neu?op_rf=nl"
+								>
+									Petition starten								</a>
+							</td>
+
+															<td align="center">&nbsp;|&nbsp;</td>
+																				<td align="center">
+								<a style="text-decoration: none; color: #3e3d40;"
+									href="https://www.openpetition.de/content/about_us?op_rf=nl"
+								>
+									Über uns								</a>
+							</td>
+
+															<td align="center">&nbsp;|&nbsp;</td>
+																				<td align="center">
+								<a style="text-decoration: none; color: #3e3d40;"
+									href="https://www.openpetition.de/spenden?op_rf=nl"
+								>
+									<img src="https://static.openpetition.de//images/newsletter_heart.png?1663255783"
+	alt=""
+	width="13"
+	height="10">&nbsp;Helfen								</a>
+							</td>
+
+																		</tr>
+				</table>
+			</td>
+			</tr>
+</table>
+									</td>
+								</tr>
+
+																										<tr>
+										<td align="left"
+											valign="top"
+										>
+											
+<table style="background-color: #29b0cc; padding: 10px 30px 10px 30px;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+	bgcolor="#29b0cc"
+>
+	<tr>
+		<td style="background-color: #29b0cc;"
+			align="left"
+			valign="top"
+		>
+							<h1 class="keep-white"
+					style="color: #ffffff; font-size: 15px; margin: 0;"
+				>
+																	Wir sind gemein									</h1>
+					</td>
+	</tr>
+</table>
+										</td>
+									</tr>
+								
+																	<tr>
+	<td>
+		<img style="color: #29b0cc; display: block; font-weight: bold; font-size: 12px; text-decoration: none;"
+	alt="Zwei Mitarbeiterinnen halten Plakate mit der Aufschrift 'Wir sind gemein' sowie 'nützig' hoch."
+	src="https://www.openpetition.de/wordpress-content/uploads/2022/09/Sequenz-01_9.gif"
+	border="0"
+	width="100%"
+	
+>
+
+	</td>
+</tr>
+																								<tr>
+									<td style="padding: 0px 30px 15px 30px;"
+										align="left"
+										valign="top"
+										bgcolor="#ffffff"
+										text="#3e3d40"
+									>
+
+<p style="margin: 0px 0px 0px 0px; line-height: 0;">
+	<img src="https://www.openpetition.de/newsletter/pixel/39e236fbf80255932d4660bfd4a2a2a3c295158e/blank.gif"
+		width="1"
+		height="1"
+	>
+</p>
+<p>Hallo David Dreschner,</p>
+<p>wir sind gemein - zumindest aus Sicht mancher Menschen. Einigen sind wir zu links, anderen zu konservativ. <strong>Die Vorstellung, dass Petitionen auf openPetition unserer Meinung entsprechen, ist falsch.</strong> Ob Sie einen Zebrastreifen vor einer Kita oder die Einführung einer deutschlandweiten Spritpreisbremse fordern, für den Erhalt eines Waldabschnitts kämpfen oder die Corona-Maßnahmen kritisieren - <strong>wir von openPetition behandeln alle Themen gleich, egal welche Meinung Sie
+vertreten.</strong> Warum? Weil wir uns der Demokratie verschrieben haben.&nbsp;</p><p><strong>Viele Menschen wissen nicht, dass openPetition&nbsp;</strong><br></p><ul><li><strong>die einzige gemeinnützige Petitionsplattform in Deutschland ist:</strong> Wir werden weiterhin als gemeinnützig anerkannt, weil wir politisch neutral bleiben - im Gegensatz zu allen anderen Petitionsplattformen, die ihre Gemeinnützigkeit im Laufe der letzten Jahre verloren oder selbst abgelegt
+haben.</li><p><li><strong>Ihre Daten schützt:</strong> Viele Plattformen sind kostenlos - doch oft bezahlen Sie dafür mit Ihren Daten. Bei uns werden Ihre persönlichen Informationen nicht ausgewertet oder an Dritte verkauft. Wir erheben keine Daten darüber, zu welcher politischen oder gesellschaftlichen Gruppe Sie gehören könnten. 5 Jahre nach beendeter Petition löschen wir Ihre Unterschriften sogar automatisch - ganz ohne Aufforderung.&nbsp;<br></li></p><li><strong>vollkommen frei von
+Werbung ist:</strong> Wir konzentrieren uns auf das Wesentliche - Ihre Petitionen. Wir lenken Sie nicht mit bunten Werbebannern ab oder lassen uns kaufen. Uns ist es wichtig, dass Petitionen organisch wachsen, weil sie den Puls der Zeit treffen und nicht, weil sie gegen Geld beworben werden.&nbsp;<br></li><p><li><strong>zu 100 Prozent spendenfinanziert ist: </strong>Wir finanzieren uns ausschließlich durch Spenden unserer Nutzerinnen und Nutzer. Staatliche Mittel oder Parteispenden kommen für
+uns nicht in Frage. So bleiben wir nicht nur finanziell unabhängig, sondern auch unabhängig von jeglicher politischer Einflussnahme.</li></ul></p><p>David Dreschner, um unseren Prinzipien auch weiterhin treu bleiben zu können, benötigen wir Ihre Hilfe. Von den 12 Millionen Nutzerinnen und Nutzern auf unserer Plattform fördern uns 99 Prozent nicht. Wenn uns nur ein Bruchteil der Menschen, die diese E-Mail lesen, monatlich unterstützen, können wir unsere Unabhängigkeit von Werbung und
+staatlichen Förderungen auch in Zukunft sicherstellen.&nbsp;</p>
+<table style="margin-top: 10px; margin-bottom: 10px;"
+	align="center"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+>
+	<tr>
+		<td align="center"
+			valign="middle"
+		>
+			<a class="keep-white"
+				style="color: #ffffff; text-decoration: none"
+				href="https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50"
+				target="_blank"
+			>
+				<table role="presentation"
+					border="0"
+					cellpadding="0"
+					cellspacing="0"
+					width="auto"
+					style="background-color: #29b0cc; border: 1px solid #29b0cc; border-radius: 4px;"
+				>
+					<tr>
+						<!--[if !mso]><!-->
+						<td style="background-color: #29b0cc; padding: 10px 10px 10px 10px; border: 1px solid #29b0cc; border-radius: 4px;"
+							align="center"
+							valign="top"
+						>
+						<!--<![endif]-->
+						<!--[if mso]>
+							<td style="background-color: #29b0cc; padding: 5px 10px 10px 10px; border: 1px solid #29b0cc; border-radius: 4px;"
+							align="center"
+							valign="top"
+							>
+						<![endif]-->
+							<a class="keep-white"
+								style="color: #ffffff; font-family: Arial, sans-serif; font-weight: bold; font-size: 16px; text-decoration: none;"
+								href="https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50"
+								target="_blank"
+							>
+								Jetzt die Unabhängigkeit von openPetition sichern 
+							</a>
+						</td>
+					</tr>
+				</table>
+			</a>
+		</td>
+	</tr>
+</table>
+<p>Seit über einem Jahrzehnt begleiten wir Menschen wie Sie mit vollem Einsatz dabei, gesellschaftliche und politische Veränderungen anzustoßen. Wir bieten allen eine Plattform und sorgen dafür, dass Sie gehört werden - ganz unabhängig von der Richtung Ihres Anliegens.&nbsp;<br></p><p>Danke, dass Sie von Ihrem Recht auf Mitbestimmung Gebrauch machen!</p>
+<br />
+<table align="center"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	bgcolor="#ffffff"
+>
+	<tbody>
+		<tr>
+			<td style="max-width:170px"
+				align="left"
+				valign="middle"
+			>
+				<img style="color: #29b0cc; display: block; font-weight: bold; font-size: 12px; text-decoration: none;"
+	alt="Bild von Jörg Mitzlaff"
+	src="https://www.openpetition.de/wordpress-content/uploads/2022/08/Joerg_NL_rund_transparent_300px.png"
+	border="0"
+	width="143"
+	height="142"
+>
+
+			</td>
+			<td style="display:table-cell; vertical-align:middle; padding-left:30px;"
+				width="100%"
+				align="left"
+				valign="middle"
+			>
+				<p>Herzliche Grüße<br></p><p>Jörg Mitzlaff, Gründer von openPetition</p>
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br />
+<p>PS: Wussten Sie, dass Sie dank unserer Gemeinnützigkeit Spenden an openPetition von Ihrer Steuer absetzen können? Zu Jahresanfang melden wir uns von selbst und schicken Ihnen die Spendenbescheinigung zu. Sie müssen sich um nichts weiter kümmern. <a href="https://www.openpetition.de/newsletter/link/39e236fbf80255932d4660bfd4a2a2a3c295158e/ae649048a66fcbc48447b157765a85ee96cfbdd7?op_ti=565c844b96e9050705694358e24b6d50" target="_blank">Bereits mit einem kleinen monatlichen Beitrag helfen Sie
+uns, unsere Mission fortzuführen</a>.</p>
+
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+										<tr>
+						<td align="center"
+							valign="top"
+						>
+							
+<table style="background-color: #29b0cc;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+	bgcolor="#29b0cc"
+>
+		<tr>
+		<td style="background-color: #29b0cc; padding: 30px 30px 15px 30px;"
+			align="center"
+			valign="top"
+		>
+			<img src="https://static.openpetition.de//images/logo_openpetition_outline.png?1663255783"
+				alt=""
+				width="49"
+				height="50"
+			/>
+		</td>
+	</tr>
+
+		<tr>
+		<td class="keep-white"
+			style="background-color: #29b0cc; padding: 15px 30px 15px 30px; color: #ffffff;"
+			align="center"
+			valign="top"
+		>
+			<p style="margin: 0;">
+				openPetition ist eine zivilgesellschaftliche Plattform für digitale Demokratie, politisch neutral, gemeinnützig und transparent.			</p>
+		</td>
+	</tr>
+
+		<tr>
+		<td class="keep-white"
+			style="background-color: #29b0cc; padding: 15px 30px 30px 30px; color: #ffffff;"
+			align="center"
+			valign="top"
+		>
+			<address style="font-style: normal;">
+				<b>openPetition gemeinnützige GmbH</b>
+				<br />
+				Am Friedrichshain 34 &middot; 10407 Berlin &middot; Deutschland			</address>
+			<br />
+			<a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="mailto:info@openpetition.eu">info@openpetition.eu</a> &middot; <a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/">www.openpetition.de</a>			<br />
+			<a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/content/about_us">Über openPetition</a> &middot; <a class="keep-white" style="color: #ffffff; text-decoration: underline;" href="https://www.openpetition.de/spenden?amount=10&interval=1">Fördern</a>		</td>
+	</tr>
+</table>
+						</td>
+					</tr>
+
+										<tr>
+						<td align="center"
+							valign="top"
+							bgcolor="#f9f9f9"
+							style="background-color: #f9f9f9"
+						>
+							<table style="mso-padding-alt: 10px"
+	role="presentation"
+	border="0"
+	cellpadding="10"
+	cellspacing="0"
+>
+	<tr>
+		<td align="center"
+			valign="top"
+		>
+			<a style="text-decoration: none;"
+				href="https://www.instagram.com/openpetition.de/"
+				target="_blank"
+				rel="external nofollow noopener"
+			>
+				<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+					src="https://static.openpetition.de//images/logo_instagram.png?1663255783"
+					alt="Instagram"
+					height="16" 				/>
+			</a>
+		</td>
+
+		<td align="center"
+			valign="top"
+		>
+			<a style="text-decoration: none;"
+				href="https://www.facebook.com/openPetition"
+				target="_blank"
+				rel="external nofollow noopener"
+			>
+				<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+					src="https://static.openpetition.de//images/logo_facebook.png?1663255783"
+					alt="Facebook"
+					height="16" 				/>
+			</a>
+		</td>
+
+		<td align="center"
+			valign="top"
+		>
+			<a style="text-decoration: none;"
+				href="https://twitter.com/openPetition"
+				target="_blank"
+				rel="external nofollow noopener"
+			>
+				<img style="display: block; color: #29b0cc; font-weight: bold; font-size: 12px; text-decoration: none;"
+					src="https://static.openpetition.de//images/logo_twitter.png?1663255783"
+					alt="Twitter"
+					height="16" 				/>
+			</a>
+		</td>
+	</tr>
+</table>
+						</td>
+					</tr>
+
+										<tr>
+						<td align="center"
+							valign="top"
+							bgcolor="#f9f9f9"
+							style="background-color: #f9f9f9"
+						>
+							<table style="padding: 0px 30px 0px 30px;"
+	role="presentation"
+	border="0"
+	cellpadding="0"
+	cellspacing="0"
+	width="100%"
+>
+	<tr>
+		<td align="center"
+			valign="top"
+		>
+			<p style="margin: 0; font-size: 12px;">
+									Sie erhalten diesen Newsletter, weil Sie auf openPetition eine Petition unterzeichnet haben. Sie haben zuletzt am 20.04.2021 die openPetition "<a style="color: #05a5b0;text-decoration: none;" href="https://www.openpetition.de/petition/online/schuetzen-sie-die-skandinavistik-vor-streichungen">Schützen Sie die Skandinavistik vor Streichungen!</a>" unterschrieben.				
+									<br />
+					Sie können den openPetition Newsletter jederzeit <a style="color: #29b0cc;" href="https://www.openpetition.de/newsletter/abmelden/565c844b96e9050705694358e24b6d50?newsletter_number=2058">abbestellen</a> und erneut <a style="color: #29b0cc;" href="https://www.openpetition.de/newsletter/anmelden">abonnieren</a>.							</p>
+		</td>
+	</tr>
+</table>
+						</td>
+					</tr>
+				</table>
+				<!--[if mso]>
+				</center>
+				<![endif]-->
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+--==BOUNDARY=abcf3aad035b815c6d0d80738625d664--
+

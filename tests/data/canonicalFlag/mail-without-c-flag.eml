@@ -1,0 +1,1702 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6022:4d6:b0:40:2847:2147 with SMTP id t22csp1029670lat;
+        Wed, 24 May 2023 03:02:28 -0700 (PDT)
+X-Google-Smtp-Source: ACHHUZ4S9sLm7bjRz/NDSGTX5WYtmFEp0cDQiZbirCF9Xz8tYZ8FevfENGJlYUFavvFA2fE77Y+c
+X-Received: by 2002:a2e:a48a:0:b0:2af:222d:9695 with SMTP id h10-20020a2ea48a000000b002af222d9695mr5792327lji.9.1684922548319;
+        Wed, 24 May 2023 03:02:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1684922548; cv=none;
+        d=google.com; s=arc-20160816;
+        b=j48gxzYLKC+foTxEHq6zqOl/MMkNoJ6VZQKDiE16CRpv8NDbYlTheFUyOYn+RMiukK
+         9261SmZBlEr94ux0FEfMirFOn76v7lIa4iU+HIHc3wH/3xEduDO5s1GxzN7KK7pSheH1
+         /hY4ooZfK0feT6ADzMpDHOV40zJZbcWSuWGzNr5POxeaH7DCIYk+mj4oa+VdGkN+j92A
+         NmXKaKl3n/j6eCsgBfvK63Y8EhoNUBQOUx1/rLc8sykNHRw2Px/QThOMbVlI4cemn67K
+         i7koVTNtO229ud9T8fAW2NuC62YfVdDXgEVf8tcGPuB5Rd6UeZzkZI7qjds9F9W/pAg3
+         gjyg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:dkim-signature:feedback-id:list-id
+         :list-unsubscribe-post:list-unsubscribe:message-id:date:reply-to:to
+         :from:subject;
+        bh=sNTUzMVTjmax6mpaTZa7yfG/BmyZve6kjQHHBxkCcbk=;
+        b=F1c8s0px22TvjiVnsM18Nt7pW7FVkgQuL2ddq94bQGvjehXwOnpYkf9OtlFwPyOgj6
+         MqBoRAdte1oD7aJae6VZTspdErH4EjdM+KsNgKbJCyu3H4dWeF9EoLX9K50uaQR4eHw0
+         UIovCzMyBNS+l/cLVuFQdzam0W5xkqG0TzR85sc/qYZiAdbXFCGGmWhITOz+rYUcugX7
+         TflUp9oxmvl6EsJ6cPpegwx5sidT9664hMtvYo2G0yLW/gSp2hFy/4HIZeRsSbTk9dWI
+         BpKXAyIgMA7HjxMjYsLcYkRIrqdti43NTHx3eDJDlFcyGzG/piu5i/9yV2CRzs6CoIPl
+         XR7g==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@kinoheld.com header.s=newsletter2go header.b=Qfnz3Nx9;
+       spf=pass (google.com: domain of return+t4v6fw7r-x85w0ggj-13go@kinoheld.com designates 88.198.51.74 as permitted sender) smtp.mailfrom=return+t4v6fw7r-x85w0ggj-13go@kinoheld.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kinoheld.com
+Return-Path: <return+t4v6fw7r-x85w0ggj-13go@kinoheld.com>
+Received: from s03.kinoheld.com (s03.kinoheld.com. [88.198.51.74])
+        by mx.google.com with ESMTPS id e6-20020a2e9846000000b002ac901c2f0dsi4052939ljj.445.2023.05.24.03.02.28
+        for <d4d4online@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 24 May 2023 03:02:28 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return+t4v6fw7r-x85w0ggj-13go@kinoheld.com designates 88.198.51.74 as permitted sender) client-ip=88.198.51.74;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@kinoheld.com header.s=newsletter2go header.b=Qfnz3Nx9;
+       spf=pass (google.com: domain of return+t4v6fw7r-x85w0ggj-13go@kinoheld.com designates 88.198.51.74 as permitted sender) smtp.mailfrom=return+t4v6fw7r-x85w0ggj-13go@kinoheld.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=kinoheld.com
+Subject: Aktuelle Filme im Cinecity und Kammer Filmtheater Crailsheim!
+From: Cinecity und Kammer Filmtheater Crailsheim - kinoheld <noreply@kinoheld.com>
+To: d4d4online@gmail.com
+Reply-To: Cinecity und Kammer Filmtheater Crailsheim - kinoheld <noreply@kinoheld.com>
+Date: Wed, 24 May 2023 11:57:26 +0200
+Message-Id: <90197558705970402@s03.kinoheld.com>
+List-Unsubscribe: <mailto:unsubscribe+t4v6fw7r-x85w0ggj-13go@kinoheld.com>, <https://kinoheld.com/unsubscribe/t4v6fw7r-x85w0ggj-13go>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Id: <t4v6fw7r-x85w0ggj-13go.list-id.kinoheld.com>
+Feedback-ID: N-kfcuo7jb:C-t4v6fw7r:P-7bkw4ds3
+X-AntiAbuse: Please report spam to postmaster@kinoheld.com and refer to this ID: t4v6fw7r-x85w0ggj-13go
+X-CSA-Complaints: csa-complaints@eco.de
+X-rpcampaign: RPkfcuo7jb
+DKIM-Signature: a=rsa-sha256; b=Qfnz3Nx9IxAcF5lEyvY1ji4preAkRG+xs8EVcbvl8l97hcaJszUWBNUDzEBf+yUu90JHo+Wm008aXRAOpGRyMq21+4mjGeRggSgiVw3gmLeCOM6yKjVzQmv4sl1Cn6+24LgSUlouqXTHqh1NGFWzmTqL/uCZzcB0qZJ2DGgNGMU=; s=newsletter2go; d=kinoheld.com; v=1; bh=dZMYfK+vhKMNetbivIH8aCMRjQELPLRL9dWZpenosu8=; h=Reply-To:List-Id:From:To:Message-Id:Subject:MIME-Version:Date:Feedback-ID:List-Unsubscribe:List-Unsubscribe-Post:X-CSA-Complaints;
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=c74a5a749875b4ed64e71c042d760b96"
+
+--=c74a5a749875b4ed64e71c042d760b96
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Besuchen Sie hier die [Webversion](https://smoton.com/t4v6fw7r-x85w0ggj-kf3=
+trema-4as).
+
+NEU im Cinecity und Kammer Filmtheater Crailsheim!
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+Folgende Highlights erwarten Sie in Ihrem Lieblingskino:
+
+Arielle, die Meerjungfrau
+
+Fast & Furious 10
+
+Guardians of the Galaxy: Vol. 3
+
+Und dann kam Dad
+
+Renfield
+
+Spider-Man: Across the Spider-Verse
+
+Transformers: Aufstieg der Bestien
+
+Super Mario Bros. Film, Der
+
+Asterix & Obelix im Reich der Mitte
+
+Boogeyman, The
+
+Roter Himmel
+
+Book Club 2 - Ein neues Kapitel
+
+
+Impressum: kinoheld GmbH, Von-der-Tann-Str. 12, 80539 M=C3=BCnchen, support=
+@kinoheld.de
+Gesch=C3=A4ftsf=C3=BChrer: Constantin Schwaab
+Registergericht: M=C3=BCnchen, HRB: 200845, USt-IdNr.: DE285165823
+[Newsletter abbestellen](https://smoton.com/t4v6fw7r-x85w0ggj-m9h46qgj-vme)
+--=c74a5a749875b4ed64e71c042d760b96
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html xmlns=3D"http://www.w3.org/1999/xhtml"><head><meta http-equiv=3D"Cont=
+ent-Type" content=3D"text/html; charset=3Dutf-8"><meta http-equiv=3D"X-UA-C=
+ompatible" content=3D"IE=3Dedge"><meta name=3D"format-detection" content=3D=
+"telephone=3Dno"><meta name=3D"viewport" content=3D"width=3Ddevice-width, i=
+nitial-scale=3D1.0"><title></title><style type=3D"text/css" emogrify=3D"no"=
+>
+/**
+ * head styles
+ */
+
+#outlook a {
+    padding:0;
+}
+.ExternalClass {
+    width:100%;
+}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font,=
+ .ExternalClass td, .ExternalClass div {
+    line-height: 100%;
+}
+table td {
+    border-collapse: collapse;
+    mso-line-height-rule: exactly;
+}
+.editable.image {
+    font-size: 0 !important;
+    line-height: 0 !important;
+}
+.nl2go_preheader {
+    display: none !important;
+    mso-hide:all !important;
+    mso-line-height-rule: exactly;
+    visibility: hidden !important;
+    line-height: 0px !important;
+    font-size: 0px !important;
+}
+body {
+    width:100% !important;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    margin:0;
+    padding:0;
+}
+img {
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode: bicubic;
+}
+a img {
+    border:none;
+}
+p {
+    margin: 1em 0;
+}
+table {
+    border-collapse:collapse;
+    mso-table-lspace:0pt;
+    mso-table-rspace:0pt;
+}
+
+.nl2go-hide {
+    display: none;
+    display: none !important;
+}
+
+/**
+ * media styles
+ */
+
+@media (max-width: 600px) {
+*[class~=3D"nl2go_class_headline"] {  }
+*[class~=3D"nl2go_class_impressum"] {  }
+a, a:link {  }
+*[class~=3D"nl2go-default-textstyle"] {  }
+*[class~=3D"nl2go-block-1-container"] { box-sizing: border-box !important; =
+text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-1-outer"] { Margin: 0 auto 0 0 !important; border-s=
+tyle: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-2-container"] { box-sizing: border-box !important; =
+text-align: left !important; valign: top !important; width: 100% !important=
+ }
+*[class~=3D"nl2go-block-2-outer"] { Margin: 0 auto 0 0 !important; border-s=
+tyle: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-2-inner"] { padding-bottom: 0px !important; padding=
+-left: 10px !important; padding-right: 10px !important; padding-top: 15px !=
+important }
+*[class~=3D"nl2go-block-3-container"] { box-sizing: border-box !important; =
+text-align: left !important; valign: top !important; width: 100% !important=
+ }
+*[class~=3D"nl2go-block-3-outer"] { Margin: 0 auto 0 0 !important; border-s=
+tyle: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-3-inner"] { padding-bottom: 0px !important; padding=
+-left: 10px !important; padding-right: 10px !important; padding-top: 10px !=
+important }
+*[class~=3D"nl2go-block-4-container"] { box-sizing: border-box !important; =
+text-align: center !important; width: 170px !important }
+*[class~=3D"nl2go-block-4-outer"] { Margin: 0 auto 0 auto !important; borde=
+r-style: solid !important; width: 170px !important }
+*[class~=3D"nl2go-block-4-inner"] { text-align: center !important }
+*[class~=3D"nl2go-block-5-container"] { box-sizing: border-box !important; =
+text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-5-outer"] { Margin: 0 auto 0 0 !important; border-s=
+tyle: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-5-inner"] { padding-top: 15px !important; text-alig=
+n: center !important }
+*[class~=3D"nl2go-block-6-container"] { box-sizing: border-box !important; =
+display: block !important; valign: top !important; width: 100% !important }
+*[class~=3D"nl2go-block-6-outer"] { border-style: solid !important; width: =
+100% !important }
+*[class~=3D"nl2go-block-6-inner"] { padding-left: 10px !important; padding-=
+right: 10px !important; padding-top: 20px !important }
+*[class~=3D"nl2go-block-7-container"] { box-sizing: border-box !important; =
+text-align: center !important; width: 170px !important }
+*[class~=3D"nl2go-block-7-outer"] { Margin: 0 auto 0 auto !important; borde=
+r-style: solid !important; width: 170px !important }
+*[class~=3D"nl2go-block-7-inner"] { text-align: center !important }
+*[class~=3D"nl2go-block-8-container"] { box-sizing: border-box !important; =
+text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-8-outer"] { Margin: 0 auto 0 0 !important; border-s=
+tyle: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-8-inner"] { padding-top: 15px !important; text-alig=
+n: left !important }
+*[class~=3D"nl2go-block-9-container"] { box-sizing: border-box !important; =
+display: block !important; valign: top !important; width: 100% !important }
+*[class~=3D"nl2go-block-9-outer"] { border-style: solid !important; width: =
+100% !important }
+*[class~=3D"nl2go-block-9-inner"] { padding-left: 10px !important; padding-=
+right: 10px !important; padding-top: 20px !important }
+*[class~=3D"nl2go-block-10-container"] { box-sizing: border-box !important;=
+ text-align: center !important; width: 170px !important }
+*[class~=3D"nl2go-block-10-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; width: 170px !important }
+*[class~=3D"nl2go-block-10-inner"] { text-align: center !important }
+*[class~=3D"nl2go-block-11-container"] { box-sizing: border-box !important;=
+ text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-11-outer"] { Margin: 0 auto 0 0 !important; border-=
+style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-11-inner"] { padding-top: 15px !important; text-ali=
+gn: left !important }
+*[class~=3D"nl2go-block-12-container"] { box-sizing: border-box !important;=
+ display: block !important; valign: top !important; width: 100% !important =
+}
+*[class~=3D"nl2go-block-12-outer"] { border-style: solid !important; width:=
+ 100% !important }
+*[class~=3D"nl2go-block-12-inner"] { padding-left: 10px !important; padding=
+-right: 10px !important; padding-top: 20px !important }
+*[class~=3D"nl2go-block-13-container"] { box-sizing: border-box !important;=
+ width: 100% !important }
+*[class~=3D"nl2go-block-13-outer"] { border-style: solid !important; width:=
+ 100% !important }
+*[class~=3D"nl2go-block-13-inner"] { padding-left: 1px !important; padding-=
+right: 1px !important }
+*[class~=3D"nl2go-block-14-container"] { box-sizing: border-box !important;=
+ text-align: left !important; valign: top !important; width: 100% !importan=
+t }
+*[class~=3D"nl2go-block-14-outer"] { Margin: 0 auto 0 0 !important; border-=
+style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-14-inner"] { padding-bottom: 0px !important; paddin=
+g-left: 10px !important; padding-right: 10px !important; padding-top: 10px =
+!important }
+*[class~=3D"nl2go-block-15-container"] { box-sizing: border-box !important;=
+ text-align: center !important; width: 170px !important }
+*[class~=3D"nl2go-block-15-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; width: 170px !important }
+*[class~=3D"nl2go-block-15-inner"] { text-align: center !important }
+*[class~=3D"nl2go-block-16-container"] { box-sizing: border-box !important;=
+ text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-16-outer"] { Margin: 0 auto 0 0 !important; border-=
+style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-16-inner"] { padding-top: 15px !important; text-ali=
+gn: left !important }
+*[class~=3D"nl2go-block-17-container"] { box-sizing: border-box !important;=
+ display: block !important; valign: top !important; width: 100% !important =
+}
+*[class~=3D"nl2go-block-17-outer"] { border-style: solid !important; width:=
+ 100% !important }
+*[class~=3D"nl2go-block-17-inner"] { padding-left: 10px !important; padding=
+-right: 10px !important; padding-top: 20px !important }
+*[class~=3D"nl2go-block-18-container"] { box-sizing: border-box !important;=
+ text-align: center !important; width: 170px !important }
+*[class~=3D"nl2go-block-18-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; width: 170px !important }
+*[class~=3D"nl2go-block-18-inner"] { text-align: center !important }
+*[class~=3D"nl2go-block-19-container"] { box-sizing: border-box !important;=
+ text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-19-outer"] { Margin: 0 auto 0 0 !important; border-=
+style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-19-inner"] { padding-top: 15px !important; text-ali=
+gn: left !important }
+*[class~=3D"nl2go-block-20-container"] { box-sizing: border-box !important;=
+ display: block !important; valign: top !important; width: 100% !important =
+}
+*[class~=3D"nl2go-block-20-outer"] { border-style: solid !important; width:=
+ 100% !important }
+*[class~=3D"nl2go-block-20-inner"] { padding-left: 10px !important; padding=
+-right: 10px !important; padding-top: 20px !important }
+*[class~=3D"nl2go-block-21-container"] { box-sizing: border-box !important;=
+ text-align: center !important; width: 170px !important }
+*[class~=3D"nl2go-block-21-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; width: 170px !important }
+*[class~=3D"nl2go-block-21-inner"] { text-align: center !important }
+*[class~=3D"nl2go-block-22-container"] { box-sizing: border-box !important;=
+ text-align: left !important; width: 100% !important }
+*[class~=3D"nl2go-block-22-outer"] { Margin: 0 auto 0 0 !important; border-=
+style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-22-inner"] { padding-top: 15px !important; text-ali=
+gn: left !important }
+*[class~=3D"nl2go-block-23-container"] { box-sizing: border-box !important;=
+ display: block !important; valign: top !important; width: 100% !important =
+}
+*[class~=3D"nl2go-block-23-outer"] { border-style: solid !important; width:=
+ 100% !important }
+*[class~=3D"nl2go-block-23-inner"] { padding-left: 10px !important; padding=
+-right: 10px !important; padding-top: 20px !important }
+*[class~=3D"nl2go-block-24-container"] { box-sizing: border-box !important;=
+ width: 100% !important }
+*[class~=3D"nl2go-block-24-outer"] { border-style: solid !important; width:=
+ 100% !important }
+*[class~=3D"nl2go-block-24-inner"] { padding-left: 1px !important; padding-=
+right: 1px !important }
+*[class~=3D"nl2go-block-25-container"] { box-sizing: border-box !important;=
+ text-align: left !important; valign: top !important; width: 100% !importan=
+t }
+*[class~=3D"nl2go-block-25-outer"] { Margin: 0 auto 0 0 !important; border-=
+style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-25-inner"] { padding-bottom: 0px !important; paddin=
+g-left: 10px !important; padding-right: 10px !important; padding-top: 10px =
+!important }
+*[class~=3D"nl2go-block-26-container"] { box-sizing: border-box !important;=
+ text-align: center !important; valign: top !important; width: auto !import=
+ant }
+*[class~=3D"nl2go-block-26-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; max-width: 320px !important; width: auto !impor=
+tant }
+*[class~=3D"nl2go-block-26-inner"] { background-color: #fff !important }
+*[class~=3D"nl2go-block-27-container"] { box-sizing: border-box !important;=
+ text-align: center !important; width: 100% !important }
+*[class~=3D"nl2go-block-27-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; width: 100% !important }
+*[class~=3D"nl2go-block-27-inner"] { padding-bottom: 20px !important; paddi=
+ng-top: 20px !important; text-align: center !important }
+*[class~=3D"nl2go-block-28-container"] { box-sizing: border-box !important;=
+ display: block !important; text-align: center !important; width: 100% !imp=
+ortant }
+*[class~=3D"nl2go-block-28-outer"] { Margin: 0 auto 0 auto !important; bord=
+er-style: solid !important; width: 320px !important }
+*[class~=3D"nl2go-block-28-inner"] { background-color: #fff !important }
+body { -webkit-text-size-adjust: none }
+*[class~=3D"nl2go-responsive-hide"] { display: none }
+*[class~=3D"nl2go-body-table"] { min-width: unset !important }
+}
+    </style><!--[if !mso]><!--><style type=3D"text/css" emogrify=3D"no">
+/**
+ * font styles
+ */
+
+
+    </style><!--<![endif]--><style type=3D"text/css">
+/**
+ * default styles
+ */
+
+a, a:link { color: #f51111; text-decoration: none }
+.nl2go-default-textstyle { color: #666; font-family: Arial, Helvetica, sans=
+-serif; font-size: 14px }
+
+/**
+ * custom styles
+ */
+
+.nl2go_class_headline { color: #677876; font-family: Arial, Helvetica, sans=
+-serif; font-size: 26px }
+.nl2go_class_impressum { color: #999999; font-family: Arial, Helvetica, san=
+s-serif; font-size: 12px; font-style: italic }
+
+/**
+ * This must be placed AFTER any other rule for <A/> tags due to !important=
+ priorities.
+ */
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: inherit !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+    </style><style type=3D"text/css" ignore=3D"ignore">.nl2go_preheader {di=
+splay:none !important; mso-hide:all !important; mso-line-height-rule: exact=
+ly; visibility: hidden !important; line-height: 0px !important; font-size: =
+0px !important;}</style></head><body style=3D"background-color: #eee; min-h=
+eight: 1000px;" bgcolor=3D"#eee" text=3D"#666" link=3D"#f51111" yahoo=3D"fi=
+x"><div class=3D"nl2go_preheader" style=3D"display: none !important; mso-hi=
+de:all !important;=20
+        mso-line-height-rule: exactly; visibility: hidden !important;=20
+        line-height: 0px !important; font-size: 0px !important;"><img src=
+=3D"http://smoton.com/t4v6fw7r-kfcuo7jb-x85w0ggj-on8.gif"=20
+                style=3D"display:none" width=3D"1" height=3D"1" alt=3D"" ti=
+tle=3D"" /></div>
+
+<!-- Begin Gmail fix -->
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"nl2go-responsive-hide nl2go-hide">
+<tbody>
+=09<tr>
+=09=09<td height=3D"1" class=3D"nl2go-responsive-hide" style=3D"min-width: =
+600px; font-size: 0px; line-height: 0px;">
+=09=09=09<img height=3D"1" width=3D"600px" src=3D"http://imgnl2go.com/useri=
+mages/customtemplates/spacer.png" style=3D"min-width: 600px; text-decoratio=
+n: none; border: none; -ms-interpolation-mode: bicubic;">
+=09=09</td>
+    </tr>
+</tbody>
+</table>
+<!-- End Gmail fix -->
+
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" style=3D"background-color: #eee; min-width: 600px; width: 100%;" class=
+=3D"nl2go-body-table" width=3D"100%">
+<tbody>
+=09<tr>
+=09=09<td align=3D"center" class=3D"nl2go-block-28-container">
+=09=09=09<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"pr=
+esentation" width=3D"600" style=3D"table-layout: fixed; width: 600px;" clas=
+s=3D"nl2go-block-28-outer">
+=09=09=09<!-- Inhalt -->
+=09=09=09<tbody>
+=09=09=09=09<tr>
+=09=09=09=09=09<td valign=3D"top" style=3D"background-color: #fff;" class=
+=3D"nl2go-block-28-inner">
+=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" role=3D"presentation">
+=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-0-container" align=3D"cent=
+er">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"table-layout: fixed; width: 100%;" class=3D"nl2g=
+o-block-0-outer">
+=09<!-- Web Version -->
+=09<tbody><tr>
+=09=09=09<td align=3D"center" style=3D"text-align: center; color: #666; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 14px;" class=3D"nl2go-bl=
+ock-0-inner nl2go-default-textstyle">
+=09=09=09=09Besuchen Sie hier die <a class=3D"link" href=3D"https://smoton.=
+com/t4v6fw7r-x85w0ggj-kb5sx5ua-18vt" style=3D"color: #3b7fc6; text-decorati=
+on: none;">Webversion</a>.=09=09=09</td>
+=09</tr></tbody>
+</table>
+=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09</tr>
+
+=09=09=09=09=09=09=09<tr><td class=3D"nl2go-block-1-container" align=3D"lef=
+t">
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"600" style=3D"table-layout: fixed; width: 600px;" class=3D"nl2g=
+o-block-1-outer">
+=09<!-- ImgBanner -->
+=09<tbody><tr>
+=09=09<td style=3D"font-size: 0px; line-height: 0px;" class=3D"nl2go-block-=
+1-inner">
+=09=09=09<img src=3D"http://smoton.com/aowrnwb7/s_t4v6fw7r/files/kinoheld-b=
+anner.png" width=3D"600" border=3D"0" style=3D"display: block; width: 100%;=
+max-height:100px;">
+=09=09</td>
+=09</tr></tbody>
+</table></td>
+=09=09=09=09=09=09=09</tr>
+
+=09=09=09=09=09=09=09<tr><td class=3D"nl2go-block-2-container" align=3D"lef=
+t">
+
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"table-layout: fixed; width: 100%;" class=3D"nl2g=
+o-block-2-outer">
+=09<!-- =C3=9Cberschrift -->
+=09<tbody><tr class=3D"nl2go-responsive-hide">
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"30" width=3D"14">=C2=AD</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"30">=C2=AD</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"30" width=3D"14">=C2=AD</td>
+=09</tr>
+=09<tr>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"14">=
+=C2=AD</td>
+=09=09<td style=3D"color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-2-inner nl2go-default-textstyle">
+=09=09=09<span class=3D"nl2go_class_headline " style=3D"color: #677876; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 26px;">NEU im Cinecity u=
+nd Kammer Filmtheater Crailsheim!</span>
+=09=09</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"14">=
+=C2=AD</td>
+=09</tr></tbody>
+</table></td>
+                    </tr><tr><td class=3D"nl2go-block-3-container" align=3D=
+"left">
+
+
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"table-layout: fixed; width: 100%;" class=3D"nl2g=
+o-block-3-outer">
+=09<!-- Textblock -->
+=09<tbody><tr class=3D"nl2go-responsive-hide">
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"20" width=3D"14">=C2=AD</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"20" width=3D"14">=C2=AD</td>
+=09</tr>
+=09<tr>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"14">=
+=C2=AD</td>
+=09=09<td style=3D"color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-3-inner nl2go-default-textstyle">
+=09=09=09<span>Folgende Highlights erwarten Sie in Ihrem Lieblingskino:</sp=
+an>
+=09=09</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"14">=
+=C2=AD</td>
+=09</tr>
+=09<tr class=3D"nl2go-responsive-hide">
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"10" width=3D"14">=C2=AD</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"10">=C2=AD</td>
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"10" width=3D"14">=C2=AD</td>
+=09</tr></tbody>
+</table></td>
+                    </tr><tr><td class=3D"nl2go-block-13-container">
+
+
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"table-layout: fixed; width: 100%;margin-left:6px=
+;padding: 0 3px;" class=3D"nl2go-block-13-outer"><!-- 3 Spalten -->
+=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09<td style=3D"" class=3D"nl2go-block-13-inner">
+=09=09=09=09<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation">
+=09=09=09=09=09<tbody>
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=3D"nl2go-=
+block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-o0mnxzzn-6sd"><img src=3D"https://media.kinoheld.de=
+/op18XVn2L0QP_dbC9l_r4-yqWBA=3D/170x243/images%2Ffilm%2F3%2F190_140156_2291=
+06.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-pfxarso2-eax"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Arielle, die =
+Meerjungfrau</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-t6u7ar7n-o5i"><img src=3D"https://media.kinoheld.de=
+/6PQv_FN-eDZxVaAU1Rua3KqYe0U=3D/170x243/images%2Ffilm%2F3%2F190_128203_2315=
+23.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-vwgp8h3m-58g"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Fast &amp; Fu=
+rious 10</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-6b35opmq-ot2"><img src=3D"https://media.kinoheld.de=
+/GxjjPeqRED7Vy18C3oI6H71E1_8=3D/170x243/images%2Ffilm%2F3%2F190_134142_2315=
+61.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-9wjiejjn-qpm"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Guardians of =
+the Galaxy: Vol. 3</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</tbody>
+=09=09=09=09</table>
+=09=09=09</td>
+=09=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt=
+: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"1=
+0">=C2=AD</td>
+=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09<td style=3D"" class=3D"nl2go-block-13-inner">
+=09=09=09=09<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation">
+=09=09=09=09=09<tbody>
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=3D"nl2go-=
+block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-dhram8z6-v0o"><img src=3D"https://media.kinoheld.de=
+/21_zRpllJ2M28u5ZFVQEqE7oM68=3D/170x243/images%2Ffilm%2F3%2F190_224132_1228=
+999.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: bl=
+ock; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-f0rhaj43-zy1"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Und dann kam =
+Dad</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-irxghv4i-hkk"><img src=3D"https://media.kinoheld.de=
+/xuTasUnnF0IEKaEDBkFLyxoWMv4=3D/170x243/images%2Ffilm%2F3%2F190_154553_2317=
+52.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-nsq052ib-hja"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Renfield</spa=
+n><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-pfx9ogo2-bzj"><img src=3D"https://media.kinoheld.de=
+/Ln-9l9QvJ19M-TFLFuA-OPsztdU=3D/170x243/images%2Ffilm%2F3%2F190_120247_2296=
+25.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-tas9iv9f-e3y"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Spider-Man: A=
+cross the Spider-Verse</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</tbody>
+=09=09=09=09</table>
+=09=09=09</td>
+=09=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt=
+: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"1=
+0">=C2=AD</td>
+=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09<td style=3D"" class=3D"nl2go-block-13-inner">
+=09=09=09=09<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation">
+=09=09=09=09=09<tbody>
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=3D"nl2go-=
+block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-xjo4jkb6-11w9"><img src=3D"https://media.kinoheld.d=
+e/a0jqyuEB7bwYetOx4EtztHDJ9Bg=3D/170x243/images%2Ffilm%2F3%2F190_119459_231=
+525.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: bl=
+ock; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-6f195rr6-mac"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Transformers:=
+ Aufstieg der Bestien</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-7xiyy8ab-va8"><img src=3D"https://media.kinoheld.de=
+/1_lu7cqZTfd9bcVFbthQGNgB6yQ=3D/170x243/images%2Ffilm%2F3%2F190_125865_2318=
+42.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-bqmvm5ma-kf0"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Super Mario B=
+ros. Film, Der</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-gvuihxab-66s"><img src=3D"https://media.kinoheld.de=
+/o99VGZ0rAbURRJCttxe1RUXI3zA=3D/170x243/images%2Ffilm%2F3%2F190_154549_1151=
+048.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: bl=
+ock; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-ik1cj77m-pq2"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Asterix &amp;=
+ Obelix im Reich der Mitte</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</tbody>
+=09=09=09=09</table>
+=09=09=09</td>
+=09=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt=
+: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"1=
+0">=C2=AD</td>
+=09=09</tr>
+=09=09=09=09=09=09=09<tr>
+=09=09=09<td style=3D"" class=3D"nl2go-block-13-inner">
+=09=09=09=09<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" role=3D"presentation">
+=09=09=09=09=09<tbody>
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=3D"nl2go-=
+block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-noshpto3-cjy"><img src=3D"https://media.kinoheld.de=
+/dPLFSfG5Pz1VcKpGN5TDkkLKeHU=3D/170x243/images%2Ffilm%2F3%2F190_237805_2318=
+335.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: bl=
+ock; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-pfxuwlpe-6fm"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Boogeyman, Th=
+e</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-uq32lww3-i1w"><img src=3D"https://media.kinoheld.de=
+/3JyG4v3uRGbk9JFUkVYauj-gmXg=3D/170x243/images%2Ffilm%2F3%2F190_225198_2317=
+68.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: blo=
+ck; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-vkn1w5jm-e9p"><img src=3D"http://smoton.com/aowr=
+nwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D"=
+max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Roter Himmel<=
+/span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"33%" valign=3D"top" class=
+=3D"nl2go-block-6-container">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" role=3D"presentation" width=3D"33%" style=3D"tabl=
+e-layout: fixed; width: 100%;" class=3D"nl2go-block-6-outer">
+=09=09=09=09=09=09=09=09<!-- Linke Spalte --><tbody>
+=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-hide">
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD<=
+/td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" height=3D"20" width=
+=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" style=3D"" class=3D"nl2go-=
+block-6-inner">
+=09=09=09=09=09=09=09=09=09=09=09<table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" role=3D"presentation"><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-4-container=
+">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"170" style=3D"table-l=
+ayout: fixed; width: 170px;" class=3D"nl2go-block-4-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Img1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px;" class=3D"nl2go-block-4-inner">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://smoto=
+n.com/t4v6fw7r-x85w0ggj-6iyq5qrm-1ebq"><img src=3D"https://media.kinoheld.d=
+e/GoyjJCzjIX8iSIwaVPiHPchkTSY=3D/170x243/images%2Ffilm%2F3%2F190_216111_612=
+202.jpg" width=3D"170" border=3D"0" style=3D"max-height: 243px; display: bl=
+ock; width: 100%;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<div style=3D"background=
+-color: #edce3b; text-align: center;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://sm=
+oton.com/t4v6fw7r-x85w0ggj-85ejf9f7-18wq"><img src=3D"http://smoton.com/aow=
+rnwb7/s_t4v6fw7r/files/tickets-btn.png" width=3D"150" border=3D"0" style=3D=
+"max-height: 40px; display: inline-block; width: 150px;"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<td class=3D"nl2go-block-5-container=
+" align=3D"left">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" role=3D"presentation" width=3D"100%" style=3D"table-=
+layout: fixed; width: 100%;" class=3D"nl2go-block-5-outer">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Txt1 --><tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr class=3D"nl2go-responsive-=
+hide">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px=
+; line-height: 0px; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" hei=
+ght=3D"12">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D=
+"text-align: left; color: #666; font-family: Arial, Helvetica, sans-serif; =
+font-size: 14px;" class=3D"nl2go-block-5-inner nl2go-default-textstyle">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<span style=3D"font-weight: bold;">Book Club 2 -=
+ Ein neues Kapitel</span><br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px=
+; mso-line-height-alt: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-respon=
+sive-hide" width=3D"10">=C2=AD</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09</tbody></table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09</tbody>
+=09=09=09=09</table>
+=09=09=09</td>
+=09=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt=
+: 0px; mso-margin-top-alt: 0px;" class=3D"nl2go-responsive-hide" width=3D"1=
+0">=C2=AD</td>
+=09=09</tr>
+=09=09=09=09</tbody>
+</table>
+
+</td>
+</tr>
+
+
+<tr>
+=09<td class=3D"nl2go-block-25-container" align=3D"center">
+=09=09<br>
+=09=09<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"prese=
+ntation" width=3D"100%" style=3D"table-layout: fixed; width: 100%;" class=
+=3D"nl2go-block-26-outer">
+=09=09=09<!-- Image -->
+=09=09=09<tbody>
+=09=09=09=09<tr>
+=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-heig=
+ht-alt: 0px; mso-margin-top-alt: 0px;" height=3D"10" width=3D"13">=C2=AD</t=
+d>
+=09=09=09=09=09<td style=3D"background-color: #fff; text-align:center; font=
+-family: Arial, Helvetica, sans-serif;" class=3D"nl2go-block-26-inner">
+=09=09=09=09=09=09<a href=3D"https://smoton.com/t4v6fw7r-x85w0ggj-ddtsixyq-=
+anf"><img src=3D"http://smoton.com/aowrnwb7/s_t4v6fw7r/files/button.png" wi=
+dth=3D"574" border=3D"0" style=3D"display: block; width: 100%%; margin: aut=
+o;"></a>=09=09=09=09=09</td>
+=09=09=09=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-heig=
+ht-alt: 0px; mso-margin-top-alt: 0px;" height=3D"10" width=3D"13">=C2=AD</t=
+d>
+=09=09=09=09</tr>
+=09=09=09</tbody>
+=09=09</table>
+=09</td>
+</tr>
+
+
+<tr>
+=09<td class=3D"nl2go-block-27-container" align=3D"center">
+
+
+<table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%" style=3D"table-layout: fixed; width: 100%;" class=3D"nl2g=
+o-block-27-outer">
+=09<!-- Impressum -->
+=09<tbody><tr class=3D"nl2go-responsive-hide">
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD</td>
+=09</tr>
+=09<tr>
+=09=09<td align=3D"center" style=3D"text-align: center; color: #666; font-f=
+amily: Arial, Helvetica, sans-serif; font-size: 14px;" class=3D"nl2go-block=
+-27-inner nl2go-default-textstyle">
+=09=09=09<span class=3D"nl2go_class_impressum" style=3D"color: #999999; fon=
+t-family: Arial, Helvetica, sans-serif; font-size: 12px; font-style: italic=
+;">Impressum: kinoheld GmbH, Von-der-Tann-Str. 12, 80539 M=C3=BCnchen, supp=
+ort@kinoheld.de<br>Gesch=C3=A4ftsf=C3=BChrer: Constantin Schwaab<br>Registe=
+rgericht: M=C3=BCnchen, HRB: 200845, USt-IdNr.: DE285165823<br></span>
+=09=09=09<a href=3D"https://smoton.com/t4v6fw7r-x85w0ggj-f4pjin5v-22s" styl=
+e=3D"text-decoration: none;"><span class=3D"nl2go_class_impressum" style=3D=
+"color: #999999; font-family: Arial, Helvetica, sans-serif; font-size: 12px=
+; font-style: italic;">Newsletter abbestellen</span></a>
+=09=09</td>
+=09</tr>
+=09<tr class=3D"nl2go-responsive-hide">
+=09=09<td style=3D"font-size: 0px; line-height: 0px; mso-line-height-alt: 0=
+px; mso-margin-top-alt: 0px;" height=3D"20">=C2=AD</td>
+=09</tr></tbody>
+</table></td>
+                    </tr></tbody></table></td>
+
+
+
+
+        </tr></tbody></table></td>
+            </tr></tbody></table>
+</body></html>
+
+--=c74a5a749875b4ed64e71c042d760b96--
