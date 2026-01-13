@@ -1,0 +1,8 @@
+{
+    "default2k._domainkey.openpetition.org": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1; h=sha256; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuL9KSvCeNpSctcCKKAbfqmiHdWT\/Yoe9Wn6U0WX1uaD9V9HLRShtKvUOeyoGWI\/xH9ydDFbT9SoPyfiI0+EZz0Kurev+X569CDJgY4TsNmJKxRC1XtqVzR4agNefSlDuMleHEt2qEjcGOI28\/hMsIn3QOwJZhch26+tsVVCkv\/HE1jAb0o2wki0qpdKK2bYo\/QFJRI5eoIkobrXw4YPOe96uCVPH3WxOwYPE7mvKCoLg101aWf3\/GgAlUXAXjLwvxSEmewmJC9aHmPCQQsvuI40aRIDHylOfV3+ndfgG7r0S7yaMw0S5vRrML04MsD5uMOdnT5Yz5yiNyo2O\/xvZfQIDAQAB"
+        }
+    ]
+}

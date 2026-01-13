@@ -1,0 +1,8 @@
+{
+    "newsletter2go._domainkey.kinoheld.com": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCcKh\/8\/KaJnZhRObYzlrkVyYIIxhlBUK\/hVjcBZq84bNPWbR462ILMw+N8ejfh4H9GlBZZETIw3qx4Pus1SY2M4M50AcjPidJLsHZgxptZHY2JNCDZeDG5+lnSZwMfc08tieEyR2K+UMFimy0Z8Zn06o1aMcWuA+EmeYHghJdlrQIDAQAB;"
+        }
+    ]
+}

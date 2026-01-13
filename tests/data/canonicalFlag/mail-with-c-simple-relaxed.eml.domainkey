@@ -1,0 +1,8 @@
+{
+    "qualtrics._domainkey.tier.app": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfrJPPzHc\/PFppJUowbpFDRl2HKDTdX8DqJuDSfaNPT4\/Oo01wQ0Us8ejg2LvBbM4Vn0iiWbOhv5tIj1PX8cB1UwlNuOW6BLPeUpBFP+BXDvOvzp0mS6HTmIxcsi0+ijjh1HbRKox\/8YTsh3HtNNFKQoP8o0dfU1kpLPZDegqUxQIDAQAB"
+        }
+    ]
+}

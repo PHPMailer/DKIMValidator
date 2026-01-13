@@ -82,7 +82,7 @@ abstract class DKIM
      *
      * @throws DKIMException
      */
-    protected function canonicalizeHeaders(array $headers, string $style = 'relaxed'): string
+    protected function canonicalizeHeaders(array $headers, string $style): string
     {
         if (count($headers) === 0) {
             throw new DKIMException('Attempted to canonicalize empty header array');
@@ -124,7 +124,7 @@ abstract class DKIM
      *
      * @return string
      */
-    protected function canonicalizeBody(string $body, string $style = 'relaxed', int $length = -1): string
+    protected function canonicalizeBody(string $body, string $style, int $length = -1): string
     {
         if ($body === '') {
             return self::CRLF;
@@ -245,7 +245,7 @@ abstract class DKIM
                         'unfolded'   => $currentHeaderValue,
                         'decoded'    => self::rfc2047Decode($currentHeaderValue),
                         'rawarray'   => $currentRawHeaderLines,
-                        'raw'        => implode(self::CRLF . ' ', $currentRawHeaderLines), //Refold lines
+                        'raw'        => implode(self::CRLF, $currentRawHeaderLines), //Refold lines
                     ];
                 }
                 $currentHeaderLabel = $matches[1];
@@ -257,7 +257,7 @@ abstract class DKIM
                 }
                 //This is a folded continuation of the current header
                 $currentHeaderValue .= $matches[1];
-                $currentRawHeaderLines[] = $matches[1];
+                $currentRawHeaderLines[] = $matches[0];
             }
             ++$headerLineIndex;
             if ($headerLineIndex >= $headerLineCount) {

@@ -1,0 +1,8 @@
+{
+    "1436676070.phpclasses._domainkey.phpclasses.org": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1;t=s;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDsqzdJJGS0aj1KkP29oYaWhdeaoVyLwpsiAJWVFh+6QsQ\/SHmpDXfQuoFql4JZqtstLaesdW4mm\/T3IGYHjwSj+ZTCqYh+mfPAX1VMysCSWMXxVv77yHPJ2UUtJsMJHL3Im6OMxSfd0AEX36XBXecB\/DeY1a6DD7mBtUJ5EL5dIQIDAQAB"
+        }
+    ]
+}

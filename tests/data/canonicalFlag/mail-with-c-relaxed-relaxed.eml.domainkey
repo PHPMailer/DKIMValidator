@@ -1,0 +1,8 @@
+{
+    "20160623._domainkey.regenwald.org": [
+        {
+            "type": "TXT",
+            "txt": "v=DKIM1; h=sha256; k=rsa; p=MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAvY\/3psu7nczv9CnwDCj7lBFY9LHpFiZHA3yGAsRP0tFOUvWaFEp+6dKQUldzN4kYuAfgDsQYHVPSen14JXCp8xr4GRVSxvDZ6oF62oxqCdfB8Yb9Nn0XPmSciUBueGX2VCS0FRYZ6lxBKtqcuZSKyq0Q+g7ow6wqoRfMdnFwDpP+Vum2h6ks2igx5z+NkdDYuCf6GjFR+9T\/oQ2xMUwO7kptPQtYtjOaeThAW0kLh+an9fNiLq\/6oU6Hkwe2049TwgehvpRWBqygCz4EGZhXHMotyjVJjuaLgOqebNPStnRsMzB5p6KZpekJ5LupjQW\/ag+Wior\/OhpqstburEQzuTpbWghGeg7ZkGq7xVbKo7gAXIKsMTRnrLM3Wq+ElatXU6UYkmF0fB4vH8s4bwWxSAjgplkhHaFs0jF6G4PpDjNrkB+EqiNtMceK9r28b2MZpu5RhR+tYg0WrRreJrtviqgynv80QAft8kErRgA7AvguwUA\/mfs67Qbu6mg0PqVEeEioW16pDgBFqKQfvExcSU82jbmJWvhf6QGXcats3\/CrliJSbe8XJEwgAKXzWmO\/gAeR0UsFEj6Bs9NHuIf7tXw8Pi\/FFGhfTjAR7fhwe\/YkuD3xpiiM5yTkw4x\/ttHlXaY9R0d22nS94KhGcGqeOP9TErSSA3XbdBj0Z7tuXXkCAwEAAQ=="
+        }
+    ]
+}

@@ -1,0 +1,2718 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6022:7408:b0:61:7583:e36a with SMTP id dp8csp882317lab;
+        Fri, 25 Oct 2024 21:41:58 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IExakzLYfcOusImaoL5SrDEE9GI4xg6OYC/Ek8IDJjbcZxlIncfxACvnSiMXJap+94Ny+lM
+X-Received: by 2002:a05:600c:3514:b0:431:4880:3120 with SMTP id 5b1f17b1804b1-4319aca55a6mr8595065e9.11.1729917718313;
+        Fri, 25 Oct 2024 21:41:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1729917718; cv=none;
+        d=google.com; s=arc-20240605;
+        b=YSpzzUDBPonL3nRVNowyiyXDS7Y/3C3yEiaOaevOSCi0XcqMCQN+uIELF0Ba5Pw7pf
+         KD8gYW+rKPoBjuWgMwOoRnQZtYw/wCw4YHUS/HRQzSPoLWis4l/+nGdF5PnFMotLEw4Q
+         v9yVB4sM0rkHM7TBIWK3fgwMvOvC7vumV7V259UiBSRSbDbWfPhgpO5jc1UdJwZLfRnf
+         Gv+sH5RrBqW0tl9V9YvXDRsZ5Q64wdXf0GBtLoKwgo0PQYYlMIt9mvKYZIIAWO2wlMNq
+         MYGnXk91hYb9dSmhpzOoXZJD2UngGIp5fk+m6AQjGexEZ5VptWZZoy/Luv6pWY1TtMv5
+         sO4Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe-post:list-unsubscribe:list-id
+         :mime-version:subject:message-id:to:reply-to:from:date
+         :dkim-signature:dkim-signature;
+        bh=fFvFTxpfBoXMONudNHmpKs7nHal3lwBTpUKBQdSyWBA=;
+        fh=lVkVyK4gEgT3UMAZjMloo01Ekuu50XVvQ3JHuS2J8V4=;
+        b=dDNa0jRv5+drQZQsju+c7O9lcjdb0BUUvzpI+kwVxiZq45dPh6ujkiQtaA/82UFYhv
+         8e0pKRvh6nTOsWMLOG4SI7oou5Tf1BtVYlDp+1z5hLVzBy9s8PaccEsnxZnTBhUrXd4h
+         4hNU/iLcoDobmRsuglflThOGTw2biYJtLZfZKExiiku7qr9yOhAYNnwdhBTrPgPzJn2M
+         osiYvKlu+cDFaAuTod2rN61furkCc8Z3PcsjUju0C2VhIzVh57XQpWdR2AsipNrr/hir
+         XJmKL/n1Wadype611lArBRotcHXRILHmYhMmj9xSpSPpVMaUc9xw/yQYYbTkmqk26XxW
+         Dpmw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@foodwatch.de header.s=mailing header.b=l08UXP7X;
+       dkim=pass header.i=@srv2.de header.s=mailing header.b=JpExZxPi;
+       spf=pass (google.com: domain of return@newsletter.foodwatch.de designates 91.241.74.216 as permitted sender) smtp.mailfrom=return@newsletter.foodwatch.de;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=foodwatch.de
+Return-Path: <return@newsletter.foodwatch.de>
+Received: from mail23-216.srv2.de (mail23-216.srv2.de. [91.241.74.216])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-38058b3dfa9si1730431f8f.274.2024.10.25.21.41.57
+        for <d4d4online@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Fri, 25 Oct 2024 21:41:58 -0700 (PDT)
+Received-SPF: pass (google.com: domain of return@newsletter.foodwatch.de designates 91.241.74.216 as permitted sender) client-ip=91.241.74.216;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@foodwatch.de header.s=mailing header.b=l08UXP7X;
+       dkim=pass header.i=@srv2.de header.s=mailing header.b=JpExZxPi;
+       spf=pass (google.com: domain of return@newsletter.foodwatch.de designates 91.241.74.216 as permitted sender) smtp.mailfrom=return@newsletter.foodwatch.de;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=foodwatch.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed; s=mailing; d=foodwatch.de;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:X-ulpe:
+ List-Id:X-CSA-Complaints:List-Unsubscribe:List-Unsubscribe-Post:Feedback-ID;
+ i=aktuell@foodwatch.de;
+ bh=C3XnR2TTy4akPzsQlrf0WmWxs52EUn2HV9xoSGiqFMo=;
+ b=l08UXP7XI7fwhapko0piVYac4O8gLJxANNTxgmvOa4G7oj9p0aV9FqE7VbjghR6vLy5MfckKxBL3
+   nTlDZmJpctERHRAAfaRP4owcPOhOwJIcV4rTCRsy05huLC13tck/mSxV68NN5Peg8e5DRwZ1wcQh
+   cYDbJXwoykY0MpmlnzQ=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed; s=mailing; d=srv2.de;
+ h=Date:From:Reply-To:To:Message-ID:Subject:MIME-Version:Content-Type:X-ulpe:
+ List-Id:X-CSA-Complaints:List-Unsubscribe:List-Unsubscribe-Post:Feedback-ID;
+ bh=C3XnR2TTy4akPzsQlrf0WmWxs52EUn2HV9xoSGiqFMo=;
+ b=JpExZxPiPDvfBbfGQBrlS/fXOAs0vgn0q7ItGol/Otk3EfV1lbJH+jYCCiZPKuqPj6iS1W1FuHnw
+   jhoV6ZtEIGcOofx3b8oMr9c+6mrG0diWVTiE5VAYxT+XdP1N+PZ8sYRtQFIkKdt5piO/a65a3oK/
+   KTvhj14+rKcoNqXCESs=
+Date: Sat, 26 Oct 2024 06:41:57 +0200 (CEST)
+From: Annemarie Botzki | foodwatch <aktuell@foodwatch.de>
+Reply-To: aktuell@foodwatch.de
+To: d4d4online@gmail.com
+Message-ID: <re-pOW0HLQJwzCc4ca9iwcnYcbGhZq-62Z6KW0E-62SAH3D5-LO21CZ6@newsletter.foodwatch.de>
+Subject: =?UTF-8?Q?Milchm=C3=A4rchen?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_32853228_515336296.1729917717125"
+X-ulpe: re-pOW0HLQJwzCc4ca9iwcnYcbGhZq-62Z6KW0E-62SAH3D5-LO21CZ6@newsletter.foodwatch.de
+List-Id: <5914AT3F-K4KOD.newsletter.foodwatch.de>
+X-Report-Spam: complaints@episerver.com
+X-CSA-Complaints: csa-complaints@eco.de
+X-Mailer: Episerver
+X-sender: aktuell@foodwatch.de
+List-Unsubscribe: <mailto:listoff-62Z6KW0E-62SAH3D5-13K2KE0@newsletter.foodwatch.de?subject=unsubscribe>,<https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5914AT3H-1CGOXYG-UL.html>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: 5914AT3F:62SAH3D5:episerver
+
+------=_Part_32853228_515336296.1729917717125
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+> Online anzeigen [1]
+
+
+[1] https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-=
+o.html=20
+
+--------------------------------------------------------------------
+
+foodwatch Logo
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5H9QZGEV-15ZR9W7.htm=
+l=20
+
+--------------------------------------------------------------------
+
+Hallo David Dreschner,
+
+in Deutschland wurde noch nie ein so geringer Milch-Konsum
+registriert wie 2023. [1] Denn Verbraucher:innen wissen: Milch ist
+ein echter Klimakiller! Unser aktueller Milch-Report zeigt die ganze
+Dimension: Die Milchproduktion allein st=C3=B6=C3=9Ft hierzulande =C3=BCber=
+ 46
+Millionen Tonnen CO2 pro Jahr aus. Das entspricht etwa 6,8 % der
+gesamten Emissionen Deutschlands im selben Bezugsjahr 2023. [2]=20
+
+--------------------------------------------------------------------
+
+Bei Verkaufsr=C3=BCckg=C3=A4ngen schl=C3=A4gt die Milchlobby Alarm. Die
+Klimasch=C3=A4dlichkeit der Branche soll unter den Teppich gekehrt
+werden. Also nimmt man Millionenbetr=C3=A4ge in die Hand, beauftragt
+gro=C3=9Fe Werbeagenturen [3] und verbreitet irref=C3=BChrende Informatione=
+n
+im gro=C3=9Fen Stil.=20
+
+--------------------------------------------------------------------
+
+foodwatch deckt auf
+
+In unserem neuen Report =E2=80=9EMilchm=C3=A4rchen=E2=80=9C haben wir diese=
+ manipulativen
+Narrative blo=C3=9Fgestellt. Wir haben aufgedeckt, dass Milchprodukte
+eine weitaus schlechtere Klimabilanz haben, als die Industrie uns
+weismachen will. Denn sie verleugnet Emissionen, die rund um die
+Milchproduktion anfallen: Dazu geh=C3=B6ren der Futtermittelanbau, die
+Produktion von D=C3=BCngemitteln und vieles mehr. [4]=20
+
+--------------------------------------------------------------------
+
+Um ihr Klima-Image zu verbessern, wendet die Milchindustrie sogar
+Tierversuche an. Beispiel Methan [5]: Der Klima-Effekt =E2=80=9Einnovativer
+Futtermethoden=E2=80=9C wird z.B. getestet, indem K=C3=BChe isoliert und =
+=C3=BCber
+Tage eingesperrt werden. In den abgeschlossenen Messzellen wird der
+Methanaussto=C3=9F kontrolliert. Die Tiere k=C3=B6nnen sich in dieser Zeit
+nicht bewegen und nicht hinlegen. [6]=20
+
+--------------------------------------------------------------------
+
+Gegen die Augenwischerei und Machenschaften der Milchindustrie, f=C3=BCr
+effektiven Klimaschutz und f=C3=BCr mehr Tiergesundheit: Daf=C3=BCr engagie=
+ren
+sich bereits zehntausende foodwatch F=C3=B6rdermitglieder. Kommen Sie
+dazu!=20
+
+--------------------------------------------------------------------
+
+Ja, ich st=C3=A4rke foodwatch
+mit 5 Euro im Monat
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.htm=
+l=20
+
+--------------------------------------------------------------------
+
+Ja, ich st=C3=A4rke foodwatch
+mit 10 Euro im Monat
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.ht=
+ml=20
+
+--------------------------------------------------------------------
+
+Ja, ich st=C3=A4rke foodwatch
+mit 20 Euro im Monat
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html=
+=20
+
+--------------------------------------------------------------------
+
+Ich helfe heute mit einer
+einmaligen Spende
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.ht=
+ml=20
+
+--------------------------------------------------------------------
+
+Ich bin ehrlich, die Zahlen und Fakten unserer Studie haben auch
+mich ersch=C3=BCttert. Die Image-Kampagne =E2=80=9EInitiative Milch=E2=80=
+=9C allein hat
+ein Budget von vier Millionen Euro =E2=80=93 das ausschlie=C3=9Flich daf=C3=
+=BCr
+genutzt wird, die Wahrheit =C3=BCber Milchprodukte zu verdrehen. [7] So
+viel Budget hat foodwatch Deutschland pro Jahr f=C3=BCr all unsere Themen
+zusammen.=20
+
+--------------------------------------------------------------------
+
+Die Millionenbetr=C3=A4ge der Milch-Lobby gehen f=C3=BCr =C3=96ffentlichkei=
+tsarbeit
+und Meinungsmache drauf =E2=80=93 Inhalte der Wahl: Podcasts mit
+Milch-Influencern [8] und Cover-Songs. Sing Hallelujah wird zu
+Hallemuhja [9]. Der m=C3=BCde Lacher bleibt im Hals stecken, denkt man an
+das Tierleid und die Folgen der Klimakatastrophe allein in diesem
+Jahr. Hurrikane. Hochwasser. Rekord-Hitze. [10]=20
+
+--------------------------------------------------------------------
+
+Und w=C3=A4hrend teuer produzierte Milch-Podcasts gut gelaunt ihre
+Nachhaltigkeitsm=C3=A4rchen verbreiten, werden =E2=80=9EHochleistungsk=C3=
+=BChe=E2=80=9C mit
+Tierversuchen gequ=C3=A4lt. Damit die Klima-Emissionen der
+Milchwirtschaft vielleicht irgendwann mal verringert werden k=C3=B6nnen,
+wird lebenden K=C3=BChen ein =E2=80=9EFenster=E2=80=9C in die Bauchseite ge=
+schnitten.
+[11] Dabei sind doch so viele Verbraucher:innen jetzt schon
+vollkommen zufrieden damit, ihren Milchkonsum zu reduzieren oder auf
+pflanzliche Alternativen umzusteigen. [12] Liebe Milchwirtschaft: Es
+ist Zeit, mit der Zeit zu gehen.=20
+
+--------------------------------------------------------------------
+
+Die Lebensmittelindustrie permanent im Blick zu behalten, die
+Erstellung von Reports, =C3=B6ffentlichkeitswirksame Mitmachaktionen und
+effektive Pressearbeit =E2=80=93 all das geht nur wegen der vielen tausende=
+n
+F=C3=B6rdermitglieder, die uns regelm=C3=A4=C3=9Fig spenden. Vielen Dank f=
+=C3=BCr Ihre
+Unterst=C3=BCtzung.=20
+
+--------------------------------------------------------------------
+
+Ja, ich helfe foodwatch
+ mit 5 Euro monatlich
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.htm=
+l=20
+
+--------------------------------------------------------------------
+
+Ja, ich helfe foodwatch
+mit 10 Euro monatlich
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.ht=
+ml=20
+
+--------------------------------------------------------------------
+
+Ja, ich helfe foodwatch
+mit 20 Euro monatlich
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html=
+=20
+
+--------------------------------------------------------------------
+
+Ich m=C3=B6chte heute lieber
+einmalig spenden
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.ht=
+ml=20
+
+--------------------------------------------------------------------
+
+Nat=C3=BCrlich ist es vollkommen okay, z.B. zwei Portionen Milch am Tag
+zu konsumieren =E2=80=93 ganz gem=C3=A4=C3=9F den Empfehlungen der =E2=80=
+=9EDeutschen
+Gesellschaft f=C3=BCr Ern=C3=A4hrung=E2=80=9C. [13] Aber eine Milchindustri=
+e, die ohne
+R=C3=BCcksicht auf Tierwohl oder Klima ein =E2=80=9EWeiter so=E2=80=9C m=C3=
+=B6chte, und sogar
+auf Wachstum setzt, ist nicht tragbar.=20
+
+--------------------------------------------------------------------
+
+Mit freundlichen Gr=C3=BC=C3=9Fen=20
+
+--------------------------------------------------------------------
+
+Annemarie Botzki
+Recherche und Kampagnen=20
+
+--------------------------------------------------------------------
+
+P.S: Die Milchlobby ist nat=C3=BCrlich nicht die erste
+Lebensmittelbranche, die Greenwashing betreibt. Letztes Jahr haben
+wir bei der EU bereits ein Verbot f=C3=BCr irref=C3=BChrende
+=E2=80=9EKlimaneutral=E2=80=9C-Label erwirkt. [14] Wir sprechen also aus Er=
+fahrung,
+wenn wir sagen: Mit gen=C3=BCgend Druck k=C3=B6nnen wir auch das Greenwashi=
+ng
+der Milchlobby unterbinden!
+
+> Ich helfe mit einem regelm=C3=A4=C3=9Figen Beitrag [1]
+
+> Ich spende einmalig [2]
+
+[1]
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWB-102S1DFK.ht=
+ml
+
+[2]
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWC-MASWJ3.html=
+=20
+
+--------------------------------------------------------------------
+
+Quellen:
+[1] Tagesschau: =E2=80=9EWarum Deutsche weniger Milch trinken=E2=80=9C, 14.=
+04.2023
+(abgerufen am 24.10.2024).
+[2] foodwatch: Report "MILCHM=C3=84RCHEN =E2=80=93 Wie die Milchlobby die
+Klimakrise befeuert, K=C3=BChe leiden l=C3=A4sst und Verbraucher t=C3=A4usc=
+ht", S.
+20, 22.10.2024 (abgerufen am 24.10.2024).
+[3] RND: =E2=80=9EDie Milch macht's =E2=80=93 nicht mehr. Sinkende Absatzza=
+hlen: Wie
+die Milchindustrie um die Generation Z wirbt=E2=80=9C, 30.04.2023 (abgerufe=
+n
+am 24.10.2024).
+[4] foodwatch: Report "MILCHM=C3=84RCHEN =E2=80=93 Wie die Milchlobby die
+Klimakrise befeuert, K=C3=BChe leiden l=C3=A4sst und Verbraucher t=C3=A4usc=
+ht",
+22.10.2024, S. 20 (abgerufen am 24.10.2024).
+[5] foodwatch: Report "MILCHM=C3=84RCHEN =E2=80=93 Wie die Milchlobby die
+Klimakrise befeuert, K=C3=BChe leiden l=C3=A4sst und Verbraucher t=C3=A4usc=
+ht",
+22.10.2024, S. 33, 39 (abgerufen am 24.10.2024).
+[6] foodwatch: Report "MILCHM=C3=84RCHEN =E2=80=93 Wie die Milchlobby die
+Klimakrise befeuert, K=C3=BChe leiden l=C3=A4sst und Verbraucher t=C3=A4usc=
+ht",
+22.10.2024, S. 20 (abgerufen am 24.10.2024).
+[7] RND: =E2=80=9EDie Milch macht's =E2=80=93 nicht mehr. Sinkende Absatzza=
+hlen: Wie
+die Milchindustrie um die Generation Z wirbt=E2=80=9C, 30.04.2023 (abgerufe=
+n
+am 24.10.2024).
+[8] Initiative Milch: Podcast =E2=80=9ETierwohl und Klimaschutz =E2=80=93
+Verantwortung f=C3=BCr die Zukunft=E2=80=9C, 07.10.2024 (abgerufen am
+24.10.2024).
+[9] Milch macht's! (YouTube): =E2=80=9EMilch macht's =E2=80=93 Hallemuhjah
+(Offizielles Musikvideo)=E2=80=9C, 30.05.2024 (abgerufen am 24.10.2024).
+[10] RBB: =E2=80=9ESommer 2024 war global der hei=C3=9Feste seit
+Aufzeichnungsbeginn=E2=80=9C, 06.09.2024 (abgerufen am 24.10.2024).
+[11] foodwatch: Report "MILCHM=C3=84RCHEN =E2=80=93 Wie die Milchlobby die
+Klimakrise befeuert, K=C3=BChe leiden l=C3=A4sst und Verbraucher t=C3=A4usc=
+ht",
+22.10.2024, S. 39 (abgerufen am 24.10.2024).
+[12] GfK: =E2=80=9EConsumer Index Total Grocery 11 | 2023=E2=80=9C (abgeruf=
+en am
+24.10.2024).
+[13] DGE: =E2=80=9EDGE-Ern=C3=A4hrungskreis =E2=80=93 Milch und Milchproduk=
+te=E2=80=9C (abgerufen
+am 24.10.2024).
+[14] foodwatch: =E2=80=9EErfolg: Klima-L=C3=BCgen sind vom Tisch!=E2=80=9C,=
+ 06.12.2023
+(abgerufen am 24.10.2024).=20
+
+--------------------------------------------------------------------
+
+Per Bank=C3=BCberweisung spenden
+Spendenkonto bei der GLS-Bank
+BICGENODEM1GLS
+IBAN DE50 4306 0967 0104 2464 00=20
+
+--------------------------------------------------------------------
+
+Sie m=C3=B6chten lieber per Post Mitglied werden?
+Formular zum Ausdrucken [1]
+
+
+[1]
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5P9TZCVW-1BNOKNP.pdf=
+=20
+
+--------------------------------------------------------------------
+
+Jetzt Newsletter teilen!
+
+Newsletter auf WhatsApp teilen
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GIGT5DE-PNW74.html?=
+text=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-5=
+G6AUO7N-88K1V5-o.html
+
+Newsletter per E-Mail teilen
+mailto:?body=3Dhttps://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5G6AU=
+O7N-88K1V5-o.html
+
+Newsletter auf Facebook teilen
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GIGT5DC-3N82NS.php?=
+u=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-5G6A=
+UO7N-88K1V5-o.html
+
+Newsletter auf X teilen
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GIGT5DD-67U18EF.htm=
+l?url=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-=
+5G6AUO7N-88K1V5-o.html
+
+Newsletter auf Telegram teilen
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GIGT5DF-6AIAW8.html=
+?url=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-5=
+G6AUO7N-88K1V5-o.html=20
+
+--------------------------------------------------------------------
+
+Newsletter weitergeleitet bekommen?
+Jetzt hier klicken & abonnieren! [1]
+
+
+[1] https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5J5N1KIP-16EEUCH=
+.html=20
+
+--------------------------------------------------------------------
+
+Facebook
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2J-G6EXT5.html
+
+Twitter
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2K-JAOSEO.html
+
+Youtube
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2L-PDA18M.html
+
+Linkedin
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2M-7ST5T8.html
+
+Instagram
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2N-Q1IGRD.html=
+=20
+
+--------------------------------------------------------------------
+
+=C2=A9 2024 foodwatch e.V.=20
+------=_Part_32853228_515336296.1729917717125
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.=
+w3.org/TR/html4/loose.dtd">
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office"><head><!--[if gte mso 9]><xml><o:OfficeDocumentSet=
+tings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentS=
+ettings></xml><![endif]--><style type=3D"text/css">.ExternalClass * { line-=
+height: 100% !important; }img { border: 0; }</style><title>Newsletter</titl=
+e><meta content=3D"width=3Ddevice-width, initial-scale=3D1.0" name=3D"viewp=
+ort"/><meta content=3D"IE=3Dedge" http-equiv=3D"X-UA-Compatible"/><meta con=
+tent=3D"text/html;charset=3DUTF-8" http-equiv=3D"Content-Type"/><style type=
+=3D"text/css" >@media screen and (max-width: 640px) {html {-webkit-text-siz=
+e-adjust: 100%;-ms-text-size-adjust: 100%;text-size-adjust: 100%;}body {mar=
+gin: 0;}a:focus {outline: thin dotted;}a:hover, a:active {outline: 0;}b, st=
+rong {font-weight: bold;}p {margin: 1em 0;}small {font-size: 75%;}sub, sup =
+{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline;=
+}sup {top: -0.5em;}sub {bottom: -0.25em;}ol, ul {margin: 0;}li ul {margin: =
+0;}ul li, ol li {padding: 5px 0 0 0;}ul li span, ol li span {vertical-align=
+: top;display: inline-block;}img {border: 0;-ms-interpolation-mode: bicubic=
+;}table {border-collapse: collapse;border-spacing: 0;}html, body {margin: 0=
+;padding: 0;}.clear {clear: both;}.huaweiFixTable {min-width:100%;max-width=
+:100%;}.mobileVersion {min-width: 320px;}.mobileVersion img.bmCountdownImag=
+e {max-width: 100%;height: auto;}ul {list-style-type: disc;padding: 0 0 0 2=
+4px;}ol {margin: 0;padding: 0 0 0 19px;}.headline {color: #000000;font-fami=
+ly: Oswald, Helvetica, Arial, sans-serif;font-size: 25px;font-weight: norma=
+l;line-height: 30px;text-decoration: none;}.headline a {color: inherit;font=
+-weight: normal;text-decoration: none;}.text, .tableOfContents {color: #000=
+000;font-family: Barlow, Helvetica, Arial, sans-serif;font-size: 20px;line-=
+height: 30px;}.text a {font-family: Oswald,Helvetica,Arial,sans-serif;color=
+: #f5a300;font-size: 20px;font-weight: normal;line-height: 30px;text-decora=
+tion: none;}.link {color: #f5a300;font-family: Oswald,Helvetica,Arial,sans-=
+serif;font-size: 20px;font-weight: normal;line-height: 30px;text-decoration=
+: none;}.link a {color: inherit;font-weight: normal;text-decoration: none;}=
+ul.tableOfContents, ol.tableOfContents {color: #f5a300;font-family: Oswald,=
+Helvetica,Arial,sans-serif;font-size: 20px;font-weight: normal;line-height:=
+ 20px;}ul.tableOfContents li span, ol.tableOfContents li span {display: inl=
+ine-block;vertical-align: top;}.tableOfContents a {color: #f5a300;font-fami=
+ly: Oswald,Helvetica,Arial,sans-serif;font-size: 20px;font-weight: normal;l=
+ine-height: 20px;text-decoration: none;}.tableOfContents .entry {position: =
+relative;}.images .next{font-size: 0;}.images .next > div{font-size: medium=
+;}.navigation {display: table;width: 100%;}.navigation .tableRow {display: =
+table-row;}.navigation .tableCell {display: table-cell;color: #f5a300;font-=
+family: Oswald,Helvetica,Arial,sans-serif;font-size: 20px;font-weight: norm=
+al;line-height: 20px;}.navigation .tableCell a {display: block;color: #f5a3=
+00;text-decoration: none;} }@media screen and (max-width: 640px) {.dummy {d=
+isplay: none !important;}.desktopVersion, .desktopHelper {display: none !im=
+portant;}.mobileHelper {display: table !important;height: auto !important;}=
+.mobileVersion {display: block !important;float: none !important;width: 100=
+% !important;height: auto !important;max-height: none !important;} }@media =
+screen and (min-width: 641px) {.dummy {display: none !important;}.desktopVe=
+rsion, .desktopHelper {display: block !important;}.mobileVersion, .mobileHe=
+lper {display: none !important;} }</style></head><body style=3D"margin: 0;p=
+adding: 0;-webkit-text-size-adjust: none;" link=3D"#f5a300" alink=3D"#f5a30=
+0" vlink=3D"#f5a300" text=3D"#000000" bgcolor=3D"#ffffff"><a name=3D"top" i=
+d=3D"top"><!-- --></a><div class=3D"desktopVersion desktopHelper" style=3D"=
+display: block;"><!--[if !mso 9]><!--><div style=3D"display:none;font-size:=
+1px;mso-line-height-rule:exactly;line-height:1px;max-height:0px;color:#ffff=
+ff;font-family:Arial,sans-serif; max-width:0px;opacity:0;overflow:hidden;ms=
+o-hide:all;">Wir decken die T&auml;uschungsversuche der Milchlobby auf.</di=
+v><!--<![endif]--><table width=3D"100%" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" bgcolor=3D"#ffffff"><tr><td align=3D"center"><table width=3D"=
+100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td align=3D"cen=
+ter"><table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+class=3D"preHeader" id=3D"preHeader1"><tr><td style=3D"font-size: 1px; line=
+-height: 1px; mso-line-height-rule: exactly;" height=3D"10" colspan=3D"3">&=
+nbsp;</td></tr><tr><td width=3D"10"></td><td width=3D"580" align=3D"left"><=
+font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000=
+000" style=3D"font-size:20px;line-height: 30px;" ><div style=3D"line-height=
+: 30px;text-align: right;"><font face=3D"Barlow, Helvetica, Arial, sans-ser=
+if" size=3D"4" color=3D"#000000" style=3D"font-size:20px;" ><span style=3D"=
+font-size:16px;"><a style=3D"color:#f5a300;font-weight:normal;text-decorati=
+on:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62=
+Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html"><font face=3D"Oswald,Helvetica,Aria=
+l,sans-serif" color=3D"#f5a300" ><b>&gt; Online anzeigen</b></font></a></sp=
+an></font></div></font></td><td width=3D"10"></td></tr><tr><td style=3D"fon=
+t-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" height=3D"10=
+" colspan=3D"3">&nbsp;</td></tr></table></td></tr></table></td></tr></table=
+></div><![if !mso]><div style=3D"display: none; float: left; height: 0; max=
+-height: 0; width: 0; overflow: hidden;" class=3D"mobileVersion"><table cla=
+ss=3D"mobileHelper huaweiFixTable" style=3D"display: none;" cellspacing=3D"=
+0" cellpadding=3D"0" border=3D"0" width=3D"100%"><tr><td class=3D"huaweiFix=
+Cell"><div><div><!-- --><div style=3D"padding: 10px;"><div class=3D"text"><=
+!-- --><div style=3D"text-align: right;"><span style=3D"font-size:16px;"><a=
+ href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5G6AUO7N-88=
+K1V5-o.html"><b>&gt; Online anzeigen</b></a></span></div></div></div></div>=
+</div></td></tr></table></div><![endif]><div class=3D"desktopVersion deskto=
+pHelper" style=3D"display: block;"><table width=3D"100%" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff"><tr><td align=3D"center"=
+><table width=3D"690" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgco=
+lor=3D"#ffffff"><tr><td width=3D"690" height=3D"20" colspan=3D"3"></td></tr=
+></table></td></tr></table></div><![if !mso]><div style=3D"display: none; f=
+loat: left; height: 0; max-height: 0; width: 0; overflow: hidden;" class=3D=
+"mobileVersion"><table class=3D"mobileHelper huaweiFixTable" style=3D"displ=
+ay: none;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%">=
+<tr><td class=3D"huaweiFixCell"><div><div style=3D"background-color: #fffff=
+f;"><!-- --></div></div></td></tr></table></div><![endif]><div class=3D"des=
+ktopVersion desktopHelper" style=3D"display: block;"><table width=3D"100%" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff"><tr><t=
+d align=3D"center"><table id=3D"dynamic1" width=3D"690" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"dynamic"><tr><td width=3D"20" bgcolo=
+r=3D"#ffffff"></td><td width=3D"650" align=3D"left" bgcolor=3D"#ffffff"><ta=
+ble width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td =
+width=3D"650"><table style=3D"margin: 0; padding: 0;" width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF"><tr><td widt=
+h=3D"650" align=3D"left"><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td valign=3D"top"><table id=3D"images1" width=3D"650" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"images"><tr><td width=3D"6=
+50" valign=3D"top" align=3D"left"><a name=3D"pa40508616164" id=3D"pa4050861=
+6164"><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"l=
+eft"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"left"><tr><td width=3D"650" align=3D"left"><table width=3D"650" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650" align=
+=3D"left"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td v=
+align=3D"top" align=3D"left"><a href=3D"https://newsletter.foodwatch.de/go/=
+6/62Z6KW0E-62SAH3D5-5H9QZGEV-15ZR9W7.html" target=3D"_blank"><img src=3D"ht=
+tps://newsletter.foodwatch.de/assets/bm/binary/0/c/8/a/0c8ae7aad35e75d05ca3=
+d0a20d925d02_15252.png" width=3D"256" alt=3D"foodwatch Logo" title=3D"foodw=
+atch Logo" style=3D"display: block; max-width: 100%; height: auto;" border=
+=3D"0"></img></a></td></tr></table></td></tr></table></td></tr><tr><td widt=
+h=3D"650" height=3D"40"></td></tr></table></td></tr></table></td></tr></tab=
+le></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"><tr><td valign=3D"top"><table id=3D"images2" width=3D"650" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"images"><tr><td width=3D"650" v=
+align=3D"top" align=3D"left"><a name=3D"pa40508616165" id=3D"pa40508616165"=
+><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left">=
+</td></tr></table></td></tr></table></td></tr></table><table border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"text=
+AndImage1" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"textAndImage"><tr><td width=3D"650" valign=3D"top" align=3D"left"><=
+a name=3D"pa40508616366" id=3D"pa40508616366"><!-- --></a><table width=3D"6=
+50" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td=
+ width=3D"650" valign=3D"top" align=3D"left"></td></tr></table></td></tr></=
+table></td></tr></table></td></tr></table></td></tr></table></td><td width=
+=3D"20" bgcolor=3D"#ffffff"></td></tr></table></td></tr></table></div><![if=
+ !mso]><div style=3D"display: none; float: left; height: 0; max-height: 0; =
+width: 0; overflow: hidden;" class=3D"mobileVersion"><table class=3D"mobile=
+Helper huaweiFixTable" style=3D"display: none;" cellspacing=3D"0" cellpaddi=
+ng=3D"0" border=3D"0" width=3D"100%"><tr><td class=3D"huaweiFixCell"><div><=
+div style=3D"background-color: #ffffff;padding: 0 20px 0 20px;"><!-- --><di=
+v><div style=3D"padding: 0px 0px 0px 0px;background-color: #FFFFFF;"><div s=
+tyle=3D"display:table; width:100%;"><div style=3D"display: table-cell;verti=
+cal-align: top;width: 100%;" class=3D"images"><div><div><a name=3D"ma405086=
+16164" id=3D"ma40508616164"><!-- --></a><div style=3D"padding: 0px 0px 40px=
+ 0px;"><!-- --><div class=3D"next" style=3D"text-align: left;"><div style=
+=3D"display: inline-block;vertical-align: top;max-width: 100.0%;text-align:=
+ left;overflow: hidden; "><div><!-- --><a href=3D"https://newsletter.foodwa=
+tch.de/go/6/62Z6KW0E-62SAH3D5-5H9QZGEW-15DIK27.html" target=3D"_blank"><img=
+ src=3D"https://newsletter.foodwatch.de/assets/bm/binary/0/c/8/a/0c8ae7aad3=
+5e75d05ca3d0a20d925d02_15252.png?mobile=3D1" width=3D"512" height=3D"100" a=
+lt=3D"foodwatch Logo" title=3D"foodwatch Logo" border=3D"0" style=3D"max-wi=
+dth: 256px !important; height: auto; width: 100%; display: block;  " /></a>=
+</div></div></div></div></div></div></div></div><div style=3D"display:table=
+; width:100%;"><div style=3D"display: table-cell;vertical-align: top;width:=
+ 100%;" class=3D"images"><div style=3D"padding-top: 0px;"><div><a name=3D"m=
+a40508616165" id=3D"ma40508616165"><!-- --></a><div><!-- --></div></div></d=
+iv></div></div><div style=3D"display:table; width:100%;"><div style=3D"disp=
+lay: table-cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><d=
+iv style=3D"padding-top: 0px;"><div><a name=3D"ma40508616366" id=3D"ma40508=
+616366"><!-- --></a><div><!-- --><div class=3D"clear"><!-- --></div></div><=
+/div></div></div></div><div class=3D"clear"><!-- --></div></div></div></div=
+></div></td></tr></table></div><![endif]><div class=3D"desktopVersion deskt=
+opHelper" style=3D"display: block;"><table width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff"><tr><td align=3D"center=
+"><table id=3D"dynamic2" width=3D"690" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" class=3D"dynamic"><tr><td width=3D"20" bgcolor=3D"#ffffff"></t=
+d><td width=3D"650" align=3D"left" bgcolor=3D"#ffffff"><table width=3D"650"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650"><ta=
+ble style=3D"margin: 0; padding: 0;" width=3D"650" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF"><tr><td width=3D"650" align=3D=
+"left"></td></tr></table></td></tr></table></td><td width=3D"20" bgcolor=3D=
+"#ffffff"></td></tr></table></td></tr></table></div><![if !mso]><div style=
+=3D"display: none; float: left; height: 0; max-height: 0; width: 0; overflo=
+w: hidden;" class=3D"mobileVersion"><table class=3D"mobileHelper huaweiFixT=
+able" style=3D"display: none;" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" width=3D"100%"><tr><td class=3D"huaweiFixCell"><div><div style=3D"ba=
+ckground-color: #ffffff;padding: 0 20px 0 20px;"><!-- --></div></div></td><=
+/tr></table></div><![endif]><div class=3D"desktopVersion desktopHelper" sty=
+le=3D"display: block;"><table width=3D"100%" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" bgcolor=3D"#ffffff"><tr><td align=3D"center"><table id=
+=3D"dynamic3" width=3D"690" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"dynamic"><tr><td width=3D"20" bgcolor=3D"#ffffff"></td><td width=
+=3D"650" align=3D"left" bgcolor=3D"#ffffff"><table width=3D"650" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650"><table style=
+=3D"margin: 0; padding: 0;" width=3D"650" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" bgcolor=3D"#FFFFFF"><tr><td width=3D"650" align=3D"left"><t=
+able border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top=
+"><table id=3D"textAndImage2" width=3D"650" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#=
+FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508616371" id=3D"pa405=
+08616371"><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=
+=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"20"></td></tr><tr><td=
+ width=3D"650" align=3D"left"><font face=3D"Oswald, Helvetica, Arial, sans-=
+serif" size=3D"5" color=3D"#000000" style=3D"font-size:25px;line-height: 30=
+px;" ><div style=3D"line-height: 30px;text-align: left;"><font face=3D"Oswa=
+ld, Helvetica, Arial, sans-serif" size=3D"5" color=3D"#000000" style=3D"fon=
+t-size:25px;" ><b>Hallo David Dreschner,</b></font></div></font><table widt=
+h=3D"643" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D=
+"643" height=3D"20"></td></tr></table><font face=3D"Barlow, Helvetica, Aria=
+l, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-he=
+ight: 30px;" ><div style=3D"line-height: 30px;text-align: left;"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;" >in Deutschland wurde <b>noch nie ein so geringer Mil=
+ch-Konsum</b> registriert wie 2023. [1] Denn Verbraucher:innen wissen: <b>M=
+ilch ist ein echter Klimakiller</b>! Unser aktueller <b>Milch-Report</b> ze=
+igt die ganze Dimension: Die Milchproduktion allein st&ouml;&szlig;t hierzu=
+lande &uuml;ber 46 Millionen Tonnen CO2 pro Jahr aus. Das entspricht etwa <=
+b>6,8 % der gesamten Emissionen Deutschlands</b> im selben Bezugsjahr 2023.=
+ [2]</font></div></font></td></tr><tr><td width=3D"650" height=3D"20"></td>=
+</tr></table></td></tr></table></td></tr></table></td></tr></table><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><tab=
+le id=3D"textAndImage3" width=3D"650" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF=
+" valign=3D"top" align=3D"left"><a name=3D"pa40508616372" id=3D"pa405086163=
+72"><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"lef=
+t"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" al=
+ign=3D"left"><tr><td width=3D"650" height=3D"20"></td></tr><tr><td width=3D=
+"650" align=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-serif" si=
+ze=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><di=
+v style=3D"line-height: 30px;text-align: left;"><font face=3D"Barlow, Helve=
+tica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20=
+px;" >Bei Verkaufsr&uuml;ckg&auml;ngen schl&auml;gt die Milchlobby Alarm. D=
+ie <b>Klimasch&auml;dlichkeit der Branche soll unter den Teppich gekehrt</b=
+> werden. Also nimmt man Millionenbetr&auml;ge in die Hand, beauftragt gro&=
+szlig;e Werbeagenturen [3] und <b>verbreitet irref&uuml;hrende Informatione=
+n</b> im gro&szlig;en Stil.</font></div></font></td></tr><tr><td width=3D"6=
+50" height=3D"20"></td></tr></table></td></tr></table></td></tr></table></t=
+d></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr>=
+<td valign=3D"top"><table id=3D"textAndImage4" width=3D"650" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"=
+650" bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa4050862=
+4073" id=3D"pa40508624073"><!-- --></a><table width=3D"650" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" vali=
+gn=3D"top" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"20"></t=
+d></tr><tr><td width=3D"650" align=3D"left"><font face=3D"Oswald, Helvetica=
+, Arial, sans-serif" size=3D"5" color=3D"#000000" style=3D"font-size:25px;l=
+ine-height: 30px;" ><b>foodwatch deckt auf</b></font><table width=3D"643" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"643" heigh=
+t=3D"20"></td></tr></table><font face=3D"Barlow, Helvetica, Arial, sans-ser=
+if" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;=
+" ><div style=3D"line-height: 30px;text-align: left;"><font face=3D"Barlow,=
+ Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-s=
+ize:20px;" >In unserem neuen <b>Report &bdquo;Milchm&auml;rchen&ldquo;</b> =
+haben wir diese <b>manipulativen Narrative</b> <b>blo&szlig;gestellt</b>. W=
+ir haben aufgedeckt, dass Milchprodukte eine weitaus schlechtere Klimabilan=
+z haben, als die Industrie uns weismachen will. Denn sie <b>verleugnet</b> =
+<b>Emissionen, die rund um die Milchproduktion anfallen</b>: Dazu geh&ouml;=
+ren der Futtermittelanbau, die Produktion von D&uuml;ngemitteln und vieles =
+mehr. [4]</font></div></font></td></tr><tr><td width=3D"650" height=3D"20">=
+</td></tr></table></td></tr></table></td></tr></table></td></tr></table><ta=
+ble border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"=
+><table id=3D"textAndImage5" width=3D"650" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#F=
+FFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508624074" id=3D"pa4050=
+8624074"><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" ce=
+llspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=
+=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"20"></td></tr><tr><td=
+ width=3D"650" align=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-=
+serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30=
+px;" ><div style=3D"line-height: 30px;text-align: left;"><font face=3D"Barl=
+ow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"fon=
+t-size:20px;" >Um ihr <b>Klima-Image zu verbessern</b>, wendet die Milchind=
+ustrie sogar <b>Tierversuche </b>an. Beispiel Methan [5]: Der Klima-Effekt =
+&bdquo;innovativer Futtermethoden&ldquo; wird z.B. getestet, indem K&uuml;h=
+e isoliert und &uuml;ber Tage eingesperrt werden. In den <b>abgeschlossenen=
+ Messzellen</b> wird der Methanaussto&szlig; kontrolliert. Die Tiere k&ouml=
+;nnen sich in dieser Zeit nicht bewegen und nicht hinlegen. [6]</font></div=
+></font></td></tr><tr><td width=3D"650" height=3D"20"></td></tr></table></t=
+d></tr></table></td></tr></table></td></tr></table><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAnd=
+Image6" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top"=
+ align=3D"left"><a name=3D"pa40508624075" id=3D"pa40508624075"><!-- --></a>=
+<table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left"><table width=
+=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><t=
+r><td style=3D"font-size: 1px; line-height: 1px; mso-line-height-rule: exac=
+tly;" width=3D"10">&nbsp;</td><td style=3D"font-size: 1px; line-height: 1px=
+; mso-line-height-rule: exactly;" width=3D"630" height=3D"10">&nbsp;</td><t=
+d style=3D"font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;=
+" width=3D"10">&nbsp;</td></tr><tr><td width=3D"10"></td><td width=3D"630" =
+align=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"=
+4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><div styl=
+e=3D"line-height: 30px;text-align: left;"><font face=3D"Barlow, Helvetica, =
+Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;" >=
+<i>Gegen die Augenwischerei und Machenschaften der Milchindustrie, f&uuml;r=
+ effektiven Klimaschutz und f&uuml;r mehr Tiergesundheit: Daf&uuml;r engagi=
+eren sich bereits zehntausende foodwatch F&ouml;rdermitglieder. Kommen Sie =
+dazu!</i></font></div></font></td><td width=3D"10"></td></tr><tr><td style=
+=3D"font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width=
+=3D"10">&nbsp;</td><td style=3D"font-size: 1px; line-height: 1px; mso-line-=
+height-rule: exactly;" width=3D"630" height=3D"10">&nbsp;</td><td style=3D"=
+font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width=3D"=
+10">&nbsp;</td></tr></table></td></tr></table></td></tr></table></td></tr><=
+/table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td vali=
+gn=3D"top"><table id=3D"textAndImage7" width=3D"650" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgc=
+olor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508624076" id=
+=3D"pa40508624076"><!-- --></a><table width=3D"650" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"to=
+p" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"20"></td></tr><=
+tr><td width=3D"650" align=3D"left"><table width=3D"650" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0"><tr><td width=3D"650" align=3D"center"><tabl=
+e style=3D"background: #f5a300 url(https://newsletter.foodwatch.de/assets/b=
+m/imh/1a/4/1a4007d1459351c90bfb61119a1d5fa8742e9858f45157105fc646df40f23e66=
+.png) 0 0 no-repeat;" background=3D"https://newsletter.foodwatch.de/assets/=
+bm/imh/1a/4/1a4007d1459351c90bfb61119a1d5fa8742e9858f45157105fc646df40f23e6=
+6.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f5a300"=
+ class=3D"buttonRoot"><tr><td height=3D"6" colspan=3D"3" style=3D"font-size=
+: 1px; line-height: 6px; mso-line-height-rule:exactly;"><font face=3D"Barlo=
+w, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font=
+-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:norma=
+l;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodw=
+atch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><fo=
+nt face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=
+=3D"https://newsletter.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba070d2=
+913e87be33a4396da337c52f04b92105f94b3174b8f4.gif" width=3D"280" height=3D"6=
+" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a><=
+/font></td></tr><tr><td width=3D"6" style=3D"font-size: 1px; line-height: 6=
+0px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial,=
+ sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-heig=
+ht: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:no=
+ne;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0=
+E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font face=3D"Oswald,He=
+lvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter=
+.foodwatch.de/assets/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e9b6ae62d=
+f486885836bac55472739f.gif" width=3D"6" height=3D"60" alt=3D"" title=3D"" b=
+order=3D"0" style=3D"display: block;" /></font></a></font></td><td height=
+=3D"60"><table style=3D"background: #FFFFFF url(https://newsletter.foodwatc=
+h.de/assets/bm/imh/bc/5/bc505dc9d969305ad439ec0dc582e756a955f1c5d76688056a0=
+21eddd1befee0.png) top left no-repeat;" background=3D"https://newsletter.fo=
+odwatch.de/assets/bm/imh/bc/5/bc505dc9d969305ad439ec0dc582e756a955f1c5d7668=
+8056a021eddd1befee0.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" b=
+gcolor=3D"#FFFFFF" width=3D"100%"><tr><td height=3D"5" colspan=3D"3" style=
+=3D"font-size: 1px; line-height: 5px; mso-line-height-rule:exactly;"><font =
+face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" =
+style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font=
+-weight:normal;text-decoration:none;line-height: 30px;" href=3D"https://new=
+sletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=
+=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a3=
+00" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0eff=
+36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"268=
+" height=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /=
+></font></a></font></td></tr><tr><td width=3D"18" style=3D"font-size: 1px; =
+line-height: 50px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Hel=
+vetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:=
+20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text=
+-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.d=
+e/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font fac=
+e=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"http=
+s://newsletter.foodwatch.de/assets/bm/imh/81/8/818a3fd0941f4a161955d4fb1b0f=
+c6fd141e4c3bc37e510eb22d0c77e28051ff.gif" width=3D"18" height=3D"50" alt=3D=
+"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></=
+td><td align=3D"center" valign=3D"middle" height=3D"50"><a style=3D"color:#=
+000000;font-style:normal;text-decoration:none;" href=3D"https://newsletter.=
+foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank=
+"><font face=3D"Oswald,Helvetica,Arial,sans-serif" size=3D"4" color=3D"#000=
+000" style=3D"font-size:20px;" ><b>Ja, ich st&auml;rke foodwatch<br />mit 5=
+ Euro im Monat</b></font></a></td><td width=3D"18" style=3D"font-size: 1px;=
+ line-height: 50px; mso-line-height-rule:exactly;"><font face=3D"Barlow, He=
+lvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size=
+:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;tex=
+t-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.=
+de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font fa=
+ce=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"htt=
+ps://newsletter.foodwatch.de/assets/bm/imh/81/8/818a3fd0941f4a161955d4fb1b0=
+fc6fd141e4c3bc37e510eb22d0c77e28051ff.gif" width=3D"18" height=3D"50" alt=
+=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font=
+></td></tr><tr><td height=3D"5" colspan=3D"3" style=3D"font-size: 1px; line=
+-height: 5px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetic=
+a, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;=
+line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-deco=
+ration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/=
+6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font face=3D"=
+Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://n=
+ewsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f44343d86bdfd=
+ce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"268" height=3D"5" alt=3D"" ti=
+tle=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></td></=
+tr></table></td><td width=3D"6" style=3D"font-size: 1px; line-height: 60px;=
+ mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, san=
+s-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: =
+30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;l=
+ine-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62=
+SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font face=3D"Oswald,Helvet=
+ica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foo=
+dwatch.de/assets/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e9b6ae62df486=
+885836bac55472739f.gif" width=3D"6" height=3D"60" alt=3D"" title=3D"" borde=
+r=3D"0" style=3D"display: block;" /></font></a></font></td></tr><tr><td hei=
+ght=3D"6" colspan=3D"3" style=3D"font-size: 1px; line-height: 6px; mso-line=
+-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" =
+size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><=
+a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-heigh=
+t: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62=
+T03GW7-RGT16HS.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial=
+,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de=
+/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be33a4396da337c52f04b92105f94=
+b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"" title=3D"" border=3D"0" =
+style=3D"display: block;" /></font></a></font></td></tr></table></td></tr><=
+/table></td></tr><tr><td style=3D"font-size: 1px; line-height: 1px; mso-lin=
+e-height-rule: exactly;" width=3D"650" height=3D"10">&nbsp;</td></tr></tabl=
+e></td></tr></table></td></tr></table></td></tr></table><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"te=
+xtAndImage8" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D=
+"top" align=3D"left"><a name=3D"pa40508624277" id=3D"pa40508624277"><!-- --=
+></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left"><table w=
+idth=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left=
+"><tr><td style=3D"font-size: 1px; line-height: 1px; mso-line-height-rule: =
+exactly;" width=3D"650" height=3D"10">&nbsp;</td></tr><tr><td width=3D"650"=
+ align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0"><tr><td width=3D"650" align=3D"center"><table style=3D"backgroun=
+d: #f5a300 url(https://newsletter.foodwatch.de/assets/bm/imh/6d/7/6d75164f0=
+9a43be3eb3bdaad42fa05495000719f68f51d466b11df5dde289188.png) 0 0 no-repeat;=
+" background=3D"https://newsletter.foodwatch.de/assets/bm/imh/6d/7/6d75164f=
+09a43be3eb3bdaad42fa05495000719f68f51d466b11df5dde289188.png" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f5a300" class=3D"buttonRoot=
+"><tr><td height=3D"6" colspan=3D"3" style=3D"font-size: 1px; line-height: =
+6px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial,=
+ sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-heig=
+ht: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:no=
+ne;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0=
+E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,H=
+elvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newslette=
+r.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be33a4396da337c=
+52f04b92105f94b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"" title=3D""=
+ border=3D"0" style=3D"display: block;" /></font></a></font></td></tr><tr><=
+td width=3D"6" style=3D"font-size: 1px; line-height: 60px; mso-line-height-=
+rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"=
+4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=
+=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px=
+;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-=
+17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-=
+serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/asset=
+s/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e9b6ae62df486885836bac554727=
+39f.gif" width=3D"6" height=3D"60" alt=3D"" title=3D"" border=3D"0" style=
+=3D"display: block;" /></font></a></font></td><td height=3D"60"><table styl=
+e=3D"background: #f5a300 url(https://newsletter.foodwatch.de/assets/bm/imh/=
+77/8/77873201f1373b0ebb3e0e60df813a7f5ed1c12708c29af643162c93a253f41f.png) =
+top left no-repeat;" background=3D"https://newsletter.foodwatch.de/assets/b=
+m/imh/77/8/77873201f1373b0ebb3e0e60df813a7f5ed1c12708c29af643162c93a253f41f=
+.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f5a300" =
+width=3D"100%"><tr><td height=3D"5" colspan=3D"3" style=3D"font-size: 1px; =
+line-height: 5px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helv=
+etica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:2=
+0px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-=
+decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de=
+/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font fac=
+e=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"http=
+s://newsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f44343d8=
+6bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"268" height=3D"5" alt=3D=
+"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></=
+td></tr><tr><td width=3D"18" style=3D"font-size: 1px; line-height: 50px; ms=
+o-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-s=
+erif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30p=
+x;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line=
+-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH=
+3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,Helvetic=
+a,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodw=
+atch.de/assets/bm/imh/81/8/818a3fd0941f4a161955d4fb1b0fc6fd141e4c3bc37e510e=
+b22d0c77e28051ff.gif" width=3D"18" height=3D"50" alt=3D"" title=3D"" border=
+=3D"0" style=3D"display: block;" /></font></a></font></td><td align=3D"cent=
+er" valign=3D"middle" height=3D"50"><a style=3D"color:#000000;font-style:no=
+rmal;text-decoration:none;" href=3D"https://newsletter.foodwatch.de/go/6/62=
+Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Osw=
+ald,Helvetica,Arial,sans-serif" size=3D"4" color=3D"#000000" style=3D"font-=
+size:20px;" ><b>Ja, ich st&auml;rke foodwatch<br />mit 10 Euro im Monat</b>=
+</font></a></td><td width=3D"18" style=3D"font-size: 1px; line-height: 50px=
+; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sa=
+ns-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height:=
+ 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;=
+line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-6=
+2SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,Helv=
+etica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.f=
+oodwatch.de/assets/bm/imh/81/8/818a3fd0941f4a161955d4fb1b0fc6fd141e4c3bc37e=
+510eb22d0c77e28051ff.gif" width=3D"18" height=3D"50" alt=3D"" title=3D"" bo=
+rder=3D"0" style=3D"display: block;" /></font></a></font></td></tr><tr><td =
+height=3D"5" colspan=3D"3" style=3D"font-size: 1px; line-height: 5px; mso-l=
+ine-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-seri=
+f" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;"=
+ ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-he=
+ight: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5=
+-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,A=
+rial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatc=
+h.de/assets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957f=
+c0338c5d9378b.gif" width=3D"268" height=3D"5" alt=3D"" title=3D"" border=3D=
+"0" style=3D"display: block;" /></font></a></font></td></tr></table></td><t=
+d width=3D"6" style=3D"font-size: 1px; line-height: 60px; mso-line-height-r=
+ule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4=
+" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=
+=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px=
+;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-=
+17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-=
+serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/asset=
+s/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e9b6ae62df486885836bac554727=
+39f.gif" width=3D"6" height=3D"60" alt=3D"" title=3D"" border=3D"0" style=
+=3D"display: block;" /></font></a></font></td></tr><tr><td height=3D"6" col=
+span=3D"3" style=3D"font-size: 1px; line-height: 6px; mso-line-height-rule:=
+exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" co=
+lor=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"co=
+lor:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px;" hre=
+f=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14=
+H7.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif"=
+ color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/i=
+mh/ff/6/ff65f809d75a4ba070d2913e87be33a4396da337c52f04b92105f94b3174b8f4.gi=
+f" width=3D"280" height=3D"6" alt=3D"" title=3D"" border=3D"0" style=3D"dis=
+play: block;" /></font></a></font></td></tr></table></td></tr></table></td>=
+</tr><tr><td style=3D"font-size: 1px; line-height: 1px; mso-line-height-rul=
+e: exactly;" width=3D"650" height=3D"10">&nbsp;</td></tr></table></td></tr>=
+</table></td></tr></table></td></tr></table><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage9"=
+ width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"te=
+xtAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=
+=3D"left"><a name=3D"pa40508624278" id=3D"pa40508624278"><!-- --></a><table=
+ width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"le=
+ft"><tr><td width=3D"650" valign=3D"top" align=3D"left"><table width=3D"650=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td s=
+tyle=3D"font-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" w=
+idth=3D"650" height=3D"10">&nbsp;</td></tr><tr><td width=3D"650" align=3D"l=
+eft"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">=
+<tr><td width=3D"650" align=3D"center"><table style=3D"background: #f5a300 =
+url(https://newsletter.foodwatch.de/assets/bm/imh/1a/4/1a4007d1459351c90bfb=
+61119a1d5fa8742e9858f45157105fc646df40f23e66.png) 0 0 no-repeat;" backgroun=
+d=3D"https://newsletter.foodwatch.de/assets/bm/imh/1a/4/1a4007d1459351c90bf=
+b61119a1d5fa8742e9858f45157105fc646df40f23e66.png" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" bgcolor=3D"#f5a300" class=3D"buttonRoot"><tr><td h=
+eight=3D"6" colspan=3D"3" style=3D"font-size: 1px; line-height: 6px; mso-li=
+ne-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif=
+" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" =
+><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-hei=
+ght: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-=
+62T03GW9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial=
+,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de=
+/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be33a4396da337c52f04b92105f94=
+b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"" title=3D"" border=3D"0" =
+style=3D"display: block;" /></font></a></font></td></tr><tr><td width=3D"6"=
+ style=3D"font-size: 1px; line-height: 60px; mso-line-height-rule:exactly;"=
+><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0=
+00000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a3=
+00;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"http=
+s://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" tar=
+get=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f=
+5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/1e/4/1e43=
+92252f0deadc67e98711631499984e9b6ae62df486885836bac55472739f.gif" width=3D"=
+6" height=3D"60" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;"=
+ /></font></a></font></td><td height=3D"60"><table style=3D"background: #FF=
+FFFF url(https://newsletter.foodwatch.de/assets/bm/imh/bc/5/bc505dc9d969305=
+ad439ec0dc582e756a955f1c5d76688056a021eddd1befee0.png) top left no-repeat;"=
+ background=3D"https://newsletter.foodwatch.de/assets/bm/imh/bc/5/bc505dc9d=
+969305ad439ec0dc582e756a955f1c5d76688056a021eddd1befee0.png" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF" width=3D"100%"><tr><=
+td height=3D"5" colspan=3D"3" style=3D"font-size: 1px; line-height: 5px; ms=
+o-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-s=
+erif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30p=
+x;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line=
+-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH=
+3D5-62T03GW9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,A=
+rial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatc=
+h.de/assets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957f=
+c0338c5d9378b.gif" width=3D"268" height=3D"5" alt=3D"" title=3D"" border=3D=
+"0" style=3D"display: block;" /></font></a></font></td></tr><tr><td width=
+=3D"18" style=3D"font-size: 1px; line-height: 50px; mso-line-height-rule:ex=
+actly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" colo=
+r=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"colo=
+r:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px;" href=
+=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.h=
+tml" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" col=
+or=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/8=
+1/8/818a3fd0941f4a161955d4fb1b0fc6fd141e4c3bc37e510eb22d0c77e28051ff.gif" w=
+idth=3D"18" height=3D"50" alt=3D"" title=3D"" border=3D"0" style=3D"display=
+: block;" /></font></a></font></td><td align=3D"center" valign=3D"middle" h=
+eight=3D"50"><a style=3D"color:#000000;font-style:normal;text-decoration:no=
+ne;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW=
+9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-s=
+erif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;" ><b>Ja, ich st=
+&auml;rke foodwatch<br />mit 20 Euro im Monat</b></font></a></td><td width=
+=3D"18" style=3D"font-size: 1px; line-height: 50px; mso-line-height-rule:ex=
+actly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" colo=
+r=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"colo=
+r:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px;" href=
+=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.h=
+tml" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" col=
+or=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/8=
+1/8/818a3fd0941f4a161955d4fb1b0fc6fd141e4c3bc37e510eb22d0c77e28051ff.gif" w=
+idth=3D"18" height=3D"50" alt=3D"" title=3D"" border=3D"0" style=3D"display=
+: block;" /></font></a></font></td></tr><tr><td height=3D"5" colspan=3D"3" =
+style=3D"font-size: 1px; line-height: 5px; mso-line-height-rule:exactly;"><=
+font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000=
+000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300=
+;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"https:=
+//newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" targe=
+t=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a=
+300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0ef=
+f36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"26=
+8" height=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" =
+/></font></a></font></td></tr></table></td><td width=3D"6" style=3D"font-si=
+ze: 1px; line-height: 60px; mso-line-height-rule:exactly;"><font face=3D"Ba=
+rlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"f=
+ont-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:no=
+rmal;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.fo=
+odwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" target=3D"_blank"><f=
+ont face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=
+=3D"https://newsletter.foodwatch.de/assets/bm/imh/1e/4/1e4392252f0deadc67e9=
+8711631499984e9b6ae62df486885836bac55472739f.gif" width=3D"6" height=3D"60"=
+ alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></=
+font></td></tr><tr><td height=3D"6" colspan=3D"3" style=3D"font-size: 1px; =
+line-height: 6px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helv=
+etica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:2=
+0px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-=
+decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de=
+/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" target=3D"_blank"><font face=
+=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https=
+://newsletter.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be3=
+3a4396da337c52f04b92105f94b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"=
+" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></t=
+d></tr></table></td></tr></table></td></tr><tr><td style=3D"font-size: 1px;=
+ line-height: 1px; mso-line-height-rule: exactly;" width=3D"650" height=3D"=
+10">&nbsp;</td></tr></table></td></tr></table></td></tr></table></td></tr><=
+/table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td vali=
+gn=3D"top"><table id=3D"textAndImage10" width=3D"650" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bg=
+color=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508624279" i=
+d=3D"pa40508624279"><!-- --></a><table width=3D"650" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"t=
+op" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" align=3D"left"><tr><td style=3D"font-size: 1px; line-height: =
+1px; mso-line-height-rule: exactly;" width=3D"650" height=3D"10">&nbsp;</td=
+></tr><tr><td width=3D"650" align=3D"left"><table width=3D"650" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650" align=3D"center=
+"><table style=3D"background: #7A737A url(https://newsletter.foodwatch.de/a=
+ssets/bm/imh/05/e/05e62233491510d3aee14f54e53bc48f010eae01500d5ed70e5b0a318=
+ad8082b.png) 0 0 no-repeat;" background=3D"https://newsletter.foodwatch.de/=
+assets/bm/imh/05/e/05e62233491510d3aee14f54e53bc48f010eae01500d5ed70e5b0a31=
+8ad8082b.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#=
+7A737A" class=3D"buttonRoot"><tr><td height=3D"4" colspan=3D"3" style=3D"fo=
+nt-size: 1px; line-height: 4px; mso-line-height-rule:exactly;"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-wei=
+ght:normal;text-decoration:none;line-height: 30px;" href=3D"https://newslet=
+ter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_=
+blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" >=
+<img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/dc/5/dc54f3817c8c=
+ed4a5261616f917f9cf4e1a594d88fc6eb451bf86605a769d01f.gif" width=3D"282" hei=
+ght=3D"4" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></fo=
+nt></a></font></td></tr><tr><td width=3D"4" style=3D"font-size: 1px; line-h=
+eight: 56px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica=
+, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;l=
+ine-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decor=
+ation:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6=
+/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><font face=3D"=
+Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://n=
+ewsletter.foodwatch.de/assets/bm/imh/be/6/be6fa763b732a9662d8d89c6d6fe233f0=
+5488ad05c0ef6c394703dc0edccdbe3.gif" width=3D"4" height=3D"56" alt=3D"" tit=
+le=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></td><td=
+ height=3D"56"><table style=3D"background: #FFFFFF url(https://newsletter.f=
+oodwatch.de/assets/bm/imh/73/e/73e4d9e2e083dd7e59946e04836a1875677acde14740=
+dd8addebe7d01cba1ed3.png) top left no-repeat;" background=3D"https://newsle=
+tter.foodwatch.de/assets/bm/imh/73/e/73e4d9e2e083dd7e59946e04836a1875677acd=
+e14740dd8addebe7d01cba1ed3.png" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" bgcolor=3D"#FFFFFF" width=3D"100%"><tr><td height=3D"5" colspan=3D"3=
+" style=3D"font-size: 1px; line-height: 5px; mso-line-height-rule:exactly;"=
+><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0=
+00000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a3=
+00;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"http=
+s://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" =
+target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D=
+"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/50/0/5=
+006d5fd1835d9f4d4064b71fae97017a6b1ddb50097e6f4ec07638011f0b166.gif" width=
+=3D"274" height=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"display: bl=
+ock;" /></font></a></font></td></tr><tr><td width=3D"34" style=3D"font-size=
+: 1px; line-height: 46px; mso-line-height-rule:exactly;"><font face=3D"Barl=
+ow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"fon=
+t-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:norm=
+al;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.food=
+watch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><=
+font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=
+=3D"https://newsletter.foodwatch.de/assets/bm/imh/dd/c/ddca4c913868adf7041d=
+711e2ab78463030432f5f9896a1f2e49632a4348a46d.gif" width=3D"34" height=3D"46=
+" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a><=
+/font></td><td align=3D"center" valign=3D"middle" height=3D"46"><a style=3D=
+"color:#7a737a;font-style:normal;text-decoration:none;" href=3D"https://new=
+sletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=
+=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" size=3D"4" col=
+or=3D"#7a737a" style=3D"font-size:18px;" ><b>Ich helfe heute mit einer<br /=
+>einmaligen Spende</b></font></a></td><td width=3D"34" style=3D"font-size: =
+1px; line-height: 46px; mso-line-height-rule:exactly;"><font face=3D"Barlow=
+, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-=
+size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal=
+;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwa=
+tch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><fo=
+nt face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=
+=3D"https://newsletter.foodwatch.de/assets/bm/imh/dd/c/ddca4c913868adf7041d=
+711e2ab78463030432f5f9896a1f2e49632a4348a46d.gif" width=3D"34" height=3D"46=
+" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a><=
+/font></td></tr><tr><td height=3D"5" colspan=3D"3" style=3D"font-size: 1px;=
+ line-height: 5px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Hel=
+vetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:=
+20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text=
+-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.d=
+e/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><font fa=
+ce=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"htt=
+ps://newsletter.foodwatch.de/assets/bm/imh/50/0/5006d5fd1835d9f4d4064b71fae=
+97017a6b1ddb50097e6f4ec07638011f0b166.gif" width=3D"274" height=3D"5" alt=
+=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font=
+></td></tr></table></td><td width=3D"4" style=3D"font-size: 1px; line-heigh=
+t: 56px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Ar=
+ial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-=
+height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoratio=
+n:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z=
+6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><font face=3D"Oswa=
+ld,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsl=
+etter.foodwatch.de/assets/bm/imh/be/6/be6fa763b732a9662d8d89c6d6fe233f05488=
+ad05c0ef6c394703dc0edccdbe3.gif" width=3D"4" height=3D"56" alt=3D"" title=
+=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></td></tr>=
+<tr><td height=3D"4" colspan=3D"3" style=3D"font-size: 1px; line-height: 4p=
+x; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, s=
+ans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height=
+: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none=
+;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-=
+62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><font face=3D"Oswald,Hel=
+vetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.=
+foodwatch.de/assets/bm/imh/dc/5/dc54f3817c8ced4a5261616f917f9cf4e1a594d88fc=
+6eb451bf86605a769d01f.gif" width=3D"282" height=3D"4" alt=3D"" title=3D"" b=
+order=3D"0" style=3D"display: block;" /></font></a></font></td></tr></table=
+></td></tr></table></td></tr><tr><td width=3D"650" height=3D"20"></td></tr>=
+</table></td></tr></table></td></tr></table></td></tr></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=
+=3D"textAndImage11" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" va=
+lign=3D"top" align=3D"left"><a name=3D"pa40508624280" id=3D"pa40508624280">=
+<!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left"><=
+table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=
+=3D"left"><tr><td width=3D"650" height=3D"30"></td></tr><tr><td width=3D"65=
+0" align=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=
+=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><div =
+style=3D"line-height: 30px;text-align: left;"><font face=3D"Barlow, Helveti=
+ca, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px=
+;" >Ich bin ehrlich, die Zahlen und Fakten unserer Studie haben auch mich <=
+b>ersch&uuml;ttert</b>. Die Image-Kampagne &bdquo;Initiative Milch&ldquo; a=
+llein hat ein Budget von <b>vier Millionen Euro</b> &ndash; das ausschlie&s=
+zlig;lich daf&uuml;r genutzt wird, die <b>Wahrheit &uuml;ber Milchprodukte =
+zu verdrehen</b>. [7] So viel Budget hat foodwatch Deutschland pro Jahr f&u=
+uml;r all unsere Themen zusammen.</font></div></font></td></tr><tr><td widt=
+h=3D"650" height=3D"20"></td></tr></table></td></tr></table></td></tr></tab=
+le></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"><tr><td valign=3D"top"><table id=3D"textAndImage12" width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td w=
+idth=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"p=
+a40508624481" id=3D"pa40508624481"><!-- --></a><table width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"=
+650" valign=3D"top" align=3D"left"><table width=3D"650" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" height=
+=3D"30"></td></tr><tr><td width=3D"650" align=3D"left"><font face=3D"Barlow=
+, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-=
+size:20px;line-height: 30px;" ><div style=3D"line-height: 30px;text-align: =
+left;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=
+=3D"#000000" style=3D"font-size:20px;" >Die <b>Millionenbetr&auml;ge </b>de=
+r Milch-Lobby gehen f&uuml;r <b>&Ouml;ffentlichkeitsarbeit und Meinungsmach=
+e</b> drauf &ndash; Inhalte der Wahl: <b>Podcasts </b>mit Milch-Influencern=
+ [8] und <b>Cover-Songs</b>. <i>Sing Hallelujah</i> wird zu <i>Hallemuhja <=
+/i>[9]. Der m&uuml;de Lacher bleibt im Hals stecken, denkt man an <b>das Ti=
+erleid und die Folgen der Klimakatastrophe</b> allein in diesem Jahr. Hurri=
+kane. Hochwasser. Rekord-Hitze. [10]</font></div></font></td></tr><tr><td w=
+idth=3D"650" height=3D"20"></td></tr></table></td></tr></table></td></tr></=
+table></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage13" width=3D"650" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><=
+td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=
+=3D"pa40508624482" id=3D"pa40508624482"><!-- --></a><table width=3D"650" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=
+=3D"650" valign=3D"top" align=3D"left"><table width=3D"650" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" heig=
+ht=3D"30"></td></tr><tr><td width=3D"650" align=3D"left"><font face=3D"Barl=
+ow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"fon=
+t-size:20px;line-height: 30px;" ><div style=3D"line-height: 30px;text-align=
+: left;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" col=
+or=3D"#000000" style=3D"font-size:20px;" >Und w&auml;hrend teuer produziert=
+e Milch-Podcasts gut gelaunt ihre <b>Nachhaltigkeitsm&auml;rchen </b>verbre=
+iten, werden <b>&bdquo;Hochleistungsk&uuml;he&ldquo; mit Tierversuchen gequ=
+&auml;lt</b>. Damit die Klima-Emissionen der Milchwirtschaft vielleicht irg=
+endwann mal verringert werden k&ouml;nnen, wird lebenden K&uuml;hen <b>ein =
+&bdquo;Fenster&ldquo; in die Bauchseite geschnitten</b>. [11] Dabei sind do=
+ch so viele Verbraucher:innen jetzt schon vollkommen zufrieden damit, ihren=
+ Milchkonsum zu reduzieren oder auf pflanzliche Alternativen umzusteigen. [=
+12] <b>Liebe Milchwirtschaft: Es ist Zeit, mit der Zeit zu gehen.</b></font=
+></div></font></td></tr><tr><td width=3D"650" height=3D"20"></td></tr></tab=
+le></td></tr></table></td></tr></table></td></tr></table><table border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"t=
+extAndImage14" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=
+=3D"top" align=3D"left"><a name=3D"pa40508624483" id=3D"pa40508624483"><!--=
+ --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left"><tabl=
+e width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"l=
+eft"><tr><td style=3D"font-size: 1px; line-height: 1px; mso-line-height-rul=
+e: exactly;" width=3D"10">&nbsp;</td><td style=3D"font-size: 1px; line-heig=
+ht: 1px; mso-line-height-rule: exactly;" width=3D"630" height=3D"10">&nbsp;=
+</td><td style=3D"font-size: 1px; line-height: 1px; mso-line-height-rule: e=
+xactly;" width=3D"10">&nbsp;</td></tr><tr><td width=3D"10"></td><td width=
+=3D"630" align=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-serif"=
+ size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" >=
+<div style=3D"line-height: 30px;text-align: left;"><font face=3D"Barlow, He=
+lvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size=
+:20px;" ><i>Die Lebensmittelindustrie permanent im Blick zu behalten, die E=
+rstellung von Reports, &ouml;ffentlichkeitswirksame Mitmachaktionen und eff=
+ektive Pressearbeit &ndash; all das geht nur wegen der vielen tausenden F&o=
+uml;rdermitglieder, die uns regelm&auml;&szlig;ig spenden. Vielen Dank f&uu=
+ml;r Ihre Unterst&uuml;tzung.</i></font></div></font></td><td width=3D"10">=
+</td></tr><tr><td style=3D"font-size: 1px; line-height: 1px; mso-line-heigh=
+t-rule: exactly;" width=3D"10">&nbsp;</td><td style=3D"font-size: 1px; line=
+-height: 1px; mso-line-height-rule: exactly;" width=3D"630" height=3D"10">&=
+nbsp;</td><td style=3D"font-size: 1px; line-height: 1px; mso-line-height-ru=
+le: exactly;" width=3D"10">&nbsp;</td></tr></table></td></tr></table></td><=
+/tr></table></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage15" width=3D"650=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><=
+tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a n=
+ame=3D"pa40508624484" id=3D"pa40508624484"><!-- --></a><table width=3D"650"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td wi=
+dth=3D"650" valign=3D"top" align=3D"left"><table width=3D"650" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" h=
+eight=3D"20"></td></tr><tr><td width=3D"650" align=3D"left"><table width=3D=
+"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650=
+" align=3D"center"><table style=3D"background: #f5a300 url(https://newslett=
+er.foodwatch.de/assets/bm/imh/1a/4/1a4007d1459351c90bfb61119a1d5fa8742e9858=
+f45157105fc646df40f23e66.png) 0 0 no-repeat;" background=3D"https://newslet=
+ter.foodwatch.de/assets/bm/imh/1a/4/1a4007d1459351c90bfb61119a1d5fa8742e985=
+8f45157105fc646df40f23e66.png" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" bgcolor=3D"#f5a300" class=3D"buttonRoot"><tr><td height=3D"6" colspa=
+n=3D"3" style=3D"font-size: 1px; line-height: 6px; mso-line-height-rule:exa=
+ctly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=
+=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color=
+:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px;" href=
+=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS=
+.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" c=
+olor=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh=
+/ff/6/ff65f809d75a4ba070d2913e87be33a4396da337c52f04b92105f94b3174b8f4.gif"=
+ width=3D"280" height=3D"6" alt=3D"" title=3D"" border=3D"0" style=3D"displ=
+ay: block;" /></font></a></font></td></tr><tr><td width=3D"6" style=3D"font=
+-size: 1px; line-height: 60px; mso-line-height-rule:exactly;"><font face=3D=
+"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=
+=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weig=
+ht:normal;text-decoration:none;line-height: 30px;" href=3D"https://newslett=
+er.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_bl=
+ank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><i=
+mg src=3D"https://newsletter.foodwatch.de/assets/bm/imh/1e/4/1e4392252f0dea=
+dc67e98711631499984e9b6ae62df486885836bac55472739f.gif" width=3D"6" height=
+=3D"60" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font=
+></a></font></td><td height=3D"60"><table style=3D"background: #FFFFFF url(=
+https://newsletter.foodwatch.de/assets/bm/imh/bc/5/bc505dc9d969305ad439ec0d=
+c582e756a955f1c5d76688056a021eddd1befee0.png) top left no-repeat;" backgrou=
+nd=3D"https://newsletter.foodwatch.de/assets/bm/imh/bc/5/bc505dc9d969305ad4=
+39ec0dc582e756a955f1c5d76688056a021eddd1befee0.png" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF" width=3D"100%"><tr><td height=
+=3D"5" colspan=3D"3" style=3D"font-size: 1px; line-height: 5px; mso-line-he=
+ight-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" siz=
+e=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a s=
+tyle=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-height: =
+30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03=
+GW7-RGT16HS.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sa=
+ns-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/as=
+sets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957fc0338c5=
+d9378b.gif" width=3D"268" height=3D"5" alt=3D"" title=3D"" border=3D"0" sty=
+le=3D"display: block;" /></font></a></font></td></tr><tr><td width=3D"24" s=
+tyle=3D"font-size: 1px; line-height: 50px; mso-line-height-rule:exactly;"><=
+font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000=
+000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300=
+;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"https:=
+//newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" tar=
+get=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f=
+5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/fa/e/fae8=
+3dc07ba0aece2a2cc31d8d9122832d845aebe987a0523a8288a1a7d13f53.gif" width=3D"=
+24" height=3D"50" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;=
+" /></font></a></font></td><td align=3D"center" valign=3D"middle" height=3D=
+"50"><a style=3D"color:#000000;font-style:normal;text-decoration:none;" hre=
+f=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16H=
+S.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" =
+size=3D"4" color=3D"#000000" style=3D"font-size:20px;" ><b>Ja, ich helfe fo=
+odwatch<br /> mit 5 Euro monatlich</b></font></a></td><td width=3D"24" styl=
+e=3D"font-size: 1px; line-height: 50px; mso-line-height-rule:exactly;"><fon=
+t face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000=
+" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;fo=
+nt-weight:normal;text-decoration:none;line-height: 30px;" href=3D"https://n=
+ewsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=
+=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a3=
+00" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/fa/e/fae83dc=
+07ba0aece2a2cc31d8d9122832d845aebe987a0523a8288a1a7d13f53.gif" width=3D"24"=
+ height=3D"50" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /=
+></font></a></font></td></tr><tr><td height=3D"5" colspan=3D"3" style=3D"fo=
+nt-size: 1px; line-height: 5px; mso-line-height-rule:exactly;"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-wei=
+ght:normal;text-decoration:none;line-height: 30px;" href=3D"https://newslet=
+ter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_b=
+lank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><=
+img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0eff36f3f6=
+982e4b2f44343d86bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"268" heig=
+ht=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></fon=
+t></a></font></td></tr></table></td><td width=3D"6" style=3D"font-size: 1px=
+; line-height: 60px; mso-line-height-rule:exactly;"><font face=3D"Barlow, H=
+elvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-siz=
+e:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;te=
+xt-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch=
+.de/go/6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font f=
+ace=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"ht=
+tps://newsletter.foodwatch.de/assets/bm/imh/1e/4/1e4392252f0deadc67e9871163=
+1499984e9b6ae62df486885836bac55472739f.gif" width=3D"6" height=3D"60" alt=
+=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font=
+></td></tr><tr><td height=3D"6" colspan=3D"3" style=3D"font-size: 1px; line=
+-height: 6px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetic=
+a, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;=
+line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-deco=
+ration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/=
+6/62Z6KW0E-62SAH3D5-62T03GW7-RGT16HS.html" target=3D"_blank"><font face=3D"=
+Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://n=
+ewsletter.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be33a43=
+96da337c52f04b92105f94b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"" ti=
+tle=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></td></=
+tr></table></td></tr></table></td></tr><tr><td style=3D"font-size: 1px; lin=
+e-height: 1px; mso-line-height-rule: exactly;" width=3D"650" height=3D"10">=
+&nbsp;</td></tr></table></td></tr></table></td></tr></table></td></tr></tab=
+le><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=
+=3D"top"><table id=3D"textAndImage16" width=3D"650" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgco=
+lor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508624685" id=
+=3D"pa40508624685"><!-- --></a><table width=3D"650" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"to=
+p" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"left"><tr><td style=3D"font-size: 1px; line-height: 1=
+px; mso-line-height-rule: exactly;" width=3D"650" height=3D"10">&nbsp;</td>=
+</tr><tr><td width=3D"650" align=3D"left"><table width=3D"650" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650" align=3D"center"=
+><table style=3D"background: #f5a300 url(https://newsletter.foodwatch.de/as=
+sets/bm/imh/6d/7/6d75164f09a43be3eb3bdaad42fa05495000719f68f51d466b11df5dde=
+289188.png) 0 0 no-repeat;" background=3D"https://newsletter.foodwatch.de/a=
+ssets/bm/imh/6d/7/6d75164f09a43be3eb3bdaad42fa05495000719f68f51d466b11df5dd=
+e289188.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f=
+5a300" class=3D"buttonRoot"><tr><td height=3D"6" colspan=3D"3" style=3D"fon=
+t-size: 1px; line-height: 6px; mso-line-height-rule:exactly;"><font face=3D=
+"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=
+=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weig=
+ht:normal;text-decoration:none;line-height: 30px;" href=3D"https://newslett=
+er.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_b=
+lank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><=
+img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4=
+ba070d2913e87be33a4396da337c52f04b92105f94b3174b8f4.gif" width=3D"280" heig=
+ht=3D"6" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></fon=
+t></a></font></td></tr><tr><td width=3D"6" style=3D"font-size: 1px; line-he=
+ight: 60px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica,=
+ Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;li=
+ne-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decora=
+tion:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/=
+62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"O=
+swald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://ne=
+wsletter.foodwatch.de/assets/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e=
+9b6ae62df486885836bac55472739f.gif" width=3D"6" height=3D"60" alt=3D"" titl=
+e=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></td><td =
+height=3D"60"><table style=3D"background: #f5a300 url(https://newsletter.fo=
+odwatch.de/assets/bm/imh/77/8/77873201f1373b0ebb3e0e60df813a7f5ed1c12708c29=
+af643162c93a253f41f.png) top left no-repeat;" background=3D"https://newslet=
+ter.foodwatch.de/assets/bm/imh/77/8/77873201f1373b0ebb3e0e60df813a7f5ed1c12=
+708c29af643162c93a253f41f.png" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" bgcolor=3D"#f5a300" width=3D"100%"><tr><td height=3D"5" colspan=3D"3=
+" style=3D"font-size: 1px; line-height: 5px; mso-line-height-rule:exactly;"=
+><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0=
+00000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a3=
+00;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"http=
+s://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" =
+target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D=
+"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/f1/e/f=
+1e0eff36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=
+=3D"268" height=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"display: bl=
+ock;" /></font></a></font></td></tr><tr><td width=3D"24" style=3D"font-size=
+: 1px; line-height: 50px; mso-line-height-rule:exactly;"><font face=3D"Barl=
+ow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"fon=
+t-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:norm=
+al;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.food=
+watch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><=
+font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=
+=3D"https://newsletter.foodwatch.de/assets/bm/imh/fa/e/fae83dc07ba0aece2a2c=
+c31d8d9122832d845aebe987a0523a8288a1a7d13f53.gif" width=3D"24" height=3D"50=
+" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a><=
+/font></td><td align=3D"center" valign=3D"middle" height=3D"50"><a style=3D=
+"color:#000000;font-style:normal;text-decoration:none;" href=3D"https://new=
+sletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=
+=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" size=3D"4" col=
+or=3D"#000000" style=3D"font-size:20px;" ><b>Ja, ich helfe foodwatch<br />m=
+it 10 Euro monatlich </b></font></a></td><td width=3D"24" style=3D"font-siz=
+e: 1px; line-height: 50px; mso-line-height-rule:exactly;"><font face=3D"Bar=
+low, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"fo=
+nt-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:nor=
+mal;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.foo=
+dwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank">=
+<font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img sr=
+c=3D"https://newsletter.foodwatch.de/assets/bm/imh/fa/e/fae83dc07ba0aece2a2=
+cc31d8d9122832d845aebe987a0523a8288a1a7d13f53.gif" width=3D"24" height=3D"5=
+0" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a>=
+</font></td></tr><tr><td height=3D"5" colspan=3D"3" style=3D"font-size: 1px=
+; line-height: 5px; mso-line-height-rule:exactly;"><font face=3D"Barlow, He=
+lvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size=
+:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;tex=
+t-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.=
+de/go/6/62Z6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font f=
+ace=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"ht=
+tps://newsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f44343=
+d86bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"268" height=3D"5" alt=
+=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font=
+></td></tr></table></td><td width=3D"6" style=3D"font-size: 1px; line-heigh=
+t: 60px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Ar=
+ial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-=
+height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoratio=
+n:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z=
+6KW0E-62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Oswa=
+ld,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsl=
+etter.foodwatch.de/assets/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e9b6=
+ae62df486885836bac55472739f.gif" width=3D"6" height=3D"60" alt=3D"" title=
+=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></td></tr>=
+<tr><td height=3D"6" colspan=3D"3" style=3D"font-size: 1px; line-height: 6p=
+x; mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, s=
+ans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height=
+: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none=
+;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-=
+62SAH3D5-62T03GW8-17DF14H7.html" target=3D"_blank"><font face=3D"Oswald,Hel=
+vetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.=
+foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be33a4396da337c52=
+f04b92105f94b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"" title=3D"" b=
+order=3D"0" style=3D"display: block;" /></font></a></font></td></tr></table=
+></td></tr></table></td></tr><tr><td style=3D"font-size: 1px; line-height: =
+1px; mso-line-height-rule: exactly;" width=3D"650" height=3D"10">&nbsp;</td=
+></tr></table></td></tr></table></td></tr></table></td></tr></table><table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><ta=
+ble id=3D"textAndImage17" width=3D"650" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFF=
+FF" valign=3D"top" align=3D"left"><a name=3D"pa40508624686" id=3D"pa4050862=
+4686"><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"l=
+eft"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"left"><tr><td style=3D"font-size: 1px; line-height: 1px; mso-line-=
+height-rule: exactly;" width=3D"650" height=3D"10">&nbsp;</td></tr><tr><td =
+width=3D"650" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td width=3D"650" align=3D"center"><table styl=
+e=3D"background: #f5a300 url(https://newsletter.foodwatch.de/assets/bm/imh/=
+1a/4/1a4007d1459351c90bfb61119a1d5fa8742e9858f45157105fc646df40f23e66.png) =
+0 0 no-repeat;" background=3D"https://newsletter.foodwatch.de/assets/bm/imh=
+/1a/4/1a4007d1459351c90bfb61119a1d5fa8742e9858f45157105fc646df40f23e66.png"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#f5a300" class=
+=3D"buttonRoot"><tr><td height=3D"6" colspan=3D"3" style=3D"font-size: 1px;=
+ line-height: 6px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Hel=
+vetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:=
+20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text=
+-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.d=
+e/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" target=3D"_blank"><font face=
+=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https=
+://newsletter.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba070d2913e87be3=
+3a4396da337c52f04b92105f94b3174b8f4.gif" width=3D"280" height=3D"6" alt=3D"=
+" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font></t=
+d></tr><tr><td width=3D"6" style=3D"font-size: 1px; line-height: 60px; mso-=
+line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-ser=
+if" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;=
+" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-h=
+eight: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D=
+5-62T03GW9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Ari=
+al,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.=
+de/assets/bm/imh/1e/4/1e4392252f0deadc67e98711631499984e9b6ae62df486885836b=
+ac55472739f.gif" width=3D"6" height=3D"60" alt=3D"" title=3D"" border=3D"0"=
+ style=3D"display: block;" /></font></a></font></td><td height=3D"60"><tabl=
+e style=3D"background: #FFFFFF url(https://newsletter.foodwatch.de/assets/b=
+m/imh/bc/5/bc505dc9d969305ad439ec0dc582e756a955f1c5d76688056a021eddd1befee0=
+.png) top left no-repeat;" background=3D"https://newsletter.foodwatch.de/as=
+sets/bm/imh/bc/5/bc505dc9d969305ad439ec0dc582e756a955f1c5d76688056a021eddd1=
+befee0.png" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FF=
+FFFF" width=3D"100%"><tr><td height=3D"5" colspan=3D"3" style=3D"font-size:=
+ 1px; line-height: 5px; mso-line-height-rule:exactly;"><font face=3D"Barlow=
+, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-=
+size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal=
+;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwa=
+tch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" target=3D"_blank"><font =
+face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"h=
+ttps://newsletter.foodwatch.de/assets/bm/imh/f1/e/f1e0eff36f3f6982e4b2f4434=
+3d86bdfdce8f58dea9a8ec957fc0338c5d9378b.gif" width=3D"268" height=3D"5" alt=
+=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font=
+></td></tr><tr><td width=3D"24" style=3D"font-size: 1px; line-height: 50px;=
+ mso-line-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, san=
+s-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: =
+30px;" ><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;l=
+ine-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62=
+SAH3D5-62T03GW9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetic=
+a,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodw=
+atch.de/assets/bm/imh/fa/e/fae83dc07ba0aece2a2cc31d8d9122832d845aebe987a052=
+3a8288a1a7d13f53.gif" width=3D"24" height=3D"50" alt=3D"" title=3D"" border=
+=3D"0" style=3D"display: block;" /></font></a></font></td><td align=3D"cent=
+er" valign=3D"middle" height=3D"50"><a style=3D"color:#000000;font-style:no=
+rmal;text-decoration:none;" href=3D"https://newsletter.foodwatch.de/go/6/62=
+Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald=
+,Helvetica,Arial,sans-serif" size=3D"4" color=3D"#000000" style=3D"font-siz=
+e:20px;" ><b>Ja, ich helfe foodwatch<br />mit 20 Euro monatlich</b></font><=
+/a></td><td width=3D"24" style=3D"font-size: 1px; line-height: 50px; mso-li=
+ne-height-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif=
+" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" =
+><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-hei=
+ght: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-=
+62T03GW9-XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial=
+,sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de=
+/assets/bm/imh/fa/e/fae83dc07ba0aece2a2cc31d8d9122832d845aebe987a0523a8288a=
+1a7d13f53.gif" width=3D"24" height=3D"50" alt=3D"" title=3D"" border=3D"0" =
+style=3D"display: block;" /></font></a></font></td></tr><tr><td height=3D"5=
+" colspan=3D"3" style=3D"font-size: 1px; line-height: 5px; mso-line-height-=
+rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"=
+4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=
+=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px=
+;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-=
+XR2NC.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-ser=
+if" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/b=
+m/imh/f1/e/f1e0eff36f3f6982e4b2f44343d86bdfdce8f58dea9a8ec957fc0338c5d9378b=
+.gif" width=3D"268" height=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"=
+display: block;" /></font></a></font></td></tr></table></td><td width=3D"6"=
+ style=3D"font-size: 1px; line-height: 60px; mso-line-height-rule:exactly;"=
+><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0=
+00000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a3=
+00;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"http=
+s://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" tar=
+get=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f=
+5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/1e/4/1e43=
+92252f0deadc67e98711631499984e9b6ae62df486885836bac55472739f.gif" width=3D"=
+6" height=3D"60" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;"=
+ /></font></a></font></td></tr><tr><td height=3D"6" colspan=3D"3" style=3D"=
+font-size: 1px; line-height: 6px; mso-line-height-rule:exactly;"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-wei=
+ght:normal;text-decoration:none;line-height: 30px;" href=3D"https://newslet=
+ter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GW9-XR2NC.html" target=3D"_bla=
+nk"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><im=
+g src=3D"https://newsletter.foodwatch.de/assets/bm/imh/ff/6/ff65f809d75a4ba=
+070d2913e87be33a4396da337c52f04b92105f94b3174b8f4.gif" width=3D"280" height=
+=3D"6" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font>=
+</a></font></td></tr></table></td></tr></table></td></tr><tr><td style=3D"f=
+ont-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width=3D"6=
+50" height=3D"10">&nbsp;</td></tr></table></td></tr></table></td></tr></tab=
+le></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+"><tr><td valign=3D"top"><table id=3D"textAndImage18" width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td w=
+idth=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"p=
+a40508624687" id=3D"pa40508624687"><!-- --></a><table width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"=
+650" valign=3D"top" align=3D"left"><table width=3D"650" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td style=3D"font-size: 1p=
+x; line-height: 1px; mso-line-height-rule: exactly;" width=3D"650" height=
+=3D"10">&nbsp;</td></tr><tr><td width=3D"650" align=3D"left"><table width=
+=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"=
+650" align=3D"center"><table style=3D"background: #7A737A url(https://newsl=
+etter.foodwatch.de/assets/bm/imh/aa/6/aa65e06cb7941beed4410ac40efa9f6b466ac=
+cf5252a545fbac0ef5c0a898ed5.png) 0 0 no-repeat;" background=3D"https://news=
+letter.foodwatch.de/assets/bm/imh/aa/6/aa65e06cb7941beed4410ac40efa9f6b466a=
+ccf5252a545fbac0ef5c0a898ed5.png" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" bgcolor=3D"#7A737A" class=3D"buttonRoot"><tr><td height=3D"4" colsp=
+an=3D"3" style=3D"font-size: 1px; line-height: 4px; mso-line-height-rule:ex=
+actly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" colo=
+r=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"colo=
+r:#f5a300;font-weight:normal;text-decoration:none;line-height: 30px;" href=
+=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16V=
+H.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" =
+color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/im=
+h/94/6/946fbaeb9cf92766c7de5190fa70d8fd731b2ad58b0c5dcf3583384d12298518.gif=
+" width=3D"281" height=3D"4" alt=3D"" title=3D"" border=3D"0" style=3D"disp=
+lay: block;" /></font></a></font></td></tr><tr><td width=3D"4" style=3D"fon=
+t-size: 1px; line-height: 56px; mso-line-height-rule:exactly;"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-wei=
+ght:normal;text-decoration:none;line-height: 30px;" href=3D"https://newslet=
+ter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_=
+blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" >=
+<img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/be/6/be6fa763b732=
+a9662d8d89c6d6fe233f05488ad05c0ef6c394703dc0edccdbe3.gif" width=3D"4" heigh=
+t=3D"56" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></fon=
+t></a></font></td><td height=3D"56"><table style=3D"background: #FFFFFF url=
+(https://newsletter.foodwatch.de/assets/bm/imh/43/f/43fc398b3f41ec53fa12958=
+9bd755c91acdd79408ca749582eac8ec604815fe6.png) top left no-repeat;" backgro=
+und=3D"https://newsletter.foodwatch.de/assets/bm/imh/43/f/43fc398b3f41ec53f=
+a129589bd755c91acdd79408ca749582eac8ec604815fe6.png" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF" width=3D"100%"><tr><td heigh=
+t=3D"5" colspan=3D"3" style=3D"font-size: 1px; line-height: 5px; mso-line-h=
+eight-rule:exactly;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" si=
+ze=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" ><a =
+style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-height:=
+ 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T0=
+3GWA-16PR16VH.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,=
+sans-serif" color=3D"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/=
+assets/bm/imh/16/2/1620d2f99352628ef8b6e2ce2e637ef36130b705e09c9fa0972616cf=
+1fd70f4e.gif" width=3D"273" height=3D"5" alt=3D"" title=3D"" border=3D"0" s=
+tyle=3D"display: block;" /></font></a></font></td></tr><tr><td width=3D"36"=
+ style=3D"font-size: 1px; line-height: 46px; mso-line-height-rule:exactly;"=
+><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0=
+00000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a3=
+00;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"http=
+s://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" =
+target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D=
+"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/19/0/1=
+90f780a3653863221cca418c46ec6e33dba9da7f1709e67b1d19e8e842a26ec.gif" width=
+=3D"36" height=3D"46" alt=3D"" title=3D"" border=3D"0" style=3D"display: bl=
+ock;" /></font></a></font></td><td align=3D"center" valign=3D"middle" heigh=
+t=3D"46"><a style=3D"color:#7a737a;font-style:normal;text-decoration:none;"=
+ href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16=
+PR16VH.html" target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-se=
+rif" size=3D"4" color=3D"#7a737a" style=3D"font-size:18px;" ><b>Ich m&ouml;=
+chte heute lieber<br />einmalig spenden</b></font></a></td><td width=3D"36"=
+ style=3D"font-size: 1px; line-height: 46px; mso-line-height-rule:exactly;"=
+><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0=
+00000" style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a3=
+00;font-weight:normal;text-decoration:none;line-height: 30px;" href=3D"http=
+s://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" =
+target=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D=
+"#f5a300" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/19/0/1=
+90f780a3653863221cca418c46ec6e33dba9da7f1709e67b1d19e8e842a26ec.gif" width=
+=3D"36" height=3D"46" alt=3D"" title=3D"" border=3D"0" style=3D"display: bl=
+ock;" /></font></a></font></td></tr><tr><td height=3D"5" colspan=3D"3" styl=
+e=3D"font-size: 1px; line-height: 5px; mso-line-height-rule:exactly;"><font=
+ face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000"=
+ style=3D"font-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;fon=
+t-weight:normal;text-decoration:none;line-height: 30px;" href=3D"https://ne=
+wsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=
+=3D"_blank"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a3=
+00" ><img src=3D"https://newsletter.foodwatch.de/assets/bm/imh/16/2/1620d2f=
+99352628ef8b6e2ce2e637ef36130b705e09c9fa0972616cf1fd70f4e.gif" width=3D"273=
+" height=3D"5" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /=
+></font></a></font></td></tr></table></td><td width=3D"4" style=3D"font-siz=
+e: 1px; line-height: 56px; mso-line-height-rule:exactly;"><font face=3D"Bar=
+low, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"fo=
+nt-size:20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:nor=
+mal;text-decoration:none;line-height: 30px;" href=3D"https://newsletter.foo=
+dwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank">=
+<font face=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img sr=
+c=3D"https://newsletter.foodwatch.de/assets/bm/imh/be/6/be6fa763b732a9662d8=
+d89c6d6fe233f05488ad05c0ef6c394703dc0edccdbe3.gif" width=3D"4" height=3D"56=
+" alt=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a><=
+/font></td></tr><tr><td height=3D"4" colspan=3D"3" style=3D"font-size: 1px;=
+ line-height: 4px; mso-line-height-rule:exactly;"><font face=3D"Barlow, Hel=
+vetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:=
+20px;line-height: 30px;" ><a style=3D"color:#f5a300;font-weight:normal;text=
+-decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.d=
+e/go/6/62Z6KW0E-62SAH3D5-62T03GWA-16PR16VH.html" target=3D"_blank"><font fa=
+ce=3D"Oswald,Helvetica,Arial,sans-serif" color=3D"#f5a300" ><img src=3D"htt=
+ps://newsletter.foodwatch.de/assets/bm/imh/94/6/946fbaeb9cf92766c7de5190fa7=
+0d8fd731b2ad58b0c5dcf3583384d12298518.gif" width=3D"281" height=3D"4" alt=
+=3D"" title=3D"" border=3D"0" style=3D"display: block;" /></font></a></font=
+></td></tr></table></td></tr></table></td></tr><tr><td width=3D"650" height=
+=3D"20"></td></tr></table></td></tr></table></td></tr></table></td></tr></t=
+able><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=
+=3D"top"><table id=3D"textAndImage19" width=3D"650" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" bgco=
+lor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508624688" id=
+=3D"pa40508624688"><!-- --></a><table width=3D"650" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"to=
+p" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"30"></td></tr><=
+tr><td width=3D"650" align=3D"left"><font face=3D"Barlow, Helvetica, Arial,=
+ sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-heig=
+ht: 30px;" ><div style=3D"line-height: 30px;text-align: left;"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;" >Nat&uuml;rlich ist es <b>vollkommen okay</b>, z.B. z=
+wei Portionen Milch am Tag zu konsumieren &ndash; ganz gem&auml;&szlig; den=
+ <b>Empfehlungen der &bdquo;Deutschen Gesellschaft f&uuml;r Ern&auml;hrung&=
+ldquo;</b>. [13] Aber eine Milchindustrie, die <b>ohne R&uuml;cksicht auf T=
+ierwohl oder Klima</b> ein &bdquo;Weiter so&ldquo; m&ouml;chte, und sogar a=
+uf Wachstum setzt, ist <b>nicht tragbar</b>.</font></div></font></td></tr><=
+tr><td width=3D"650" height=3D"20"></td></tr></table></td></tr></table></td=
+></tr></table></td></tr></table><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage20" width=3D"6=
+50" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"=
+><tr><td width=3D"650" valign=3D"top" align=3D"left"><a name=3D"pa405086248=
+89" id=3D"pa40508624889"><!-- --></a><table width=3D"650" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=
+=3D"top" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"20"></td>=
+</tr><tr><td width=3D"650" align=3D"left"><font face=3D"Barlow, Helvetica, =
+Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;lin=
+e-height: 30px;" ><b>Mit freundlichen Gr&uuml;&szlig;en</b></font><table wi=
+dth=3D"643" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=
+=3D"643" height=3D"20"></td></tr></table><table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"650"><tr><td><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"180"><img src=3D"h=
+ttps://newsletter.foodwatch.de/assets/bm/binary/c/3/8/7/c3874d864eaac301456=
+4c9003269701d_54866.png" width=3D"180" height=3D"180" alt=3D"" title=3D"" b=
+order=3D"0" style=3D"display: block;" /></td></tr></table></td></tr></table=
+></td></tr><tr><td width=3D"650" height=3D"20"></td></tr></table></td></tr>=
+</table></td></tr></table></td></tr></table><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage21=
+" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"t=
+extAndImage"><tr><td width=3D"650" valign=3D"top" align=3D"left"><a name=3D=
+"pa40508624890" id=3D"pa40508624890"><!-- --></a><table width=3D"650" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D=
+"650" valign=3D"top" align=3D"left"><table width=3D"650" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" align=
+=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" co=
+lor=3D"#000000" style=3D"font-size:20px;line-height: 30px;" >Annemarie Botz=
+ki<br />Recherche und Kampagnen<br />&nbsp;</font></td></tr><tr><td width=
+=3D"650" height=3D"20"></td></tr></table></td></tr></table></td></tr></tabl=
+e></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+><tr><td valign=3D"top"><table id=3D"textAndImage22" width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td w=
+idth=3D"650" bgcolor=3D"#f4f4f4" valign=3D"top" align=3D"left"><a name=3D"p=
+a40508624891" id=3D"pa40508624891"><!-- --></a><table width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"=
+650" height=3D"20" bgcolor=3D"#f4f4f4" colspan=3D"3"></td></tr><tr><td widt=
+h=3D"20" bgcolor=3D"#f4f4f4"></td><td width=3D"610" valign=3D"top" align=3D=
+"left"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"610=
+"><tr><td><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"=
+center"><tr><td width=3D"610"><img src=3D"https://newsletter.foodwatch.de/a=
+ssets/bm/imh/fd/4/fd43dbea86d4d99b4813b5f211ac7c3cb2d8bcc96016ab3d98909fd75=
+79e830d.png" width=3D"610" height=3D"232" alt=3D"" title=3D"" border=3D"0" =
+style=3D"display: block;" /></td></tr></table></td></tr></table><table widt=
+h=3D"603" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D=
+"603" height=3D"20"></td></tr></table><font face=3D"Barlow, Helvetica, Aria=
+l, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-he=
+ight: 30px;" ><span style=3D"color:#f5a300;"><b>P.S:</b></span> Die Milchlo=
+bby ist nat&uuml;rlich nicht die erste Lebensmittelbranche, die Greenwashin=
+g betreibt. Letztes Jahr haben wir bei der EU bereits ein Verbot f&uuml;r i=
+rref&uuml;hrende &bdquo;Klimaneutral&ldquo;-Label erwirkt. [14] Wir spreche=
+n also aus Erfahrung, wenn wir sagen: <b>Mit gen&uuml;gend Druck k&ouml;nne=
+n wir auch das Greenwashing der Milchlobby unterbinden!</b><br /><br /><a s=
+tyle=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-height: =
+30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03=
+GWB-102S1DFK.html"><font face=3D"Oswald,Helvetica,Arial,sans-serif" color=
+=3D"#f5a300" ><b>&gt; Ich helfe mit einem regelm&auml;&szlig;igen Beitrag</=
+b></font></a><br /><br /><a style=3D"color:#f5a300;font-weight:normal;text-=
+decoration:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de=
+/go/6/62Z6KW0E-62SAH3D5-62T03GWC-MASWJ3.html"><font face=3D"Oswald,Helvetic=
+a,Arial,sans-serif" color=3D"#f5a300" >&gt; Ich spende einmalig</font></a><=
+/font></td><td width=3D"20" bgcolor=3D"#f4f4f4"></td></tr><tr><td width=3D"=
+650" height=3D"20" bgcolor=3D"#f4f4f4" colspan=3D"3"></td></tr></table></td=
+></tr></table></td></tr></table><table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage23" width=3D"6=
+50" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"=
+><tr><td width=3D"650" valign=3D"top" align=3D"left"><a name=3D"pa405086248=
+92" id=3D"pa40508624892"><!-- --></a><table width=3D"650" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=
+=3D"top" align=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" height=3D"40"></td>=
+</tr><tr><td width=3D"650" align=3D"left"><font face=3D"Barlow, Helvetica, =
+Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;lin=
+e-height: 30px;" ><span style=3D"font-size:14px;"><b>Quellen:</b><br />[1] =
+Tagesschau: &bdquo;Warum Deutsche weniger Milch trinken&ldquo;, 14.04.2023 =
+(abgerufen am 24.10.2024).<br />[2] foodwatch: Report &quot;MILCHM&Auml;RCH=
+EN &ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leiden l&a=
+uml;sst und Verbraucher t&auml;uscht&quot;, S. 20, 22.10.2024 (abgerufen am=
+ 24.10.2024).<br />[3] RND: &bdquo;Die Milch macht&#39;s &ndash; nicht mehr=
+. Sinkende Absatzzahlen: Wie die Milchindustrie um die Generation Z wirbt&l=
+dquo;, 30.04.2023 (abgerufen am 24.10.2024).<br />[4] foodwatch: Report &qu=
+ot;MILCHM&Auml;RCHEN &ndash; Wie die Milchlobby die Klimakrise befeuert, K&=
+uuml;he leiden l&auml;sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S=
+. 20 (abgerufen am 24.10.2024).<br />[5] foodwatch: Report &quot;MILCHM&Aum=
+l;RCHEN &ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leide=
+n l&auml;sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 33, 39 (abg=
+erufen am 24.10.2024).<br />[6] foodwatch: Report &quot;MILCHM&Auml;RCHEN &=
+ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leiden l&auml;=
+sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 20 (abgerufen am 24.=
+10.2024).<br />[7] RND: &bdquo;Die Milch macht&#39;s &ndash; nicht mehr. Si=
+nkende Absatzzahlen: Wie die Milchindustrie um die Generation Z wirbt&ldquo=
+;, 30.04.2023 (abgerufen am 24.10.2024).<br />[8] Initiative Milch: Podcast=
+ &bdquo;Tierwohl und Klimaschutz &ndash; Verantwortung f&uuml;r die Zukunft=
+&ldquo;, 07.10.2024 (abgerufen am 24.10.2024).<br />[9] Milch macht&#39;s! =
+(YouTube): &bdquo;Milch macht&#39;s &ndash; Hallemuhjah (Offizielles Musikv=
+ideo)&ldquo;, 30.05.2024 (abgerufen am 24.10.2024).<br />[10] RBB: &bdquo;S=
+ommer 2024 war global der hei&szlig;este seit Aufzeichnungsbeginn&ldquo;, 0=
+6.09.2024 (abgerufen am 24.10.2024).<br />[11] foodwatch: Report &quot;MILC=
+HM&Auml;RCHEN &ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he=
+ leiden l&auml;sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 39 (a=
+bgerufen am 24.10.2024).<br />[12] GfK: &bdquo;Consumer Index Total Grocery=
+ 11 | 2023&ldquo; (abgerufen am 24.10.2024).<br />[13] DGE: &bdquo;DGE-Ern&=
+auml;hrungskreis &ndash; Milch und Milchprodukte&ldquo; (abgerufen am 24.10=
+.2024).<br />[14] foodwatch: &bdquo;Erfolg: Klima-L&uuml;gen sind vom Tisch=
+!&ldquo;, 06.12.2023 (abgerufen am 24.10.2024).</span></font></td></tr><tr>=
+<td width=3D"650" height=3D"20"></td></tr></table></td></tr></table></td></=
+tr></table></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage24" width=3D"650"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><t=
+r><td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a na=
+me=3D"pa40508624893" id=3D"pa40508624893"><!-- --></a><table width=3D"650" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td wid=
+th=3D"20" bgcolor=3D"#FFFFFF"></td><td width=3D"610" valign=3D"top" align=
+=3D"left"></td><td width=3D"20" bgcolor=3D"#FFFFFF"></td></tr><tr><td width=
+=3D"650" height=3D"20" bgcolor=3D"#FFFFFF" colspan=3D"3"></td></tr></table>=
+</td></tr></table></td></tr></table><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage25" width=
+=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndI=
+mage"><tr><td width=3D"650" bgcolor=3D"#f4f4f4" valign=3D"top" align=3D"lef=
+t"><a name=3D"pa40508625094" id=3D"pa40508625094"><!-- --></a><table width=
+=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><t=
+r><td width=3D"650" height=3D"20" bgcolor=3D"#f4f4f4" colspan=3D"3"></td></=
+tr><tr><td width=3D"20" bgcolor=3D"#f4f4f4"></td><td width=3D"620" valign=
+=3D"top" align=3D"left"><font face=3D"Barlow, Helvetica, Arial, sans-serif"=
+ size=3D"4" color=3D"#000000" style=3D"font-size:20px;line-height: 30px;" >=
+<div style=3D"line-height: 30px;text-align: center;"><font face=3D"Barlow, =
+Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-si=
+ze:20px;" ><span style=3D"font-size:16px;"><b>Per Bank&uuml;berweisung spen=
+den</b><br />Spendenkonto bei der GLS-Bank<br />BIC&nbsp;GENODEM1GLS<br />I=
+BAN DE50 4306 0967 0104 2464 00</span></font></div></font></td><td width=3D=
+"10" bgcolor=3D"#f4f4f4"></td></tr><tr><td width=3D"650" height=3D"20" bgco=
+lor=3D"#f4f4f4" colspan=3D"3"></td></tr></table></td></tr></table></td></tr=
+></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td va=
+lign=3D"top"><table id=3D"textAndImage26" width=3D"650" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" =
+bgcolor=3D"#FFFFFF" valign=3D"top" align=3D"left"><a name=3D"pa40508625095"=
+ id=3D"pa40508625095"><!-- --></a><table width=3D"650" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"20" bgcolor=3D=
+"#FFFFFF"></td><td width=3D"610" valign=3D"top" align=3D"left"></td><td wid=
+th=3D"20" bgcolor=3D"#FFFFFF"></td></tr><tr><td width=3D"650" height=3D"20"=
+ bgcolor=3D"#FFFFFF" colspan=3D"3"></td></tr></table></td></tr></table></td=
+></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><=
+td valign=3D"top"><table id=3D"textAndImage27" width=3D"650" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"=
+650" bgcolor=3D"#f4f4f4" valign=3D"top" align=3D"left"><a name=3D"pa4050862=
+5096" id=3D"pa40508625096"><!-- --></a><table width=3D"650" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" heig=
+ht=3D"20" bgcolor=3D"#f4f4f4" colspan=3D"3"></td></tr><tr><td width=3D"20" =
+bgcolor=3D"#f4f4f4"></td><td width=3D"620" valign=3D"top" align=3D"left"><f=
+ont face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#0000=
+00" style=3D"font-size:20px;line-height: 30px;" ><div style=3D"line-height:=
+ 30px;text-align: center;"><font face=3D"Barlow, Helvetica, Arial, sans-ser=
+if" size=3D"4" color=3D"#000000" style=3D"font-size:20px;" ><span style=3D"=
+font-size:16px;"><b>Sie m&ouml;chten lieber per Post Mitglied werden?</b><b=
+r /><a style=3D"color:#f5a300;font-weight:normal;text-decoration:none;line-=
+height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3=
+D5-5P9TZCVW-1BNOKNP.pdf"><font face=3D"Oswald,Helvetica,Arial,sans-serif" c=
+olor=3D"#f5a300" ><b>Formular zum Ausdrucken&nbsp;</b></font></a></span></f=
+ont></div></font></td><td width=3D"10" bgcolor=3D"#f4f4f4"></td></tr><tr><t=
+d width=3D"650" height=3D"20" bgcolor=3D"#f4f4f4" colspan=3D"3"></td></tr><=
+/table></td></tr></table></td></tr></table><table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"textAndImage28=
+" width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"t=
+extAndImage"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=3D"top" align=
+=3D"left"><a name=3D"pa40508625097" id=3D"pa40508625097"><!-- --></a><table=
+ width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"le=
+ft"><tr><td width=3D"20" bgcolor=3D"#FFFFFF"></td><td width=3D"610" valign=
+=3D"top" align=3D"left"></td><td width=3D"20" bgcolor=3D"#FFFFFF"></td></tr=
+><tr><td width=3D"650" height=3D"20" bgcolor=3D"#FFFFFF" colspan=3D"3"></td=
+></tr></table></td></tr></table></td></tr></table><table border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top"><table id=3D"images3"=
+ width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"im=
+ages"><tr><td width=3D"650" bgcolor=3D"#f4f4f4" valign=3D"top" align=3D"lef=
+t"><a name=3D"pa40508625298" id=3D"pa40508625298"><!-- --></a><table width=
+=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"left"><t=
+r><td width=3D"650" height=3D"20" bgcolor=3D"#f4f4f4" colspan=3D"3"></td></=
+tr><tr><td width=3D"20" bgcolor=3D"#f4f4f4"></td><td width=3D"610" valign=
+=3D"top" align=3D"left"><font face=3D"Oswald, Helvetica, Arial, sans-serif"=
+ size=3D"5" color=3D"#000000" style=3D"font-size:25px;line-height: 30px;" >=
+<div style=3D"line-height: 30px;text-align: center;"><font face=3D"Oswald, =
+Helvetica, Arial, sans-serif" size=3D"5" color=3D"#000000" style=3D"font-si=
+ze:25px;" >Jetzt Newsletter teilen!</font></div></font><table width=3D"563"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"563" hei=
+ght=3D"20"></td></tr></table><table width=3D"610" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td width=3D"610" align=3D"center"><table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top" align=
+=3D"center"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3=
+D5-5GIGT5DE-PNW74.html?text=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F=
+6%2F62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img src=3D=
+"https://newsletter.foodwatch.de/assets/bm/binary/9/b/3/e/9b3e6cce161027dc1=
+ba9f53d9f5fb288_4343.png" width=3D"60" height=3D"60" alt=3D"Newsletter auf =
+WhatsApp teilen" title=3D"Newsletter auf WhatsApp teilen" border=3D"0" styl=
+e=3D"display: block;" /></a></td><td width=3D"10"></td><td valign=3D"top" a=
+lign=3D"center"><a href=3D"mailto:?body=3Dhttps://newsletter.foodwatch.de/g=
+o/6/62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img src=3D=
+"https://newsletter.foodwatch.de/assets/bm/binary/b/d/2/f/bd2fd473f0db3cf3c=
+b0c02e5cba9bed0_2614.png" width=3D"60" height=3D"60" alt=3D"Newsletter per =
+E-Mail teilen" title=3D"Newsletter per E-Mail teilen" border=3D"0" style=3D=
+"display: block;" /></a></td><td width=3D"10"></td><td valign=3D"top" align=
+=3D"center"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3=
+D5-5GIGT5DC-3N82NS.php?u=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2=
+F62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img src=3D"ht=
+tps://newsletter.foodwatch.de/assets/bm/binary/8/2/7/4/82743fc8ac9626c66cad=
+08db20f411b0_2446.png" width=3D"60" height=3D"60" alt=3D"Newsletter auf Fac=
+ebook teilen" title=3D"Newsletter auf Facebook teilen" border=3D"0" style=
+=3D"display: block;" /></a></td><td width=3D"10"></td><td valign=3D"top" al=
+ign=3D"center"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62S=
+AH3D5-5GIGT5DD-67U18EF.html?url=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fg=
+o%2F6%2F62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img sr=
+c=3D"https://newsletter.foodwatch.de/assets/bm/binary/4/9/3/7/4937fd1df22fe=
+cf038bae7243867fe34_3329.png" width=3D"60" height=3D"60" alt=3D"Newsletter =
+auf X teilen" title=3D"Newsletter auf X teilen" border=3D"0" style=3D"displ=
+ay: block;" /></a></td><td width=3D"10"></td><td valign=3D"top" align=3D"ce=
+nter"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GI=
+GT5DF-6AIAW8.html?url=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62=
+Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img src=3D"https=
+://newsletter.foodwatch.de/assets/bm/binary/e/c/8/c/ec8ccf7bb1ebed24a42e5fe=
+132ecd460_3268.png" width=3D"60" height=3D"60" alt=3D"Newsletter auf Telegr=
+am teilen" title=3D"Newsletter auf Telegram teilen" border=3D"0" style=3D"d=
+isplay: block;" /></a></td></tr></table></td></tr></table></td><td width=3D=
+"20" bgcolor=3D"#f4f4f4"></td></tr><tr><td width=3D"650" height=3D"20" bgco=
+lor=3D"#f4f4f4" colspan=3D"3"></td></tr></table></td></tr></table></td></tr=
+></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td va=
+lign=3D"top"><table id=3D"textAndImage29" width=3D"650" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td width=3D"650" =
+bgcolor=3D"#f4f4f4" valign=3D"top" align=3D"left"><a name=3D"pa40508625299"=
+ id=3D"pa40508625299"><!-- --></a><table width=3D"650" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"20" bgcolor=3D=
+"#f4f4f4"></td><td width=3D"610" valign=3D"top" align=3D"left"><font face=
+=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000" styl=
+e=3D"font-size:20px;line-height: 30px;" ><div style=3D"line-height: 30px;te=
+xt-align: center;"><font face=3D"Barlow, Helvetica, Arial, sans-serif" size=
+=3D"4" color=3D"#000000" style=3D"font-size:20px;" >Newsletter weitergeleit=
+et bekommen?<br /><a style=3D"color:#f5a300;font-weight:normal;text-decorat=
+ion:none;line-height: 30px;" href=3D"https://newsletter.foodwatch.de/go/6/6=
+2Z6KW0E-62SAH3D5-5J5N1KIP-16EEUCH.html"><font face=3D"Oswald,Helvetica,Aria=
+l,sans-serif" color=3D"#f5a300" ><b>&nbsp;Jetzt hier klicken &amp; abonnier=
+en!</b></font></a></font></div></font></td><td width=3D"20" bgcolor=3D"#f4f=
+4f4"></td></tr><tr><td width=3D"650" height=3D"20" bgcolor=3D"#f4f4f4" cols=
+pan=3D"3"></td></tr></table></td></tr></table></td></tr></table></td></tr><=
+/table></td></tr></table></td><td width=3D"20" bgcolor=3D"#ffffff"></td></t=
+r></table></td></tr></table></div><![if !mso]><div style=3D"display: none; =
+float: left; height: 0; max-height: 0; width: 0; overflow: hidden;" class=
+=3D"mobileVersion"><table class=3D"mobileHelper huaweiFixTable" style=3D"di=
+splay: none;" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100=
+%"><tr><td class=3D"huaweiFixCell"><div><div style=3D"background-color: #ff=
+ffff;padding: 0 20px 0 20px;"><!-- --><div><div style=3D"padding: 0px 0px 0=
+px 0px;background-color: #FFFFFF;"><div style=3D"display:table; width:100%;=
+"><div style=3D"display: table-cell;vertical-align: top;width: 100%;" class=
+=3D"textAndImage"><div><div style=3D"background-color: #FFFFFF;"><a name=3D=
+"ma40508616371" id=3D"ma40508616371"><!-- --></a><div style=3D"padding: 20p=
+x 0px 20px 0px;"><!-- --><div class=3D"headline"><div style=3D"text-align: =
+left;"><b>Hallo David Dreschner,</b></div></div><div style=3D"height: 20px;=
+"><!-- --></div><div class=3D"text"><div style=3D"text-align: left;">in Deu=
+tschland wurde <b>noch nie ein so geringer Milch-Konsum</b> registriert wie=
+ 2023. [1] Denn Verbraucher:innen wissen: <b>Milch ist ein echter Klimakill=
+er</b>! Unser aktueller <b>Milch-Report</b> zeigt die ganze Dimension: Die =
+Milchproduktion allein st&ouml;&szlig;t hierzulande &uuml;ber 46 Millionen =
+Tonnen CO2 pro Jahr aus. Das entspricht etwa <b>6,8 % der gesamten Emission=
+en Deutschlands</b> im selben Bezugsjahr 2023. [2]</div></div><div class=3D=
+"clear"><!-- --></div></div></div></div></div></div><div style=3D"display:t=
+able; width:100%;"><div style=3D"display: table-cell;vertical-align: top;wi=
+dth: 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div st=
+yle=3D"background-color: #FFFFFF;"><a name=3D"ma40508616372" id=3D"ma405086=
+16372"><!-- --></a><div style=3D"padding: 20px 0px 20px 0px;"><!-- --><div =
+class=3D"text"><div style=3D"text-align: left;">Bei Verkaufsr&uuml;ckg&auml=
+;ngen schl&auml;gt die Milchlobby Alarm. Die <b>Klimasch&auml;dlichkeit der=
+ Branche soll unter den Teppich gekehrt</b> werden. Also nimmt man Millione=
+nbetr&auml;ge in die Hand, beauftragt gro&szlig;e Werbeagenturen [3] und <b=
+>verbreitet irref&uuml;hrende Informationen</b> im gro&szlig;en Stil.</div>=
+</div><div class=3D"clear"><!-- --></div></div></div></div></div></div><div=
+ style=3D"display:table; width:100%;"><div style=3D"display: table-cell;ver=
+tical-align: top;width: 100%;" class=3D"textAndImage"><div style=3D"padding=
+-top: 0px;"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma40508624=
+073" id=3D"ma40508624073"><!-- --></a><div style=3D"padding: 20px 0px 20px =
+0px;"><!-- --><div class=3D"headline"><b>foodwatch deckt auf</b></div><div =
+style=3D"height: 20px;"><!-- --></div><div class=3D"text"><div style=3D"tex=
+t-align: left;">In unserem neuen <b>Report &bdquo;Milchm&auml;rchen&ldquo;<=
+/b> haben wir diese <b>manipulativen Narrative</b> <b>blo&szlig;gestellt</b=
+>. Wir haben aufgedeckt, dass Milchprodukte eine weitaus schlechtere Klimab=
+ilanz haben, als die Industrie uns weismachen will. Denn sie <b>verleugnet<=
+/b> <b>Emissionen, die rund um die Milchproduktion anfallen</b>: Dazu geh&o=
+uml;ren der Futtermittelanbau, die Produktion von D&uuml;ngemitteln und vie=
+les mehr. [4]</div></div><div class=3D"clear"><!-- --></div></div></div></d=
+iv></div></div><div style=3D"display:table; width:100%;"><div style=3D"disp=
+lay: table-cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><d=
+iv style=3D"padding-top: 0px;"><div style=3D"background-color: #FFFFFF;"><a=
+ name=3D"ma40508624074" id=3D"ma40508624074"><!-- --></a><div style=3D"padd=
+ing: 20px 0px 20px 0px;"><!-- --><div class=3D"text"><div style=3D"text-ali=
+gn: left;">Um ihr <b>Klima-Image zu verbessern</b>, wendet die Milchindustr=
+ie sogar <b>Tierversuche </b>an. Beispiel Methan [5]: Der Klima-Effekt &bdq=
+uo;innovativer Futtermethoden&ldquo; wird z.B. getestet, indem K&uuml;he is=
+oliert und &uuml;ber Tage eingesperrt werden. In den <b>abgeschlossenen Mes=
+szellen</b> wird der Methanaussto&szlig; kontrolliert. Die Tiere k&ouml;nne=
+n sich in dieser Zeit nicht bewegen und nicht hinlegen. [6]</div></div><div=
+ class=3D"clear"><!-- --></div></div></div></div></div></div><div style=3D"=
+display:table; width:100%;"><div style=3D"display: table-cell;vertical-alig=
+n: top;width: 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;=
+"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma40508624075" id=3D=
+"ma40508624075"><!-- --></a><div style=3D"padding: 10px 10px 10px 10px;"><!=
+-- --><div class=3D"text"><div style=3D"text-align: left;"><i>Gegen die Aug=
+enwischerei und Machenschaften der Milchindustrie, f&uuml;r effektiven Klim=
+aschutz und f&uuml;r mehr Tiergesundheit: Daf&uuml;r engagieren sich bereit=
+s zehntausende foodwatch F&ouml;rdermitglieder. Kommen Sie dazu!</i></div><=
+/div><div class=3D"clear"><!-- --></div></div></div></div></div></div><div =
+style=3D"display:table; width:100%;"><div style=3D"display: table-cell;vert=
+ical-align: top;width: 100%;" class=3D"textAndImage"><div style=3D"padding-=
+top: 0px;"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma405086240=
+76" id=3D"ma40508624076"><!-- --></a><div style=3D"padding: 20px 0px 10px 0=
+px;"><!-- --><div style=3D"clear: both; text-align: center;" class=3D"butto=
+n"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03G=
+WD-VAQ15KU.html" target=3D"_blank" style=3D"display: inline-block;font-fami=
+ly: Oswald,Helvetica,Arial,sans-serif;color: #000000;font-size: 20px;font-w=
+eight: bold;font-style: normal;text-decoration: none;background-color: #FFF=
+FFF;padding: 5px 18px 5px 18px;border-width: 6px;border-color: #f5a300;bord=
+er-style: solid;border-radius: 15px;"><div style=3D"padding: 2px; text-alig=
+n: center; white-space: nowrap;"><span>Ja, ich st&auml;rke foodwatch<br />m=
+it 5 Euro im Monat</span></div></a></div><div class=3D"clear"><!-- --></div=
+></div></div></div></div></div><div style=3D"display:table; width:100%;"><d=
+iv style=3D"display: table-cell;vertical-align: top;width: 100%;" class=3D"=
+textAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background-col=
+or: #FFFFFF;"><a name=3D"ma40508624277" id=3D"ma40508624277"><!-- --></a><d=
+iv style=3D"padding: 10px 0px 10px 0px;"><!-- --><div style=3D"clear: both;=
+ text-align: center;" class=3D"button"><a href=3D"https://newsletter.foodwa=
+tch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWE-16CJQTK.html" target=3D"_blank" styl=
+e=3D"display: inline-block;font-family: Oswald,Helvetica,Arial,sans-serif;c=
+olor: #000000;font-size: 20px;font-weight: bold;font-style: normal;text-dec=
+oration: none;background-color: #f5a300;padding: 5px 18px 5px 18px;border-w=
+idth: 6px;border-color: #f5a300;border-style: solid;border-radius: 15px;"><=
+div style=3D"padding: 2px; text-align: center; white-space: nowrap;"><span>=
+Ja, ich st&auml;rke foodwatch<br />mit 10 Euro im Monat</span></div></a></d=
+iv><div class=3D"clear"><!-- --></div></div></div></div></div></div><div st=
+yle=3D"display:table; width:100%;"><div style=3D"display: table-cell;vertic=
+al-align: top;width: 100%;" class=3D"textAndImage"><div style=3D"padding-to=
+p: 0px;"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma40508624278=
+" id=3D"ma40508624278"><!-- --></a><div style=3D"padding: 10px 0px 10px 0px=
+;"><!-- --><div style=3D"clear: both; text-align: center;" class=3D"button"=
+><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWF=
+-LKCVHU.html" target=3D"_blank" style=3D"display: inline-block;font-family:=
+ Oswald,Helvetica,Arial,sans-serif;color: #000000;font-size: 20px;font-weig=
+ht: bold;font-style: normal;text-decoration: none;background-color: #FFFFFF=
+;padding: 5px 18px 5px 18px;border-width: 6px;border-color: #f5a300;border-=
+style: solid;border-radius: 15px;"><div style=3D"padding: 2px; text-align: =
+center; white-space: nowrap;"><span>Ja, ich st&auml;rke foodwatch<br />mit =
+20 Euro im Monat</span></div></a></div><div class=3D"clear"><!-- --></div><=
+/div></div></div></div></div><div style=3D"display:table; width:100%;"><div=
+ style=3D"display: table-cell;vertical-align: top;width: 100%;" class=3D"te=
+xtAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background-color=
+: #FFFFFF;"><a name=3D"ma40508624279" id=3D"ma40508624279"><!-- --></a><div=
+ style=3D"padding: 10px 0px 20px 0px;"><!-- --><div style=3D"clear: both; t=
+ext-align: center;" class=3D"button"><a href=3D"https://newsletter.foodwatc=
+h.de/go/6/62Z6KW0E-62SAH3D5-62T03GWG-GUBEB.html" target=3D"_blank" style=3D=
+"display: inline-block;font-family: Oswald,Helvetica,Arial,sans-serif;color=
+: #7A737A;font-size: 18px;font-weight: bold;font-style: normal;text-decorat=
+ion: none;background-color: #FFFFFF;padding: 5px 34px 5px 34px;border-width=
+: 4px;border-color: #7A737A;border-style: solid;border-radius: 15px;"><div =
+style=3D"padding: 2px; text-align: center; white-space: nowrap;"><span>Ich =
+helfe heute mit einer<br />einmaligen Spende</span></div></a></div><div cla=
+ss=3D"clear"><!-- --></div></div></div></div></div></div><div style=3D"disp=
+lay:table; width:100%;"><div style=3D"display: table-cell;vertical-align: t=
+op;width: 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><d=
+iv style=3D"background-color: #FFFFFF;"><a name=3D"ma40508624280" id=3D"ma4=
+0508624280"><!-- --></a><div style=3D"padding: 30px 0px 20px 0px;"><!-- -->=
+<div class=3D"text"><div style=3D"text-align: left;">Ich bin ehrlich, die Z=
+ahlen und Fakten unserer Studie haben auch mich <b>ersch&uuml;ttert</b>. Di=
+e Image-Kampagne &bdquo;Initiative Milch&ldquo; allein hat ein Budget von <=
+b>vier Millionen Euro</b> &ndash; das ausschlie&szlig;lich daf&uuml;r genut=
+zt wird, die <b>Wahrheit &uuml;ber Milchprodukte zu verdrehen</b>. [7] So v=
+iel Budget hat foodwatch Deutschland pro Jahr f&uuml;r all unsere Themen zu=
+sammen.</div></div><div class=3D"clear"><!-- --></div></div></div></div></d=
+iv></div><div style=3D"display:table; width:100%;"><div style=3D"display: t=
+able-cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><div sty=
+le=3D"padding-top: 0px;"><div style=3D"background-color: #FFFFFF;"><a name=
+=3D"ma40508624481" id=3D"ma40508624481"><!-- --></a><div style=3D"padding: =
+30px 0px 20px 0px;"><!-- --><div class=3D"text"><div style=3D"text-align: l=
+eft;">Die <b>Millionenbetr&auml;ge </b>der Milch-Lobby gehen f&uuml;r <b>&O=
+uml;ffentlichkeitsarbeit und Meinungsmache</b> drauf &ndash; Inhalte der Wa=
+hl: <b>Podcasts </b>mit Milch-Influencern [8] und <b>Cover-Songs</b>. <i>Si=
+ng Hallelujah</i> wird zu <i>Hallemuhja </i>[9]. Der m&uuml;de Lacher bleib=
+t im Hals stecken, denkt man an <b>das Tierleid und die Folgen der Klimakat=
+astrophe</b> allein in diesem Jahr. Hurrikane. Hochwasser. Rekord-Hitze. [1=
+0]</div></div><div class=3D"clear"><!-- --></div></div></div></div></div></=
+div><div style=3D"display:table; width:100%;"><div style=3D"display: table-=
+cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><div style=3D=
+"padding-top: 0px;"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma=
+40508624482" id=3D"ma40508624482"><!-- --></a><div style=3D"padding: 30px 0=
+px 20px 0px;"><!-- --><div class=3D"text"><div style=3D"text-align: left;">=
+Und w&auml;hrend teuer produzierte Milch-Podcasts gut gelaunt ihre <b>Nachh=
+altigkeitsm&auml;rchen </b>verbreiten, werden <b>&bdquo;Hochleistungsk&uuml=
+;he&ldquo; mit Tierversuchen gequ&auml;lt</b>. Damit die Klima-Emissionen d=
+er Milchwirtschaft vielleicht irgendwann mal verringert werden k&ouml;nnen,=
+ wird lebenden K&uuml;hen <b>ein &bdquo;Fenster&ldquo; in die Bauchseite ge=
+schnitten</b>. [11] Dabei sind doch so viele Verbraucher:innen jetzt schon =
+vollkommen zufrieden damit, ihren Milchkonsum zu reduzieren oder auf pflanz=
+liche Alternativen umzusteigen. [12] <b>Liebe Milchwirtschaft: Es ist Zeit,=
+ mit der Zeit zu gehen.</b></div></div><div class=3D"clear"><!-- --></div><=
+/div></div></div></div></div><div style=3D"display:table; width:100%;"><div=
+ style=3D"display: table-cell;vertical-align: top;width: 100%;" class=3D"te=
+xtAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background-color=
+: #FFFFFF;"><a name=3D"ma40508624483" id=3D"ma40508624483"><!-- --></a><div=
+ style=3D"padding: 10px 10px 10px 10px;"><!-- --><div class=3D"text"><div s=
+tyle=3D"text-align: left;"><i>Die Lebensmittelindustrie permanent im Blick =
+zu behalten, die Erstellung von Reports, &ouml;ffentlichkeitswirksame Mitma=
+chaktionen und effektive Pressearbeit &ndash; all das geht nur wegen der vi=
+elen tausenden F&ouml;rdermitglieder, die uns regelm&auml;&szlig;ig spenden=
+. Vielen Dank f&uuml;r Ihre Unterst&uuml;tzung.</i></div></div><div class=
+=3D"clear"><!-- --></div></div></div></div></div></div><div style=3D"displa=
+y:table; width:100%;"><div style=3D"display: table-cell;vertical-align: top=
+;width: 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div=
+ style=3D"background-color: #FFFFFF;"><a name=3D"ma40508624484" id=3D"ma405=
+08624484"><!-- --></a><div style=3D"padding: 20px 0px 10px 0px;"><!-- --><d=
+iv style=3D"clear: both; text-align: center;" class=3D"button"><a href=3D"h=
+ttps://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWD-VAQ15KU.html=
+" target=3D"_blank" style=3D"display: inline-block;font-family: Oswald,Helv=
+etica,Arial,sans-serif;color: #000000;font-size: 20px;font-weight: bold;fon=
+t-style: normal;text-decoration: none;background-color: #FFFFFF;padding: 5p=
+x 24px 5px 24px;border-width: 6px;border-color: #f5a300;border-style: solid=
+;border-radius: 15px;"><div style=3D"padding: 2px; text-align: center; whit=
+e-space: nowrap;"><span>Ja, ich helfe foodwatch<br /> mit 5 Euro monatlich<=
+/span></div></a></div><div class=3D"clear"><!-- --></div></div></div></div>=
+</div></div><div style=3D"display:table; width:100%;"><div style=3D"display=
+: table-cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><div =
+style=3D"padding-top: 0px;"><div style=3D"background-color: #FFFFFF;"><a na=
+me=3D"ma40508624685" id=3D"ma40508624685"><!-- --></a><div style=3D"padding=
+: 10px 0px 10px 0px;"><!-- --><div style=3D"clear: both; text-align: center=
+;" class=3D"button"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0=
+E-62SAH3D5-62T03GWE-16CJQTK.html" target=3D"_blank" style=3D"display: inlin=
+e-block;font-family: Oswald,Helvetica,Arial,sans-serif;color: #000000;font-=
+size: 20px;font-weight: bold;font-style: normal;text-decoration: none;backg=
+round-color: #f5a300;padding: 5px 24px 5px 24px;border-width: 6px;border-co=
+lor: #f5a300;border-style: solid;border-radius: 15px;"><div style=3D"paddin=
+g: 2px; text-align: center; white-space: nowrap;"><span>Ja, ich helfe foodw=
+atch<br />mit 10 Euro monatlich </span></div></a></div><div class=3D"clear"=
+><!-- --></div></div></div></div></div></div><div style=3D"display:table; w=
+idth:100%;"><div style=3D"display: table-cell;vertical-align: top;width: 10=
+0%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div style=3D"=
+background-color: #FFFFFF;"><a name=3D"ma40508624686" id=3D"ma40508624686">=
+<!-- --></a><div style=3D"padding: 10px 0px 10px 0px;"><!-- --><div style=
+=3D"clear: both; text-align: center;" class=3D"button"><a href=3D"https://n=
+ewsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWF-LKCVHU.html" target=
+=3D"_blank" style=3D"display: inline-block;font-family: Oswald,Helvetica,Ar=
+ial,sans-serif;color: #000000;font-size: 20px;font-weight: bold;font-style:=
+ normal;text-decoration: none;background-color: #FFFFFF;padding: 5px 24px 5=
+px 24px;border-width: 6px;border-color: #f5a300;border-style: solid;border-=
+radius: 15px;"><div style=3D"padding: 2px; text-align: center; white-space:=
+ nowrap;"><span>Ja, ich helfe foodwatch<br />mit 20 Euro monatlich</span></=
+div></a></div><div class=3D"clear"><!-- --></div></div></div></div></div></=
+div><div style=3D"display:table; width:100%;"><div style=3D"display: table-=
+cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><div style=3D=
+"padding-top: 0px;"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma=
+40508624687" id=3D"ma40508624687"><!-- --></a><div style=3D"padding: 10px 0=
+px 20px 0px;"><!-- --><div style=3D"clear: both; text-align: center;" class=
+=3D"button"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3=
+D5-62T03GWG-GUBEB.html" target=3D"_blank" style=3D"display: inline-block;fo=
+nt-family: Oswald,Helvetica,Arial,sans-serif;color: #7A737A;font-size: 18px=
+;font-weight: bold;font-style: normal;text-decoration: none;background-colo=
+r: #FFFFFF;padding: 5px 36px 5px 36px;border-width: 4px;border-color: #7A73=
+7A;border-style: solid;border-radius: 15px;"><div style=3D"padding: 2px; te=
+xt-align: center; white-space: nowrap;"><span>Ich m&ouml;chte heute lieber<=
+br />einmalig spenden</span></div></a></div><div class=3D"clear"><!-- --></=
+div></div></div></div></div></div><div style=3D"display:table; width:100%;"=
+><div style=3D"display: table-cell;vertical-align: top;width: 100%;" class=
+=3D"textAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background=
+-color: #FFFFFF;"><a name=3D"ma40508624688" id=3D"ma40508624688"><!-- --></=
+a><div style=3D"padding: 30px 0px 20px 0px;"><!-- --><div class=3D"text"><d=
+iv style=3D"text-align: left;">Nat&uuml;rlich ist es <b>vollkommen okay</b>=
+, z.B. zwei Portionen Milch am Tag zu konsumieren &ndash; ganz gem&auml;&sz=
+lig; den <b>Empfehlungen der &bdquo;Deutschen Gesellschaft f&uuml;r Ern&aum=
+l;hrung&ldquo;</b>. [13] Aber eine Milchindustrie, die <b>ohne R&uuml;cksic=
+ht auf Tierwohl oder Klima</b> ein &bdquo;Weiter so&ldquo; m&ouml;chte, und=
+ sogar auf Wachstum setzt, ist <b>nicht tragbar</b>.</div></div><div class=
+=3D"clear"><!-- --></div></div></div></div></div></div><div style=3D"displa=
+y:table; width:100%;"><div style=3D"display: table-cell;vertical-align: top=
+;width: 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div=
+><a name=3D"ma40508624889" id=3D"ma40508624889"><!-- --></a><div style=3D"p=
+adding: 20px 0px 20px 0px;"><!-- --><div class=3D"text"><b>Mit freundlichen=
+ Gr&uuml;&szlig;en</b></div><div style=3D"height: 20px;"><!-- --></div><div=
+ style=3D"text-align: left;max-width: 100%;"><!-- --><img src=3D"https://ne=
+wsletter.foodwatch.de/assets/bm/binary/c/3/8/7/c3874d864eaac3014564c9003269=
+701d_54866.png?mobile=3D1" width=3D"180" height=3D"180" alt=3D"" title=3D""=
+ border=3D"0" style=3D"max-width: 180px !important; height: auto;  width: 1=
+00%;" /></div><div class=3D"clear"><!-- --></div></div></div></div></div></=
+div><div style=3D"display:table; width:100%;"><div style=3D"display: table-=
+cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><div style=3D=
+"padding-top: 0px;"><div><a name=3D"ma40508624890" id=3D"ma40508624890"><!-=
+- --></a><div style=3D"padding: 0px 0px 20px 0px;"><!-- --><div class=3D"te=
+xt">Annemarie Botzki<br />Recherche und Kampagnen<br />&nbsp;</div><div cla=
+ss=3D"clear"><!-- --></div></div></div></div></div></div><div style=3D"disp=
+lay:table; width:100%;"><div style=3D"display: table-cell;vertical-align: t=
+op;width: 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><d=
+iv style=3D"background-color: #f4f4f4;"><a name=3D"ma40508624891" id=3D"ma4=
+0508624891"><!-- --></a><div style=3D"border-top: #f4f4f4 solid 20px;border=
+-right: #f4f4f4 solid 20px;border-bottom: #f4f4f4 solid 20px;border-left: #=
+f4f4f4 solid 20px;"><!-- --><div style=3D"text-align: center;max-width: 100=
+%;"><!-- --><img src=3D"https://newsletter.foodwatch.de/assets/bm/binary/8/=
+0/3/6/8036fd6996ce0f419cbf5db405edff64_82314.png?mobile=3D1" width=3D"650" =
+height=3D"248" alt=3D"" title=3D"" border=3D"0" style=3D"max-width: 650px !=
+important; height: auto;  width: 100%;" /></div><div style=3D"height: 20px;=
+"><!-- --></div><div class=3D"text"><span style=3D"color:#f5a300;"><b>P.S:<=
+/b></span> Die Milchlobby ist nat&uuml;rlich nicht die erste Lebensmittelbr=
+anche, die Greenwashing betreibt. Letztes Jahr haben wir bei der EU bereits=
+ ein Verbot f&uuml;r irref&uuml;hrende &bdquo;Klimaneutral&ldquo;-Label erw=
+irkt. [14] Wir sprechen also aus Erfahrung, wenn wir sagen: <b>Mit gen&uuml=
+;gend Druck k&ouml;nnen wir auch das Greenwashing der Milchlobby unterbinde=
+n!</b><br />&nbsp;<br /><a href=3D"https://newsletter.foodwatch.de/go/6/62Z=
+6KW0E-62SAH3D5-62T03GWH-7SZ15T8.html"><b>&gt; Ich helfe mit einem regelm&au=
+ml;&szlig;igen Beitrag</b></a><br />&nbsp;<br /><a href=3D"https://newslett=
+er.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-62T03GWI-HOBBQD.html">&gt; Ich spend=
+e einmalig</a></div><div class=3D"clear"><!-- --></div></div></div></div></=
+div></div><div style=3D"display:table; width:100%;"><div style=3D"display: =
+table-cell;vertical-align: top;width: 100%;" class=3D"textAndImage"><div st=
+yle=3D"padding-top: 0px;"><div><a name=3D"ma40508624892" id=3D"ma4050862489=
+2"><!-- --></a><div style=3D"padding: 40px 0px 20px 0px;"><!-- --><div clas=
+s=3D"text"><span style=3D"font-size:14px;"><b>Quellen:</b><br />[1] Tagessc=
+hau: &bdquo;Warum Deutsche weniger Milch trinken&ldquo;, 14.04.2023 (abgeru=
+fen am 24.10.2024).<br />[2] foodwatch: Report &quot;MILCHM&Auml;RCHEN &nda=
+sh; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leiden l&auml;sst=
+ und Verbraucher t&auml;uscht&quot;, S. 20, 22.10.2024 (abgerufen am 24.10.=
+2024).<br />[3] RND: &bdquo;Die Milch macht&#39;s &ndash; nicht mehr. Sinke=
+nde Absatzzahlen: Wie die Milchindustrie um die Generation Z wirbt&ldquo;, =
+30.04.2023 (abgerufen am 24.10.2024).<br />[4] foodwatch: Report &quot;MILC=
+HM&Auml;RCHEN &ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he=
+ leiden l&auml;sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 20 (a=
+bgerufen am 24.10.2024).<br />[5] foodwatch: Report &quot;MILCHM&Auml;RCHEN=
+ &ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leiden l&aum=
+l;sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 33, 39 (abgerufen =
+am 24.10.2024).<br />[6] foodwatch: Report &quot;MILCHM&Auml;RCHEN &ndash; =
+Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leiden l&auml;sst und=
+ Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 20 (abgerufen am 24.10.2024=
+).<br />[7] RND: &bdquo;Die Milch macht&#39;s &ndash; nicht mehr. Sinkende =
+Absatzzahlen: Wie die Milchindustrie um die Generation Z wirbt&ldquo;, 30.0=
+4.2023 (abgerufen am 24.10.2024).<br />[8] Initiative Milch: Podcast &bdquo=
+;Tierwohl und Klimaschutz &ndash; Verantwortung f&uuml;r die Zukunft&ldquo;=
+, 07.10.2024 (abgerufen am 24.10.2024).<br />[9] Milch macht&#39;s! (YouTub=
+e): &bdquo;Milch macht&#39;s &ndash; Hallemuhjah (Offizielles Musikvideo)&l=
+dquo;, 30.05.2024 (abgerufen am 24.10.2024).<br />[10] RBB: &bdquo;Sommer 2=
+024 war global der hei&szlig;este seit Aufzeichnungsbeginn&ldquo;, 06.09.20=
+24 (abgerufen am 24.10.2024).<br />[11] foodwatch: Report &quot;MILCHM&Auml=
+;RCHEN &ndash; Wie die Milchlobby die Klimakrise befeuert, K&uuml;he leiden=
+ l&auml;sst und Verbraucher t&auml;uscht&quot;, 22.10.2024, S. 39 (abgerufe=
+n am 24.10.2024).<br />[12] GfK: &bdquo;Consumer Index Total Grocery 11 | 2=
+023&ldquo; (abgerufen am 24.10.2024).<br />[13] DGE: &bdquo;DGE-Ern&auml;hr=
+ungskreis &ndash; Milch und Milchprodukte&ldquo; (abgerufen am 24.10.2024).=
+<br />[14] foodwatch: &bdquo;Erfolg: Klima-L&uuml;gen sind vom Tisch!&ldquo=
+;, 06.12.2023 (abgerufen am 24.10.2024).</span></div><div class=3D"clear"><=
+!-- --></div></div></div></div></div></div><div style=3D"display:table; wid=
+th:100%;"><div style=3D"display: table-cell;vertical-align: top;width: 100%=
+;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div style=3D"ba=
+ckground-color: #FFFFFF;"><a name=3D"ma40508624893" id=3D"ma40508624893"><!=
+-- --></a><div style=3D"border-right: #FFFFFF solid 20px;border-bottom: #FF=
+FFFF solid 20px;border-left: #FFFFFF solid 20px;"><!-- --><div class=3D"cle=
+ar"><!-- --></div></div></div></div></div></div><div style=3D"display:table=
+; width:100%;"><div style=3D"display: table-cell;vertical-align: top;width:=
+ 100%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div style=
+=3D"background-color: #f4f4f4;"><a name=3D"ma40508625094" id=3D"ma405086250=
+94"><!-- --></a><div style=3D"border-top: #f4f4f4 solid 20px;border-right: =
+#f4f4f4 solid 10px;border-bottom: #f4f4f4 solid 20px;border-left: #f4f4f4 s=
+olid 20px;"><!-- --><div class=3D"text"><div style=3D"text-align: center;">=
+<span style=3D"font-size:16px;"><b>Per Bank&uuml;berweisung spenden</b><br =
+/>Spendenkonto bei der GLS-Bank<br />BIC&nbsp;GENODEM1GLS<br />IBAN DE50 43=
+06 0967 0104 2464 00</span></div></div><div class=3D"clear"><!-- --></div><=
+/div></div></div></div></div><div style=3D"display:table; width:100%;"><div=
+ style=3D"display: table-cell;vertical-align: top;width: 100%;" class=3D"te=
+xtAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background-color=
+: #FFFFFF;"><a name=3D"ma40508625095" id=3D"ma40508625095"><!-- --></a><div=
+ style=3D"border-right: #FFFFFF solid 20px;border-bottom: #FFFFFF solid 20p=
+x;border-left: #FFFFFF solid 20px;"><!-- --><div class=3D"clear"><!-- --></=
+div></div></div></div></div></div><div style=3D"display:table; width:100%;"=
+><div style=3D"display: table-cell;vertical-align: top;width: 100%;" class=
+=3D"textAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background=
+-color: #f4f4f4;"><a name=3D"ma40508625096" id=3D"ma40508625096"><!-- --></=
+a><div style=3D"border-top: #f4f4f4 solid 20px;border-right: #f4f4f4 solid =
+10px;border-bottom: #f4f4f4 solid 20px;border-left: #f4f4f4 solid 20px;"><!=
+-- --><div class=3D"text"><div style=3D"text-align: center;"><span style=3D=
+"font-size:16px;"><b>Sie m&ouml;chten lieber per Post Mitglied werden?</b><=
+br /><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5P9T=
+ZCVZ-VGTPY1.pdf"><b>Formular zum Ausdrucken&nbsp;</b></a></span></div></div=
+><div class=3D"clear"><!-- --></div></div></div></div></div></div><div styl=
+e=3D"display:table; width:100%;"><div style=3D"display: table-cell;vertical=
+-align: top;width: 100%;" class=3D"textAndImage"><div style=3D"padding-top:=
+ 0px;"><div style=3D"background-color: #FFFFFF;"><a name=3D"ma40508625097" =
+id=3D"ma40508625097"><!-- --></a><div style=3D"border-right: #FFFFFF solid =
+20px;border-bottom: #FFFFFF solid 20px;border-left: #FFFFFF solid 20px;"><!=
+-- --><div class=3D"clear"><!-- --></div></div></div></div></div></div><div=
+ style=3D"display:table; width:100%;"><div style=3D"display: table-cell;ver=
+tical-align: top;width: 100%;" class=3D"images"><div style=3D"padding-top: =
+0px;"><div style=3D"background-color: #f4f4f4;"><a name=3D"ma40508625298" i=
+d=3D"ma40508625298"><!-- --></a><div style=3D"border-top: #f4f4f4 solid 20p=
+x;border-right: #f4f4f4 solid 20px;border-bottom: #f4f4f4 solid 20px;border=
+-left: #f4f4f4 solid 20px;"><!-- --><div class=3D"headline"><div style=3D"t=
+ext-align: center;">Jetzt Newsletter teilen!</div></div><div style=3D"heigh=
+t: 20px;"><!-- --></div><div class=3D"next" style=3D"text-align: center;"><=
+div style=3D"display: inline-block;vertical-align: top;max-width: 18.75%;te=
+xt-align: center;overflow: hidden; "><div><!-- --><a href=3D"https://newsle=
+tter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GIGT5L4-QPC1C4L.html?text=3Dhttps=
+%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-5G6AUO7N-88K1=
+V5-o.html" target=3D"_blank"><img src=3D"https://newsletter.foodwatch.de/as=
+sets/bm/binary/9/b/3/e/9b3e6cce161027dc1ba9f53d9f5fb288_4343.png?mobile=3D1=
+" width=3D"60" height=3D"60" alt=3D"Newsletter auf WhatsApp teilen" title=
+=3D"Newsletter auf WhatsApp teilen" border=3D"0" style=3D"max-width: 60px !=
+important; height: auto; width: 100%; display: block; margin: 0 auto; " /><=
+/a></div></div><div style=3D"display: inline-block; height: 1px; width: 1.5=
+625%;"><!-- --></div><div style=3D"display: inline-block;vertical-align: to=
+p;max-width: 18.75%;text-align: center;overflow: hidden; "><div><!-- --><a =
+href=3D"mailto:?body=3Dhttps://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3=
+D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img src=3D"https://newsletter=
+.foodwatch.de/assets/bm/binary/b/d/2/f/bd2fd473f0db3cf3cb0c02e5cba9bed0_261=
+4.png?mobile=3D1" width=3D"60" height=3D"60" alt=3D"Newsletter per E-Mail t=
+eilen" title=3D"Newsletter per E-Mail teilen" border=3D"0" style=3D"max-wid=
+th: 60px !important; height: auto; width: 100%; display: block; margin: 0 a=
+uto; " /></a></div></div><div style=3D"display: inline-block; height: 1px; =
+width: 1.5625%;"><!-- --></div><div style=3D"display: inline-block;vertical=
+-align: top;max-width: 18.75%;text-align: center;overflow: hidden; "><div><=
+!-- --><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5G=
+IGT5L2-PW31A57.php?u=3Dhttps%3A%2F%2Fnewsletter.foodwatch.de%2Fgo%2F6%2F62Z=
+6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"><img src=3D"https:=
+//newsletter.foodwatch.de/assets/bm/binary/8/2/7/4/82743fc8ac9626c66cad08db=
+20f411b0_2446.png?mobile=3D1" width=3D"60" height=3D"60" alt=3D"Newsletter =
+auf Facebook teilen" title=3D"Newsletter auf Facebook teilen" border=3D"0" =
+style=3D"max-width: 60px !important; height: auto; width: 100%; display: bl=
+ock; margin: 0 auto; " /></a></div></div><div style=3D"display: inline-bloc=
+k; height: 1px; width: 1.5625%;"><!-- --></div><div style=3D"display: inlin=
+e-block;vertical-align: top;max-width: 18.75%;text-align: center;overflow: =
+hidden; "><div><!-- --><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6=
+KW0E-62SAH3D5-5GIGT5L3-11R4HMJ.html?url=3Dhttps%3A%2F%2Fnewsletter.foodwatc=
+h.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"_blank"=
+><img src=3D"https://newsletter.foodwatch.de/assets/bm/binary/4/9/3/7/4937f=
+d1df22fecf038bae7243867fe34_3329.png?mobile=3D1" width=3D"60" height=3D"60"=
+ alt=3D"Newsletter auf X teilen" title=3D"Newsletter auf X teilen" border=
+=3D"0" style=3D"max-width: 60px !important; height: auto; width: 100%; disp=
+lay: block; margin: 0 auto; " /></a></div></div><div style=3D"display: inli=
+ne-block; height: 1px; width: 1.5625%;"><!-- --></div><div style=3D"display=
+: inline-block;vertical-align: top;max-width: 18.75%;text-align: center;ove=
+rflow: hidden; "><div><!-- --><a href=3D"https://newsletter.foodwatch.de/go=
+/6/62Z6KW0E-62SAH3D5-5GIGT5L5-7B71DSK.html?url=3Dhttps%3A%2F%2Fnewsletter.f=
+oodwatch.de%2Fgo%2F6%2F62Z6KW0E-62SAH3D5-5G6AUO7N-88K1V5-o.html" target=3D"=
+_blank"><img src=3D"https://newsletter.foodwatch.de/assets/bm/binary/e/c/8/=
+c/ec8ccf7bb1ebed24a42e5fe132ecd460_3268.png?mobile=3D1" width=3D"60" height=
+=3D"60" alt=3D"Newsletter auf Telegram teilen" title=3D"Newsletter auf Tele=
+gram teilen" border=3D"0" style=3D"max-width: 60px !important; height: auto=
+; width: 100%; display: block; margin: 0 auto; " /></a></div></div></div></=
+div></div></div></div></div><div style=3D"display:table; width:100%;"><div =
+style=3D"display: table-cell;vertical-align: top;width: 100%;" class=3D"tex=
+tAndImage"><div style=3D"padding-top: 0px;"><div style=3D"background-color:=
+ #f4f4f4;"><a name=3D"ma40508625299" id=3D"ma40508625299"><!-- --></a><div =
+style=3D"border-right: #f4f4f4 solid 20px;border-bottom: #f4f4f4 solid 20px=
+;border-left: #f4f4f4 solid 20px;"><!-- --><div class=3D"text"><div style=
+=3D"text-align: center;">Newsletter weitergeleitet bekommen?<br /><a href=
+=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5J5N1KIQ-EKYR2P.=
+html"><b>&nbsp;Jetzt hier klicken &amp; abonnieren!</b></a></div></div><div=
+ class=3D"clear"><!-- --></div></div></div></div></div></div><div class=3D"=
+clear"><!-- --></div></div></div></div></div></td></tr></table></div><![end=
+if]><div class=3D"desktopVersion desktopHelper" style=3D"display: block;"><=
+table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcol=
+or=3D"#ffffff"><tr><td align=3D"center"><table id=3D"dynamic4" width=3D"690=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"dynamic"><tr><t=
+d width=3D"20" bgcolor=3D"#ffffff"></td><td width=3D"650" align=3D"left" bg=
+color=3D"#ffffff"><table style=3D"margin: 0; padding: 0;" width=3D"650" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=3D"650" align=
+=3D"left"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td v=
+align=3D"top"><table id=3D"sourceCode1" width=3D"650" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" class=3D"sourceCode"><tr><td width=3D"650" vali=
+gn=3D"top" align=3D"left"><a name=3D"pa40508625302" id=3D"pa40508625302"><!=
+-- --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left"><=
+table class=3D"footer" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" b=
+order=3D"0">
+<tbody>
+<tr>
+<td class=3D"footer__cell" style=3D"padding: 48px 0;" valign=3D"top" align=
+=3D"left">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td>
+<table class=3D"l-container" style=3D"width: 600px;" width=3D"600" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"left"><!--[if (gte mso 9)|(IE)]>
+        <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"730" style=3D"width:730px;">
+        <tr>
+        <td align=3D"center" valign=3D"top" width=3D"730" style=3D"width:73=
+0px;">
+          <![endif]-->
+<table class=3D"module-container" style=3D"table-layout: fixed;" width=3D"1=
+00%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"l-side-padding" style=3D"padding: 0 40px;" valign=3D"top" alig=
+n=3D"center">
+<table class=3D"footer__inner" width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"footer__nav t-small t-headline t-bold" style=3D"font-family: O=
+swald,Helvetica,Arial,sans-serif; font-size: 16px; font-weight: bold; lette=
+r-spacing: .01em; line-height: 24px; padding: 0 0 24px;" valign=3D"top" ali=
+gn=3D"center"><!--#html mode=3D"default" inline=3D"true"#-->
+<div><a target=3D"_blank" href=3D"https://newsletter.foodwatch.de/go/6/62Z6=
+KW0E-62SAH3D5-5CHTNTVD-GJ87G7.html" style=3D"color: #f5a300; text-decoratio=
+n: none;" rel=3D"noopener">&gt; Datenschutz</a>=C2=A0=C2=A0=C2=A0<a class=
+=3D"t-headline t-bold" target=3D"_blank" href=3D"https://newsletter.foodwat=
+ch.de/go/6/62Z6KW0E-62SAH3D5-5CHTNTVE-12EF1DXR.html" style=3D"color: #f5a30=
+0; font-family: Oswald,Helvetica,Arial,sans-serif; font-weight: bold; lette=
+r-spacing: .01em; text-decoration: none;" rel=3D"noopener">&gt; Impressum</=
+a></div>
+<!--#/html#--></td>
+</tr>
+<tr>
+<td class=3D"footer__content t-small" style=3D"color: #777; font-size: 16px=
+; line-height: 24px;" valign=3D"top" align=3D"center"><!--#html mode=3D"def=
+ault" inline=3D"true"#-->
+<div><strong>Impressum</strong><br> Herausgeber: foodwatch e.V., Brunnenstr=
+. 181, 10119 Berlin, Deutschland<br> E-Mail: <a href=3D"mailto:aktuell@food=
+watch.de" style=3D"color: #f5a300; font-weight: bold; text-decoration: none=
+;">aktuell@foodwatch.de</a><br> foodwatch ist ein eingetragener Verein mit =
+Sitz in Berlin, VR 21908 B, AG Charlottenburg, Gesch=C3=A4ftsf=C3=BChrer si=
+nd Dr. Chris Methmann und J=C3=B6rg Rohwedder.<br><br> <strong>Datenschutz<=
+/strong><br> Sie erhalten unseren Newsletter aufgrund Ihrer Einwilligung in=
+ den Newsletter-Versand gem=C3=A4=C3=9F Art. 6 Abs. 1 a) DSGVO. Ihre Daten =
+geben wir selbstverst=C3=A4ndlich nicht an Dritte weiter. =C3=96ffnungen un=
+d Klicks in unseren Newsletter werten wir seit dem 1.4.2020 aus, um unser A=
+ngebot optimieren und inaktive Adressen aus dem Verteiler l=C3=B6schen zu k=
+=C3=B6nnen. So k=C3=B6nnen wir Kosten und damit Spendengelder sparen. Der V=
+erwendung Ihrer Daten k=C3=B6nnen Sie jederzeit formlos widersprechen, z. B=
+. =C3=BCber unser <a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-=
+62SAH3D5-5CHTNTVF-ZFV5F3.html" style=3D"color: #f5a300; font-weight: bold; =
+text-decoration: none;">Formular zum Abbestellen</a> oder per E-Mail an <a =
+href=3D"mailto:service@foodwatch.de" style=3D"color: #f5a300; font-weight: =
+bold; text-decoration: none;">service@foodwatch.de</a>. Weitere Information=
+en zum Datenschutz finden Sie in unseren <a href=3D"https://newsletter.food=
+watch.de/go/6/62Z6KW0E-62SAH3D5-5CHTNTVD-GJ87G7.html" style=3D"color: #f5a3=
+00; font-weight: bold; text-decoration: none;">Datenschutzhinweisen</a>.<br=
+><br> Um den Newsletter online zu lesen, klicken Sie bitte <a target=3D"_bl=
+ank" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5G6AUO7=
+N-88K1V5-o.html" style=3D"color: #f5a300; font-weight: bold; text-decoratio=
+n: none;" rel=3D"noopener">hier</a>.<br><br> Sie haben bei der Bestellung d=
+es Newsletters die Adresse d4d4online@gmail.com angegeben.<br><br> Wenn Sie=
+ den Newsletter nicht mehr empfangen m=C3=B6chten, k=C3=B6nnen Sie sich <a =
+target=3D"_blank" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62S=
+AH3D5-5CHTNTVF-ZFV5F3.html" style=3D"color: #f5a300; font-weight: bold; tex=
+t-decoration: none;" rel=3D"noopener">hier</a> aus dem Verteiler austragen.=
+</div>
+<!--#/html#--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></td></tr></table></td></tr></table></td></tr></table></td></tr></t=
+able></td><td width=3D"20" bgcolor=3D"#ffffff"></td></tr></table></td></tr>=
+</table></div><![if !mso]><div style=3D"display: none; float: left; height:=
+ 0; max-height: 0; width: 0; overflow: hidden;" class=3D"mobileVersion"><ta=
+ble class=3D"mobileHelper huaweiFixTable" style=3D"display: none;" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%"><tr><td class=3D"hu=
+aweiFixCell"><div><div style=3D"background-color: #ffffff;padding: 0 20px 0=
+ 20px;"><!-- --><div><div style=3D"background-color: #ffffff;"><div style=
+=3D"display:table; width:100%;"><div style=3D"display: table-cell;vertical-=
+align: top;width: 100%;" class=3D"sourceCode"><div><div><a name=3D"ma405086=
+25302" id=3D"ma40508625302"><!-- --></a><div><!-- --><table class=3D"mobile=
+Helper huaweiFixTable" style=3D"display: none;" class=3D"footer" width=3D"1=
+00%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"footer__cell" style=3D"padding: 48px 0;" valign=3D"top" align=
+=3D"left">
+<table class=3D"mobileHelper huaweiFixTable" style=3D"display: none;" width=
+=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td>
+<table class=3D"mobileHelper" style=3D"display: none;" class=3D"l-container=
+" style=3D"max-width: 600px; width: 100%;" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td valign=3D"top" align=3D"left">
+<table class=3D"mobileHelper huaweiFixTable" style=3D"display: none;" class=
+=3D"module-container" style=3D"table-layout: fixed;" width=3D"100%" cellspa=
+cing=3D"0" cellpadding=3D"0" border=3D"0">
+<tbody>
+<tr>
+<td class=3D"l-side-padding" style=3D"padding: 0 40px;" valign=3D"top" alig=
+n=3D"center">
+<table class=3D"mobileHelper huaweiFixTable" style=3D"display: none;" class=
+=3D"footer__inner" width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"footer__nav t-small t-headline t-bold" style=3D"font-family: O=
+swald,Helvetica,Arial,sans-serif; font-size: 16px; font-weight: bold; lette=
+r-spacing: .01em; line-height: 24px; padding: 0 0 24px;" valign=3D"top" ali=
+gn=3D"center">
+<div><a target=3D"_blank" href=3D"https://newsletter.foodwatch.de/go/6/62Z6=
+KW0E-62SAH3D5-5DRSGWZP-1DGXWAI.html" style=3D"color: #f5a300; text-decorati=
+on: none;" rel=3D"noopener">&gt; Datenschutz</a>=C2=A0=C2=A0=C2=A0<a class=
+=3D"t-headline t-bold" target=3D"_blank" href=3D"https://newsletter.foodwat=
+ch.de/go/6/62Z6KW0E-62SAH3D5-5DRSGWZQ-ZVG6PK.html" style=3D"color: #f5a300;=
+ font-family: Oswald,Helvetica,Arial,sans-serif; font-weight: bold; letter-=
+spacing: .01em; text-decoration: none;" rel=3D"noopener">&gt; Impressum</a>=
+</div>
+</td>
+</tr>
+<tr>
+<td class=3D"footer__content t-small" style=3D"color: #777; font-size: 16px=
+; line-height: 24px;" valign=3D"top" align=3D"center">
+<div><strong>Impressum</strong><br> Herausgeber: foodwatch e.V., Brunnenstr=
+. 181, 10119 Berlin, Deutschland<br> E-Mail: <a href=3D"mailto:aktuell@food=
+watch.de" style=3D"color: #f5a300; font-weight: bold; text-decoration: none=
+;">aktuell@foodwatch.de</a><br> foodwatch ist ein eingetragener Verein mit =
+Sitz in Berlin, VR 21908 B, AG Charlottenburg, Gesch=C3=A4ftsf=C3=BChrer si=
+nd Dr. Chris Methmann und J=C3=B6rg Rohwedder.<br><br> <strong>Datenschutz<=
+/strong><br> Sie erhalten unseren Newsletter aufgrund Ihrer Einwilligung in=
+ den Newsletter-Versand gem=C3=A4=C3=9F Art. 6 Abs. 1 a) DSGVO. Ihre Daten =
+geben wir selbstverst=C3=A4ndlich nicht an Dritte weiter. =C3=96ffnungen un=
+d Klicks in unseren Newsletter werten wir seit dem 1.4.2020 aus, um unser A=
+ngebot optimieren und inaktive Adressen aus dem Verteiler l=C3=B6schen zu k=
+=C3=B6nnen. So k=C3=B6nnen wir Kosten und damit Spendengelder sparen. Der V=
+erwendung Ihrer Daten k=C3=B6nnen Sie jederzeit formlos widersprechen, z. B=
+. =C3=BCber unser <a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-=
+62SAH3D5-5DRSGWZR-HDH1AYQ.html" style=3D"color: #f5a300; font-weight: bold;=
+ text-decoration: none;">Formular zum Abbestellen</a> oder per E-Mail an <a=
+ href=3D"mailto:service@foodwatch.de" style=3D"color: #f5a300; font-weight:=
+ bold; text-decoration: none;">service@foodwatch.de</a>. Weitere Informatio=
+nen zum Datenschutz finden Sie in unseren <a href=3D"https://newsletter.foo=
+dwatch.de/go/6/62Z6KW0E-62SAH3D5-5DRSGWZP-1DGXWAI.html" style=3D"color: #f5=
+a300; font-weight: bold; text-decoration: none;">Datenschutzhinweisen</a>.<=
+br><br> Um den Newsletter online zu lesen, klicken Sie bitte <a target=3D"_=
+blank" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5G6AU=
+O7N-88K1V5-o.html" style=3D"color: #f5a300; font-weight: bold; text-decorat=
+ion: none;" rel=3D"noopener">hier</a>.<br><br> Sie haben bei der Bestellung=
+ des Newsletters die Adresse d4d4online@gmail.com angegeben.<br><br> Wenn S=
+ie den Newsletter nicht mehr empfangen m=C3=B6chten, k=C3=B6nnen Sie sich <=
+a target=3D"_blank" href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-6=
+2SAH3D5-5DRSGWZR-HDH1AYQ.html" style=3D"color: #f5a300; font-weight: bold; =
+text-decoration: none;" rel=3D"noopener">hier</a> aus dem Verteiler austrag=
+en.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table></div></div></div></div></div><div class=3D"clear"><!-- --></div></=
+div></div></div></div></td></tr></table></div><![endif]><div class=3D"deskt=
+opVersion desktopHelper" style=3D"display: block;"><table width=3D"100%" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff"><tr><td =
+align=3D"center"><table id=3D"footer" width=3D"690" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"static"><tr><td width=3D"20" bgcolor=3D"=
+#ffffff"></td><td width=3D"650" align=3D"left" bgcolor=3D"#ffffff"><table w=
+idth=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td width=
+=3D"650"><table style=3D"margin: 0; padding: 0;" width=3D"650" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF"><tr><td style=3D"f=
+ont-size: 1px; line-height: 1px; mso-line-height-rule: exactly;" width=3D"6=
+50" height=3D"10">&nbsp;</td></tr><tr><td width=3D"650" align=3D"left"><tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><tr><td valign=3D"top">=
+<table id=3D"images4" width=3D"650" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" class=3D"images"><tr><td width=3D"650" bgcolor=3D"#FFFFFF" valign=
+=3D"top" align=3D"left"><a name=3D"pa40508625306" id=3D"pa40508625306"><!--=
+ --></a><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" align=3D"left"><tr><td width=3D"650" valign=3D"top" align=3D"left"><tabl=
+e width=3D"650" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"l=
+eft"><tr><td width=3D"25"></td><td width=3D"600" height=3D"20"></td><td wid=
+th=3D"25"></td></tr><tr><td width=3D"25"></td><td width=3D"600" align=3D"le=
+ft"><table width=3D"600" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"><=
+tr><td width=3D"600" align=3D"center"><table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0"><tr><td valign=3D"top" align=3D"center"><a href=3D"https=
+://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2J-G6EXT5.html" tar=
+get=3D"_blank"><img src=3D"https://newsletter.foodwatch.de/assets/bm/binary=
+/3/f/1/c/3f1c725c466f7294e415abc386b8fa03_15275.png" width=3D"33" alt=3D"Fa=
+cebook" title=3D"Facebook" style=3D"display: block; max-width: 100%; height=
+: auto;" border=3D"0"></img></a></td><td width=3D"20"></td><td valign=3D"to=
+p" align=3D"center"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0=
+E-62SAH3D5-5GDU9B2K-JAOSEO.html" target=3D"_blank"><img src=3D"https://news=
+letter.foodwatch.de/assets/bm/binary/8/1/8/d/818df3a77f324ef92d8dc7bfb13a31=
+dd_3210.png" width=3D"40" alt=3D"Twitter" title=3D"Twitter" style=3D"displa=
+y: block; max-width: 100%; height: auto;" border=3D"0"></img></a></td><td w=
+idth=3D"20"></td><td valign=3D"top" align=3D"center"><a href=3D"https://new=
+sletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2L-PDA18M.html" target=3D=
+"_blank"><img src=3D"https://newsletter.foodwatch.de/assets/bm/binary/c/4/b=
+/8/c4b8b1a3c4ba1cb9d6cc1d856edc5231_648.png" width=3D"40" alt=3D"Youtube" t=
+itle=3D"Youtube" style=3D"display: block; max-width: 100%; height: auto;" b=
+order=3D"0"></img></a></td><td width=3D"20"></td><td valign=3D"top" align=
+=3D"center"><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3=
+D5-5GDU9B2M-7ST5T8.html" target=3D"_blank"><img src=3D"https://newsletter.f=
+oodwatch.de/assets/bm/binary/4/6/7/c/467ce1276066ec857ba001a777bd49c8_15573=
+.png" width=3D"40" alt=3D"Linkedin" title=3D"Linkedin" style=3D"display: bl=
+ock; max-width: 100%; height: auto;" border=3D"0"></img></a></td><td width=
+=3D"20"></td><td valign=3D"top" align=3D"center"><a href=3D"https://newslet=
+ter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2N-Q1IGRD.html" target=3D"_bl=
+ank"><img src=3D"https://newsletter.foodwatch.de/assets/bm/binary/8/0/b/9/8=
+0b957c0a16f7df40249900f9965807f_2484.png" width=3D"40" alt=3D"Instagram" ti=
+tle=3D"Instagram" style=3D"display: block; max-width: 100%; height: auto;" =
+border=3D"0"></img></a></td></tr></table></td></tr></table></td><td width=
+=3D"25"></td></tr><tr><td width=3D"25"></td><td width=3D"600" height=3D"20"=
+></td><td width=3D"25"></td></tr></table></td></tr></table></td></tr></tabl=
+e></td></tr></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+><tr><td valign=3D"top"><table id=3D"textAndImage30" width=3D"650" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"textAndImage"><tr><td w=
+idth=3D"650" valign=3D"top" align=3D"left"><a name=3D"pa40508625507" id=3D"=
+pa40508625507"><!-- --></a><table width=3D"650" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" align=3D"left"><tr><td width=3D"650" valign=3D"top" a=
+lign=3D"left"><table width=3D"650" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" align=3D"left"><tr><td style=3D"font-size: 1px; line-height: 1px; =
+mso-line-height-rule: exactly;" width=3D"25">&nbsp;</td><td style=3D"font-s=
+ize: 1px; line-height: 1px; mso-line-height-rule: exactly;" width=3D"600" h=
+eight=3D"15">&nbsp;</td><td style=3D"font-size: 1px; line-height: 1px; mso-=
+line-height-rule: exactly;" width=3D"25">&nbsp;</td></tr><tr><td width=3D"2=
+5"></td><td width=3D"600" align=3D"left"><font face=3D"Barlow, Helvetica, A=
+rial, sans-serif" size=3D"4" color=3D"#000000" style=3D"font-size:20px;line=
+-height: 30px;" ><div style=3D"line-height: 30px;text-align: center;"><font=
+ face=3D"Barlow, Helvetica, Arial, sans-serif" size=3D"4" color=3D"#000000"=
+ style=3D"font-size:20px;" ><span style=3D"font-size:12px;"><span style=3D"=
+font-family:arial,helvetica,sans-serif;"><span style=3D"color:#999caa;">&co=
+py; 2024 foodwatch e.V.</span></span></span></font></div></font></td><td wi=
+dth=3D"25"></td></tr></table></td></tr></table></td></tr></table></td></tr>=
+</table></td></tr><tr><td width=3D"650" height=3D"25"></td></tr></table></t=
+d></tr><tr><td width=3D"650" height=3D"25" bgcolor=3D"#E6E4E3"></td></tr></=
+table></td><td width=3D"20" bgcolor=3D"#ffffff"></td></tr></table></td></tr=
+></table><table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" bgcolor=3D"#ffffff"><tr><td align=3D"center"><table width=3D"690" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#ffffff"><tr><td =
+width=3D"690" height=3D"20" colspan=3D"3"></td></tr></table></td></tr></tab=
+le></div><![if !mso]><div style=3D"display: none; float: left; height: 0; m=
+ax-height: 0; width: 0; overflow: hidden;" class=3D"mobileVersion"><table c=
+lass=3D"mobileHelper huaweiFixTable" style=3D"display: none;" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%"><tr><td class=3D"huawe=
+iFixCell"><div><div style=3D"background-color: #ffffff;padding: 0 0 20px 0;=
+"><!-- --><div style=3D"background-color: #E6E4E3;padding: 0px 0px 25px 0px=
+;"><div style=3D"padding: 10px 0px 25px 0px;background-color: #FFFFFF;"><di=
+v style=3D"display:table; width:100%;"><div style=3D"display: table-cell;ve=
+rtical-align: top;width: 100%;" class=3D"images"><div><div style=3D"backgro=
+und-color: #FFFFFF;"><a name=3D"ma40508625306" id=3D"ma40508625306"><!-- --=
+></a><div style=3D"padding: 20px 25px 20px 25px;"><!-- --><div class=3D"nex=
+t" style=3D"text-align: center;"><div style=3D"display: inline-block;vertic=
+al-align: top;max-width: 14.961139896373057%;text-align: center;overflow: h=
+idden; "><div><!-- --><a href=3D"https://newsletter.foodwatch.de/go/6/62Z6K=
+W0E-62SAH3D5-5GDU9B2O-20F1E6U.html" target=3D"_blank"><img src=3D"https://n=
+ewsletter.foodwatch.de/assets/bm/binary/3/f/1/c/3f1c725c466f7294e415abc386b=
+8fa03_15275.png?mobile=3D1" width=3D"66" height=3D"44" alt=3D"Facebook" tit=
+le=3D"Facebook" border=3D"0" style=3D"max-width: 33px !important; height: a=
+uto; width: 100%; display: block; margin: 0 auto; " /></a></div></div><div =
+style=3D"display: inline-block; height: 1px; width: 3.125%;"><!-- --></div>=
+<div style=3D"display: inline-block;vertical-align: top;max-width: 18.13471=
+5025906736%;text-align: center;overflow: hidden; "><div><!-- --><a href=3D"=
+https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2P-4LFH2S.html=
+" target=3D"_blank"><img src=3D"https://newsletter.foodwatch.de/assets/bm/b=
+inary/8/1/8/d/818df3a77f324ef92d8dc7bfb13a31dd_3210.png?mobile=3D1" width=
+=3D"80" height=3D"44" alt=3D"Twitter" title=3D"Twitter" border=3D"0" style=
+=3D"max-width: 40px !important; height: auto; width: 100%; display: block; =
+margin: 0 auto; " /></a></div></div><div style=3D"display: inline-block; he=
+ight: 1px; width: 3.125%;"><!-- --></div><div style=3D"display: inline-bloc=
+k;vertical-align: top;max-width: 18.134715025906736%;text-align: center;ove=
+rflow: hidden; "><div><!-- --><a href=3D"https://newsletter.foodwatch.de/go=
+/6/62Z6KW0E-62SAH3D5-5GDU9B2Q-Q4KMJ8.html" target=3D"_blank"><img src=3D"ht=
+tps://newsletter.foodwatch.de/assets/bm/binary/c/4/b/8/c4b8b1a3c4ba1cb9d6cc=
+1d856edc5231_648.png?mobile=3D1" width=3D"80" height=3D"44" alt=3D"Youtube"=
+ title=3D"Youtube" border=3D"0" style=3D"max-width: 40px !important; height=
+: auto; width: 100%; display: block; margin: 0 auto; " /></a></div></div><d=
+iv style=3D"display: inline-block; height: 1px; width: 3.125%;"><!-- --></d=
+iv><div style=3D"display: inline-block;vertical-align: top;max-width: 18.13=
+4715025906736%;text-align: center;overflow: hidden; "><div><!-- --><a href=
+=3D"https://newsletter.foodwatch.de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2R-1434Q7J=
+.html" target=3D"_blank"><img src=3D"https://newsletter.foodwatch.de/assets=
+/bm/binary/4/6/7/c/467ce1276066ec857ba001a777bd49c8_15573.png?mobile=3D1" w=
+idth=3D"80" height=3D"44" alt=3D"Linkedin" title=3D"Linkedin" border=3D"0" =
+style=3D"max-width: 40px !important; height: auto; width: 100%; display: bl=
+ock; margin: 0 auto; " /></a></div></div><div style=3D"display: inline-bloc=
+k; height: 1px; width: 3.125%;"><!-- --></div><div style=3D"display: inline=
+-block;vertical-align: top;max-width: 18.134715025906736%;text-align: cente=
+r;overflow: hidden; "><div><!-- --><a href=3D"https://newsletter.foodwatch.=
+de/go/6/62Z6KW0E-62SAH3D5-5GDU9B2S-1581FC4.html" target=3D"_blank"><img src=
+=3D"https://newsletter.foodwatch.de/assets/bm/binary/8/0/b/9/80b957c0a16f7d=
+f40249900f9965807f_2484.png?mobile=3D1" width=3D"80" height=3D"44" alt=3D"I=
+nstagram" title=3D"Instagram" border=3D"0" style=3D"max-width: 40px !import=
+ant; height: auto; width: 100%; display: block; margin: 0 auto; " /></a></d=
+iv></div></div></div></div></div></div></div><div style=3D"display:table; w=
+idth:100%;"><div style=3D"display: table-cell;vertical-align: top;width: 10=
+0%;" class=3D"textAndImage"><div style=3D"padding-top: 0px;"><div><a name=
+=3D"ma40508625507" id=3D"ma40508625507"><!-- --></a><div style=3D"padding: =
+15px 25px 0px 25px;"><!-- --><div class=3D"text"><div style=3D"text-align: =
+center;"><span style=3D"font-size:12px;"><span style=3D"font-family:arial,h=
+elvetica,sans-serif;"><span style=3D"color:#999caa;">&copy; 2024 foodwatch =
+e.V.</span></span></span></div></div><div class=3D"clear"><!-- --></div></d=
+iv></div></div></div></div><div class=3D"clear"><!-- --></div></div></div><=
+/div></div></td></tr></table></div><![endif]><!-- [=3Dop=3D] --><img src=3D=
+"https://newsletter.foodwatch.de/op/6/62Z6KW0E-62SAH3D5-13K2KE0.gif" width=
+=3D"1" height=3D"1" border=3D"0" alt=3D"" style=3D"height:0;display:block;"=
+/><!-- [/=3Dop=3D] --></body></html>
+------=_Part_32853228_515336296.1729917717125--

@@ -83,8 +83,24 @@ class Validator extends DKIM
                 ];
             }
 
-            //Validate canonicalization algorithms for header and body
-            [$headerCA, $bodyCA] = explode('/', $dkimTags['c']);
+            //Validate optional canonicalization algorithms for header and body
+            //Use simple/simple as default unless defined differently
+            $headerCA = 'simple';
+            $bodyCA = 'simple';
+
+            if (array_key_exists('c', $dkimTags)) {
+                $containsBodyAndHeaderAlgorithm = strpos($dkimTags['c'], '/') !== false;
+
+                if ($containsBodyAndHeaderAlgorithm) {
+                    $rules = explode('/', $dkimTags['c']);
+
+                    $headerCA = $rules[0];
+                    $bodyCA = $rules[1];
+                } else {
+                    $headerCA = $dkimTags['c'];
+                }
+            }
+
             if ($headerCA !== 'relaxed' && $headerCA !== 'simple') {
                 $output[$signatureIndex][] = [
                     'status' => 'PERMFAIL',
@@ -297,6 +313,7 @@ class Validator extends DKIM
     {
         $host = sprintf('%s._domainkey.%s', $selector, $domain);
         $textRecords = dns_get_record($host, DNS_TXT);
+
 
         if ($textRecords === false) {
             return false;

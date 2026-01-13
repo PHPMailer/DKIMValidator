@@ -1,0 +1,306 @@
+Delivered-To: d4d4online@gmail.com
+Received: by 2002:a05:6400:c1:0:0:0:0 with SMTP id ia1csp822172ecb;
+        Thu, 22 Sep 2022 19:33:35 -0700 (PDT)
+X-Google-Smtp-Source: AMsMyM7dTr+rijPG9Q6fhRxri7K+T6+HoH0Jz+CCiMqXQs+ziYPmsBW6n3sZwvNm22QwNJAXGLzD
+X-Received: by 2002:a05:600c:4f55:b0:3b4:b687:a7b7 with SMTP id m21-20020a05600c4f5500b003b4b687a7b7mr11291473wmq.185.1663900415472;
+        Thu, 22 Sep 2022 19:33:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1663900415; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AHioSLz6uTQidR83xps5BVG7vq+4bWFCxamXvSlHpjrOTGnuyGWRSer00y2DrBvBdl
+         ZBo34zpx2Q9sObUhE3YJq1O9iodhT+E3yapBSOEBjMbPx56DmTaxCtUQSgJ+CHJ5V3pW
+         +BCu5qdxefAOG72Cx7aOUfWmXyCybMDDEFs8ia4d1lf4QgKnFjXlG1EnB+3mLQPullkw
+         qQ7+pTwk//c5Y22stNUJFej8Osow9VsgopivLl1ynVFU1EYWW8Z9E0hcyPx+DMpfS1fA
+         IokUvtYWsNOAVkwL/kjsCR943DkDyfY29M6ECn7p1y72BrdbHFpCNXuvqxt2j3gdXsv/
+         ATjQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=feedback-id:list-unsubscribe:mime-version:subject:message-id:to
+         :reply-to:sender:from:date:dkim-signature;
+        bh=Eu0bQBDU2LsWTjIHGYO8LQt0Hrd7yEVtQJbSowCtNE4=;
+        b=NMJdUxY/HqJrX8ke3Kk9ZmJNt/K0BZ69Dgwdhdw7O1eu1eu9s8wIsjXVyPkedX7j4P
+         RQB/tjVPpCValeb4tu+OHm5sZjNsYEDwPmmrpFjhrVlXtwnhQwR/LIPO0HHymLc2AfXE
+         Ckp+iXhBhzEeUukHEDcWhFg80GyRjfOjFyXBrRN2JdiqEGunFaZzn4TAo6EHcOC5bIo4
+         JDdLRo3r+gfVXVs3xLe17EAXQUeTE7W76t/Eu9MEMozlq6OCauCh8yK+Tx+AtIAFzroo
+         sTKYY8q3NNA9qxJ2WZ+y0yovY4iA4fDZwecW3cEk26ZUzTCFIy2UmF9jWH5mcHYRLuI0
+         6UJA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@tier.app header.s=qualtrics header.b=V99dBvha;
+       spf=pass (google.com: domain of bounces@bounces.qemailserver.com designates 139.60.155.52 as permitted sender) smtp.mailfrom=bounces@bounces.qemailserver.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=tier.app
+Return-Path: <bounces@bounces.qemailserver.com>
+Received: from smtp7.fra1.qemailserver.com (smtp7.fra1.qemailserver.com. [139.60.155.52])
+        by mx.google.com with ESMTPS id k7-20020a05600c1c8700b003a8433d4cd7si739176wms.213.2022.09.22.19.33.35
+        for <d4d4online@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-CHACHA20-POLY1305 bits=256/256);
+        Thu, 22 Sep 2022 19:33:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounces@bounces.qemailserver.com designates 139.60.155.52 as permitted sender) client-ip=139.60.155.52;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@tier.app header.s=qualtrics header.b=V99dBvha;
+       spf=pass (google.com: domain of bounces@bounces.qemailserver.com designates 139.60.155.52 as permitted sender) smtp.mailfrom=bounces@bounces.qemailserver.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=tier.app
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=simple/relaxed; t=1663900415;
+	s=qualtrics; d=tier.app;
+	h=List-Unsubscribe:Content-Type:MIME-Version:Subject:Message-ID:To:Reply-To:Sender:From:Date;
+	bh=Eu0bQBDU2LsWTjIHGYO8LQt0Hrd7yEVtQJbSowCtNE4=;
+	b=V99dBvhafhb29otXUQ5ypjgxVGlcXABfuwCJaVqrXjem49woVCaE3Z4gJvhyWBSz
+	NGvpt+VnEdw/RtBbDWMRbwIxQSFMBMPrkG+uSmy0g8AzacfJa7E19PeuMlEhFvAuA/u
+	V8eCotDCmUGYF04ghTs/oBljGsJFOPByYi/pfqXs=
+Date: Thu, 22 Sep 2022 20:33:35 -0600 (MDT)
+From: TIER Research <noreply@tier.app>
+Sender: TIER Research <noreply@tier.app>
+Reply-To: TIER Research <noreply@tier.app>
+To: David <d4d4online@gmail.com>
+Message-ID: <575256131.8633900.1663900415331@jwm10-app.fra1.qprod.net>
+Subject: Teile TIER deine Meinung mit!
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_8633897_344554942.1663900415325"
+X-QUMID: UR_86Ov8wk93Q5dTHE-EMD_OJPdBktnFyCZdmy-CGC_nvTd3DUQ6FhtVjS-SV_d09cJb0V7TGDIj4
+List-Unsubscribe: <https://tier.qualtrics.com/CP/Register.php?OptOut=true&RID=CGC_nvTd3DUQ6FhtVjS&LID=GR_2tRMLhVFB48B8qi&DID=EMD_OJPdBktnFyCZdmy&BT=dGllcg&_=1>, <mailto:BE.NZ3FIZBTIRKVCNSGNB2FM2ST.GJ2FETKMNBLEMQRUHBBDQ4LJ@unsubscribe.qemailserver.com?subject=qunsub_CGC_nvTd3DUQ6FhtVjS.GR_2tRMLhVFB48B8qi.tier.EMD_OJPdBktnFyCZdmy.SV_d09cJb0V7TGDIj4.UR_86Ov8wk93Q5dTHE.CG_To44ISy58wVpcxb.https%3A%2F%2Ftier.qualtrics.com%2FCP%2FRegister.php>
+Feedback-ID: CGC_nvTd3DUQ6FhtVjS:EMD_OJPdBktnFyCZdmy:SV_d09cJb0V7TGDIj4:qemailserver
+
+------=_Part_8633897_344554942.1663900415325
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8633898_1929347597.1663900415325"
+
+------=_Part_8633898_1929347597.1663900415325
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+<https://www.tier.app>
+
+
+Hallo David,
+
+f=C3=BCr uns bei TIER sind unsere Kund*innen von gr=C3=B6=C3=9Fter Bedeutun=
+g.
+
+Durch dein Feedback k=C3=B6nnen wir unsere Produkte und Dienstleistungen
+kontinuierlich verbessern, um dir ein noch besseres Erlebnis zu bieten. Um =
+dir
+Geh=C3=B6r zu verschaffen, nimm bitte an einer Kund*innenumfrage teil. Die =
+Umfrage
+sollte nicht l=C3=A4nger als 10 bis 15 Minuten dauern.
+
+Es gibt keine richtigen oder falschen Antworten, wir sind lediglich an dein=
+er
+pers=C3=B6nlichen Meinung interessiert. Du kannst die Umfrage jederzeit unt=
+erbrechen
+und sp=C3=A4ter =C3=BCber denselben Link fortsetzen.
+
+AN UMFRAGE TEINEHMEN
+<https://tier.qualtrics.com/jfe/form/SV_d09cJb0V7TGDIj4?Q_DL=3DOJPdBktnFyCZ=
+dmy_d09cJb0V7TGDIj4_CGC_nvTd3DUQ6FhtVjS&Q_CHL=3Demail>
+Die Teilnahme an der Umfrage ist bis zum 29. September 2022 m=C3=B6glich.
+
+Die ersten 1000 Personen, die an der Umfrage teilnehmen, erhalten als
+Dankesch=C3=B6n einen Gutschein f=C3=BCr 15 Entriegelungen. Die Gutschein-C=
+odes werden
+bis zum 30. September 2022 direkt per E-Mail versandt.
+
+Herzliche Gr=C3=BC=C3=9Fe,
+das Research & Insights Team von TIER
+
+Wenn der Link zur Umfrage oben nicht funktioniert, kannst du die folgende U=
+RL
+kopieren und in deinen Internetbrowser einf=C3=BCgen:
+
+https://tier.qualtrics.com/jfe/form/SV_d09cJb0V7TGDIj4?Q_DL=3DOJPdBktnFyCZd=
+my_d09cJb0V7TGDIj4_CGC_nvTd3DUQ6FhtVjS&Q_CHL=3Demail
+
+
+<https://www.facebook.com/tier.emobility>
+<https://www.instagram.com/tier.mobility/>  <https://twitter.com/tier_mobil=
+ity>
+<https://www.linkedin.com/company/tiermobility/>
+
+TIER Mobility SE, c/o WeWork
+Eichhornstr. 3, 10785 Berlin, Deutschland
+TIER Mobility SE wird von Lawrence Leuschner vertreten
+
+Amtsgericht Charlottenburg, HRB 198977 B
+
+E-Mail:  info@tier.app  <mailto:info@tier.app>
+Tel.: +49 30 568 38651
+Hilfe:  support@tier.app  <mailto:support@tier.app>
+
+Datenschutzrichtlinie <https://www.tier.app/privacy-notice/> | Abbestellen
+<https://tier.qualtrics.com/CP/Register.php?OptOut=3Dtrue&RID=3DCGC_nvTd3DU=
+Q6FhtVjS&LID=3DGR_2tRMLhVFB48B8qi&DID=3DEMD_OJPdBktnFyCZdmy&BT=3DdGllcg&_=
+=3D1>
+
+Weitere Informationen zur Erhebung und Verarbeitung deiner Daten
+sowie zu deinen Rechten findest du in unserer  Datenschutzrichtlinie
+<https://www.tier.app/privacy-notice/>.
+Deine Antworten werden auch dazu verwendet, unsere Dienstleistungen und
+unsere Kommunikation mit dir zu verbessern und werden f=C3=BCr 12 Monate
+gespeichert.
+------=_Part_8633898_1929347597.1663900415325
+Content-Type: multipart/related; 
+	boundary="----=_Part_8633899_1169504654.1663900415325"
+
+------=_Part_8633899_1169504654.1663900415325
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><head></head><body><p>
+<style type=3D"text/css">/* td {border: 1px solid #ccc;}=20
+  br {mso-data-placement:same-cell;}  */
+</style>
+</p>
+
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"width:600p=
+x;">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td style=3D"background-color: rgb(204, 225, 255);padding: 10%;">
+=09=09=09<p style=3D"text-align: center;"><a href=3D"https://www.tier.app">=
+<img alt=3D"TIER Logo" height=3D"27" src=3D"https://tier.qualtrics.com/CP/G=
+raphic.php?IM=3DIM_eEsvLzOVBm3uIWq" style=3D"width: 140px; height: 27px;" w=
+idth=3D"140"></a></p>
+
+=09=09=09<p><br>
+=09=09=09<span style=3D"color:#0e1a50;"><span style=3D"font-size:larger;"><=
+span style=3D"font-family:Arial;">Hallo David,</span></span><br>
+=09=09=09<br>
+=09=09=09f=C3=BCr uns bei TIER sind unsere Kund*innen von gr=C3=B6=C3=9Fter=
+ Bedeutung.</span></p>
+
+=09=09=09<p><span style=3D"color:#0e1a50;">Durch dein Feedback k=C3=B6nnen =
+wir unsere Produkte und Dienstleistungen kontinuierlich verbessern, um dir =
+ein noch besseres Erlebnis zu bieten. Um dir Geh=C3=B6r zu verschaffen, nim=
+m bitte an einer Kund*innenumfrage teil. Die Umfrage sollte nicht l=C3=A4ng=
+er als 10 bis 15 Minuten dauern.<br>
+=09=09=09<br>
+=09=09=09Es gibt keine richtigen oder falschen Antworten, wir sind lediglic=
+h an deiner pers=C3=B6nlichen Meinung interessiert. Du kannst die Umfrage j=
+ederzeit unterbrechen und sp=C3=A4ter =C3=BCber denselben Link fortsetzen.<=
+/span></p>
+
+=09=09=09<center>
+=09=09=09<table style=3D"font-size:larger;font-family:font-family:Arial,Hel=
+vetica,sans-serif;;table-layout:fixed;border-spacing:0" width=3D"290">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"center" bgcolor=3D"#0e1a50" height=3D"40" st=
+yle=3D"padding:0;border-radius:0.25rem;font-weight:bold;font-family:font-fa=
+mily:Arial,Helvetica,sans-serif;font-size:normal;text-align:center;vertical=
+-align:middle;background-color:#0e1a50" valign=3D"middle"><a href=3D"https:=
+//tier.qualtrics.com/jfe/form/SV_d09cJb0V7TGDIj4?Q_DL=3DOJPdBktnFyCZdmy_d09=
+cJb0V7TGDIj4_CGC_nvTd3DUQ6FhtVjS&amp;Q_CHL=3Demail" style=3D"display:block;=
+padding:14px 0;text-decoration:none;width:100%;color:white" target=3D"_blan=
+k"><font color=3D"#ffffff">AN UMFRAGE TEINEHMEN</font> </a></td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</center>
+
+=09=09=09<p><span style=3D"color:#0e1a50;">Die Teilnahme an der Umfrage ist=
+ bis zum 29. September 2022 m=C3=B6glich.<br>
+=09=09=09<br>
+=09=09=09Die ersten 1000 Personen, die an der Umfrage teilnehmen, erhalten =
+als Dankesch=C3=B6n einen Gutschein f=C3=BCr 15 Entriegelungen. Die Gutsche=
+in-Codes werden bis zum 30. September 2022 direkt per E-Mail versandt.</spa=
+n></p>
+=09=09=09&nbsp;
+
+=09=09=09<p><span style=3D"color:#0e1a50;">Herzliche Gr=C3=BC=C3=9Fe,</span=
+><br>
+=09=09=09<span style=3D"color:#0e1a50;">das Research &amp; Insights Team vo=
+n TIER</span></p>
+=09=09=09<span style=3D"color:#0e1a50;">&nbsp;</span>
+
+=09=09=09<p><span style=3D"color:#0e1a50;">Wenn der Link zur Umfrage oben n=
+icht funktioniert, kannst du die folgende URL kopieren und in deinen Intern=
+etbrowser einf=C3=BCgen:</span><br>
+=09=09=09<span style=3D"color:#0e1a50;font-family:Arial;">https://tier.qual=
+trics.com/jfe/form/SV_d09cJb0V7TGDIj4?Q_DL=3DOJPdBktnFyCZdmy_d09cJb0V7TGDIj=
+4_CGC_nvTd3DUQ6FhtVjS&amp;Q_CHL=3Demail</span></p>
+=09=09=09</td>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<th style=3D"white-space: nowrap; text-align: center; vertical-ali=
+gn: middle;"><span style=3D"font-family:Arial;"><img height=3D"281" src=3D"=
+https://tier.qualtrics.com/CP/Graphic.php?IM=3DIM_cI2lKagEgdE0QyG" style=3D=
+"width: 600px; height: 281px; margin: 0px; border-width: 0px; border-style:=
+ solid;" width=3D"600"></span></th>
+=09=09</tr>
+=09=09<tr>
+=09=09=09<td align=3D"center" bgcolor=3D"#0E1A50" valign=3D"top" width=3D"1=
+00%">
+=09=09=09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" role=3D"pr=
+esentation" width=3D"100%">
+=09=09=09=09<tbody>
+=09=09=09=09=09<tr>
+=09=09=09=09=09=09<td align=3D"left" valign=3D"top" width=3D"100%">
+=09=09=09=09=09=09<p style=3D"text-align: center;line-height: 1em;"><br>
+=09=09=09=09=09=09<a href=3D"https://www.facebook.com/tier.emobility"><img =
+height=3D"35" src=3D"https://tier.qualtrics.com/CP/Graphic.php?IM=3DIM_09bA=
+SGZSDtlY3TE" style=3D"width: 35px; height: 35px;" width=3D"35"> </a> <a hre=
+f=3D"https://www.instagram.com/tier.mobility/"> <img height=3D"35" src=3D"h=
+ttps://tier.qualtrics.com/CP/Graphic.php?IM=3DIM_0VO3zMfignXLzG6" style=3D"=
+width: 35px; height: 35px;" width=3D"35"> </a> <a href=3D"https://twitter.c=
+om/tier_mobility"> <img height=3D"36" src=3D"https://tier.qualtrics.com/CP/=
+Graphic.php?IM=3DIM_eVTbysmJAM0J5J4" style=3D"width: 35px; height: 36px;" w=
+idth=3D"35"> </a> <a href=3D"https://www.linkedin.com/company/tiermobility/=
+"> <img height=3D"35" src=3D"https://tier.qualtrics.com/CP/Graphic.php?IM=
+=3DIM_bsGBOpK7bQFu6eW" style=3D"width: 35px; height: 35px;" width=3D"35"> <=
+/a><br>
+=09=09=09=09=09=09<br>
+=09=09=09=09=09=09<span style=3D"color:#fffaf6;font-size:smaller;font-famil=
+y:Arial;">TIER Mobility SE,&nbsp;c/o WeWork<br>
+=09=09=09=09=09=09Eichhornstr. 3, 10785 Berlin, Deutschland<br>
+=09=09=09=09=09=09TIER Mobility SE&nbsp;wird von Lawrence Leuschner vertret=
+en </span></p>
+
+=09=09=09=09=09=09<p style=3D"text-align: center;"><span style=3D"color:#ff=
+faf6;font-size:smaller;font-family:Arial;">Amtsgericht Charlottenburg, HRB =
+198977 B </span></p>
+
+=09=09=09=09=09=09<p style=3D"text-align: center;line-height: 1em;"><span s=
+tyle=3D"font-size:smaller;font-family:Arial;"><span style=3D"color:#fffaf6;=
+">E-Mail:&nbsp; </span> <a href=3D"mailto:info@tier.app" target=3D"_blank" =
+title=3D"info@tier.app"> <span style=3D"color:#fffaf6;"> info@tier.app </sp=
+an> </a><br>
+=09=09=09=09=09=09<span style=3D"color:#fffaf6;">Tel.: +49 30 568 38651<br>
+=09=09=09=09=09=09Hilfe:&nbsp; </span> <a href=3D"mailto:support@tier.app" =
+target=3D"_blank" title=3D"support@tier.app"> <span style=3D"color:#fffaf6;=
+"> support@tier.app </span> </a> </span></p>
+
+=09=09=09=09=09=09<p style=3D"text-align: center;line-height: 1em;"><span s=
+tyle=3D"font-size:smaller;font-family:Arial;color:#fffaf6;"><a href=3D"http=
+s://www.tier.app/privacy-notice/" style=3D"color:#fffaf6;" target=3D"_blank=
+">Datenschutzrichtlinie</a></span>&nbsp;<span style=3D"color:#fffaf6;">|</s=
+pan>&nbsp;<span style=3D"font-size:smaller;font-family:Arial;"><a href=3D"h=
+ttps://tier.qualtrics.com/CP/Register.php?OptOut=3Dtrue&amp;RID=3DCGC_nvTd3=
+DUQ6FhtVjS&amp;LID=3DGR_2tRMLhVFB48B8qi&amp;DID=3DEMD_OJPdBktnFyCZdmy&amp;B=
+T=3DdGllcg&amp;_=3D1" style=3D"color:#fffaf6;">Abbestellen </a> </span><br>
+=09=09=09=09=09=09<br>
+=09=09=09=09=09=09<span style=3D"font-size:smaller;font-family:Arial;color:=
+#fffaf6;">Weitere Informationen zur Erhebung und Verarbeitung deiner Daten<=
+br>
+=09=09=09=09=09=09sowie zu deinen Rechten findest du in unserer <a href=3D"=
+https://www.tier.app/privacy-notice/" style=3D"color:#fffaf6;" target=3D"_b=
+lank"> Datenschutzrichtlinie</a>.<br>
+=09=09=09=09=09=09Deine Antworten werden auch dazu verwendet, unsere Dienst=
+leistungen und<br>
+=09=09=09=09=09=09unsere Kommunikation mit dir zu verbessern und werden f=
+=C3=BCr 12 Monate gespeichert. </span></p>
+=09=09=09=09=09=09</td>
+=09=09=09=09=09</tr>
+=09=09=09=09</tbody>
+=09=09=09</table>
+=09=09=09</td>
+=09=09</tr>
+=09</tbody>
+</table>
+<img width=3D"1" height=3D"1" alt=3D"" src=3D"https://tier.qualtrics.com/WR=
+QualtricsContacts/Watermark.php?UID=3DUR_86Ov8wk93Q5dTHE&amp;EMD=3DEMD_OJPd=
+BktnFyCZdmy&amp;CGC=3DCGC_nvTd3DUQ6FhtVjS&amp;SV=3DSV_d09cJb0V7TGDIj4"></bo=
+dy></html>
+------=_Part_8633899_1169504654.1663900415325--
+
+------=_Part_8633898_1929347597.1663900415325--
+
+------=_Part_8633897_344554942.1663900415325--
