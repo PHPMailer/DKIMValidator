@@ -1,0 +1,11 @@
+{
+    "name": "Development container based on Debian 13",
+    "image": "debian:latest",
+    "features": {
+        "ghcr.io/shyim/devcontainers-features/php:0": {
+            "version": "7.2",
+            "extensionsExtra": "json,xdebug"
+        },
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+}
