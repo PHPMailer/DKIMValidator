@@ -26,7 +26,7 @@ class Validator extends DKIM
 
         // Only return true in this case
         return (count($res) === 1)
-            && (count($res[0]) === 1)
+            && (count($res[0] ?? []) === 1)
             && ($res[0][0]['status'] === 'SUCCESS');
     }
 
@@ -83,8 +83,24 @@ class Validator extends DKIM
                 ];
             }
 
-            //Validate canonicalization algorithms for header and body
-            [$headerCA, $bodyCA] = explode('/', $dkimTags['c']);
+            //Validate optional canonicalization algorithms for header and body
+            //Use simple/simple as default unless defined differently
+            $headerCA = 'simple';
+            $bodyCA = 'simple';
+
+            if (array_key_exists('c', $dkimTags)) {
+                $containsBodyAndHeaderAlgorithm = strpos($dkimTags['c'], '/') !== false;
+
+                if ($containsBodyAndHeaderAlgorithm) {
+                    $rules = explode('/', $dkimTags['c']);
+
+                    $headerCA = $rules[0];
+                    $bodyCA = $rules[1];
+                } else {
+                    $headerCA = $dkimTags['c'];
+                }
+            }
+
             if ($headerCA !== 'relaxed' && $headerCA !== 'simple') {
                 $output[$signatureIndex][] = [
                     'status' => 'PERMFAIL',
@@ -259,6 +275,16 @@ class Validator extends DKIM
                     ];
                     continue;
                 }
+
+                if (!isset($publicKey['p']) || $publicKey['p'] === '') {
+                    $output[$signatureIndex][] = [
+                        'status' => 'PERMFAIL',
+                        'reason' => 'Public key missing or empty (p= tag not found)' .
+                            " ({$dkimTags['d']}/{$dkimTags['s']} key #$keyIndex)",
+                    ];
+                    continue;
+                }
+
                 // Validate the signature
                 $validationResult = self::validateSignature(
                     $publicKey['p'],
